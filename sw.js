@@ -118,23 +118,29 @@ self.addEventListener('fetch', event => {
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
       const root = new URL('./', self.location);
+      const isRoot = url.pathname === root.pathname ||
+                     url.pathname === `${root.pathname}index.html`;
 
-      // Serving the shell straight back at a nested path would leave its
-      // relative css/ and js/ references resolving against that depth, where
-      // nothing exists — an unstyled, empty page. Redirecting to the scope root
-      // first fixes them, and the fragment, which is where this app's routes
-      // live, is carried across the redirect by the browser.
-      if (url.pathname !== root.pathname &&
-          url.pathname !== `${root.pathname}index.html`) {
-        return Response.redirect(root.pathname + url.search, 302);
+      // The app's own URL is served from the cache, so it opens instantly and
+      // works with no network. Every route in this app lives in the fragment,
+      // so this is the only path the app itself ever navigates to.
+      if (isRoot) {
+        const cached = await caches.match('index.html');
+        if (cached) return cached;
       }
 
-      const cached = await caches.match('index.html');
-      if (cached) return cached;
       try {
+        // Any other path goes to the network: there are real pages here that
+        // are deliberately not precached, such as tests/.
         return await fetch(request);
       } catch {
-        return new Response('Offline', { status: 503, statusText: 'Offline' });
+        // Offline. Handing the shell back at a nested path would leave its
+        // relative css/ and js/ resolving against that depth, where nothing
+        // exists — an unstyled, empty page. Redirecting to the scope root fixes
+        // them, and the browser carries the fragment across the redirect.
+        if (!isRoot) return Response.redirect(root.pathname + url.search, 302);
+        const cached = await caches.match('index.html');
+        return cached ?? new Response('Offline', { status: 503, statusText: 'Offline' });
       }
     })());
     return;

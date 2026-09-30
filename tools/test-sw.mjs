@@ -230,10 +230,33 @@ check('a navigation to the scope root is served the cached shell', () => {
 const navRes = await scope.dispatch('fetch', {
   request: new FakeRequest('/some/deep/link', { mode: 'navigate' }),
 });
-check('a nested navigation redirects to the scope root, so relative assets resolve', () => {
+check('a nested navigation redirects to the scope root when offline, so relative assets resolve', () => {
   if (navRes?.status !== 302) throw new Error(`expected a 302, got ${navRes?.status}`);
   if (navRes.location !== '/') throw new Error(`redirected to ${navRes.location}`);
 });
+
+// A real sub-page that is deliberately not precached, such as tests/, must
+// still be reachable while the network is up.
+scope.fetch = async req => new FakeResponse(`live ${new URL(req.url).pathname}`, { url: req.url });
+const subPage = await scope.dispatch('fetch', {
+  request: new FakeRequest('/tests/', { mode: 'navigate' }),
+});
+check('an uncached real sub-page is served from the network, not redirected away', () => {
+  if (subPage?.status === 302) throw new Error('it was redirected to the root');
+  if (!String(subPage?.body).includes('/tests/')) {
+    throw new Error(`served ${subPage?.body}`);
+  }
+});
+
+const rootOnline = await scope.dispatch('fetch', {
+  request: new FakeRequest('/', { mode: 'navigate' }),
+});
+check('the app root still comes from the cache even with a network available', () => {
+  if (!String(rootOnline?.body).includes('index.html')) {
+    throw new Error(`served ${rootOnline?.body} rather than the cached shell`);
+  }
+});
+scope.fetch = offline;
 
 const missRes = await scope.dispatch('fetch', {
   request: new FakeRequest('/not-in-cache.png', { mode: 'cors' }),
