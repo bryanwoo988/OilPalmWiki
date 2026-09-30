@@ -1,0 +1,160 @@
+{
+  "id": "ch04",
+  "num": 4,
+  "title": { "zh": "土壤与土地评级", "en": "Soils and Land Suitability", "ms": "Tanah dan Kesesuaian Tanah" },
+  "sections": [
+    {
+      "id": "4.1",
+      "heading": { "zh": "油棕对土壤的要求", "en": "What the palm asks of a soil", "ms": "Apa yang diperlukan pokok daripada tanah" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕对土壤的化学肥力要求其实不高——它在相当贫瘠的热带酸性土上也能长好，只要肥料跟得上。真正难以用管理弥补的是物理条件：有效土层深度、排水、持水能力和质地。化学问题可以施肥解决，物理问题基本只能靠选址避开。",
+            "en": "The oil palm is not demanding about soil chemistry — it grows well on distinctly poor tropical acid soils provided fertiliser keeps up. What management cannot easily fix is the physical side: effective rooting depth, drainage, water-holding capacity and texture. Chemical problems can be fertilised away; physical ones mostly have to be avoided at the site-selection stage.",
+            "ms": "Sawit tidak cerewet tentang kimia tanah — ia tumbuh baik pada tanah asid tropika yang agak miskin asalkan baja mencukupi. Yang sukar diperbaiki oleh pengurusan ialah sifat fizikal: kedalaman berakar berkesan, saliran, keupayaan menyimpan air dan tekstur. Masalah kimia boleh diatasi dengan baja; masalah fizikal kebanyakannya perlu dielakkan pada peringkat pemilihan tapak."
+          }
+        },
+        {
+          "type": "keyval",
+          "rows": [
+            {
+              "k": { "zh": "有效土层", "en": "Effective depth", "ms": "Kedalaman berkesan" },
+              "v": { "zh": "1 米以上为佳；低于 50 厘米（有硬盘、砾石层或岩层）会严重限制产量", "en": "over 1 m is good; under 50 cm — a pan, a gravel layer or rock — sharply limits yield", "ms": "melebihi 1 m adalah baik; bawah 50 cm — lapisan keras, kerikil atau batu — mengehadkan hasil dengan ketara" }
+            },
+            {
+              "k": { "zh": "质地", "en": "Texture", "ms": "Tekstur" },
+              "v": { "zh": "壤土至黏壤土最理想；纯砂持水差，重黏排水差", "en": "loam to clay loam is ideal; pure sand holds too little water, heavy clay drains too slowly", "ms": "lom hingga lom liat adalah ideal; pasir tulen menyimpan terlalu sedikit air, tanah liat berat mengalir terlalu perlahan" }
+            },
+            {
+              "k": { "zh": "pH", "en": "pH", "ms": "pH" },
+              "v": { "zh": "4.0–6.0 都可以；油棕相当耐酸", "en": "4.0–6.0 is all workable; the palm is quite acid-tolerant", "ms": "4.0–6.0 semuanya boleh; pokok ini agak tahan asid" }
+            },
+            {
+              "k": { "zh": "坡度", "en": "Slope", "ms": "Cerun" },
+              "v": { "zh": "12° 以内易管理；超过 20° 必须修梯田，收割与运输成本大增", "en": "under 12° is manageable; above 20° needs terracing, and harvesting and transport costs climb steeply", "ms": "bawah 12° mudah diurus; melebihi 20° perlu diteres, dan kos menuai serta pengangkutan meningkat mendadak" }
+            },
+            {
+              "k": { "zh": "地下水位", "en": "Water table", "ms": "Aras air bawah tanah" },
+              "v": { "zh": "常年高于 50 厘米会造成根系缺氧", "en": "standing above 50 cm year-round starves the roots of oxygen", "ms": "kekal di atas 50 cm sepanjang tahun menyebabkan akar kekurangan oksigen" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "heading": { "zh": "土地适宜性分级", "en": "Land suitability classes", "ms": "Kelas kesesuaian tanah" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "种植公司在开园前会做土地评估，把地块按限制因素分级。分级体系各家略有不同，但逻辑一致：把气候、土壤物理、土壤化学和地形的限制汇总，落成一个等级和一个预期产量区间。这个数字随后进入财务模型，决定这块地值不值得开。",
+            "en": "Before an estate is opened, the land is assessed and graded by its limitations. Systems differ in detail between companies, but the logic is the same: fold together the climatic, physical, chemical and topographic constraints into one class and one expected yield range. That figure then goes into the financial model and decides whether the block is worth opening at all.",
+            "ms": "Sebelum sesebuah ladang dibuka, tanah dinilai dan digredkan mengikut kekangannya. Sistemnya berbeza sedikit antara syarikat, tetapi logiknya sama: gabungkan kekangan iklim, fizikal, kimia dan topografi menjadi satu kelas dan satu julat hasil jangkaan. Angka itu kemudian masuk ke dalam model kewangan dan menentukan sama ada blok itu berbaloi dibuka."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "适宜性等级与典型果串产量", "en": "Suitability classes and typical FFB yields", "ms": "Kelas kesesuaian dan hasil BTS tipikal" },
+          "headers": [
+            { "zh": "等级", "en": "Class", "ms": "Kelas" },
+            { "zh": "说明", "en": "Description", "ms": "Keterangan" },
+            { "zh": "果串产量（吨／公顷·年）", "en": "FFB (t/ha per year)", "ms": "BTS (t/ha setahun)" }
+          ],
+          "rows": [
+            [{ "zh": "S1 高度适宜", "en": "S1 — highly suitable", "ms": "S1 — sangat sesuai" }, { "zh": "无明显限制", "en": "no significant limitation", "ms": "tiada kekangan ketara" }, "26–32"],
+            [{ "zh": "S2 中等适宜", "en": "S2 — moderately suitable", "ms": "S2 — sesuai sederhana" }, { "zh": "限制轻微，可管理", "en": "minor, manageable limitations", "ms": "kekangan kecil, boleh diurus" }, "22–26"],
+            [{ "zh": "S3 勉强适宜", "en": "S3 — marginally suitable", "ms": "S3 — sesuai sedikit" }, { "zh": "限制明显，投入回报变差", "en": "clear limitations; inputs pay back less well", "ms": "kekangan jelas; pulangan input lebih rendah" }, "17–22"],
+            [{ "zh": "S4 边际", "en": "S4 — conditionally suitable", "ms": "S4 — sesuai bersyarat" }, { "zh": "限制严重，需特殊措施", "en": "severe limitations needing special measures", "ms": "kekangan teruk memerlukan langkah khas" }, "12–17"],
+            [{ "zh": "N 不适宜", "en": "N — not suitable", "ms": "N — tidak sesuai" }, { "zh": "不宜种植", "en": "should not be planted", "ms": "tidak patut ditanam" }, "—"]
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "读适宜性报告时要注意：等级反映的是这块地的产量上限，不是承诺。S1 的地在管理不到位的情况下照样可以只产 18 吨。反过来，S3 的地配合良好的施肥和收割纪律，也能稳定做到等级区间的上沿。",
+            "en": "Read a suitability report for what it is: the class states the block's ceiling, not a promise. An S1 block under poor management will still only give 18 tonnes. Equally, an S3 block with good fertiliser and harvesting discipline will sit reliably at the top of its band.",
+            "ms": "Baca laporan kesesuaian sebagaimana adanya: kelas menyatakan had atas blok, bukan jaminan. Blok S1 dengan pengurusan lemah tetap hanya memberi 18 tan. Begitu juga, blok S3 dengan baja dan disiplin penuaian yang baik akan kekal di bahagian atas julatnya."
+          }
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "heading": { "zh": "不利土壤条件", "en": "Difficult soils", "ms": "Tanah yang bermasalah" },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "zh": "浅层土与硬盘层——根系被限制在薄薄一层，抗旱能力极差，产量天花板很低。", "en": "Shallow soils and pans — roots are confined to a thin layer, drought resistance is poor and the yield ceiling is low.", "ms": "Tanah cetek dan lapisan keras — akar terkurung dalam lapisan nipis, ketahanan kemarau lemah dan had hasil rendah." },
+            { "zh": "砂质土——持水量小，养分淋失快，需要更频繁、更小量的施肥。", "en": "Sandy soils — little water held, nutrients leach quickly; they need smaller and more frequent fertiliser applications.", "ms": "Tanah berpasir — sedikit air tersimpan, nutrien cepat larut lesap; memerlukan pembajaan lebih kerap dalam kuantiti kecil." },
+            { "zh": "酸性硫酸盐土——排水后黄铁矿氧化，pH 可跌到 3 以下，铝毒严重。处理方式是控制地下水位，不要过度排水。", "en": "Acid sulphate soils — once drained, pyrite oxidises, pH can fall below 3 and aluminium toxicity becomes severe. The remedy is to control the water table rather than drain hard.", "ms": "Tanah sulfat asid — setelah disalirkan, pirit teroksida, pH boleh jatuh di bawah 3 dan ketoksikan aluminium menjadi teruk. Penyelesaiannya ialah mengawal aras air, bukan menyalirkan secara berlebihan." },
+            { "zh": "高磷固定土壤——富含高岭石与铁铝氧化物的土壤会把施入的磷牢牢固定，磷肥利用率很低。", "en": "Strongly phosphate-fixing soils — those rich in kaolinite and iron and aluminium oxides lock up applied phosphate, so recovery of P fertiliser is low.", "ms": "Tanah yang kuat mengikat fosfat — tanah kaya kaolinit serta oksida besi dan aluminium mengunci fosfat yang dibaja, jadi pemulihan baja P adalah rendah." },
+            { "zh": "陡坡——侵蚀风险高，收割与运输效率低，人工成本长期偏高。", "en": "Steep slopes — high erosion risk, slow harvesting and transport, and a permanently higher labour cost.", "ms": "Cerun curam — risiko hakisan tinggi, penuaian dan pengangkutan perlahan, dan kos buruh yang kekal tinggi." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "heading": { "zh": "泥炭地", "en": "Peat", "ms": "Tanah gambut" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "泥炭地是油棕种植里争议最大、技术上也最棘手的一类土壤。东南亚有大面积的深厚热带泥炭，历史上被大量开发种植油棕。种在泥炭上确实可行，但要付出一系列长期代价。",
+            "en": "Peat is the most contested soil in this crop, and technically the most awkward. South-East Asia holds large areas of deep tropical peat, much of it developed for oil palm over the past decades. Planting on it is possible, but it carries a set of long-running costs.",
+            "ms": "Gambut ialah tanah yang paling dipertikaikan dalam tanaman ini, dan paling menyusahkan dari segi teknikal. Asia Tenggara mempunyai kawasan luas gambut tropika dalam, kebanyakannya dibangunkan untuk sawit sejak beberapa dekad. Menanam di atasnya boleh dilakukan, tetapi ia membawa siri kos jangka panjang."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "必须排水才能种，但排水会让泥炭氧化分解，地面持续沉降——初期每年可达 5 厘米以上，长期约 2–3 厘米。几十年后地面可能下沉一两米。", "en": "It has to be drained to be planted, and draining it oxidises the peat so the surface subsides continuously — over 5 cm a year at first, settling to roughly 2–3 cm. Over decades the ground can drop by a metre or two.", "ms": "Ia mesti disalirkan untuk ditanam, dan saliran mengoksidakan gambut sehingga permukaan terus mendap — melebihi 5 cm setahun pada mulanya, kemudian sekitar 2–3 cm. Selepas beberapa dekad tanah boleh turun satu atau dua meter." },
+            { "zh": "沉降最终会让地面接近地下水位甚至低于外部水位，排水系统失效，园区难以再次重种。", "en": "That subsidence eventually brings the surface down towards, or below, the surrounding water level; drainage stops working and the block becomes hard to replant.", "ms": "Mendapan itu akhirnya menurunkan permukaan mendekati atau di bawah aras air sekitar; saliran berhenti berfungsi dan blok itu sukar ditanam semula." },
+            { "zh": "泥炭承载力低，棕榈容易倾斜倒伏，定植前通常需要压实种植带。", "en": "Peat has low bearing strength, so palms lean and topple; the planting row is normally compacted before planting.", "ms": "Gambut mempunyai kekuatan galas rendah, jadi pokok condong dan tumbang; barisan tanaman biasanya dipadatkan sebelum menanam." },
+            { "zh": "泥炭几乎不含矿质养分，铜、锌、硼等微量元素缺乏很常见，必须专门补充。", "en": "Peat holds almost no mineral nutrients; deficiencies of copper, zinc and boron are routine and have to be corrected deliberately.", "ms": "Gambut hampir tiada nutrien mineral; kekurangan kuprum, zink dan boron adalah biasa dan mesti diperbetulkan secara khusus." },
+            { "zh": "排水后的泥炭是巨大的碳排放源，这是可持续认证体系普遍不接受新开泥炭地的原因（见第 17 与第 19 章）。", "en": "Drained peat is a very large source of carbon emissions, which is why certification schemes generally do not accept newly developed peat — see Chapters 17 and 19.", "ms": "Gambut yang disalirkan adalah sumber pelepasan karbon yang sangat besar, sebab itu skim pensijilan umumnya tidak menerima gambut yang baru dibangunkan — lihat Bab 17 dan 19." }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "泥炭地水位管理是个两难：水位压得太低，沉降和排放加速、火灾风险上升；水位抬得太高，根系缺氧、棕榈倒伏。实务上通常把地下水位控制在地表以下 50–70 厘米。",
+            "en": "Water-table management on peat is a bind. Too low and subsidence, emissions and fire risk all rise; too high and roots suffocate and palms topple. In practice the table is normally held 50–70 cm below the surface.",
+            "ms": "Pengurusan aras air di gambut adalah dilema. Terlalu rendah, mendapan, pelepasan dan risiko kebakaran meningkat; terlalu tinggi, akar lemas dan pokok tumbang. Dalam amalan aras air biasanya dikekalkan 50–70 cm di bawah permukaan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "heading": { "zh": "三大产区的土壤差异", "en": "Soils of the three growing regions", "ms": "Tanah di tiga kawasan penanaman" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "东南亚的油棕大多种在内陆的高度风化酸性土（由花岗岩、页岩、砂岩发育而来）和沿海冲积土上，另有相当比例在泥炭上。内陆土普遍养分贫瘠、磷固定强，但物理性状好；沿海冲积土肥力较高，但可能有酸性硫酸盐层和排水问题。",
+            "en": "In South-East Asia the crop sits mostly on highly weathered inland acid soils derived from granite, shale and sandstone, on coastal alluvium, and on a substantial area of peat. The inland soils are generally poor in nutrients and fix phosphate strongly but have good physical properties; the coastal alluvium is more fertile but may carry acid sulphate layers and drainage problems.",
+            "ms": "Di Asia Tenggara tanaman ini kebanyakannya berada di tanah asid pedalaman yang sangat terluluhawa hasil daripada granit, syal dan batu pasir, di aluvium pantai, dan di kawasan gambut yang luas. Tanah pedalaman umumnya miskin nutrien dan kuat mengikat fosfat tetapi mempunyai sifat fizikal yang baik; aluvium pantai lebih subur tetapi mungkin mengandungi lapisan sulfat asid dan masalah saliran."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "西非产区的土壤多为砂质、有机质含量低、持水能力弱，叠加明显的旱季，这是当地单产偏低的重要原因之一。拉丁美洲的情况差异很大——从哥伦比亚东部平原的贫瘠氧化土，到中美洲的火山灰土，肥力跨度极大。",
+            "en": "West African soils are often sandy, low in organic matter and poor at holding water, and they come with a pronounced dry season — a large part of why yields there are low. Latin America varies enormously, from the poor oxisols of the eastern Colombian plains to the fertile volcanic soils of Central America.",
+            "ms": "Tanah Afrika Barat selalunya berpasir, rendah bahan organik dan lemah menyimpan air, serta disertai musim kemarau yang ketara — sebahagian besar sebab hasil di sana rendah. Amerika Latin sangat berbeza-beza, daripada oksisol miskin di dataran timur Colombia hingga tanah volkanik subur di Amerika Tengah."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "FAO–UNESCO 与 Soil Taxonomy 土壤分类", "en": "FAO–UNESCO and Soil Taxonomy classifications", "ms": "Pengelasan FAO–UNESCO dan Soil Taxonomy" }
+  ]
+}

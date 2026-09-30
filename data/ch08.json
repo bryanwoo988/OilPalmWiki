@@ -1,0 +1,124 @@
+{
+  "id": "ch08",
+  "num": 8,
+  "title": { "zh": "种子与苗圃", "en": "Seed and Nursery", "ms": "Benih dan Tapak Semaian" },
+  "sections": [
+    {
+      "id": "8.1",
+      "heading": { "zh": "催芽", "en": "Getting the seed to germinate", "ms": "Mencambahkan benih" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕种子有休眠性，自然条件下发芽零散且缓慢，可以拖上一两年。商业化育苗必须打破休眠，让一批种子整齐发芽。标准做法是干热处理：把含水量调到约 17%–19%，在 39–40 °C 恒温下放置 60–80 天，然后重新吸水到约 21%–22%，在 27 °C 左右催芽，通常两到三周内大量出芽。",
+            "en": "Oil palm seed is dormant. Left to itself it germinates sporadically over a year or more, which is useless commercially; a nursery needs a batch to come up together. The standard method is dry heat treatment: bring moisture content to about 17–19%, hold the seed at 39–40 °C for 60–80 days, then re-moisten to about 21–22% and germinate at around 27 °C, where most seed breaks within two or three weeks.",
+            "ms": "Benih sawit dorman. Jika dibiarkan ia bercambah secara berselerak dalam setahun atau lebih, yang tidak berguna secara komersial; tapak semaian memerlukan satu kumpulan bercambah serentak. Kaedah lazim ialah rawatan haba kering: laraskan kandungan lembapan kepada kira-kira 17–19%, simpan benih pada 39–40 °C selama 60–80 hari, kemudian lembapkan semula kepada kira-kira 21–22% dan cambahkan pada sekitar 27 °C, di mana kebanyakan benih pecah dalam dua atau tiga minggu."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "热处理期间的含水量是最关键、也最容易出错的参数。含水量偏高时，40 °C 会直接杀死胚；偏低则打不破休眠。这也是为什么催芽通常由种子园完成，种植者买的是已发芽种子（germinated seed）而不是干种子。",
+            "en": "Moisture content during heat treatment is the critical parameter and the easiest to get wrong. Too wet, and 40 °C kills the embryo outright; too dry, and dormancy is not broken. It is why germination is normally done by the seed producer and growers buy germinated seed rather than dry seed.",
+            "ms": "Kandungan lembapan semasa rawatan haba ialah parameter kritikal dan paling mudah tersilap. Terlalu lembap, 40 °C terus membunuh embrio; terlalu kering, dormansi tidak pecah. Itulah sebabnya percambahan biasanya dilakukan oleh pengeluar benih dan penanam membeli benih bercambah, bukan benih kering."
+          }
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "heading": { "zh": "预苗圃与大苗圃", "en": "Pre-nursery and main nursery", "ms": "Semaian awal dan semaian utama" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "主流做法是两段式育苗。发芽种子先种进小塑料袋（约 15 × 23 厘米）做预苗圃，遮阴约 50%，养 3 个月左右，长到 4–5 片叶。然后移入大袋（约 40 × 45 厘米），逐步撤除遮阴，再养 8–10 个月。整个苗期约 12–14 个月，定植时苗高约 1–1.3 米。",
+            "en": "The usual practice is a two-stage nursery. Germinated seed goes into small polybags, about 15 × 23 cm, under roughly 50% shade for some three months, until the seedling carries four or five leaves. It is then transplanted into a large bag, about 40 × 45 cm, the shade is progressively removed, and it grows on for another eight to ten months. The whole nursery period is 12–14 months, and seedlings go to the field at about 1–1.3 m tall.",
+            "ms": "Amalan biasa ialah semaian dua peringkat. Benih bercambah dimasukkan ke dalam beg polibeg kecil, kira-kira 15 × 23 cm, di bawah teduhan kira-kira 50% selama tiga bulan, sehingga anak benih mempunyai empat atau lima daun. Ia kemudian dipindahkan ke beg besar, kira-kira 40 × 45 cm, teduhan dibuang secara berperingkat, dan ia dibesarkan lagi lapan hingga sepuluh bulan. Tempoh semaian keseluruhan ialah 12–14 bulan, dan anak benih dihantar ke ladang pada ketinggian kira-kira 1–1.3 m."
+          }
+        },
+        {
+          "type": "keyval",
+          "rows": [
+            {
+              "k": { "zh": "预苗圃", "en": "Pre-nursery", "ms": "Semaian awal" },
+              "v": { "zh": "约 3 个月；50% 遮阴；每天浇水，土壤保持湿润不积水", "en": "about 3 months; ~50% shade; watered daily, kept moist but never waterlogged", "ms": "kira-kira 3 bulan; teduhan ~50%; disiram harian, lembap tetapi tidak bertakung" }
+            },
+            {
+              "k": { "zh": "大苗圃", "en": "Main nursery", "ms": "Semaian utama" },
+              "v": { "zh": "8–10 个月；全光照；袋距逐步加大至约 90 厘米三角形排列", "en": "8–10 months; full sun; bags progressively spaced out to about 90 cm triangular", "ms": "8–10 bulan; cahaya penuh; beg dijarakkan secara berperingkat hingga kira-kira 90 cm segi tiga" }
+            },
+            {
+              "k": { "zh": "水分需求", "en": "Water", "ms": "Air" },
+              "v": { "zh": "大苗圃每株每天约 2 升；缺水是苗圃最常见的减产原因", "en": "roughly 2 litres per seedling per day in the main nursery; water shortage is the commonest cause of a poor nursery", "ms": "kira-kira 2 liter setiap anak benih sehari di semaian utama; kekurangan air ialah punca paling biasa semaian yang lemah" }
+            },
+            {
+              "k": { "zh": "定植苗龄", "en": "Age at planting", "ms": "Umur ketika ditanam" },
+              "v": { "zh": "12–14 个月；超过 18 个月的老苗定植后缓苗期长、早期产量差", "en": "12–14 months; seedlings held past 18 months transplant badly and yield poorly early on", "ms": "12–14 bulan; anak benih yang disimpan melebihi 18 bulan sukar dipindah dan hasil awalnya lemah" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "heading": { "zh": "淘汰：苗圃里最有价值的工作", "en": "Culling: the most valuable work in the nursery", "ms": "Pembuangan: kerja paling berharga di tapak semaian" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "苗圃阶段的淘汰率通常在 15%–25%。这个数字听起来浪费，实际上是整个项目里回报率最高的一笔支出：一株劣质苗定植下去，要占一个坑位二十五年，期间照样消耗肥料、人工和收割成本，却只产出一半的果串。",
+            "en": "A nursery normally culls 15–25% of its seedlings. The figure sounds wasteful; it is in fact the highest-return spending in the whole project. A poor seedling planted out occupies a point for twenty-five years, consuming the same fertiliser, upkeep and harvesting cost as its neighbours while producing perhaps half the bunches.",
+            "ms": "Tapak semaian biasanya membuang 15–25% anak benihnya. Angka itu kedengaran membazir; sebenarnya ia perbelanjaan dengan pulangan tertinggi dalam keseluruhan projek. Anak benih lemah yang ditanam menduduki satu titik selama dua puluh lima tahun, menggunakan baja, penyelenggaraan dan kos penuaian yang sama seperti jirannya sambil menghasilkan mungkin separuh tandan."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "生长明显落后、矮小瘦弱的苗。", "en": "Runts — seedlings clearly behind the batch in size and vigour.", "ms": "Anak benih kerdil — jelas ketinggalan dari segi saiz dan kecergasan." },
+            { "zh": "叶片不正常：细窄叶（narrow leaf）、皱缩叶（crinkled leaf）、卷叶（rolled leaf）、扁顶（flat top）。", "en": "Abnormal leaves: narrow leaf, crinkled leaf, rolled leaf, flat top.", "ms": "Daun abnormal: daun sempit, daun berkedut, daun bergulung, pucuk rata." },
+            { "zh": "叶序异常或生长点扭曲的苗。", "en": "Seedlings with disturbed phyllotaxy or a twisted growing point.", "ms": "Anak benih dengan filotaksi terganggu atau titik tumbuh terpiuh." },
+            { "zh": "有病斑（尤其 Curvularia 叶斑）或严重虫伤的苗。", "en": "Seedlings with disease lesions — Curvularia leaf spot especially — or serious insect damage.", "ms": "Anak benih dengan lesi penyakit — terutamanya bintik daun Curvularia — atau kerosakan serangga serius." },
+            { "zh": "有条件的话，用 SHELL 基因检测淘汰混入的 dura 和 pisifera。", "en": "Where it is available, SHELL gene testing to remove stray dura and pisifera.", "ms": "Jika tersedia, ujian gen SHELL untuk membuang dura dan pisifera yang tersasul." }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "淘汰要分两次做：移入大苗圃时一次，出圃定植前再一次。第一次淘汰省下的是十个月的大袋管理成本，第二次淘汰省下的是二十五年。两次都别心软。",
+            "en": "Cull twice: once when transplanting into the main nursery, and again before the seedlings go to the field. The first cull saves ten months of large-bag upkeep; the second saves twenty-five years. Be ruthless at both.",
+            "ms": "Buang dua kali: sekali semasa memindah ke semaian utama, dan sekali lagi sebelum anak benih dihantar ke ladang. Pembuangan pertama menjimatkan sepuluh bulan penyelenggaraan beg besar; yang kedua menjimatkan dua puluh lima tahun. Jangan berlembut pada kedua-duanya."
+          }
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "heading": { "zh": "苗圃养分与病虫", "en": "Nursery nutrition and pests", "ms": "Pemakanan dan perosak di tapak semaian" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "苗圃施肥的原则是少量多次。大苗圃阶段通常每两周施一次复合肥，从每株几克逐步增加到二三十克，并补充镁和硼。介质用表土，最好过筛并混入适量有机质；用底土会导致生长缓慢、缺素频发。",
+            "en": "Nursery fertiliser works on the principle of little and often. In the main nursery a compound is usually applied every two weeks, rising from a few grams per seedling to twenty or thirty, with magnesium and boron supplied alongside. The medium should be sieved topsoil with some organic matter; subsoil gives slow growth and a steady stream of deficiencies.",
+            "ms": "Pembajaan semaian berasaskan prinsip sedikit tetapi kerap. Di semaian utama sebatian biasanya digunakan setiap dua minggu, meningkat daripada beberapa gram setiap anak benih kepada dua puluh atau tiga puluh, dengan magnesium dan boron dibekalkan sekali. Medium sepatutnya tanah atas yang diayak dengan sedikit bahan organik; tanah bawah memberi pertumbuhan perlahan dan kekurangan nutrien yang berterusan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "苗圃主要病害是 Curvularia 叶斑和 Cercospora 叶斑，两者都在高湿、密植、通风差的条件下爆发。预防重于治疗：及时拉开袋距、避免叶面长时间湿润、发现病株立即移出。虫害方面，蟋蟀、蝗虫、红蜘蛛和象甲幼虫是常见问题，袋面覆盖和定期巡查通常就够。",
+            "en": "The main nursery diseases are Curvularia and Cercospora leaf spot, both of which flare in humid, crowded, poorly ventilated conditions. Prevention beats cure: space the bags on time, avoid leaving foliage wet for long periods, and remove infected plants immediately. Among pests, crickets, grasshoppers, red spider mite and weevil larvae are the usual problems; bag-surface mulching and regular inspection normally handle them.",
+            "ms": "Penyakit utama tapak semaian ialah bintik daun Curvularia dan Cercospora, kedua-duanya merebak dalam keadaan lembap, sesak dan kurang pengudaraan. Pencegahan lebih baik daripada rawatan: jarakkan beg tepat pada masanya, elakkan daun basah untuk tempoh lama, dan buang pokok berjangkit dengan segera. Antara perosak, cengkerik, belalang, hama merah dan larva kumbang adalah masalah biasa; sungkupan permukaan beg dan pemeriksaan berkala biasanya memadai."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "商业苗圃标准作业规程", "en": "Standard commercial nursery practice", "ms": "Amalan standard tapak semaian komersial" }
+  ]
+}

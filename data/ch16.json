@@ -1,0 +1,133 @@
+{
+  "id": "ch16",
+  "num": 16,
+  "title": { "zh": "市场、用途与健康", "en": "Market, Uses and Health", "ms": "Pasaran, Kegunaan dan Kesihatan" },
+  "sections": [
+    {
+      "id": "16.1",
+      "heading": { "zh": "价格与成本", "en": "Price and cost", "ms": "Harga dan kos" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油价格由全球油脂市场整体决定，而不是由棕油自身的供需单独决定。它与豆油、菜籽油、葵花油高度替代，价格因此长期跟随大豆复合体波动；原油价格通过生物柴油需求形成另一条联动通道。对种植者而言，这意味着价格风险基本不可控，能控制的只有成本和单产。",
+            "en": "The palm oil price is set by the world fats and oils market as a whole rather than by palm's own supply and demand. It substitutes closely for soya, rapeseed and sunflower oil, so it tracks the soya complex; and crude oil prices reach it through biodiesel demand. For a grower this means price risk is largely outside their control, and what is inside it is cost and yield.",
+            "ms": "Harga minyak sawit ditentukan oleh pasaran lemak dan minyak dunia secara keseluruhan dan bukan oleh penawaran dan permintaan sawit sendiri. Ia menggantikan minyak soya, kanola dan bunga matahari dengan rapat, jadi ia mengikut kompleks soya; dan harga minyak mentah sampai kepadanya melalui permintaan biodiesel. Bagi penanam ini bermakna risiko harga sebahagian besarnya di luar kawalan mereka, dan yang dalam kawalan ialah kos dan hasil."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "生产成本在各国之间差异很大，主要取决于人工成本、单产水平和地形。东南亚的大型园区凭借高单产和成熟的基础设施长期保持成本优势；拉美部分地区成本接近；非洲则因单产低而单位成本偏高。成本结构里最大的两项通常是肥料和人工，合计往往超过六成。",
+            "en": "Production costs differ widely between countries, driven mainly by labour cost, yield level and terrain. Large South-East Asian estates have long held a cost advantage through high yields and mature infrastructure; parts of Latin America come close; Africa's unit costs are higher because yields are low. The two largest lines in the cost structure are usually fertiliser and labour, which between them often exceed 60%.",
+            "ms": "Kos pengeluaran berbeza secara meluas antara negara, didorong terutamanya oleh kos buruh, tahap hasil dan rupa bumi. Ladang besar Asia Tenggara telah lama memegang kelebihan kos melalui hasil tinggi dan infrastruktur matang; sebahagian Amerika Latin hampir menyamainya; kos unit Afrika lebih tinggi kerana hasilnya rendah. Dua item terbesar dalam struktur kos biasanya baja dan buruh, yang bersama-sama selalunya melebihi 60%."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "由于价格不可控而固定成本占比高，单产就成了唯一可靠的抗风险手段。同样的肥料和人工投入下，25 吨／公顷的园区和 18 吨／公顷的园区，单位成本差距接近三成——低价周期里，这个差距决定谁能撑过去。",
+            "en": "Because price cannot be controlled and fixed costs are a large share, yield is the only reliable buffer. For the same fertiliser and labour, a block at 25 t/ha and one at 18 t/ha differ by nearly a third in unit cost — and in a low-price year that difference decides who survives it.",
+            "ms": "Kerana harga tidak boleh dikawal dan kos tetap merupakan bahagian besar, hasil ialah satu-satunya penampan yang boleh diharap. Dengan baja dan buruh yang sama, blok pada 25 t/ha dan satu lagi pada 18 t/ha berbeza hampir satu pertiga dalam kos unit — dan pada tahun harga rendah, perbezaan itu menentukan siapa yang bertahan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "16.2",
+      "heading": { "zh": "用途", "en": "Where it ends up", "ms": "Ke mana ia pergi" },
+      "blocks": [
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "棕油的最终用途（大致比例）", "en": "End uses of palm oil, broad shares", "ms": "Kegunaan akhir minyak sawit, bahagian kasar" },
+            "note": { "zh": "食用占绝大部分；生物柴油的份额随各国政策与原油价格波动。", "en": "Food dominates. The biodiesel share moves with national mandates and the crude oil price.", "ms": "Makanan mendominasi. Bahagian biodiesel berubah mengikut mandat negara dan harga minyak mentah." },
+            "source": { "zh": "行业估计", "en": "Industry estimates", "ms": "Anggaran industri" },
+            "x": {
+              "categories": [
+                { "zh": "食用油与煎炸油", "en": "Cooking and frying oil", "ms": "Minyak masak dan menggoreng" },
+                { "zh": "加工食品与烘焙", "en": "Processed food and bakery", "ms": "Makanan diproses dan bakeri" },
+                { "zh": "生物柴油", "en": "Biodiesel", "ms": "Biodiesel" },
+                { "zh": "油脂化工（肥皂、洗涤剂）", "en": "Oleochemicals — soap, detergents", "ms": "Oleokimia — sabun, detergen" },
+                { "zh": "动物饲料及其他", "en": "Animal feed and other", "ms": "Makanan ternakan dan lain-lain" }
+              ]
+            },
+            "y": { "unit": "%" },
+            "series": [
+              { "name": { "zh": "份额", "en": "Share", "ms": "Bahagian" }, "values": [34, 30, 18, 14, 4], "color": "--c-2" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油之所以在加工食品里无处不在，原因是功能性而非价格单一因素：它在室温下半固体、氧化稳定性好（煎炸寿命长）、无需氢化即可提供固体脂结构、风味中性、且供应量大而稳定。要在一个配方里替代它，往往需要同时更换两三种原料。",
+            "en": "Palm is everywhere in processed food for functional reasons, not price alone: it is semi-solid at room temperature, oxidatively stable so it lasts in a fryer, gives solid-fat structure without hydrogenation, is neutral in flavour, and is available in large, steady volume. Replacing it in a formulation often means changing two or three ingredients at once.",
+            "ms": "Sawit ada di mana-mana dalam makanan diproses atas sebab fungsi, bukan harga semata-mata: ia separa pepejal pada suhu bilik, stabil terhadap pengoksidaan supaya tahan lama dalam penggoreng, memberi struktur lemak pepejal tanpa penghidrogenan, neutral rasanya, dan tersedia dalam volum besar yang stabil. Menggantikannya dalam sesuatu formulasi selalunya bermakna menukar dua atau tiga bahan sekali gus."
+          }
+        }
+      ]
+    },
+    {
+      "id": "16.3",
+      "heading": { "zh": "棕油与健康", "en": "Palm oil and health", "ms": "Minyak sawit dan kesihatan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油约有一半脂肪酸是饱和的（主要是棕榈酸 C16:0），因此在关于饱和脂肪的争论中长期处在风口上。把现有证据放在一起，可以说几件比较确定的事：",
+            "en": "About half of palm oil's fatty acids are saturated, chiefly palmitic acid, so it has sat in the middle of the argument over saturated fat for decades. Taking the evidence together, a few things can be said with reasonable confidence:",
+            "ms": "Kira-kira separuh asid lemak minyak sawit adalah tepu, terutamanya asid palmitik, jadi ia telah berada di tengah perdebatan mengenai lemak tepu selama beberapa dekad. Menggabungkan bukti yang ada, beberapa perkara boleh dinyatakan dengan agak yakin:"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "相比多不饱和植物油，棕油确实会略微提高低密度脂蛋白胆固醇（LDL-C）；但同时也提高高密度脂蛋白（HDL-C）。", "en": "Compared with polyunsaturated vegetable oils, palm oil does raise LDL cholesterol somewhat — while also raising HDL.", "ms": "Berbanding minyak sayuran politaktepu, minyak sawit memang menaikkan kolesterol LDL sedikit — sambil turut menaikkan HDL." },
+            { "zh": "相比部分氢化油脂（反式脂肪），棕油在心血管风险上明显更优。用棕油替代反式脂肪，是过去二十年食品工业一次实实在在的健康改善。", "en": "Compared with partially hydrogenated fats and their trans fatty acids, palm is clearly the better option. Replacing trans fats with palm was a genuine public-health improvement in food manufacturing over the past twenty years.", "ms": "Berbanding lemak terhidrogen separa dan asid lemak transnya, sawit jelas pilihan yang lebih baik. Menggantikan lemak trans dengan sawit ialah peningkatan kesihatan awam yang sebenar dalam pembuatan makanan sepanjang dua puluh tahun lalu." },
+            { "zh": "红棕油（未精炼脱色）富含类胡萝卜素和生育三烯酚，在维生素 A 缺乏地区有确切的营养价值。常规精炼的 RBD 棕油则基本不含这些成分。", "en": "Red palm oil, unrefined and unbleached, is rich in carotenoids and tocotrienols and has demonstrated nutritional value where vitamin A deficiency is common. Conventionally refined RBD palm oil retains almost none of it.", "ms": "Minyak sawit merah, tidak ditapis dan tidak diluntur, kaya dengan karotenoid dan tokotrienol serta terbukti bernilai pemakanan di kawasan kekurangan vitamin A. Minyak sawit RBD yang ditapis secara konvensional hampir tidak mengekalkannya." },
+            { "zh": "精炼过程中在高温下可能形成 3-MCPD 酯和缩水甘油酯，这是近年监管关注的重点。通过降低脱臭温度等工艺调整可以显著减少其生成。", "en": "High-temperature refining can form 3-MCPD esters and glycidyl esters, which have been a regulatory focus in recent years. Process changes such as lower deodorisation temperatures reduce them substantially.", "ms": "Penapisan suhu tinggi boleh membentuk ester 3-MCPD dan ester glisidil, yang menjadi tumpuan pengawal selia sejak beberapa tahun. Perubahan proses seperti suhu penyahbauan yang lebih rendah mengurangkannya dengan ketara." }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "这一节是一般性的科学背景，不是健康建议。具体到个人的膳食脂肪选择，应当咨询医生或注册营养师。",
+            "en": "This section is general scientific background, not health advice. Decisions about dietary fat for an individual belong with a doctor or a registered dietitian.",
+            "ms": "Bahagian ini adalah latar belakang saintifik umum, bukan nasihat kesihatan. Keputusan tentang lemak pemakanan bagi individu perlu dirujuk kepada doktor atau pakar diet berdaftar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "16.4",
+      "heading": { "zh": "买家、政策与认证", "en": "Buyers, policy and certification", "ms": "Pembeli, dasar dan pensijilan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油的需求结构里有一个显著特点：不同市场对可持续性的要求差别极大。欧盟市场对认证棕油的要求最严，且已通过法规限制与毁林相关的进口；印度、中国等大宗买家的价格敏感度更高，对认证的溢价意愿有限。这个分化决定了认证棕油在全球产量中的份额提升缓慢。",
+            "en": "One striking feature of demand is how differently markets treat sustainability. The European Union asks most of certified palm oil and has legislated against deforestation-linked imports; India and China, the largest volume buyers, are more price-sensitive and pay little premium for certification. That split is why the certified share of world output has risen only slowly.",
+            "ms": "Satu ciri ketara permintaan ialah betapa berbezanya pasaran melayan kelestarian. Kesatuan Eropah menuntut paling banyak minyak sawit bersijil dan telah menggubal undang-undang terhadap import berkaitan penebangan hutan; India dan China, pembeli volum terbesar, lebih sensitif harga dan membayar sedikit premium untuk pensijilan. Perpecahan itulah sebabnya bahagian bersijil daripada pengeluaran dunia meningkat perlahan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "生产国政策同样重要。印尼和马来西亚都推行生物柴油掺混强制令（B30、B35 等），这在低价周期里起到了托底作用，同时把棕油价格与国内能源政策绑在了一起。两国也各自建立了国家认证体系（ISPO、MSPO），与国际的 RSPO 并行。第 19 章会更详细地讨论这些体系。",
+            "en": "Producer-country policy matters just as much. Indonesia and Malaysia both run biodiesel blending mandates — B30, B35 and successors — which put a floor under demand in low-price years while tying the palm price to domestic energy policy. Both have also built national certification schemes, ISPO and MSPO, running alongside the international RSPO. Chapter 19 goes into these.",
+            "ms": "Dasar negara pengeluar sama pentingnya. Indonesia dan Malaysia kedua-duanya melaksanakan mandat campuran biodiesel — B30, B35 dan seterusnya — yang menetapkan lantai permintaan pada tahun harga rendah sambil mengikat harga sawit kepada dasar tenaga domestik. Kedua-duanya juga membina skim pensijilan kebangsaan, ISPO dan MSPO, seiring dengan RSPO antarabangsa. Bab 19 membincangkannya."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Oil World Annual 2013 (ISTA Mielke GmbH)",
+    "MPOB",
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "ch10",
+  "num": 10,
+  "title": { "zh": "定植与种植密度", "en": "Field Planting and Density", "ms": "Penanaman dan Kepadatan" },
+  "sections": [
+    {
+      "id": "10.1",
+      "heading": { "zh": "三角形排列", "en": "The triangular layout", "ms": "Susunan segi tiga" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕几乎总是按等边三角形排列种植，而不是正方形。理由很直接：在同样的株距下，三角形排列每公顷能多种约 15% 的棕榈，而且每株与相邻株的距离完全相等，光照竞争最均匀。行向通常取南北向，让行间受光更均衡。",
+            "en": "Oil palm is almost always planted on an equilateral triangle rather than a square. The reason is straightforward: at the same spacing between neighbours, a triangular layout fits about 15% more palms per hectare, and every palm sits the same distance from all its neighbours, so competition for light is even. Rows normally run north–south to balance light between them.",
+            "ms": "Sawit hampir sentiasa ditanam dalam segi tiga sama sisi dan bukan segi empat. Sebabnya mudah: pada jarak yang sama antara jiran, susunan segi tiga memuatkan kira-kira 15% lebih pokok sehektar, dan setiap pokok berada pada jarak yang sama daripada semua jirannya, jadi persaingan cahaya adalah sekata. Barisan biasanya menghala utara–selatan untuk mengimbangi cahaya antaranya."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "常用株距与对应密度（等边三角形）", "en": "Common spacings and the resulting density, triangular", "ms": "Jarak biasa dan kepadatan hasilnya, segi tiga" },
+          "headers": [
+            { "zh": "株距", "en": "Spacing", "ms": "Jarak" },
+            { "zh": "行距", "en": "Row spacing", "ms": "Jarak baris" },
+            { "zh": "每公顷株数", "en": "Palms per hectare", "ms": "Pokok sehektar" }
+          ],
+          "rows": [
+            ["8.5 m", "7.36 m", "160"],
+            ["8.8 m", "7.62 m", "149"],
+            ["9.0 m", "7.79 m", "143"],
+            ["9.2 m", "7.97 m", "136"],
+            ["9.5 m", "8.23 m", "128"],
+            ["10.0 m", "8.66 m", "115"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "商业上最常用的是 9.0 米（143 株／公顷）和 9.2 米（136 株／公顷）。选哪个取决于地点的产量潜力和所用材料的树冠大小：土壤好、辐射高、树冠开展的材料应当种稀一些；土壤差、生长慢的地点可以稍密。",
+            "en": "The commonest commercial spacings are 9.0 m, giving 143 palms per hectare, and 9.2 m, giving 136. Which to choose depends on the site's yield potential and on how big a canopy the planting material makes: good soils, high radiation and spreading crowns want wider spacing; poorer, slower-growing sites can take a little more density.",
+            "ms": "Jarak komersial paling biasa ialah 9.0 m, memberi 143 pokok sehektar, dan 9.2 m, memberi 136. Pilihan bergantung kepada potensi hasil tapak dan sebesar mana kanopi yang dihasilkan bahan tanaman: tanah baik, sinaran tinggi dan mahkota melebar memerlukan jarak lebih luas; tapak yang lebih miskin dan perlahan boleh menerima sedikit kepadatan tambahan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "10.2",
+      "heading": { "zh": "密度的两难", "en": "The density trade-off", "ms": "Pertukaran kepadatan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "种植密度是油棕栽培里最典型的一个长期权衡：密度对早期产量和后期产量的作用方向是相反的。",
+            "en": "Planting density is the classic long-run trade-off in this crop, because density pulls early yield and later yield in opposite directions.",
+            "ms": "Kepadatan tanaman ialah pertukaran jangka panjang klasik dalam tanaman ini, kerana kepadatan menarik hasil awal dan hasil kemudian ke arah yang bertentangan."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "line",
+            "title": { "zh": "两种密度下的产量轨迹", "en": "Yield trajectory at two densities", "ms": "Trajektori hasil pada dua kepadatan" },
+            "note": { "zh": "密植早期占优，成龄后被稀植反超。交叉点通常出现在第 8–10 年。", "en": "The dense stand leads early and is overtaken once mature. The crossover usually falls in years 8 to 10.", "ms": "Dirian padat mendahului awal dan diatasi apabila matang. Persilangan biasanya berlaku pada tahun 8 hingga 10." },
+            "source": { "zh": "密度试验的典型结果", "en": "Typical outcome of density trials", "ms": "Keputusan tipikal ujian kepadatan" },
+            "x": {
+              "label": { "zh": "定植后年数", "en": "years after planting", "ms": "tahun selepas menanam" },
+              "categories": ["3", "4", "5", "6", "8", "10", "12", "15", "18", "21"]
+            },
+            "y": { "unit": "t/ha", "label": { "zh": "吨果串／公顷", "en": "t FFB per ha", "ms": "tan BTS/ha" } },
+            "series": [
+              { "name": { "zh": "160 株／公顷", "en": "160 palms/ha", "ms": "160 pokok/ha" }, "values": [10, 19, 25, 28, 29, 27, 25, 22, 19, 16], "color": "--c-2" },
+              { "name": { "zh": "128 株／公顷", "en": "128 palms/ha", "ms": "128 pokok/ha" }, "values": [7, 14, 20, 24, 28, 29, 28, 26, 24, 22], "color": "--c-1" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "密植的早期优势来自更快封行、更早达到高截光率。但一旦封行，棕榈开始争光，后果有三个：单株果串数下降、果串变小、以及棕榈为了争光而加速长高。最后一点尤其麻烦——它缩短了园区的经济寿命，因为收割高度是决定何时必须重种的主要因素之一。",
+            "en": "The early advantage of a dense stand comes from closing canopy sooner and intercepting light earlier. But once closed, the palms compete, with three consequences: fewer bunches per palm, smaller bunches, and accelerated height growth as palms reach for light. The last of these is the awkward one — it shortens the economic life of the block, because harvesting height is one of the main things that forces a replant.",
+            "ms": "Kelebihan awal dirian padat datang daripada menutup kanopi lebih cepat dan memintas cahaya lebih awal. Tetapi setelah tertutup, pokok bersaing, dengan tiga akibat: kurang tandan setiap pokok, tandan lebih kecil, dan pertumbuhan ketinggian yang dipercepat kerana pokok memanjat mencari cahaya. Yang terakhir itu paling menyusahkan — ia memendekkan hayat ekonomi blok, kerana ketinggian menuai ialah antara faktor utama yang memaksa tanam semula."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "如果按整个轮作周期的累计产量来评价，最优密度通常落在每公顷 120–140 株之间。但如果决策目标是尽快回收现金流（例如小农或高利率环境下），稍高一点的密度可能更合理。这是个财务判断，不纯是农艺判断。",
+            "en": "Judged on cumulative yield over a whole cycle, the optimum usually falls between 120 and 140 palms per hectare. But if the aim is to recover cash quickly — a smallholder's position, or a high interest-rate environment — a somewhat higher density can be the better answer. This is a financial judgement as much as an agronomic one.",
+            "ms": "Dinilai pada hasil kumulatif sepanjang satu kitaran, optimum biasanya antara 120 dan 140 pokok sehektar. Tetapi jika matlamatnya memulihkan tunai dengan cepat — kedudukan pekebun kecil, atau persekitaran kadar faedah tinggi — kepadatan yang lebih tinggi sedikit boleh menjadi jawapan yang lebih baik. Ini pertimbangan kewangan sebanyak pertimbangan agronomi."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "有一种做法要避免：为了两头都占，先高密度种植，打算几年后间伐。实际执行中间伐几乎总是被推迟或取消——因为砍掉正在结果的棕榈在心理上和账面上都很难接受。等到不得不砍时，损失已经造成了。",
+            "en": "One approach to avoid: planting dense with the intention of thinning later to get the best of both. In practice the thinning is almost always postponed or dropped, because cutting down palms that are bearing fruit is hard to accept both psychologically and on the books. By the time it happens, the damage is done.",
+            "ms": "Satu pendekatan yang perlu dielakkan: menanam padat dengan niat menjarangkan kemudian untuk mendapat yang terbaik daripada kedua-duanya. Dalam amalan penjarangan hampir selalu ditangguh atau dibatalkan, kerana menebang pokok yang sedang berbuah sukar diterima baik dari segi psikologi mahupun kewangan. Apabila ia akhirnya dilakukan, kerosakan sudah berlaku."
+          }
+        }
+      ]
+    },
+    {
+      "id": "10.3",
+      "heading": { "zh": "定植操作", "en": "Putting the palm in the ground", "ms": "Menanam pokok" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "定植的时机应当选在雨季开始时，让幼苗有几个月稳定的水分供应来扎根。种植穴要比苗袋略大，深度与袋高一致——种得太深会闷住生长点，种得太浅根球外露易干。",
+            "en": "Plant at the start of the rains, so the seedling has several months of reliable moisture in which to root. The hole should be a little wider than the bag and the same depth — plant too deep and the growing point is buried, too shallow and the root ball dries out.",
+            "ms": "Tanam pada permulaan musim hujan, supaya anak benih mempunyai beberapa bulan lembapan yang boleh diharap untuk berakar. Lubang perlu sedikit lebih lebar daripada beg dan sama dalamnya — terlalu dalam titik tumbuh tertimbus, terlalu cetek bebola akar kering."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "苗袋必须完整割除。留在土里的塑料袋会束缚根系，几年后表现为长势衰弱和倒伏。", "en": "Cut the polybag away completely. A bag left in the ground girdles the root system and shows up years later as weak growth and toppling.", "ms": "Potong polibeg sepenuhnya. Beg yang ditinggalkan dalam tanah mengikat sistem akar dan menunjukkan kesannya bertahun kemudian sebagai pertumbuhan lemah dan tumbang." },
+            { "zh": "土球要保持完整，回填后压实，确保根土密接、没有空隙。", "en": "Keep the root ball intact, backfill and firm it so there are no voids between roots and soil.", "ms": "Kekalkan bebola akar utuh, timbus dan padatkan supaya tiada rongga antara akar dan tanah." },
+            { "zh": "基肥（通常是磷肥）施在穴底和回填土中，不要直接接触根球。", "en": "Put the basal fertiliser — usually phosphate — in the hole and mixed through the backfill, not in direct contact with the root ball.", "ms": "Letakkan baja asas — biasanya fosfat — dalam lubang dan campur ke dalam tanah timbus, bukan bersentuhan terus dengan bebola akar." },
+            { "zh": "犀角金龟（Oryctes）在重种区风险很高，定植时通常需要配合防治措施，见第 14 章。", "en": "Rhinoceros beetle is a serious risk on replanted land; planting is normally accompanied by control measures — see Chapter 14.", "ms": "Kumbang badak berisiko tinggi di tanah tanam semula; penanaman biasanya disertai langkah kawalan — lihat Bab 14." },
+            { "zh": "补植要在定植后头一年内完成。拖到第二年才补，补的苗会永远落后于周围棕榈。", "en": "Do any supplying — replacing failures — within the first year. A seedling put in during the second year never catches up with its neighbours.", "ms": "Lakukan penggantian pokok yang mati dalam tahun pertama. Anak benih yang ditanam pada tahun kedua tidak akan mengejar jirannya." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10.4",
+      "heading": { "zh": "缩短未成熟期", "en": "Shortening the immature period", "ms": "Memendekkan tempoh belum matang" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "从定植到开始有经济产量的这 30 个月，是纯支出没有收入的一段。缩短它的价值很直接，办法主要有三条：用更大更壮的苗定植（但苗龄不宜超过 14–16 个月）、保证幼龄期的水肥供应、以及做好树盘管理不让杂草竞争。",
+            "en": "The thirty months between planting and first economic crop are pure expenditure with no income, so shortening them is worth real money. Three things do it: plant a larger, sturdier seedling — though not one held past 14–16 months; keep water and nutrients up through the immature phase; and keep the palm circle clean so weeds do not compete.",
+            "ms": "Tiga puluh bulan antara penanaman dan hasil ekonomi pertama adalah perbelanjaan semata-mata tanpa pendapatan, jadi memendekkannya bernilai wang sebenar. Tiga perkara melakukannya: tanam anak benih yang lebih besar dan kukuh — tetapi bukan yang disimpan melebihi 14–16 bulan; kekalkan air dan nutrien sepanjang fasa belum matang; dan pastikan bulatan pokok bersih supaya rumpai tidak bersaing."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "还有一项做法是疏花（ablation）：在最初的一两年里把抽出的花序全部摘除。这样做牺牲了少量早期产量，换来更强的营养生长和根系发育，之后的产量爬升更快、抗旱能力也更好。在干旱风险高的地点，这个做法通常是划算的；在条件优越的地点，价值就小一些。",
+            "en": "One further practice is ablation: removing every inflorescence during the first year or two. It sacrifices a little early crop in exchange for stronger vegetative and root growth, after which yield climbs faster and the palm stands drought better. On drought-prone sites ablation usually pays; on favourable sites the benefit is smaller.",
+            "ms": "Satu lagi amalan ialah ablasi: membuang setiap jambak pada tahun pertama atau kedua. Ia mengorbankan sedikit hasil awal sebagai pertukaran untuk pertumbuhan vegetatif dan akar yang lebih kukuh, selepas itu hasil meningkat lebih cepat dan pokok lebih tahan kemarau. Di tapak berisiko kemarau, ablasi biasanya berbaloi; di tapak yang baik, faedahnya lebih kecil."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "巴布亚新几内亚与马来西亚的密度试验", "en": "Density trials in Papua New Guinea and Malaysia", "ms": "Ujian kepadatan di Papua New Guinea dan Malaysia" }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "chapters": [
+    {
+      "id": "ch01", "num": 1, "icon": "history",
+      "title": { "zh": "油棕与世界油脂", "en": "Oil Palm and the World's Fats", "ms": "Sawit dan Minyak Dunia" },
+      "blurb": { "zh": "从西非雨林到全球第一大植物油：产量、贸易与为什么是油棕。", "en": "From West African forest to the world's leading vegetable oil: output, trade, and why palm won.", "ms": "Dari hutan Afrika Barat ke minyak sayuran utama dunia: pengeluaran, perdagangan, dan sebabnya." }
+    },
+    {
+      "id": "ch02", "num": 2, "icon": "leaf",
+      "title": { "zh": "植物学与果型", "en": "Botany and Fruit Forms", "ms": "Botani dan Bentuk Buah" },
+      "blurb": { "zh": "棕榈的结构、花序与 dura／tenera／pisifera 三种果型的遗传。", "en": "How the palm is built, how it flowers, and the genetics behind dura, tenera and pisifera.", "ms": "Struktur pokok, pembungaan, dan genetik dura, tenera dan pisifera." }
+    },
+    {
+      "id": "ch03", "num": 3, "icon": "sun",
+      "title": { "zh": "气候条件", "en": "Climate Requirements", "ms": "Keperluan Iklim" },
+      "blurb": { "zh": "温度、雨量、水分亏缺与日照——决定一个地点能不能种。", "en": "Temperature, rainfall, water deficit and sunshine — what makes a site viable.", "ms": "Suhu, hujan, defisit air dan cahaya matahari — apa yang menentukan tapak." }
+    },
+    {
+      "id": "ch04", "num": 4, "icon": "soil",
+      "title": { "zh": "土壤与土地评级", "en": "Soils and Land Suitability", "ms": "Tanah dan Kesesuaian Tanah" },
+      "blurb": { "zh": "什么样的土适合油棕，泥炭地的特殊问题，以及土地分级怎么读。", "en": "What oil palm needs from a soil, the peat problem, and how suitability classes work.", "ms": "Keperluan tanah, masalah tanah gambut, dan kelas kesesuaian." }
+    },
+    {
+      "id": "ch05", "num": 5, "icon": "growth",
+      "title": { "zh": "生长与产量形成", "en": "Growth and Yield Formation", "ms": "Pertumbuhan dan Pembentukan Hasil" },
+      "blurb": { "zh": "干物质怎么分配、性比如何决定、从授粉到收成要多久。", "en": "How dry matter is partitioned, what sets the sex ratio, and the long road from flower to bunch.", "ms": "Pengagihan bahan kering, nisbah jantina, dan perjalanan dari bunga ke tandan." }
+    },
+    {
+      "id": "ch06", "num": 6, "icon": "breeding",
+      "title": { "zh": "育种与选育", "en": "Breeding and Selection", "ms": "Pembiakbakaan dan Pemilihan" },
+      "blurb": { "zh": "Deli dura × pisifera 的由来，遗传力，以及为什么一个育种周期要十几年。", "en": "Where Deli dura × pisifera came from, heritability, and why one cycle takes a decade or more.", "ms": "Asal usul Deli dura × pisifera, kebolehwarisan, dan kitaran sedekad." }
+    },
+    {
+      "id": "ch07", "num": 7, "icon": "lab",
+      "title": { "zh": "组织培养与生物技术", "en": "Tissue Culture and Biotechnology", "ms": "Kultur Tisu dan Bioteknologi" },
+      "blurb": { "zh": "无性系繁殖的承诺与 mantled 异常的教训，以及基因组学带来的改变。", "en": "The promise of clones, the lesson of the mantled abnormality, and what genomics changed.", "ms": "Janji klon, pengajaran keabnormalan mantled, dan kesan genomik." }
+    },
+    {
+      "id": "ch08", "num": 8, "icon": "seedling",
+      "title": { "zh": "种子与苗圃", "en": "Seed and Nursery", "ms": "Benih dan Tapak Semaian" },
+      "blurb": { "zh": "催芽、预苗圃、大苗圃与淘汰——种苗质量决定往后二十五年。", "en": "Heat treatment, pre-nursery, main nursery and culling — 25 years ride on this stage.", "ms": "Rawatan haba, semaian awal, semaian utama dan pemilihan." }
+    },
+    {
+      "id": "ch09", "num": 9, "icon": "map",
+      "title": { "zh": "选址与整地", "en": "Site Selection and Land Preparation", "ms": "Pemilihan Tapak dan Penyediaan Tanah" },
+      "blurb": { "zh": "土地评估、园区规划、梯田与零燃烧整地。", "en": "Assessing land, laying out the estate, terracing, and clearing without fire.", "ms": "Menilai tanah, susun atur ladang, teres, dan pembersihan tanpa bakar." }
+    },
+    {
+      "id": "ch10", "num": 10, "icon": "grid",
+      "title": { "zh": "定植与种植密度", "en": "Field Planting and Density", "ms": "Penanaman dan Kepadatan" },
+      "blurb": { "zh": "三角形排列、每公顷多少株，以及密度对早期与后期产量的相反影响。", "en": "Triangular spacing, palms per hectare, and why density helps early yield and hurts later.", "ms": "Jarak segi tiga, pokok per hektar, dan kesan kepadatan." }
+    },
+    {
+      "id": "ch11", "num": 11, "icon": "tools",
+      "title": { "zh": "田间管理", "en": "Field Upkeep", "ms": "Penyelenggaraan Ladang" },
+      "blurb": { "zh": "覆盖作物、修叶、收割轮次、机械化、出油率与重种。", "en": "Covers, pruning, harvesting rounds, mechanisation, oil extraction rate and replanting.", "ms": "Tanaman penutup, pemangkasan, pusingan tuai, mekanisasi, OER dan tanam semula." }
+    },
+    {
+      "id": "ch12", "num": 12, "icon": "nutrient",
+      "title": { "zh": "养分管理", "en": "Nutrient Management", "ms": "Pengurusan Nutrien" },
+      "blurb": { "zh": "带走多少就要补多少：叶片分析、缺素症状、空果串与废水回收。", "en": "Replace what the crop removes: leaf analysis, deficiency symptoms, EFB and POME recycling.", "ms": "Gantikan apa yang diambil: analisis daun, simptom kekurangan, kitar semula EFB dan POME." }
+    },
+    {
+      "id": "ch13", "num": 13, "icon": "disease",
+      "title": { "zh": "病害", "en": "Diseases", "ms": "Penyakit" },
+      "blurb": { "zh": "Ganoderma 基腐病、镰刀菌枯萎、芽腐病、冠腐病与苗期病害。", "en": "Ganoderma basal stem rot, Fusarium wilt, bud rot, crown disease and nursery diseases.", "ms": "Reput pangkal batang Ganoderma, layu Fusarium, reput pucuk dan penyakit semaian." }
+    },
+    {
+      "id": "ch14", "num": 14, "icon": "bug",
+      "title": { "zh": "虫害与综合防治", "en": "Pests and Integrated Management", "ms": "Perosak dan Pengurusan Bersepadu" },
+      "blurb": { "zh": "袋蛾、刺蛾、犀角金龟、鼠害——以及那只让产量跳升的授粉象鼻虫。", "en": "Bagworms, nettle caterpillars, rhinoceros beetle, rats — and the weevil that lifted yields.", "ms": "Ulat bungkus, ulat bulu, kumbang badak, tikus — dan kumbang pendebunga." }
+    },
+    {
+      "id": "ch15", "num": 15, "icon": "mill",
+      "title": { "zh": "产品与加工", "en": "Products and Processing", "ms": "Produk dan Pemprosesan" },
+      "blurb": { "zh": "从果串到毛棕油：榨油流程、脂肪酸组成、游离脂肪酸与分提。", "en": "Bunch to crude palm oil: the mill process, fatty acids, free fatty acid, and fractionation.", "ms": "Tandan ke minyak sawit mentah: proses kilang, asid lemak, FFA dan pemeringkatan." }
+    },
+    {
+      "id": "ch16", "num": 16, "icon": "market",
+      "title": { "zh": "市场、用途与健康", "en": "Market, Uses and Health", "ms": "Pasaran, Kegunaan dan Kesihatan" },
+      "blurb": { "zh": "谁在买、卖多少钱、用在哪里，以及棕油与人体健康的证据。", "en": "Who buys it, what it costs to make, where it ends up, and the evidence on health.", "ms": "Siapa membeli, kos pengeluaran, kegunaan, dan bukti kesihatan." }
+    },
+    {
+      "id": "ch17", "num": 17, "icon": "climate",
+      "title": { "zh": "油棕与气候变化", "en": "Oil Palm and Climate Change", "ms": "Sawit dan Perubahan Iklim" },
+      "blurb": { "zh": "碳储量、泥炭地排放，以及气候变化反过来对油棕的影响。", "en": "Carbon stocks, peat emissions, and how a changing climate acts back on the crop.", "ms": "Stok karbon, pelepasan gambut, dan kesan iklim terhadap tanaman." }
+    },
+    {
+      "id": "ch18", "num": 18, "icon": "fuel",
+      "title": { "zh": "生物燃料", "en": "Biofuel", "ms": "Biobahan Api" },
+      "blurb": { "zh": "棕油生物柴油的能量平衡、碳偿还期与政策争议。", "en": "The energy balance of palm biodiesel, carbon payback time, and the policy argument.", "ms": "Imbangan tenaga biodiesel sawit, masa bayar balik karbon, dan polisi." }
+    },
+    {
+      "id": "ch19", "num": 19, "icon": "leafcheck",
+      "title": { "zh": "可持续发展", "en": "Sustainability", "ms": "Kelestarian" },
+      "blurb": { "zh": "毁林、生物多样性、认证体系与小农的处境。", "en": "Deforestation, biodiversity, certification, and where smallholders stand.", "ms": "Penebangan hutan, biodiversiti, pensijilan, dan pekebun kecil." }
+    },
+    {
+      "id": "ch20", "num": 20, "icon": "future",
+      "title": { "zh": "未来展望", "en": "The Road Ahead", "ms": "Masa Hadapan" },
+      "blurb": { "zh": "需求增长、产量差距、育种目标——增产还是扩地？", "en": "Rising demand, the yield gap, breeding targets — more yield or more land?", "ms": "Permintaan meningkat, jurang hasil, sasaran pembiakbakaan." }
+    }
+  ]
+}

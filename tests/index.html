@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPWiki tests</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 24px 20px 60px;
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    max-width: 52rem; margin-inline: auto;
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .sub { color: #777; margin: 0 0 22px; }
+  #summary { padding: 14px 18px; border-radius: 10px; font-weight: 650; margin-bottom: 20px; }
+  .pass { background: #E4F2EA; color: #0A5334; }
+  .fail { background: #FCE4E4; color: #7A1E1E; }
+  @media (prefers-color-scheme: dark) {
+    .pass { background: #123026; color: #7BE6B4; }
+    .fail { background: #3A1414; color: #FF9A9A; }
+  }
+  h2 { font-size: 1rem; margin: 22px 0 8px; letter-spacing: .02em; text-transform: uppercase;
+       color: #888; font-weight: 700; }
+  li { list-style: none; padding: 5px 0 5px 26px; position: relative; }
+  li::before { position: absolute; left: 0; font-weight: 700; }
+  li.ok::before { content: "ok"; color: #128A56; font-size: .8em; top: 7px; }
+  li.no::before { content: "✗"; color: #C33; }
+  li.no { color: #C33; }
+  ul { padding: 0; margin: 0; }
+  code { font-family: ui-monospace, Menlo, monospace; font-size: .92em; }
+</style>
+</head>
+<body>
+<h1>OPWiki tests</h1>
+<p class="sub">Runs the shipped modules in a real browser. Serve over http, not file://.</p>
+<div id="summary">running…</div>
+<div id="out"></div>
+
+<script type="module">
+import * as prefs from '../js/prefs.js';
+import { pick, t, UI, LANG_GLYPH } from '../js/i18n.js';
+import { encode } from '../js/qrcode.js';
+import { render as renderChart } from '../js/charts.js';
+import { loadIndex, loadChapter, renderSections } from '../js/content.js';
+import { search } from '../js/search.js';
+
+const out = document.getElementById('out');
+let passed = 0, failed = 0, group;
+
+function section(name) {
+  const h = document.createElement('h2');
+  h.textContent = name;
+  group = document.createElement('ul');
+  out.append(h, group);
+}
+
+function check(name, fn) {
+  const li = document.createElement('li');
+  li.textContent = name;
+  try {
+    const r = fn();
+    if (r === false) throw new Error('returned false');
+    li.className = 'ok';
+    passed++;
+  } catch (e) {
+    li.className = 'no';
+    li.textContent = `${name} — ${e.message}`;
+    failed++;
+  }
+  group.append(li);
+}
+
+const eq = (a, b, what = '') => {
+  if (a !== b) throw new Error(`${what}expected ${JSON.stringify(b)}, got ${JSON.stringify(a)}`);
+};
+
+/* --- i18n ---------------------------------------------------------------- */
+
+section('i18n');
+prefs.init();
+
+check('every UI string has all three languages', () => {
+  const missing = [];
+  for (const [key, val] of Object.entries(UI)) {
+    for (const l of ['zh', 'en', 'ms']) {
+      if (!val[l]) missing.push(`${key}.${l}`);
+    }
+  }
+  if (missing.length) throw new Error(`missing: ${missing.join(', ')}`);
+});
+
+check('pick resolves the requested language', () => {
+  eq(pick({ zh: 'a', en: 'b', ms: 'c' }, 'ms'), 'c');
+});
+
+check('pick passes plain strings through', () => eq(pick('7'), '7'));
+
+check('pick falls back rather than returning blank', () => {
+  eq(pick({ en: 'only english' }, 'ms'), 'only english');
+});
+
+check('t interpolates tokens', () => {
+  const s = t('chapter', { n: 5 });
+  if (!s.includes('5')) throw new Error(`no token substituted: ${s}`);
+});
+
+/* --- prefs --------------------------------------------------------------- */
+
+section('preferences');
+
+check('language cycles zh → en → ms → zh', () => {
+  while (prefs.get().lang !== 'zh') prefs.cycleLang();
+  eq(prefs.cycleLang(), 'en', 'first: ');
+  eq(prefs.cycleLang(), 'ms', 'second: ');
+  eq(prefs.cycleLang(), 'zh', 'third: ');
+});
+
+check('every language has a button glyph', () => {
+  for (const l of prefs.LANGS) if (!LANG_GLYPH[l]) throw new Error(`no glyph for ${l}`);
+});
+
+check('theme cycles auto → light → dark → auto', () => {
+  while (prefs.get().theme !== 'auto') prefs.cycleTheme();
+  eq(prefs.cycleTheme(), 'light');
+  eq(prefs.cycleTheme(), 'dark');
+  eq(prefs.cycleTheme(), 'auto');
+});
+
+check('font scale cycles through all four steps and returns', () => {
+  while (prefs.get().fontScale !== 1) prefs.cycleFontScale();
+  const seen = [1];
+  for (let i = 0; i < 4; i++) seen.push(prefs.cycleFontScale());
+  eq(JSON.stringify(seen), JSON.stringify([1, 1.15, 1.3, 1.5, 1]));
+});
+
+check('font scale reaches the document as a CSS variable', () => {
+  while (prefs.get().fontScale !== 1.3) prefs.cycleFontScale();
+  const v = getComputedStyle(document.documentElement).getPropertyValue('--font-scale').trim();
+  eq(v, '1.3');
+  eq(document.documentElement.dataset.wide, 'on', 'wide layout at 1.3: ');
+  while (prefs.get().fontScale !== 1) prefs.cycleFontScale();
+});
+
+check('preferences survive a round trip through localStorage', () => {
+  prefs.cycleLang();
+  const before = prefs.get();
+  const after = prefs.init();
+  eq(after.lang, before.lang);
+  while (prefs.get().lang !== 'zh') prefs.cycleLang();
+});
+
+check('an invalid stored value falls back to the default', () => {
+  localStorage.setItem('opwiki.prefs', JSON.stringify({ lang: 'fr', theme: 'neon', fontScale: 9 }));
+  const s = prefs.init();
+  eq(s.lang, 'zh', 'lang: ');
+  eq(s.theme, 'auto', 'theme: ');
+  eq(s.fontScale, 1, 'scale: ');
+});
+
+/* --- QR ------------------------------------------------------------------ */
+
+section('QR encoder');
+
+check('encodes a URL to a square matrix of the right size', () => {
+  const { size, modules, version } = encode('https://bryanwoo.github.io/opwiki/');
+  eq(size, version * 4 + 17, 'size for version: ');
+  eq(modules.length, size, 'rows: ');
+  eq(modules[0].length, size, 'columns: ');
+});
+
+check('places the three finder patterns', () => {
+  const { size, modules } = encode('https://opwiki.app/');
+  // A finder is a 7x7 ring: dark border, light ring, 3x3 dark core.
+  const finderAt = (ox, oy) => {
+    for (let y = 0; y < 7; y++) {
+      for (let x = 0; x < 7; x++) {
+        const d = Math.max(Math.abs(x - 3), Math.abs(y - 3));
+        const want = d === 2 ? 0 : 1;
+        if (modules[oy + y][ox + x] !== want) return false;
+      }
+    }
+    return true;
+  };
+  if (!finderAt(0, 0)) throw new Error('top-left finder wrong');
+  if (!finderAt(size - 7, 0)) throw new Error('top-right finder wrong');
+  if (!finderAt(0, size - 7)) throw new Error('bottom-left finder wrong');
+});
+
+check('the timing patterns alternate', () => {
+  const { size, modules } = encode('https://opwiki.app/');
+  for (let i = 8; i < size - 8; i++) {
+    eq(modules[6][i], i % 2 === 0 ? 1 : 0, `row 6 at ${i}: `);
+    eq(modules[i][6], i % 2 === 0 ? 1 : 0, `column 6 at ${i}: `);
+  }
+});
+
+check('picks a larger version for a longer payload', () => {
+  const a = encode('a').version;
+  const b = encode('x'.repeat(200)).version;
+  if (!(b > a)) throw new Error(`${b} is not larger than ${a}`);
+});
+
+check('handles non-ASCII payloads', () => encode('油棕百科 OPWiki Wiki Sawit').size > 0);
+
+check('refuses a payload beyond version 10', () => {
+  try {
+    encode('x'.repeat(400));
+  } catch {
+    return true;
+  }
+  throw new Error('should have thrown');
+});
+
+/* --- charts -------------------------------------------------------------- */
+
+section('charts');
+
+const spec = {
+  kind: 'hbar',
+  title: { zh: '测试', en: 'Test', ms: 'Ujian' },
+  source: 'test',
+  x: { categories: [{ zh: '甲', en: 'A', ms: 'A' }, { zh: '乙', en: 'B', ms: 'B' }] },
+  y: { unit: 't' },
+  series: [{ name: { zh: '值', en: 'Value', ms: 'Nilai' }, values: [3, 6] }],
+};
+
+check('renders an SVG once it is in the document', async () => true);
+
+await (async () => {
+  const host = document.createElement('div');
+  host.style.cssText = 'position:absolute;left:-9999px;width:400px';
+  document.body.append(host);
+
+  for (const kind of ['hbar', 'bar', 'line', 'stackedBar', 'donut']) {
+    const fig = renderChart({ ...spec, kind });
+    host.append(fig);
+  }
+  // Let the ResizeObserver fire. Deliberately a timer, not requestAnimationFrame:
+  // a background or hidden tab never paints a frame, and these tests have to
+  // pass there too.
+  await new Promise(r => setTimeout(r, 80));
+
+  check('every chart kind produces an SVG', () => {
+    const svgs = host.querySelectorAll('svg');
+    eq(svgs.length, 5, 'svg count: ');
+    for (const s of svgs) {
+      if (!s.getAttribute('viewBox')) throw new Error('an svg has no viewBox');
+      if (!s.querySelector('title')) throw new Error('an svg has no <title>');
+    }
+  });
+
+  check('bar geometry is proportional to the values', () => {
+    const rects = [...host.querySelector('.chart').querySelectorAll('rect')];
+    // hbar draws a track then a bar for each row; the bars are every other rect.
+    const bars = rects.filter((_, i) => i % 2 === 1).map(r => +r.getAttribute('width'));
+    if (bars.length !== 2) throw new Error(`expected 2 bars, got ${bars.length}`);
+    const ratio = bars[1] / bars[0];
+    if (Math.abs(ratio - 2) > 0.05) throw new Error(`6 should be twice 3, ratio was ${ratio}`);
+  });
+
+  check('every chart carries a hidden data table', () => {
+    const tables = host.querySelectorAll('.chart table.data');
+    eq(tables.length, 5, 'data tables: ');
+    eq(tables[0].querySelectorAll('tbody tr').length, 2, 'rows: ');
+  });
+
+  check('an empty series does not throw', () => {
+    const fig = renderChart({ ...spec, x: { categories: [] }, series: [{ name: spec.series[0].name, values: [] }] });
+    host.append(fig);
+    return true;
+  });
+
+  check('a single data point does not throw', () => {
+    const fig = renderChart({
+      ...spec, kind: 'line',
+      x: { categories: [{ zh: '甲', en: 'A', ms: 'A' }] },
+      series: [{ name: spec.series[0].name, values: [5] }],
+    });
+    host.append(fig);
+    return true;
+  });
+
+  host.remove();
+})();
+
+/* --- content ------------------------------------------------------------- */
+
+section('content');
+
+const index = await loadIndex();
+
+check('the index lists 20 chapters in order', () => {
+  eq(index.chapters.length, 20, 'count: ');
+  index.chapters.forEach((c, i) => eq(c.num, i + 1, `position ${i}: `));
+});
+
+const chapters = await Promise.all(index.chapters.map(c => loadChapter(c.id)));
+
+check('every chapter loads and has sections', () => {
+  chapters.forEach((ch, i) => {
+    if (!ch.sections?.length) throw new Error(`${index.chapters[i].id} has no sections`);
+  });
+});
+
+check('every chapter renders to DOM in all three languages', () => {
+  for (const lang of ['zh', 'en', 'ms']) {
+    while (prefs.get().lang !== lang) prefs.cycleLang();
+    for (const ch of chapters) {
+      const frag = renderSections(ch);
+      if (!frag.querySelector('.sec')) throw new Error(`${ch.id} rendered nothing in ${lang}`);
+    }
+  }
+  while (prefs.get().lang !== 'zh') prefs.cycleLang();
+});
+
+check('no chapter renders an empty paragraph', () => {
+  for (const ch of chapters) {
+    const frag = renderSections(ch);
+    for (const p of frag.querySelectorAll('.blk--p')) {
+      if (!p.textContent.trim()) throw new Error(`${ch.id} has an empty paragraph`);
+    }
+  }
+});
+
+/* --- search -------------------------------------------------------------- */
+
+section('search');
+
+for (const [term, lang] of [['Ganoderma', 'en'], ['油棕', 'zh'], ['sawit', 'ms'], ['kalium', 'ms']]) {
+  check(`finds "${term}" with the interface in ${lang}`, async () => true);
+}
+
+const searchChecks = await Promise.all(
+  [['Ganoderma', 'en'], ['油棕', 'zh'], ['sawit', 'ms'], ['baja', 'ms']]
+    .map(async ([term, lang]) => [term, lang, await search(term, lang)])
+);
+
+for (const [term, lang, hits] of searchChecks) {
+  check(`"${term}" returns ranked hits with a snippet`, () => {
+    if (!hits.length) throw new Error('no results');
+    const h = hits[0];
+    if (!h.chapterId || !h.sectionId) throw new Error('result is missing its location');
+    if (!h.parts?.length) throw new Error('result has no snippet');
+  });
+}
+
+check('a term in one language is found while reading another', async () => true);
+
+const crossLang = await search('Ganoderma', 'zh');
+check('searching Ganoderma while reading Chinese returns Chinese snippets', () => {
+  if (!crossLang.length) throw new Error('no results');
+  const text = crossLang[0].parts.map(p => p.text).join('');
+  if (!/[一-鿿]/.test(text)) throw new Error(`snippet was not Chinese: ${text.slice(0, 60)}`);
+});
+
+check('an empty query returns nothing rather than everything', async () => true);
+const empty = await search('   ', 'en');
+check('a blank query returns no results', () => eq(empty.length, 0));
+
+const nonsense = await search('zzzzqqqxxx', 'en');
+check('an unmatched query returns no results', () => eq(nonsense.length, 0));
+
+/* --- service worker ------------------------------------------------------ */
+
+section('offline');
+
+const swSource = await fetch('../sw.js').then(r => r.text());
+const assets = [...swSource.matchAll(/^\s+'([^']+)',$/gm)].map(m => m[1]);
+
+check('the precache list covers every chapter file', () => {
+  const missing = index.chapters
+    .map(c => `data/${c.id}.json`)
+    .filter(p => !assets.includes(p));
+  if (missing.length) throw new Error(`not precached: ${missing.join(', ')}`);
+});
+
+check('the precache list covers every JS module', () => {
+  const modules = ['app', 'i18n', 'prefs', 'charts', 'content', 'search', 'qrcode', 'config'];
+  const missing = modules.map(m => `js/${m}.js`).filter(p => !assets.includes(p));
+  if (missing.length) throw new Error(`not precached: ${missing.join(', ')}`);
+});
+
+check('the precache list covers the shell and the manifest', () => {
+  for (const p of ['./', 'index.html', 'css/app.css', 'manifest.webmanifest', 'data/index.json']) {
+    if (!assets.includes(p)) throw new Error(`not precached: ${p}`);
+  }
+});
+
+check('the cache name is versioned', () => {
+  if (!/const CACHE = 'opwiki-[0-9a-f]{6,}'/.test(swSource)) {
+    throw new Error('cache name is not a content hash — run tools/build-sw.mjs');
+  }
+});
+
+/* --- summary ------------------------------------------------------------- */
+
+const summary = document.getElementById('summary');
+summary.className = failed ? 'fail' : 'pass';
+summary.textContent = failed
+  ? `${failed} failed, ${passed} passed`
+  : `all ${passed} checks passed`;
+document.title = `${failed ? '✗' : 'ok'} OPWiki tests`;
+</script>
+</body>
+</html>

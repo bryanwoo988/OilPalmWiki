@@ -1,0 +1,148 @@
+{
+  "id": "ch03",
+  "num": 3,
+  "title": { "zh": "气候条件", "en": "Climate Requirements", "ms": "Keperluan Iklim" },
+  "sections": [
+    {
+      "id": "3.1",
+      "heading": { "zh": "温度", "en": "Temperature", "ms": "Suhu" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕的商业种植区基本落在南北纬 10 度以内的低地。它要求全年温暖且温差不大：平均最高温 29–33 °C、平均最低温 22–24 °C 是理想区间。月均温低于 20 °C 时生长明显放慢，接近 15 °C 时几乎停滞。它不耐霜，也不耐长期低温。",
+            "en": "Commercial oil palm sits almost entirely in the lowlands within about 10 degrees of the equator. It wants warmth all year with little seasonal swing: mean maximum temperatures of 29–33 °C and mean minimums of 22–24 °C are the ideal band. Growth slows noticeably once monthly mean temperature drops below 20 °C and all but stops near 15 °C. The palm tolerates neither frost nor sustained cold.",
+            "ms": "Penanaman sawit komersial hampir seluruhnya di tanah rendah dalam lingkungan 10 darjah dari khatulistiwa. Ia memerlukan kepanasan sepanjang tahun dengan sedikit perubahan bermusim: suhu maksimum purata 29–33 °C dan minimum purata 22–24 °C adalah julat ideal. Pertumbuhan perlahan dengan ketara apabila suhu purata bulanan jatuh di bawah 20 °C dan hampir terhenti sekitar 15 °C. Pokok ini tidak tahan fros mahupun sejuk berpanjangan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "海拔的影响主要就是通过温度起作用。每升高 100 米，气温约降 0.6 °C，所以同一纬度上，海拔越高成熟越慢、产量越低。在赤道附近，超过约 500 米就要谨慎评估；离赤道越远，可行的海拔上限越低。",
+            "en": "Altitude matters mainly because it acts through temperature. Air cools by roughly 0.6 °C per 100 m of elevation, so at a given latitude the higher the site the slower the ripening and the lower the yield. Near the equator, anything above about 500 m needs careful assessment; the further from the equator, the lower that ceiling falls.",
+            "ms": "Ketinggian penting terutamanya kerana kesannya melalui suhu. Udara menyejuk kira-kira 0.6 °C bagi setiap 100 m ketinggian, jadi pada latitud yang sama, semakin tinggi tapak semakin perlahan kematangan dan semakin rendah hasil. Berhampiran khatulistiwa, apa-apa di atas kira-kira 500 m memerlukan penilaian teliti; semakin jauh dari khatulistiwa, semakin rendah had itu."
+          }
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "heading": { "zh": "雨量与水分亏缺", "en": "Rainfall and water deficit", "ms": "Hujan dan defisit air" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "雨量是最常被用来判断一个地点行不行的指标，但真正重要的不是年总量，而是分布。年雨量 2,000 毫米以上、且每月都有 100 毫米以上，是最理想的情况。年雨量 1,600 毫米、但分布均匀的地点，可能比年雨量 2,500 毫米、却有三个月旱季的地点更合适。",
+            "en": "Rainfall is the figure most often used to judge a site, but what matters is distribution rather than the annual total. Above 2,000 mm a year with at least 100 mm in every month is the ideal. A site with 1,600 mm spread evenly can be a better prospect than one with 2,500 mm and a three-month dry season.",
+            "ms": "Hujan ialah angka yang paling kerap digunakan untuk menilai tapak, tetapi yang penting ialah taburan, bukan jumlah tahunan. Melebihi 2,000 mm setahun dengan sekurang-kurangnya 100 mm setiap bulan adalah ideal. Tapak dengan 1,600 mm yang tersebar sekata boleh lebih baik daripada tapak dengan 2,500 mm tetapi ada musim kemarau tiga bulan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "实务中更有用的指标是年累计水分亏缺：把每月的降雨减去蒸散量，负值累加起来。经验上，年亏缺低于 200 毫米问题不大；200–400 毫米开始明显影响产量；超过 400 毫米就需要考虑灌溉或者干脆放弃这个地点。",
+            "en": "The more useful figure in practice is the annual cumulative water deficit: month by month, subtract evapotranspiration from rainfall and add up the shortfalls. As a rule of thumb, under 200 mm a year gives little trouble; 200–400 mm starts to cost yield noticeably; above 400 mm the site needs irrigation or should be reconsidered altogether.",
+            "ms": "Angka yang lebih berguna dalam amalan ialah defisit air kumulatif tahunan: bulan demi bulan, tolak evapotranspirasi daripada hujan dan jumlahkan kekurangannya. Sebagai panduan kasar, di bawah 200 mm setahun tidak banyak masalah; 200–400 mm mula menjejaskan hasil dengan ketara; melebihi 400 mm tapak itu memerlukan pengairan atau perlu dinilai semula."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "年累计水分亏缺与产量影响", "en": "Annual water deficit and its cost in yield", "ms": "Defisit air tahunan dan kesannya terhadap hasil" },
+            "note": { "zh": "指示性数值：实际损失取决于亏缺出现的时间与土壤持水能力。", "en": "Indicative only: the real loss depends on when the deficit falls and on how much water the soil can hold.", "ms": "Anggaran sahaja: kerugian sebenar bergantung pada bila defisit berlaku dan keupayaan tanah menyimpan air." },
+            "source": { "zh": "基于公开的产量—亏缺关系", "en": "Based on published yield–deficit relationships", "ms": "Berdasarkan hubungan hasil–defisit yang diterbitkan" },
+            "x": {
+              "categories": [
+                { "zh": "0–200 毫米", "en": "0–200 mm", "ms": "0–200 mm" },
+                { "zh": "200–300 毫米", "en": "200–300 mm", "ms": "200–300 mm" },
+                { "zh": "300–400 毫米", "en": "300–400 mm", "ms": "300–400 mm" },
+                { "zh": "400–500 毫米", "en": "400–500 mm", "ms": "400–500 mm" },
+                { "zh": "500 毫米以上", "en": "over 500 mm", "ms": "melebihi 500 mm" }
+              ]
+            },
+            "y": { "unit": "%", "label": { "zh": "产量损失", "en": "yield lost", "ms": "hasil hilang" } },
+            "series": [
+              { "name": { "zh": "指示性产量损失", "en": "Indicative yield loss", "ms": "Anggaran kehilangan hasil" }, "values": [3, 10, 20, 32, 45], "color": "--c-2" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "干旱对油棕的伤害之所以特别棘手，是因为它作用在一条很长的时间线上。缺水会推迟叶片抽出、提高雌花败育率、把性比推向雄花，还会造成果串败育。这些影响分别在干旱之后 6 个月、12 个月、24 个月陆续体现在产量上——也就是说，一次严重干旱的账，要分两三年还。",
+            "en": "Drought is awkward in this crop because it acts along that long pipeline. Water shortage delays frond production, raises the abortion rate of female inflorescences, pushes the sex ratio towards male, and causes bunch failure. Those effects reach the crop about 6, 12 and 24 months later respectively — so the bill for one severe drought is paid over two or three years.",
+            "ms": "Kemarau menyusahkan tanaman ini kerana ia bertindak sepanjang jangka masa yang panjang. Kekurangan air melewatkan pengeluaran pelepah, menaikkan kadar gugur jambak betina, mendorong nisbah jantina ke arah jantan, dan menyebabkan kegagalan tandan. Kesan-kesan itu sampai kepada hasil kira-kira 6, 12 dan 24 bulan kemudian — jadi kos satu kemarau teruk dibayar selama dua atau tiga tahun."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "水分亏缺不只看雨量，也看土壤。同样的降雨条件下，一块持水量 150 毫米的深厚壤土，和一块持水量 50 毫米的浅层砂土，实际承受的干旱压力完全不同。选址时两者必须一起看。",
+            "en": "Water deficit is as much about the soil as the rain. Under identical rainfall, a deep loam holding 150 mm of available water and a shallow sand holding 50 mm impose completely different drought stress. Site assessment has to read the two together.",
+            "ms": "Defisit air bergantung kepada tanah sebanyak kepada hujan. Dengan hujan yang sama, tanah lom dalam yang menyimpan 150 mm air tersedia dan tanah pasir cetek yang menyimpan 50 mm memberikan tekanan kemarau yang jauh berbeza. Penilaian tapak mesti membaca kedua-duanya bersama."
+          }
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "heading": { "zh": "日照与辐射", "en": "Sunshine and radiation", "ms": "Cahaya matahari dan sinaran" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "在水分充足的前提下，太阳辐射就成了限制产量的主要因素。理想条件是每天 5–7 小时日照。油棕的树冠截光能力很强——成龄园的叶面积指数通常在 4–6 之间，几乎把入射光全部拦下——所以进一步提高产量的空间，主要不在多截光，而在把截到的光更有效地转化成油。",
+            "en": "Where water is adequate, solar radiation becomes the main limit on yield. Five to seven hours of sunshine a day is the ideal. The canopy intercepts light very efficiently — a mature stand usually runs a leaf area index of 4 to 6 and captures nearly all the incoming radiation — so further gains come less from intercepting more light than from converting what is already intercepted more efficiently into oil.",
+            "ms": "Apabila air mencukupi, sinaran suria menjadi had utama kepada hasil. Lima hingga tujuh jam cahaya matahari sehari adalah ideal. Kanopi memintas cahaya dengan sangat cekap — dirian matang biasanya mempunyai indeks luas daun 4 hingga 6 dan menangkap hampir semua sinaran masuk — jadi peningkatan seterusnya datang bukan daripada memintas lebih banyak cahaya tetapi daripada menukar cahaya yang dipintas kepada minyak dengan lebih cekap."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这一点对种植密度有直接含义：种得太密，早期确实能更快封行、更早达到高截光率，但成龄后棕榈之间争光，单株产量下降，还会加速长高。第 10 章会详细讨论这个取舍。",
+            "en": "This has a direct bearing on planting density. A close stand does close canopy sooner and reaches high interception earlier, but once mature the palms compete for light, individual yields fall and height increment accelerates. Chapter 10 works through that trade-off.",
+            "ms": "Ini memberi kesan langsung kepada kepadatan tanaman. Dirian rapat memang menutup kanopi lebih awal dan mencapai pemintasan tinggi lebih cepat, tetapi apabila matang pokok bersaing untuk cahaya, hasil setiap pokok menurun dan pertambahan ketinggian meningkat. Bab 10 membincangkan pertukaran ini."
+          }
+        }
+      ]
+    },
+    {
+      "id": "3.4",
+      "heading": { "zh": "风与其他因素", "en": "Wind and other factors", "ms": "Angin dan faktor lain" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕不耐强风。持续大风会加大蒸散、折断叶轴；风速超过约 20 米／秒时可能吹断树冠或吹倒棕榈。这就是为什么台风或飓风路径上的地区基本不适合大规模种植——赤道带正好在这些风暴的活动范围之外，这也是油棕分布集中在赤道附近的原因之一。",
+            "en": "The oil palm does not take strong wind. Persistent wind raises evaporative demand and snaps rachises; above roughly 20 m/s the crown can be broken out or the palm blown over. That is why ground on a typhoon or hurricane track is broadly unsuitable for large-scale planting — and part of why the crop clusters near the equator, which sits outside the usual range of those storms.",
+            "ms": "Sawit tidak tahan angin kuat. Angin berterusan meningkatkan permintaan sejatan dan mematahkan rakis; melebihi kira-kira 20 m/s mahkota boleh patah atau pokok tumbang. Itulah sebabnya kawasan di laluan taufan secara amnya tidak sesuai untuk penanaman berskala besar — dan sebahagian sebab tanaman ini tertumpu berhampiran khatulistiwa, di luar julat biasa ribut tersebut."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "气候条件速查", "en": "Climate at a glance", "ms": "Iklim secara ringkas" },
+          "headers": [
+            { "zh": "因素", "en": "Factor", "ms": "Faktor" },
+            { "zh": "理想", "en": "Ideal", "ms": "Ideal" },
+            { "zh": "勉强可行", "en": "Marginal", "ms": "Sederhana" }
+          ],
+          "rows": [
+            [{ "zh": "年雨量", "en": "Annual rainfall", "ms": "Hujan tahunan" }, { "zh": "2,000–2,500 毫米，分布均匀", "en": "2,000–2,500 mm, evenly spread", "ms": "2,000–2,500 mm, sekata" }, { "zh": "1,600–2,000 毫米", "en": "1,600–2,000 mm", "ms": "1,600–2,000 mm" }],
+            [{ "zh": "旱月（<100 毫米）", "en": "Dry months under 100 mm", "ms": "Bulan kering bawah 100 mm" }, { "zh": "0", "en": "none", "ms": "tiada" }, { "zh": "1–2 个", "en": "1–2", "ms": "1–2" }],
+            [{ "zh": "年水分亏缺", "en": "Annual water deficit", "ms": "Defisit air tahunan" }, { "zh": "低于 200 毫米", "en": "under 200 mm", "ms": "bawah 200 mm" }, { "zh": "200–400 毫米", "en": "200–400 mm", "ms": "200–400 mm" }],
+            [{ "zh": "平均最高温", "en": "Mean maximum temperature", "ms": "Suhu maksimum purata" }, "29–33 °C", "25–29 °C"],
+            [{ "zh": "平均最低温", "en": "Mean minimum temperature", "ms": "Suhu minimum purata" }, "22–24 °C", { "zh": "18–22 °C", "en": "18–22 °C", "ms": "18–22 °C" }],
+            [{ "zh": "日照", "en": "Sunshine", "ms": "Cahaya matahari" }, { "zh": "每天 5–7 小时", "en": "5–7 h per day", "ms": "5–7 jam sehari" }, { "zh": "每天 4–5 小时", "en": "4–5 h per day", "ms": "4–5 jam sehari" }],
+            [{ "zh": "海拔", "en": "Altitude", "ms": "Ketinggian" }, { "zh": "500 米以下", "en": "below 500 m", "ms": "bawah 500 m" }, { "zh": "500–700 米（视纬度）", "en": "500–700 m, depending on latitude", "ms": "500–700 m, bergantung latitud" }]
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "各产区农业气候分区资料", "en": "Published agroclimatic zoning for the producing regions", "ms": "Zon agroklimat terbitan bagi kawasan pengeluaran" }
+  ]
+}

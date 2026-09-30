@@ -1,0 +1,143 @@
+{
+  "id": "ch13",
+  "num": 13,
+  "title": { "zh": "病害", "en": "Diseases", "ms": "Penyakit" },
+  "sections": [
+    {
+      "id": "13.1",
+      "heading": { "zh": "Ganoderma 基腐病", "en": "Ganoderma basal stem rot", "ms": "Reput pangkal batang Ganoderma" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "Ganoderma boninense 引起的基腐病是东南亚油棕最严重的病害，没有之一。它是一种白腐真菌，从根部侵入，在茎基内部腐解木质部，最终导致棕榈倒伏或死亡。到目前为止没有有效的治愈手段。",
+            "en": "Basal stem rot, caused by Ganoderma boninense, is the most serious disease of oil palm in South-East Asia by a wide margin. It is a white rot fungus that enters through the roots, decays the tissue inside the base of the trunk, and eventually brings the palm down or kills it outright. There is still no effective cure.",
+            "ms": "Reput pangkal batang, disebabkan Ganoderma boninense, ialah penyakit sawit paling serius di Asia Tenggara dengan jauh. Ia kulat reput putih yang masuk melalui akar, mereputkan tisu dalam pangkal batang, dan akhirnya menumbangkan atau membunuh pokok. Sehingga kini tiada rawatan berkesan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "最麻烦的一点是发现太晚。当子实体（那个典型的棕红色扇形菌盖）出现在茎基上时，内部腐解往往已经超过一半，这棵棕榈基本救不回来了。更早的迹象是：新叶抽出变慢并聚成一束未展开的矛叶、老叶大量下垂形成「裙子」、树冠整体扁平萎缩。",
+            "en": "The awkward part is how late it is found. By the time the bracket — the characteristic reddish-brown fan on the trunk base — appears, internal decay is usually past halfway and the palm cannot be saved. The earlier signs are a slowing of frond production with several unopened spears bunched together, a skirt of collapsed older fronds hanging down, and a flattened, shrinking crown.",
+            "ms": "Bahagian yang menyusahkan ialah betapa lewatnya ia ditemui. Apabila jasad buah — kipas coklat kemerahan yang khas di pangkal batang — muncul, pereputan dalaman biasanya sudah melepasi separuh dan pokok tidak dapat diselamatkan. Tanda awalnya ialah pengeluaran pelepah yang perlahan dengan beberapa pucuk tidak terbuka berkumpul, pelepah tua terkulai membentuk skirt, dan mahkota yang rata serta mengecil."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "Ganoderma 的发病率随重种代次递增：第一代新开地块通常很轻，第二代明显上升，第三代可能达到 30%–50% 甚至更高。原因是病菌以旧棕榈残体为食料基质，在土壤中不断累积。",
+            "en": "Incidence rises with each replanting generation. A first planting on newly opened land is usually lightly affected; the second is noticeably worse; a third can reach 30–50% or more. The reason is that the fungus feeds on old palm debris and builds up in the soil from one cycle to the next.",
+            "ms": "Kejadian meningkat dengan setiap generasi tanam semula. Penanaman pertama di tanah yang baru dibuka biasanya ringan; yang kedua ketara lebih teruk; yang ketiga boleh mencapai 30–50% atau lebih. Sebabnya kulat ini memakan sisa pokok lama dan terkumpul dalam tanah dari satu kitaran ke kitaran seterusnya."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "重种时彻底处理旧棕榈残体：粉碎、摊开、加速腐解，不要堆成大堆或就地掩埋。这是目前最有效的单项措施。", "en": "At replanting, deal thoroughly with the old stand: chip the material, spread it and let it break down fast. Do not leave it in large heaps or bury it. This is the single most effective measure available.", "ms": "Semasa tanam semula, uruskan dirian lama dengan menyeluruh: cincang bahan, taburkan dan biarkan ia terurai cepat. Jangan tinggalkan dalam timbunan besar atau tanam. Ini langkah tunggal paling berkesan yang ada." },
+            { "zh": "挖除病株时连根挖净，病穴不要立即补种。", "en": "When removing an infected palm, take out the root mass with it and do not replant into that point immediately.", "ms": "Apabila membuang pokok berjangkit, keluarkan jisim akar sekali dan jangan tanam semula di titik itu dengan segera." },
+            { "zh": "土堆法（soil mounding）：在病株基部堆土，促发不定根，可以延长病株的生产年限，但不能治愈。", "en": "Soil mounding at the base of an affected palm encourages adventitious roots and can extend its productive life, though it cures nothing.", "ms": "Menimbun tanah di pangkal pokok yang dijangkiti menggalakkan akar sampingan dan boleh memanjangkan hayat produktifnya, walaupun ia tidak menyembuhkan." },
+            { "zh": "生物防治（木霉属 Trichoderma、Hendersonia 等）与土壤改良有一定效果，但试验结果不稳定。", "en": "Biological control with Trichoderma or Hendersonia, and soil amendment, show some effect, but trial results are inconsistent.", "ms": "Kawalan biologi dengan Trichoderma atau Hendersonia, dan pembaikan tanah, menunjukkan sedikit kesan, tetapi keputusan ujian tidak konsisten." },
+            { "zh": "耐病种植材料是长期方向。目前的材料只是耐病（发病较慢），不是抗病。", "en": "Tolerant planting material is the long-run answer. What exists today is tolerance — slower progression — not resistance.", "ms": "Bahan tanaman yang toleran ialah jawapan jangka panjang. Apa yang ada hari ini ialah toleransi — perkembangan lebih perlahan — bukan ketahanan." },
+            { "zh": "定期普查并记录病株位置，是判断趋势和评估措施是否有效的唯一办法。", "en": "Regular census with the position of each infected palm recorded is the only way to see the trend and to judge whether anything you do is working.", "ms": "Bancian berkala dengan kedudukan setiap pokok berjangkit direkodkan ialah satu-satunya cara melihat arah aliran dan menilai sama ada tindakan anda berkesan." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13.2",
+      "heading": { "zh": "镰刀菌枯萎病", "en": "Fusarium wilt", "ms": "Layu Fusarium" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "由 Fusarium oxysporum f. sp. elaeidis 引起，是西非和中非最重要的油棕病害，在亚洲尚未出现——这也是油棕种苗国际流通受严格检疫管制的主要原因。",
+            "en": "Caused by Fusarium oxysporum f. sp. elaeidis, this is the most important oil palm disease in West and Central Africa. It has not appeared in Asia — which is the main reason international movement of oil palm planting material is tightly quarantined.",
+            "ms": "Disebabkan Fusarium oxysporum f. sp. elaeidis, ini penyakit sawit paling penting di Afrika Barat dan Tengah. Ia belum muncul di Asia — sebab utama pergerakan antarabangsa bahan tanaman sawit dikuarantin dengan ketat."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "病菌通过维管束侵染，阻断水分运输。急性型可在数月内致死，慢性型则表现为单侧叶片黄化枯萎、生长停滞、产量逐年下降。防治主要靠抗病育种——这方面在非洲已有相当成熟的抗性材料选育体系。",
+            "en": "The fungus invades the vascular system and blocks water transport. The acute form kills within months; the chronic form shows as one-sided yellowing and wilting of fronds, stalled growth and a slow yield decline. Control rests mainly on resistance breeding, and Africa has a well-developed programme for selecting resistant material.",
+            "ms": "Kulat ini menyerang sistem vaskular dan menyekat pengangkutan air. Bentuk akut membunuh dalam beberapa bulan; bentuk kronik muncul sebagai kekuningan dan layu sebelah pada pelepah, pertumbuhan terhenti dan penurunan hasil perlahan. Kawalan bergantung terutamanya kepada pembiakbakaan ketahanan, dan Afrika mempunyai program yang mantap untuk memilih bahan tahan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "13.3",
+      "heading": { "zh": "芽腐病与拉美的困境", "en": "Bud rot and the Latin American problem", "ms": "Reput pucuk dan masalah Amerika Latin" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "芽腐病（pudrición del cogollo）是拉丁美洲油棕产业的核心威胁。它攻击生长点——而油棕只有一个生长点，所以生长点一旦腐烂，棕榈必死。哥伦比亚部分产区曾因此损失数万公顷。",
+            "en": "Bud rot, pudrición del cogollo, is the central threat to the Latin American industry. It attacks the growing point, and because the oil palm has only one, a rotted bud means a dead palm. Parts of Colombia have lost tens of thousands of hectares to it.",
+            "ms": "Reput pucuk, pudrición del cogollo, ialah ancaman utama industri Amerika Latin. Ia menyerang titik tumbuh, dan kerana sawit hanya mempunyai satu, pucuk yang reput bermakna pokok mati. Sebahagian Colombia telah kehilangan puluhan ribu hektar kepadanya."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "病因长期有争议，目前较为一致的认识是卵菌 Phytophthora palmivora 为主要初侵染源，随后细菌和昆虫参与加重病情。实务上的应对是：早期发现并切除病组织、严格的排水管理，以及改种对芽腐病有耐性的 OxG 种间杂交种（见第 2 章）。",
+            "en": "The cause was long disputed; the prevailing view now is that the oomycete Phytophthora palmivora is the primary agent, with bacteria and insects making the damage worse afterwards. The practical response is early detection and surgical removal of affected tissue, strict drainage management, and replanting with OxG interspecific hybrids that tolerate the disease — see Chapter 2.",
+            "ms": "Puncanya lama dipertikaikan; pandangan semasa ialah oomiset Phytophthora palmivora adalah agen utama, dengan bakteria dan serangga memburukkan kerosakan selepasnya. Tindak balas praktikalnya ialah pengesanan awal dan pembuangan tisu terjejas, pengurusan saliran ketat, dan tanam semula dengan kacukan antara spesies OxG yang toleran — lihat Bab 2."
+          }
+        }
+      ]
+    },
+    {
+      "id": "13.4",
+      "heading": { "zh": "其他病害", "en": "Other diseases", "ms": "Penyakit lain" },
+      "blocks": [
+        {
+          "type": "table",
+          "caption": { "zh": "其他需要认识的病害", "en": "Other diseases worth recognising", "ms": "Penyakit lain yang wajar dikenali" },
+          "headers": [
+            { "zh": "病害", "en": "Disease", "ms": "Penyakit" },
+            { "zh": "症状与要点", "en": "Symptoms and key points", "ms": "Simptom dan perkara utama" },
+            { "zh": "处理", "en": "What to do", "ms": "Tindakan" }
+          ],
+          "rows": [
+            [
+              { "zh": "冠腐病 Crown disease", "en": "Crown disease", "ms": "Penyakit mahkota" },
+              { "zh": "幼龄棕榈叶轴弯曲、小叶坏死；有明显的遗传成分，某些杂交组合发病率高", "en": "bent rachis and necrotic leaflets on young palms; strongly genetic, with some crosses much more affected", "ms": "rakis bengkok dan anak daun nekrotik pada pokok muda; kuat bersifat genetik, sesetengah kacukan jauh lebih terjejas" },
+              { "zh": "通常可自行恢复；选择发病率低的亲本组合", "en": "palms usually grow out of it; choose parent combinations with low incidence", "ms": "pokok biasanya pulih sendiri; pilih gabungan induk dengan kejadian rendah" }
+            ],
+            [
+              { "zh": "苗期叶斑病 Curvularia／Cercospora", "en": "Nursery leaf spot — Curvularia, Cercospora", "ms": "Bintik daun semaian — Curvularia, Cercospora" },
+              { "zh": "苗圃叶片褐色或黄褐色病斑，密植高湿条件下爆发", "en": "brown or tan lesions on nursery foliage, flaring in crowded humid conditions", "ms": "lesi coklat pada daun semaian, merebak dalam keadaan sesak dan lembap" },
+              { "zh": "拉开袋距、改善通风、移除病株，必要时用杀菌剂", "en": "space the bags, improve ventilation, remove infected plants, fungicide if needed", "ms": "jarakkan beg, perbaiki pengudaraan, buang pokok berjangkit, racun kulat jika perlu" }
+            ],
+            [
+              { "zh": "苗期疫病 Blast", "en": "Blast", "ms": "Blast" },
+              { "zh": "苗圃与刚定植幼棕根部受害、地上部迅速枯死；与干热天气和裸露地面相关", "en": "root damage and rapid death of nursery and newly planted palms; linked to hot dry weather and bare ground", "ms": "kerosakan akar dan kematian cepat pokok semaian dan baharu ditanam; berkaitan cuaca panas kering dan tanah kosong" },
+              { "zh": "覆盖树盘、保持土壤湿润、避开干季定植", "en": "mulch the circle, keep soil moist, avoid planting into the dry season", "ms": "sungkup bulatan, kekalkan tanah lembap, elak menanam pada musim kemarau" }
+            ],
+            [
+              { "zh": "上部茎腐病 Upper stem rot", "en": "Upper stem rot", "ms": "Reput batang atas" },
+              { "zh": "老龄棕榈茎干中上部腐烂，可导致折断", "en": "decay part way up the trunk of older palms, which can snap", "ms": "reput di bahagian tengah atas batang pokok tua, boleh patah" },
+              { "zh": "无有效防治；老园区注意作业安全", "en": "no effective control; treat it as a safety issue in old stands", "ms": "tiada kawalan berkesan; anggap sebagai isu keselamatan di dirian tua" }
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "植物检疫在这个作物上不是形式主义。Fusarium 枯萎病至今没进亚洲，芽腐病至今没进亚洲和非洲主产区——这两件事都依赖严格的种苗跨境管制。任何非正规渠道引进的种苗，风险不只是自己那块地。",
+            "en": "Plant quarantine is not a formality in this crop. Fusarium wilt has never reached Asia, and bud rot has never reached the main Asian or African regions — both facts depend on strict control of planting material across borders. Material brought in through informal channels risks far more than one block.",
+            "ms": "Kuarantin tumbuhan bukan formaliti dalam tanaman ini. Layu Fusarium tidak pernah sampai ke Asia, dan reput pucuk tidak pernah sampai ke kawasan utama Asia atau Afrika — kedua-dua fakta bergantung kepada kawalan ketat bahan tanaman merentas sempadan. Bahan yang dibawa masuk melalui saluran tidak rasmi membahayakan jauh lebih daripada satu blok."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "MPOB 与 Cenipalma 的病害研究", "en": "Disease research from MPOB and Cenipalma", "ms": "Penyelidikan penyakit MPOB dan Cenipalma" }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "ch01",
+  "num": 1,
+  "title": { "zh": "油棕与世界油脂", "en": "Oil Palm and the World's Fats", "ms": "Sawit dan Minyak Dunia" },
+  "sections": [
+    {
+      "id": "1.1",
+      "heading": { "zh": "从西非雨林走出来", "en": "Out of the West African forest", "ms": "Dari hutan Afrika Barat" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕（Elaeis guineensis）原生于西非与中非的湿润低地，自然分布在河岸、林缘和人类活动扰动过的开阔地带——它需要阳光，在郁闭的原始林里长不好。西非居民采集棕果榨油已有数千年历史，油棕在当地既是食物、灯油，也是棕榈酒的来源。",
+            "en": "The oil palm, Elaeis guineensis, is native to the humid lowlands of West and Central Africa. In the wild it grows along rivers, at forest margins and on ground that people have already opened up — it needs light, and does poorly under a closed forest canopy. West African communities have pressed oil from its fruit for thousands of years, using the palm for food, for lamp oil and for palm wine.",
+            "ms": "Kelapa sawit, Elaeis guineensis, berasal dari tanah rendah lembap di Afrika Barat dan Tengah. Di habitat semula jadinya ia tumbuh di tebing sungai, pinggir hutan dan kawasan yang telah dibuka manusia — ia memerlukan cahaya dan tidak subur di bawah kanopi hutan yang tertutup. Masyarakat Afrika Barat telah memerah minyak daripada buahnya selama ribuan tahun, untuk makanan, minyak lampu dan todi."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "十九世纪，西非的棕油开始大量出口欧洲。当时它并不是食用油：工业革命需要肥皂、蜡烛和机械润滑油，棕油正好便宜又合用。真正改变这个作物命运的是 1848 年——四棵油棕苗被种在爪哇茂物植物园。它们的后代沿着苏门答腊 Deli 地区的道路种植，长出了出奇一致的群体，后来被称为 Deli dura，成了整个亚洲育种体系的起点。",
+            "en": "In the nineteenth century, West African palm oil began moving to Europe in quantity — not as food, but as industry. The industrial revolution wanted soap, candles and machine lubricant, and palm oil was cheap and suited all three. What changed the crop's future, though, was 1848, when four oil palm seedlings were planted in the botanic garden at Bogor, Java. Their descendants were planted along roadsides in the Deli district of Sumatra, where they grew into a strikingly uniform population. Known since as the Deli dura, they became the foundation of every Asian breeding programme.",
+            "ms": "Pada abad kesembilan belas, minyak sawit Afrika Barat mula dieksport ke Eropah dalam kuantiti besar — bukan sebagai makanan, tetapi untuk industri. Revolusi perindustrian memerlukan sabun, lilin dan pelincir mesin, dan minyak sawit murah serta sesuai untuk ketiga-tiganya. Namun yang mengubah masa depan tanaman ini ialah tahun 1848, apabila empat anak benih sawit ditanam di taman botani Bogor, Jawa. Keturunannya ditanam di tepi jalan di daerah Deli, Sumatera, dan tumbuh menjadi populasi yang sangat seragam. Dikenali sebagai Deli dura, ia menjadi asas kepada setiap program pembiakbakaan di Asia."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "商业化种植园在 1911 年前后出现于苏门答腊，1917 年到达马来亚。此后半个世纪，非洲仍是主要出口地；直到 1960–70 年代，马来西亚的种植面积迅速扩张并超过尼日利亚。2006 年前后，印度尼西亚又超过马来西亚，成为世界第一。",
+            "en": "Commercial plantations appeared in Sumatra around 1911 and reached Malaya in 1917. For another half century Africa remained the main exporter; then, through the 1960s and 1970s, Malaysia's planted area expanded rapidly and overtook Nigeria. Around 2006 Indonesia in turn passed Malaysia to become the world's largest producer.",
+            "ms": "Ladang komersial muncul di Sumatera sekitar 1911 dan sampai ke Tanah Melayu pada 1917. Selama setengah abad selepas itu Afrika kekal sebagai pengeksport utama; kemudian, sepanjang 1960-an dan 1970-an, keluasan tanaman Malaysia berkembang pesat dan memintas Nigeria. Sekitar 2006, Indonesia pula memintas Malaysia menjadi pengeluar terbesar dunia."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "一个值得记住的反差：油棕原产非洲，但今天全球约 85% 的棕油产自印尼和马来西亚，非洲只占约 4%。",
+            "en": "A contrast worth remembering: the oil palm is African, yet about 85% of the world's palm oil now comes from Indonesia and Malaysia, and only about 4% from Africa.",
+            "ms": "Satu perbezaan yang wajar diingat: sawit berasal dari Afrika, namun kira-kira 85% minyak sawit dunia kini datang dari Indonesia dan Malaysia, dan hanya kira-kira 4% dari Afrika."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "heading": { "zh": "今天的产量格局", "en": "Where it is grown today", "ms": "Di mana ia ditanam hari ini" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "以 2012 年为例，全球约 1,420 万公顷结果期油棕生产了约 5,370 万吨棕油，另有约 590 万吨棕仁油。印尼与马来西亚合计约 4,570 万吨，占全球八成以上。泰国、哥伦比亚、尼日利亚、巴布亚新几内亚、厄瓜多尔等构成第二梯队。",
+            "en": "In 2012, roughly 14.2 million hectares of mature oil palm produced about 53.7 million tonnes of palm oil, plus a further 5.9 million tonnes of palm kernel oil. Indonesia and Malaysia together accounted for about 45.7 million tonnes — over four fifths of the world total. Thailand, Colombia, Nigeria, Papua New Guinea and Ecuador make up a second tier.",
+            "ms": "Pada 2012, kira-kira 14.2 juta hektar sawit matang menghasilkan sekitar 53.7 juta tan minyak sawit, ditambah 5.9 juta tan minyak isirong. Indonesia dan Malaysia bersama menyumbang kira-kira 45.7 juta tan — lebih empat perlima jumlah dunia. Thailand, Colombia, Nigeria, Papua New Guinea dan Ecuador membentuk lapisan kedua."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "主要产油国的棕油产量（2012）", "en": "Palm oil production by country, 2012", "ms": "Pengeluaran minyak sawit mengikut negara, 2012" },
+            "note": { "zh": "两个国家就占了全球产量的八成以上。", "en": "Two countries account for more than four fifths of world output.", "ms": "Dua negara menyumbang lebih empat perlima pengeluaran dunia." },
+            "source": "Oil World Annual 2013",
+            "x": {
+              "categories": [
+                { "zh": "印度尼西亚", "en": "Indonesia", "ms": "Indonesia" },
+                { "zh": "马来西亚", "en": "Malaysia", "ms": "Malaysia" },
+                { "zh": "泰国", "en": "Thailand", "ms": "Thailand" },
+                { "zh": "哥伦比亚", "en": "Colombia", "ms": "Colombia" },
+                { "zh": "尼日利亚", "en": "Nigeria", "ms": "Nigeria" },
+                { "zh": "厄瓜多尔", "en": "Ecuador", "ms": "Ecuador" },
+                { "zh": "巴布亚新几内亚", "en": "Papua New Guinea", "ms": "Papua New Guinea" }
+              ]
+            },
+            "y": { "unit": "Mt", "label": { "zh": "百万吨", "en": "million tonnes", "ms": "juta tan" } },
+            "series": [
+              {
+                "name": { "zh": "棕油产量", "en": "Palm oil", "ms": "Minyak sawit" },
+                "values": [26.9, 18.79, 1.6, 0.97, 0.94, 0.54, 0.53]
+              }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "产量差距不只是面积差距，单产差距同样明显。印尼与马来西亚的结果期单产约为每公顷 4.1–4.3 吨油，而非洲主要产国多在 1.1–2.1 吨之间。这个差距来自种植材料、施肥水平、收割纪律与加工设施，而不是气候上的先天劣势。",
+            "en": "The gap between countries is not only a matter of area; yields differ just as sharply. Indonesia and Malaysia average about 4.1–4.3 tonnes of oil per mature hectare, while the main African producers mostly sit between 1.1 and 2.1 tonnes. That difference comes from planting material, fertiliser use, harvesting discipline and milling capacity — not from any inherent disadvantage of climate.",
+            "ms": "Jurang antara negara bukan sahaja soal keluasan; hasil juga berbeza dengan ketara. Indonesia dan Malaysia mencatat purata kira-kira 4.1–4.3 tan minyak sehektar matang, manakala pengeluar utama Afrika kebanyakannya antara 1.1 dan 2.1 tan. Perbezaan itu datang daripada bahan tanaman, penggunaan baja, disiplin penuaian dan kapasiti kilang — bukan kelemahan iklim."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "结果期单产比较（2012，吨油／公顷·年）", "en": "Oil yield from mature area, 2012 (t/ha per year)", "ms": "Hasil minyak dari kawasan matang, 2012 (t/ha setahun)" },
+          "headers": [
+            { "zh": "国家／地区", "en": "Country or region", "ms": "Negara atau rantau" },
+            { "zh": "结果面积（千公顷）", "en": "Mature area (kha)", "ms": "Kawasan matang (kha)" },
+            { "zh": "棕油单产", "en": "Palm oil yield", "ms": "Hasil minyak sawit" }
+          ],
+          "rows": [
+            [{ "zh": "马来西亚", "en": "Malaysia", "ms": "Malaysia" }, "4,360", "4.31"],
+            [{ "zh": "印度尼西亚", "en": "Indonesia", "ms": "Indonesia" }, "6,500", "4.14"],
+            [{ "zh": "巴布亚新几内亚", "en": "Papua New Guinea", "ms": "Papua New Guinea" }, "143", "3.71"],
+            [{ "zh": "哥伦比亚", "en": "Colombia", "ms": "Colombia" }, "300", "3.22"],
+            [{ "zh": "泰国", "en": "Thailand", "ms": "Thailand" }, "645", "2.48"],
+            [{ "zh": "尼日利亚", "en": "Nigeria", "ms": "Nigeria" }, "457", "2.06"],
+            [{ "zh": "非洲合计", "en": "Africa total", "ms": "Jumlah Afrika" }, "1,252", "1.75"],
+            [{ "zh": "全球", "en": "World", "ms": "Dunia" }, "14,224", "3.77"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "heading": { "zh": "为什么是油棕", "en": "Why palm outproduces everything else", "ms": "Mengapa sawit mengatasi yang lain" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "在所有油料作物里，油棕的单位面积产油量遥遥领先。世界平均水平下，油棕每公顷产油约 3.7 吨，大豆约 0.46 吨，油菜约 0.70 吨，葵花约 0.56 吨。换句话说，同样一公顷地，油棕产的油大约是大豆的八倍。",
+            "en": "Among oil crops, palm produces far more oil per hectare than anything else. On world averages, oil palm yields about 3.7 tonnes of oil per hectare against roughly 0.46 for soya bean, 0.70 for rapeseed and 0.56 for sunflower. Put plainly, the same hectare gives about eight times as much oil under palm as under soya.",
+            "ms": "Antara tanaman minyak, sawit menghasilkan jauh lebih banyak minyak sehektar berbanding yang lain. Pada purata dunia, sawit menghasilkan kira-kira 3.7 tan minyak sehektar berbanding kira-kira 0.46 bagi kacang soya, 0.70 bagi kanola dan 0.56 bagi bunga matahari. Secara ringkas, hektar yang sama memberi kira-kira lapan kali ganda minyak di bawah sawit berbanding soya."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "主要油料作物的单位面积产油量", "en": "Oil yield of the major oil crops", "ms": "Hasil minyak tanaman minyak utama" },
+            "note": { "zh": "世界平均，2011 年。油棕按结果面积计。", "en": "World averages for 2011. Palm figures are per mature hectare.", "ms": "Purata dunia 2011. Angka sawit adalah per hektar matang." },
+            "source": "Oil World Annual 2013",
+            "x": {
+              "categories": [
+                { "zh": "油棕（棕油）", "en": "Oil palm — palm oil", "ms": "Sawit — minyak sawit" },
+                { "zh": "油菜", "en": "Rapeseed", "ms": "Kanola" },
+                { "zh": "葵花", "en": "Sunflower", "ms": "Bunga matahari" },
+                { "zh": "大豆", "en": "Soya bean", "ms": "Kacang soya" },
+                { "zh": "油棕（棕仁油）", "en": "Oil palm — kernel oil", "ms": "Sawit — minyak isirong" }
+              ]
+            },
+            "y": { "unit": "t/ha", "label": { "zh": "吨油／公顷", "en": "tonnes oil per hectare", "ms": "tan minyak sehektar" } },
+            "series": [
+              {
+                "name": { "zh": "产油量", "en": "Oil yield", "ms": "Hasil minyak" },
+                "values": [3.72, 0.7, 0.56, 0.46, 0.42],
+                "colors": ["--c-1", "--c-4", "--c-2", "--c-6", "--c-3"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这个优势有几个来源。油棕是多年生常绿作物，一次定植可以采收二十五年以上，不必每年重新整地播种；它全年开花结果，光合产物几乎不间断地转化为油脂；果肉本身含油率高达 45%–50%；而且它同时产出两种油——果肉的棕油和果仁的棕仁油，后者的脂肪酸组成完全不同，用途也不同。",
+            "en": "Several things produce that advantage. The oil palm is a perennial evergreen: planted once, it is harvested for twenty-five years or more with no annual re-establishment. It flowers and fruits all year, so photosynthesis is converted into oil more or less continuously. The mesocarp itself is 45–50% oil. And the crop yields two distinct oils — palm oil from the flesh and palm kernel oil from the seed — with quite different fatty acid profiles and quite different uses.",
+            "ms": "Beberapa perkara menghasilkan kelebihan itu. Sawit adalah tanaman saka malar hijau: ditanam sekali, dituai selama dua puluh lima tahun atau lebih tanpa penanaman semula tahunan. Ia berbunga dan berbuah sepanjang tahun, jadi fotosintesis ditukar kepada minyak secara berterusan. Mesokarpnya sendiri mengandungi 45–50% minyak. Dan tanaman ini menghasilkan dua jenis minyak — minyak sawit dari isi buah dan minyak isirong dari bijinya — dengan profil asid lemak dan kegunaan yang berbeza."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "这个单产优势也是可持续性争论的核心。棕油供应了全球约三分之一的植物油，却只占用不到一成的油料作物土地。如果用其他油料替代同样的产量，需要的土地会大得多。",
+            "en": "This yield advantage sits at the centre of the sustainability argument. Palm supplies roughly a third of the world's vegetable oil from under a tenth of the land given to oil crops. Replacing that output with any other oil would take considerably more land.",
+            "ms": "Kelebihan hasil ini menjadi inti perdebatan kelestarian. Sawit membekalkan kira-kira satu pertiga minyak sayuran dunia daripada kurang satu persepuluh tanah tanaman minyak. Menggantikan pengeluaran itu dengan minyak lain memerlukan jauh lebih banyak tanah."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "heading": { "zh": "贸易与买家", "en": "Trade and the buyers", "ms": "Perdagangan dan pembeli" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油是高度外向型的作物：印尼与马来西亚生产的绝大部分用于出口。最大的进口方是印度、中国和欧盟，其次是巴基斯坦和一批中东、北非国家。印度长期是单一最大买家，其国内食用油缺口主要靠棕油填补。",
+            "en": "Palm oil is an unusually export-oriented crop: most of what Indonesia and Malaysia produce is shipped abroad. The largest buyers are India, China and the European Union, followed by Pakistan and a group of Middle Eastern and North African countries. India has long been the single biggest importer, filling most of its domestic edible oil gap with palm.",
+            "ms": "Minyak sawit adalah tanaman yang sangat berorientasikan eksport: kebanyakan pengeluaran Indonesia dan Malaysia dihantar ke luar negara. Pembeli terbesar ialah India, China dan Kesatuan Eropah, diikuti Pakistan serta sekumpulan negara Timur Tengah dan Afrika Utara. India telah lama menjadi pengimport tunggal terbesar, memenuhi sebahagian besar jurang minyak makan domestiknya dengan sawit."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "用途方面，大部分棕油进入食品：煎炸油、人造奶油、起酥油、糕点与加工食品。棕油在室温下呈半固体，且可以通过分提得到不同熔点的组分，这让它在很多配方里能替代部分氢化油脂——这一点在反式脂肪受限之后变得格外重要。其余份额进入油脂化工（肥皂、洗涤剂、表面活性剂）和生物柴油。",
+            "en": "Most palm oil goes into food: frying oil, margarine, shortening, bakery products and processed foods. It is semi-solid at room temperature and can be fractionated into components with different melting points, which lets it replace partially hydrogenated fats in many formulations — a property that mattered a great deal once trans fats came under restriction. The rest goes to oleochemicals — soap, detergents, surfactants — and to biodiesel.",
+            "ms": "Kebanyakan minyak sawit digunakan dalam makanan: minyak menggoreng, marjerin, lemak sayuran, produk bakeri dan makanan diproses. Ia separa pepejal pada suhu bilik dan boleh dipecahkan kepada komponen dengan takat lebur berbeza, membolehkannya menggantikan lemak terhidrogen separa dalam banyak formulasi — sifat yang menjadi penting apabila lemak trans dihadkan. Selebihnya digunakan dalam oleokimia — sabun, detergen, surfaktan — dan biodiesel."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1.5",
+      "heading": { "zh": "大园与小农", "en": "Estates and smallholders", "ms": "Ladang besar dan pekebun kecil" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕的经营形态大致分三类：公司经营的大型种植园、政府主导的移垦／合作计划，以及独立小农。马来西亚从 1956 年起通过 FELDA 等机构大规模安置农户，印尼则以 PIR／plasma 模式把小农与核心园区和工厂绑定。今天两国的小农合计占据相当大的种植面积。",
+            "en": "Oil palm is grown under three broad arrangements: company estates, government-led settlement or cooperative schemes, and independent smallholders. From 1956 Malaysia settled farmers on a large scale through agencies such as FELDA; Indonesia used the PIR or plasma model, tying smallholders to a nucleus estate and its mill. Between them, smallholders now hold a substantial share of the planted area in both countries.",
+            "ms": "Sawit ditanam di bawah tiga susunan utama: ladang syarikat, skim penempatan atau koperasi yang diterajui kerajaan, dan pekebun kecil bebas. Sejak 1956 Malaysia menempatkan petani secara besar-besaran melalui agensi seperti FELDA; Indonesia menggunakan model PIR atau plasma, mengikat pekebun kecil kepada ladang teras dan kilangnya. Kini pekebun kecil memegang bahagian yang besar daripada kawasan tanaman di kedua-dua negara."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "小农单产通常低于大园，差距往往在 20%–40%。原因大多是可以改善的：种苗来源不明、施肥不足或不及时、收割成熟度掌握不好、果串到厂时间过长导致游离脂肪酸升高。这也意味着，提高现有小农园的产量，是在不新增土地的前提下增产最直接的一条路。",
+            "en": "Smallholder yields are usually below estate yields, often by 20–40%. The reasons are mostly fixable: planting material of unknown origin, fertiliser applied too little or too late, bunches cut at the wrong ripeness, and long delays between field and mill that drive up free fatty acid. That also means lifting the yield of existing smallholder blocks is the most direct route to more oil without more land.",
+            "ms": "Hasil pekebun kecil biasanya lebih rendah daripada ladang besar, selalunya 20–40%. Sebabnya kebanyakannya boleh diperbaiki: bahan tanaman yang tidak diketahui asalnya, baja yang terlalu sedikit atau lewat, tandan dituai pada kematangan yang salah, dan kelewatan panjang antara ladang dan kilang yang menaikkan asid lemak bebas. Ini bermakna meningkatkan hasil kebun kecil sedia ada adalah jalan paling langsung untuk mendapat lebih banyak minyak tanpa menambah tanah."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "果串割下后，果肉里的脂肪酶立刻开始分解油脂。24 小时内送厂是常规要求；拖延越久，游离脂肪酸越高，售价越低。",
+            "en": "Once a bunch is cut, lipase in the fruit starts breaking the oil down. Delivery to the mill within 24 hours is the normal requirement; the longer the delay, the higher the free fatty acid and the lower the price.",
+            "ms": "Sebaik tandan dipotong, lipase dalam buah mula memecahkan minyak. Penghantaran ke kilang dalam 24 jam adalah keperluan biasa; semakin lama kelewatan, semakin tinggi asid lemak bebas dan semakin rendah harganya."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Oil World Annual 2013 (ISTA Mielke GmbH)",
+    "MPOB",
+    "FAOSTAT",
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "ch02",
+  "num": 2,
+  "title": { "zh": "植物学与果型", "en": "Botany and Fruit Forms", "ms": "Botani dan Bentuk Buah" },
+  "sections": [
+    {
+      "id": "2.1",
+      "heading": { "zh": "一棵油棕的结构", "en": "How the palm is built", "ms": "Struktur pokok sawit" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕是单干棕榈，只有一个生长点，长在树冠中心。它没有形成层，茎干不会加粗——你看到的粗细在幼年期就基本定型了，之后只是往上长。这也意味着一个事实：生长点一旦被破坏，整棵棕榈就死了，没有任何替代芽可以接管。",
+            "en": "The oil palm is a single-stemmed palm with one growing point, buried at the centre of the crown. It has no cambium, so the trunk never thickens: the diameter you see was set in the palm's early years, and everything after that is upward growth. One consequence matters above all others — destroy the growing point and the palm dies, because there is no second bud to take over.",
+            "ms": "Kelapa sawit ialah palma berbatang tunggal dengan satu titik tumbuh, tersembunyi di tengah mahkota. Ia tiada kambium, jadi batangnya tidak pernah membesar: diameter yang anda lihat ditentukan pada tahun-tahun awal, dan selepas itu hanyalah pertumbuhan ke atas. Satu akibat penting: jika titik tumbuh musnah, pokok itu mati, kerana tiada tunas kedua yang boleh mengambil alih."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "叶片（叶轴加小叶，行业里叫 frond）按固定的螺旋序列长出，八条螺旋线绕干而上，方向左旋或右旋因株而异。成龄棕榈树冠上通常维持 40 片左右的活叶。幼龄期每年可抽出 24 片以上新叶，随树龄增长降到每年 18–24 片。树高年增量因材料而异，约 25–75 厘米——这个数字直接决定这片园还能割多少年。",
+            "en": "Leaves — the rachis and its leaflets, called a frond in the trade — emerge in a fixed spiral, eight spirals running up the trunk, turning left or right depending on the individual palm. A mature palm normally carries about 40 living fronds. A young palm may produce more than 24 new fronds a year, falling to 18–24 as it ages. Height increment varies with planting material at roughly 25–75 cm a year — a figure that decides, more than anything else, how many years a block can still be harvested.",
+            "ms": "Daun — rakis dan anak daunnya, dipanggil pelepah — muncul dalam lingkaran tetap, lapan lingkaran menaiki batang, berpusing ke kiri atau kanan bergantung pada pokok. Pokok matang biasanya menyandang kira-kira 40 pelepah hidup. Pokok muda boleh menghasilkan lebih 24 pelepah setahun, menurun kepada 18–24 apabila meningkat usia. Pertambahan ketinggian berbeza mengikut bahan tanaman, kira-kira 25–75 cm setahun — angka yang paling menentukan berapa lama satu blok masih boleh dituai."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "根系从茎基发出，分四级。初生根水平伸展，可达 10–20 米；吸收养分和水分的主力是三级和四级根，绝大部分集中在表土 0–40 厘米。这个分布解释了两件事：为什么表土压实和侵蚀对油棕伤害很大，以及为什么肥料要撒在树冠滴水线附近的表层，而不是深施。",
+            "en": "Roots come off the base of the stem in four orders. The primaries run out horizontally, reaching 10–20 m; the tertiaries and quaternaries do most of the absorbing, and the great majority of them sit in the top 0–40 cm of soil. That distribution explains two things: why compaction and erosion of the topsoil hurt this crop so much, and why fertiliser belongs on the surface within the weeded circle and frond-tip zone rather than buried.",
+            "ms": "Akar keluar dari pangkal batang dalam empat peringkat. Akar primer menjalar mendatar sehingga 10–20 m; akar tertier dan kuarterner melakukan kebanyakan penyerapan, dan majoriti besarnya berada di lapisan atas 0–40 cm. Taburan ini menjelaskan dua perkara: mengapa pemadatan dan hakisan tanah atas sangat memudaratkan tanaman ini, dan mengapa baja perlu ditabur di permukaan dalam bulatan bersih dan zon hujung pelepah, bukan ditanam dalam."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "机械进出园区若长期走同一条路线，会压实表层根区。这类伤害是累积性的，而且几年之内看不出来——等到产量下滑时已经很难挽回。",
+            "en": "Machinery that always takes the same route through a block compacts the surface rooting zone. The damage accumulates and does not show for several years — by the time yield drops, it is hard to undo.",
+            "ms": "Jentera yang sentiasa menggunakan laluan yang sama akan memadatkan zon akar permukaan. Kerosakan ini terkumpul dan tidak kelihatan selama beberapa tahun — apabila hasil menurun, ia sukar dipulihkan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "heading": { "zh": "开花与果串", "en": "Flowering and the bunch", "ms": "Pembungaan dan tandan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕是雌雄同株异花：同一棵树上既有雄花序也有雌花序，但不在同一时间成熟。每片叶腋里都有一个花序原基，最终发育成雄花序、雌花序，或者中途败育。一棵树往往一连抽出几个雄花序，再转成一连串雌花序，形成所谓的性周期。",
+            "en": "The oil palm is monoecious: a single palm carries both male and female inflorescences, but not ripe at the same time. Every leaf axil holds an inflorescence primordium that develops into a male, a female, or aborts along the way. A palm commonly produces a run of male inflorescences, then switches to a run of females, giving the sex cycles familiar to anyone who has walked a block.",
+            "ms": "Sawit ialah monoesius: satu pokok membawa kedua-dua bunga jantan dan betina, tetapi tidak matang serentak. Setiap ketiak daun mengandungi primordium jambak yang akan menjadi jantan, betina, atau gugur di pertengahan. Pokok selalunya menghasilkan beberapa jambak jantan berturut-turut, kemudian bertukar kepada siri betina — kitaran jantina yang biasa dilihat di ladang."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "从花序原基分化到果串成熟，大约需要三年，其中授粉到成熟约五到六个月。这条很长的时间线在实践上非常重要：今天看到的产量，反映的是两三年前的天气和管理。一次严重干旱的后果，要等到两年后才会完整地显现在产量上。",
+            "en": "From the initiation of an inflorescence primordium to a ripe bunch takes roughly three years, of which pollination to ripeness is about five to six months. That long pipeline matters in practice: the yield you see today reflects the weather and the management of two or three years ago. The full cost of one bad drought does not appear in the crop until two years later.",
+            "ms": "Dari permulaan primordium jambak hingga tandan masak mengambil masa kira-kira tiga tahun, dengan pendebungaan ke kematangan sekitar lima hingga enam bulan. Jangka masa panjang ini penting dalam amalan: hasil hari ini mencerminkan cuaca dan pengurusan dua atau tiga tahun lalu. Kesan penuh satu kemarau teruk hanya muncul dalam hasil dua tahun kemudian."
+          }
+        },
+        {
+          "type": "keyval",
+          "rows": [
+            {
+              "k": { "zh": "每串果实数", "en": "Fruits per bunch", "ms": "Buah setiap tandan" },
+              "v": { "zh": "约 1,000–3,000 粒", "en": "roughly 1,000–3,000", "ms": "kira-kira 1,000–3,000" }
+            },
+            {
+              "k": { "zh": "成龄果串重", "en": "Mature bunch weight", "ms": "Berat tandan matang" },
+              "v": { "zh": "约 15–30 公斤（幼龄园低得多）", "en": "about 15–30 kg; far lower on young palms", "ms": "kira-kira 15–30 kg; jauh lebih rendah pada pokok muda" }
+            },
+            {
+              "k": { "zh": "果实结构", "en": "Fruit structure", "ms": "Struktur buah" },
+              "v": { "zh": "外果皮 → 中果皮（产棕油）→ 内果壳 → 果仁（产棕仁油）", "en": "exocarp → mesocarp, which gives palm oil → shell → kernel, which gives palm kernel oil", "ms": "eksokarp → mesokarp, memberi minyak sawit → tempurung → isirong, memberi minyak isirong" }
+            },
+            {
+              "k": { "zh": "授粉", "en": "Pollination", "ms": "Pendebungaan" },
+              "v": { "zh": "主要靠象鼻虫 Elaeidobius kamerunicus，风媒作用很小", "en": "mainly by the weevil Elaeidobius kamerunicus; wind contributes little", "ms": "terutamanya oleh kumbang Elaeidobius kamerunicus; angin menyumbang sedikit" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "heading": { "zh": "三种果型与 Sh 基因", "en": "Three fruit forms and the Sh gene", "ms": "Tiga bentuk buah dan gen Sh" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕最重要的一条遗传学事实，是果壳厚度由单个基因控制，且为共显性。这个基因决定了整个商业种植体系的样子。",
+            "en": "The single most consequential piece of oil palm genetics is that shell thickness is controlled by one gene, and that the gene is codominant. That fact shapes the whole commercial planting system.",
+            "ms": "Fakta genetik sawit yang paling penting ialah ketebalan tempurung dikawal oleh satu gen, dan gen itu kodominan. Fakta ini membentuk keseluruhan sistem penanaman komersial."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "三种果型", "en": "The three fruit forms", "ms": "Tiga bentuk buah" },
+          "headers": [
+            { "zh": "果型", "en": "Form", "ms": "Bentuk" },
+            { "zh": "基因型", "en": "Genotype", "ms": "Genotip" },
+            { "zh": "果壳", "en": "Shell", "ms": "Tempurung" },
+            { "zh": "中果皮／果实", "en": "Mesocarp / fruit", "ms": "Mesokarp / buah" }
+          ],
+          "rows": [
+            [{ "zh": "Dura 厚壳", "en": "Dura", "ms": "Dura" }, "sh⁺/sh⁺", { "zh": "2–8 毫米", "en": "2–8 mm", "ms": "2–8 mm" }, "35–65%"],
+            [{ "zh": "Tenera 薄壳", "en": "Tenera", "ms": "Tenera" }, "sh⁺/sh⁻", { "zh": "0.5–4 毫米，有纤维环", "en": "0.5–4 mm, with a fibre ring", "ms": "0.5–4 mm, dengan cincin gentian" }, "55–96%"],
+            [{ "zh": "Pisifera 无壳", "en": "Pisifera", "ms": "Pisifera" }, "sh⁻/sh⁻", { "zh": "无", "en": "none", "ms": "tiada" }, { "zh": "雌花多不育，几乎不结实", "en": "usually female-sterile; sets almost no fruit", "ms": "biasanya mandul betina; hampir tiada buah" }]
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "Tenera 的中果皮比例远高于 dura，出油率也高得多——同样重量的果串，tenera 的油／果串比约 23%–26%，dura 只有 17%–20%。但 tenera 自交会按 1 dura : 2 tenera : 1 pisifera 分离，不能留种。而 pisifera 虽然无壳，雌花却通常不育。",
+            "en": "Tenera carries far more mesocarp than dura and yields far more oil: about 23–26% oil to bunch against 17–20% for dura. But tenera does not breed true — selfed, it segregates 1 dura : 2 tenera : 1 pisifera. And pisifera, though shell-less, is usually female-sterile.",
+            "ms": "Tenera mempunyai mesokarp yang jauh lebih banyak daripada dura dan menghasilkan lebih banyak minyak: kira-kira 23–26% minyak kepada tandan berbanding 17–20% bagi dura. Tetapi tenera tidak membiak tulen — apabila dikacuk sendiri ia memisah 1 dura : 2 tenera : 1 pisifera. Dan pisifera, walaupun tanpa tempurung, biasanya mandul betina."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "解决办法就是商业种子园的全部逻辑：用 dura 作母本、pisifera 作父本杂交，后代 100% 是 tenera。这就是所谓的 D × P 种子。任何一批合格的商业种苗，都应该来自这样的受控杂交。",
+            "en": "The way round this is the entire logic of a commercial seed garden: cross a dura mother with a pisifera father and every offspring is tenera. That is D × P seed. Any legitimate batch of commercial planting material comes from such a controlled cross.",
+            "ms": "Penyelesaiannya ialah logik keseluruhan taman benih komersial: kacukkan induk dura dengan bapa pisifera dan setiap anak adalah tenera. Itulah benih D × P. Mana-mana bahan tanaman komersial yang sah datang daripada kacukan terkawal sedemikian."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "这是小农最容易踩的坑：从自家园里落果捡种子育苗，长出来的会有约四分之一是 dura，还有四分之一是几乎不结果的 pisifera。整片园的产量会被永久拖低，而且要等四五年才看得出来。种苗一定要从有资质的种子园或苗圃买。",
+            "en": "This is the trap smallholders fall into most often. Seed picked up from loose fruit in your own block gives roughly a quarter dura and a quarter near-barren pisifera. The block's yield is permanently depressed, and it takes four or five years before anyone can see it. Buy planting material from a licensed seed garden or nursery.",
+            "ms": "Inilah perangkap yang paling kerap menjerat pekebun kecil. Benih yang dipungut daripada buah gugur di kebun sendiri menghasilkan kira-kira satu perempat dura dan satu perempat pisifera yang hampir tidak berbuah. Hasil blok itu terjejas kekal, dan mengambil empat atau lima tahun sebelum sesiapa perasan. Belilah bahan tanaman daripada taman benih atau tapak semaian berlesen."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "stackedBar",
+            "title": { "zh": "果实组成对比（占果实重量）", "en": "Fruit composition by form (share of fruit weight)", "ms": "Komposisi buah mengikut bentuk (bahagian berat buah)" },
+            "note": { "zh": "Tenera 的壳薄，省下来的重量变成了产油的中果皮。", "en": "The thin shell of tenera converts directly into oil-bearing mesocarp.", "ms": "Tempurung nipis tenera bertukar terus menjadi mesokarp yang menghasilkan minyak." },
+            "source": { "zh": "典型范围，Corley & Tinker 2016 所载数据", "en": "Typical ranges from the data in Corley & Tinker 2016", "ms": "Julat tipikal daripada data dalam Corley & Tinker 2016" },
+            "x": {
+              "categories": [
+                { "zh": "Dura 厚壳", "en": "Dura", "ms": "Dura" },
+                { "zh": "Tenera 薄壳", "en": "Tenera", "ms": "Tenera" }
+              ]
+            },
+            "y": { "unit": "%" },
+            "series": [
+              { "name": { "zh": "中果皮", "en": "Mesocarp", "ms": "Mesokarp" }, "values": [50, 80], "color": "--c-2" },
+              { "name": { "zh": "果壳", "en": "Shell", "ms": "Tempurung" }, "values": [38, 10], "color": "--c-3" },
+              { "name": { "zh": "果仁", "en": "Kernel", "ms": "Isirong" }, "values": [12, 10], "color": "--c-6" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "2013 年，马来西亚棕油局的研究团队定位出了控制壳厚的 SHELL 基因（一个 MADS-box 转录因子）。这在实务上意义重大：现在可以在苗圃阶段直接做 DNA 检测，把混进来的 dura 和 pisifera 淘汰掉，而不必等四五年到结果才发现。",
+            "en": "In 2013 a team at the Malaysian Palm Oil Board identified SHELL, the gene behind shell thickness — a MADS-box transcription factor. The practical consequence is large: seedlings can now be DNA-tested in the nursery and stray dura and pisifera culled there, instead of being discovered four or five years later when the palms finally fruit.",
+            "ms": "Pada 2013 satu pasukan di Lembaga Minyak Sawit Malaysia mengenal pasti SHELL, gen di sebalik ketebalan tempurung — sejenis faktor transkripsi MADS-box. Kesan praktikalnya besar: anak benih kini boleh diuji DNA di tapak semaian dan dura serta pisifera yang tersasul dibuang di situ, bukannya ditemui empat atau lima tahun kemudian apabila pokok mula berbuah."
+          }
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "heading": { "zh": "果色与其他变异", "en": "Fruit colour and other variants", "ms": "Warna buah dan varian lain" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "绝大多数商业材料属于 nigrescens 型：未熟果顶端黑紫色，成熟后基部转橙红。virescens 型果皮不含花青素，未熟时绿色，成熟时转橙而顶端仍带绿。virescens 的成熟判断比 nigrescens 直观，在收割标准的执行上有实际好处，但商业上仍是少数。",
+            "en": "Almost all commercial material is nigrescens: the unripe fruit is dark purple-black at the tip, turning orange-red at the base as it ripens. Virescens fruit carries no anthocyanin in the exocarp — green when unripe, orange with a greenish tip when ripe. Virescens ripeness is easier to judge than nigrescens, which has real value for harvesting discipline, but it remains a minority in commerce.",
+            "ms": "Hampir semua bahan komersial adalah nigrescens: buah mentah berwarna ungu kehitaman di hujung, bertukar jingga kemerahan di pangkal apabila masak. Buah virescens tiada antosianin pada eksokarp — hijau ketika mentah, jingga dengan hujung kehijauan apabila masak. Kematangan virescens lebih mudah dinilai daripada nigrescens, satu kelebihan sebenar untuk disiplin penuaian, tetapi ia masih minoriti dalam perdagangan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "此外还有 albescens（中果皮胡萝卜素极低，颜色偏淡黄）和 poissoni／mantled（果实外围包着最多六枚由雄蕊原基发育来的肉质副心皮）。后者的名字在第 7 章还会再出现——组培苗上出现的 mantled 异常与它形态相似，但成因完全不同。",
+            "en": "There are also albescens, whose mesocarp is very low in carotene and therefore pale yellow rather than orange, and poissoni or mantled fruit, surrounded by up to six fleshy supplementary carpels derived from stamen primordia. That last name reappears in Chapter 7: the mantled abnormality seen in tissue-cultured palms looks similar but arises for a completely different reason.",
+            "ms": "Terdapat juga albescens, yang mesokarpnya sangat rendah karotena dan berwarna kuning pucat bukannya jingga, serta buah poissoni atau mantled, dikelilingi sehingga enam karpel tambahan berisi yang terbit daripada primordium stamen. Nama terakhir itu muncul semula dalam Bab 7: keabnormalan mantled pada pokok kultur tisu kelihatan serupa tetapi berpunca daripada sebab yang sama sekali berbeza."
+          }
+        }
+      ]
+    },
+    {
+      "id": "2.5",
+      "heading": { "zh": "美洲油棕与种间杂交", "en": "The American oil palm and interspecific hybrids", "ms": "Sawit Amerika dan kacukan antara spesies" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "Elaeis oleifera 原产中南美洲。它的茎干近乎匍匐、年增高极慢，油的不饱和度显著高于非洲油棕，对若干病害也较耐受——但产量远低于 E. guineensis，单独种植没有商业价值。",
+            "en": "Elaeis oleifera is native to Central and South America. Its stem is close to prostrate and puts on height very slowly, its oil is markedly more unsaturated than African palm oil, and it tolerates several diseases better — but it yields far less than E. guineensis and is not worth planting on its own.",
+            "ms": "Elaeis oleifera berasal dari Amerika Tengah dan Selatan. Batangnya hampir menjalar dan meninggi dengan sangat perlahan, minyaknya jauh lebih tidak tepu daripada minyak sawit Afrika, dan ia lebih tahan terhadap beberapa penyakit — tetapi hasilnya jauh lebih rendah daripada E. guineensis dan tidak berbaloi ditanam bersendirian."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "两个种可以杂交，后代（常写作 OxG）继承了慢增高和部分抗病性。在哥伦比亚、厄瓜多尔等受芽腐病（pudrición del cogollo）严重威胁的产区，OxG 杂交种是少数能继续种下去的选择。代价是这类杂交种花粉育性差，往往必须人工辅助授粉，增加了常年的人工成本。",
+            "en": "The two species cross, and the hybrid — usually written OxG — inherits the slow height increment and some of the disease tolerance. In parts of Colombia and Ecuador where bud rot, pudrición del cogollo, has made ordinary plantings untenable, OxG hybrids are one of the few options left. The price is poor pollen fertility: these hybrids generally need assisted pollination, which adds a permanent labour cost.",
+            "ms": "Kedua-dua spesies boleh dikacukkan, dan kacukan itu — biasanya ditulis OxG — mewarisi pertambahan ketinggian yang perlahan serta sebahagian ketahanan penyakit. Di sesetengah kawasan Colombia dan Ecuador yang reput pucuk, pudrición del cogollo, menjadikan penanaman biasa tidak mampan, kacukan OxG adalah antara pilihan yang tinggal. Harganya ialah kesuburan debunga yang lemah: kacukan ini umumnya memerlukan pendebungaan bantuan, menambah kos buruh tetap."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "MPOB (Singh et al., SHELL gene, 2013)",
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    "Beirnaert & Vanderweyen (1941), shell inheritance"
+  ]
+}

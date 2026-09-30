@@ -1,0 +1,200 @@
+{
+  "id": "ch15",
+  "num": 15,
+  "title": { "zh": "产品与加工", "en": "Products and Processing", "ms": "Produk dan Pemprosesan" },
+  "sections": [
+    {
+      "id": "15.1",
+      "heading": { "zh": "从果串到毛棕油", "en": "From bunch to crude palm oil", "ms": "Dari tandan ke minyak sawit mentah" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油厂的流程在一百年里没有根本改变，因为它解决的物理问题很明确：把油从含水的果肉里分离出来，同时尽量少损失、少让脂肪酶起作用。",
+            "en": "The palm oil mill process has not changed fundamentally in a hundred years, because the physical problem it solves is a clear one: separate oil from wet fruit pulp while losing as little as possible and giving lipase as little chance as possible.",
+            "ms": "Proses kilang minyak sawit tidak berubah secara asas dalam seratus tahun, kerana masalah fizikal yang diselesaikannya jelas: memisahkan minyak daripada isi buah yang basah sambil kehilangan sesedikit mungkin dan memberi lipase sesedikit peluang mungkin."
+          }
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            { "zh": "杀青消毒（sterilisation）：果串在约 3 巴、140 °C 蒸汽中处理 60–90 分钟。这一步同时灭活脂肪酶、软化果肉、松动果实。", "en": "Sterilisation: bunches are steamed at about 3 bar and 140 °C for 60–90 minutes. This inactivates the lipase, softens the pulp and loosens the fruit, all in one step.", "ms": "Pensterilan: tandan dikukus pada kira-kira 3 bar dan 140 °C selama 60–90 minit. Ini menyahaktifkan lipase, melembutkan isi dan melonggarkan buah sekali gus." },
+            { "zh": "脱果（threshing）：旋转滚筒把果实从果串轴上打下来，剩下的就是空果串（EFB）。", "en": "Threshing: a rotating drum knocks the fruit off the stalk; what remains is the empty fruit bunch.", "ms": "Pemipilan: dram berputar menanggalkan buah daripada tangkai; yang tinggal ialah tandan buah kosong." },
+            { "zh": "捣碎（digestion）：果实在带搅拌臂的桶中加热捣碎，破坏含油细胞。", "en": "Digestion: the fruit is heated and mashed in a stirred vessel to break open the oil-bearing cells.", "ms": "Penghadaman: buah dipanaskan dan dilumatkan dalam bekas berkacau untuk memecahkan sel yang mengandungi minyak." },
+            { "zh": "压榨（pressing）：螺旋压榨机把油挤出来，得到粗油和压榨饼（纤维加坚果）。", "en": "Pressing: a screw press squeezes the oil out, leaving a cake of fibre and nuts.", "ms": "Pengempaan: pengempa skru memerah minyak keluar, meninggalkan kek gentian dan biji." },
+            { "zh": "澄清与净化（clarification）：静置分层、离心分离，去除水分和杂质。", "en": "Clarification: settling and centrifuging to remove water and solids.", "ms": "Penjernihan: pengenapan dan pengempar untuk membuang air dan pepejal." },
+            { "zh": "干燥与储存：真空干燥至水分约 0.1%，降温后入罐。", "en": "Drying and storage: vacuum-dried to about 0.1% moisture, cooled and tanked.", "ms": "Pengeringan dan penyimpanan: dikeringkan vakum kepada kira-kira 0.1% lembapan, disejukkan dan disimpan dalam tangki." },
+            { "zh": "坚果与果仁处理：压榨饼分离出坚果，破壳取仁，果仁另行榨取棕仁油。", "en": "Nut and kernel line: nuts are separated from the press cake, cracked, and the kernels pressed separately for palm kernel oil.", "ms": "Talian biji dan isirong: biji diasingkan daripada kek empa, dipecahkan, dan isirong diempa berasingan untuk minyak isirong." }
+          ]
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "stackedBar",
+            "title": { "zh": "一吨果串的去向", "en": "What a tonne of bunches becomes", "ms": "Apa yang terhasil daripada satu tan tandan" },
+            "note": { "zh": "典型质量平衡。副产物的体积远大于产品本身——这正是养分循环和生物质利用的空间所在。", "en": "A typical mass balance. The by-products outweigh the product several times over, which is where nutrient recycling and biomass use come in.", "ms": "Imbangan jisim tipikal. Produk sampingan melebihi produk utama beberapa kali ganda, di situlah kitaran nutrien dan penggunaan biojisim berperanan." },
+            "source": { "zh": "典型工厂质量平衡", "en": "Typical mill mass balance", "ms": "Imbangan jisim kilang tipikal" },
+            "x": { "categories": [{ "zh": "1 吨鲜果串", "en": "1 tonne of FFB", "ms": "1 tan BTS" }] },
+            "y": { "unit": "%" },
+            "series": [
+              { "name": { "zh": "毛棕油", "en": "Crude palm oil", "ms": "Minyak sawit mentah" }, "values": [21], "color": "--c-2" },
+              { "name": { "zh": "棕仁", "en": "Palm kernel", "ms": "Isirong" }, "values": [5], "color": "--c-6" },
+              { "name": { "zh": "空果串", "en": "Empty bunches", "ms": "Tandan kosong" }, "values": [22], "color": "--c-1" },
+              { "name": { "zh": "纤维与壳", "en": "Fibre and shell", "ms": "Gentian dan tempurung" }, "values": [19], "color": "--c-3" },
+              { "name": { "zh": "废水与水分", "en": "Effluent and water", "ms": "Efluen dan air" }, "values": [33], "color": "--c-4" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "15.2",
+      "heading": { "zh": "游离脂肪酸：最贵的那个指标", "en": "Free fatty acid: the number that costs money", "ms": "Asid lemak bebas: angka yang merugikan wang" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "果实里天然存在的脂肪酶，在果实脱离果串、外果皮受损之后就开始把甘油三酯水解成游离脂肪酸（FFA）。FFA 高的毛油精炼损耗大、品质差，收购价直接打折。标准毛棕油的 FFA 上限通常是 5%。",
+            "en": "Lipase, naturally present in the fruit, starts hydrolysing triglycerides into free fatty acid as soon as fruit detaches or the skin is broken. High-FFA crude oil refines badly, loses more in refining and is worth less; the discount is immediate. Standard crude palm oil is normally capped at 5% FFA.",
+            "ms": "Lipase, yang wujud secara semula jadi dalam buah, mula menghidrolisis trigliserida menjadi asid lemak bebas sebaik buah tanggal atau kulitnya pecah. Minyak mentah dengan FFA tinggi sukar ditapis, lebih banyak hilang semasa penapisan dan kurang bernilai; diskaunnya serta-merta. Minyak sawit mentah standard biasanya dihadkan pada 5% FFA."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "FFA 是一个纯粹由管理决定的指标，而且几乎全部决定在工厂之外：收割成熟度、果串搬运时的机械损伤、以及最重要的——从割下到进杀青罐的时间。杀青这一步会把脂肪酶彻底灭活，在此之前的每一小时都在累积 FFA。",
+            "en": "FFA is a management number, and almost all of it is decided outside the mill: harvest ripeness, mechanical damage to bunches in handling, and above all the time between cutting and the steriliser. Sterilisation kills the lipase outright; every hour before it, FFA accumulates.",
+            "ms": "FFA ialah angka pengurusan, dan hampir semuanya ditentukan di luar kilang: kematangan penuaian, kerosakan mekanikal pada tandan semasa pengendalian, dan yang paling utama masa antara pemotongan dan penseteril. Pensterilan membunuh lipase terus; setiap jam sebelum itu, FFA terkumpul."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "把果串粗暴装卸、用叉子戳、从高处抛下，都会造成果实破损，直接抬高 FFA。这类损失在收购时才反映出来，而且往往被归咎于工厂，其实产生在田头。",
+            "en": "Rough loading, spearing bunches with a fork and throwing them from a height all break fruit and raise FFA directly. The loss only shows up at the weighbridge, where it is often blamed on the mill although it was created in the field.",
+            "ms": "Pemuatan kasar, mencucuk tandan dengan garpu dan melemparkannya dari ketinggian semuanya memecahkan buah dan menaikkan FFA secara langsung. Kerugian itu hanya muncul di jambatan timbang, di mana ia sering dipersalahkan kepada kilang walaupun ia berlaku di ladang."
+          }
+        }
+      ]
+    },
+    {
+      "id": "15.3",
+      "heading": { "zh": "两种油，两种化学", "en": "Two oils, two chemistries", "ms": "Dua minyak, dua kimia" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕产出的两种油在化学上差别很大，用途也完全不同。棕油（来自果肉）以棕榈酸和油酸为主，饱和与不饱和大致各半；棕仁油（来自果仁）则是月桂酸型油脂，与椰子油同类，高度饱和、碳链短。",
+            "en": "The two oils this crop produces are chemically very different and used for quite different things. Palm oil, from the mesocarp, is dominated by palmitic and oleic acid and is roughly half saturated. Palm kernel oil, from the seed, is a lauric oil like coconut oil — highly saturated with short chains.",
+            "ms": "Dua minyak yang dihasilkan tanaman ini sangat berbeza dari segi kimia dan digunakan untuk perkara yang berlainan. Minyak sawit, dari mesokarp, didominasi asid palmitik dan oleik serta kira-kira separuh tepu. Minyak isirong, dari biji, ialah minyak laurik seperti minyak kelapa — sangat tepu dengan rantai pendek."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "bar",
+            "title": { "zh": "脂肪酸组成：棕油与棕仁油", "en": "Fatty acid composition: palm oil and palm kernel oil", "ms": "Komposisi asid lemak: minyak sawit dan minyak isirong" },
+            "note": { "zh": "两种油来自同一颗果实，化学性质却属于完全不同的类别。", "en": "Two oils from the same fruit, in completely different chemical categories.", "ms": "Dua minyak dari buah yang sama, dalam kategori kimia yang berbeza sama sekali." },
+            "source": "MPOB",
+            "x": {
+              "categories": [
+                { "zh": "月桂酸 C12", "en": "Lauric C12", "ms": "Laurik C12" },
+                { "zh": "肉豆蔻酸 C14", "en": "Myristic C14", "ms": "Miristik C14" },
+                { "zh": "棕榈酸 C16", "en": "Palmitic C16", "ms": "Palmitik C16" },
+                { "zh": "硬脂酸 C18", "en": "Stearic C18", "ms": "Stearik C18" },
+                { "zh": "油酸 C18:1", "en": "Oleic C18:1", "ms": "Oleik C18:1" },
+                { "zh": "亚油酸 C18:2", "en": "Linoleic C18:2", "ms": "Linoleik C18:2" }
+              ]
+            },
+            "y": { "unit": "%", "label": { "zh": "占脂肪酸总量 %", "en": "% of total fatty acids", "ms": "% jumlah asid lemak" } },
+            "series": [
+              { "name": { "zh": "棕油", "en": "Palm oil", "ms": "Minyak sawit" }, "values": [0.2, 1.1, 43.5, 4.3, 39.8, 10.2], "color": "--c-2" },
+              { "name": { "zh": "棕仁油", "en": "Palm kernel oil", "ms": "Minyak isirong" }, "values": [48.2, 16.2, 8.4, 2.5, 15.3, 2.3], "color": "--c-6" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油的碘值约 53，滑动熔点约 36 °C，因此在热带室温下呈半固体——这正是它在食品工业里好用的原因：不需要氢化就能提供固体脂的功能。棕仁油碘值只有约 17，熔点低而熔程窄，主要用于糖果油脂、涂层和油脂化工。",
+            "en": "Palm oil has an iodine value of about 53 and a slip melting point near 36 °C, which is why it is semi-solid at tropical room temperature — and why it is so useful in food manufacture: it provides the function of a solid fat without hydrogenation. Palm kernel oil has an iodine value of about 17, a low melting point and a sharp melting range, and goes mainly into confectionery fats, coatings and oleochemicals.",
+            "ms": "Minyak sawit mempunyai nilai iodin kira-kira 53 dan takat lebur gelincir sekitar 36 °C, sebab itu ia separa pepejal pada suhu bilik tropika — dan sebab itu ia sangat berguna dalam pembuatan makanan: ia memberi fungsi lemak pepejal tanpa penghidrogenan. Minyak isirong mempunyai nilai iodin kira-kira 17, takat lebur rendah dan julat lebur tajam, dan digunakan terutamanya dalam lemak konfeksi, salutan dan oleokimia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "15.4",
+      "heading": { "zh": "精炼与分提", "en": "Refining and fractionation", "ms": "Penapisan dan pemeringkatan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "毛棕油经过脱胶、脱色、脱臭得到 RBD 棕油（refined, bleached, deodorised）。之后通过分提——控制降温让高熔点的甘油三酯结晶并过滤分离——得到棕榈液油（olein）和棕榈硬脂（stearin）两个组分。",
+            "en": "Crude palm oil is degummed, bleached and deodorised to give RBD palm oil. It is then fractionated: cooled under control so the higher-melting triglycerides crystallise, and filtered to separate them, giving palm olein and palm stearin.",
+            "ms": "Minyak sawit mentah dinyahgam, diluntur dan dinyahbau untuk menghasilkan minyak sawit RBD. Ia kemudian diperingkatkan: disejukkan secara terkawal supaya trigliserida bertakat lebur tinggi menghablur, dan ditapis untuk memisahkannya, menghasilkan olein sawit dan stearin sawit."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "分提产物", "en": "Fractionation products", "ms": "Produk pemeringkatan" },
+          "headers": [
+            { "zh": "产品", "en": "Product", "ms": "Produk" },
+            { "zh": "碘值", "en": "Iodine value", "ms": "Nilai iodin" },
+            { "zh": "滑动熔点", "en": "Slip melting point", "ms": "Takat lebur gelincir" },
+            { "zh": "主要用途", "en": "Main uses", "ms": "Kegunaan utama" }
+          ],
+          "rows": [
+            [
+              { "zh": "棕油（未分提）", "en": "Palm oil", "ms": "Minyak sawit" }, "53", "36 °C",
+              { "zh": "起酥油、人造奶油、加工食品", "en": "shortening, margarine, processed foods", "ms": "lemak sayuran, marjerin, makanan diproses" }
+            ],
+            [
+              { "zh": "棕榈液油 olein", "en": "Palm olein", "ms": "Olein sawit" }, "58", "22 °C",
+              { "zh": "煎炸油、烹调油", "en": "frying and cooking oil", "ms": "minyak menggoreng dan memasak" }
+            ],
+            [
+              { "zh": "超级液油 super olein", "en": "Super olein", "ms": "Olein super" }, "66", "12 °C",
+              { "zh": "低温澄清度要求高的烹调油", "en": "cooking oil where cold clarity matters", "ms": "minyak masak yang memerlukan kejernihan sejuk" }
+            ],
+            [
+              { "zh": "棕榈硬脂 stearin", "en": "Palm stearin", "ms": "Stearin sawit" }, "40", "51 °C",
+              { "zh": "人造奶油硬相、糕点起酥、肥皂", "en": "margarine hard stock, bakery fats, soap", "ms": "stok keras marjerin, lemak bakeri, sabun" }
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "分提能力是棕油在食用油市场上的独特优势：同一批原料可以按熔点需求切成不同产品，去满足从室温流动的煎炸油到室温坚硬的糕点起酥油的全部需求，而且不需要部分氢化——这一点在反式脂肪被逐步禁用之后价值大增。",
+            "en": "Fractionation is what gives palm its particular position in the edible oil market: one feedstock can be cut by melting point into products spanning everything from a frying oil that pours at room temperature to a bakery fat that is firm at room temperature, without any partial hydrogenation. That mattered a great deal once trans fats began to be restricted.",
+            "ms": "Pemeringkatan itulah yang memberi sawit kedudukan istimewanya dalam pasaran minyak makan: satu bahan mentah boleh dipotong mengikut takat lebur kepada produk yang merangkumi segala-galanya daripada minyak menggoreng yang mengalir pada suhu bilik hingga lemak bakeri yang keras pada suhu bilik, tanpa sebarang penghidrogenan separa. Itu sangat penting apabila lemak trans mula dihadkan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "15.5",
+      "heading": { "zh": "副产物", "en": "By-products", "ms": "Produk sampingan" },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "zh": "纤维与果壳：工厂锅炉的燃料，多数棕油厂在能源上自给自足，甚至有余电上网。", "en": "Fibre and shell: fuel for the mill boiler. Most mills are energy self-sufficient on their own residues, and some export power.", "ms": "Gentian dan tempurung: bahan api dandang kilang. Kebanyakan kilang mencukupi tenaga daripada sisanya sendiri, dan sesetengahnya mengeksport kuasa." },
+            { "zh": "空果串：还田覆盖（见第 12 章），或堆肥、做生物质燃料。", "en": "Empty fruit bunches: returned to the field as mulch (Chapter 12), composted, or used as biomass fuel.", "ms": "Tandan buah kosong: dipulangkan ke ladang sebagai sungkupan (Bab 12), dikompos, atau digunakan sebagai bahan api biojisim." },
+            { "zh": "棕仁粕：榨仁后的饼粕，蛋白含量中等，是重要的饲料原料。", "en": "Palm kernel expeller: the cake left after pressing kernels; moderate protein, and an important feed ingredient.", "ms": "Ekspeler isirong sawit: kek yang tinggal selepas mengempa isirong; protein sederhana, dan bahan makanan ternakan yang penting." },
+            { "zh": "POME 与甲烷：厌氧处理产生的甲烷可捕集发电（见第 17 章）。", "en": "Mill effluent and its methane: anaerobic treatment produces methane that can be captured for power — see Chapter 17.", "ms": "Efluen kilang dan metananya: rawatan anaerobik menghasilkan metana yang boleh ditangkap untuk kuasa — lihat Bab 17." },
+            { "zh": "微量成分：毛棕油富含类胡萝卜素和维生素 E（生育酚与生育三烯酚），可在精炼前提取。常规精炼会破坏大部分类胡萝卜素，这正是红棕油（未脱色）保留橙红色的原因。", "en": "Minor constituents: crude palm oil is rich in carotenoids and vitamin E — tocopherols and tocotrienols — which can be recovered before refining. Conventional refining destroys most of the carotenoids, which is why red palm oil, left unbleached, keeps its colour.", "ms": "Juzuk kecil: minyak sawit mentah kaya dengan karotenoid dan vitamin E — tokoferol dan tokotrienol — yang boleh diperoleh sebelum penapisan. Penapisan konvensional memusnahkan kebanyakan karotenoid, sebab itu minyak sawit merah yang tidak diluntur mengekalkan warnanya." }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "MPOB",
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "马来西亚棕油产品标准规范", "en": "Malaysian palm oil product standards", "ms": "Piawaian produk minyak sawit Malaysia" }
+  ]
+}

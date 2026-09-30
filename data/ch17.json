@@ -1,0 +1,130 @@
+{
+  "id": "ch17",
+  "num": 17,
+  "title": { "zh": "油棕与气候变化", "en": "Oil Palm and Climate Change", "ms": "Sawit dan Perubahan Iklim" },
+  "sections": [
+    {
+      "id": "17.1",
+      "heading": { "zh": "排放来自哪里", "en": "Where the emissions come from", "ms": "Dari mana pelepasan datang" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕种植本身是一个碳吸收系统：一片成龄园每年固定大量二氧化碳。问题不在棕榈，而在它取代了什么，以及园区如何运营。排放主要来自三个源头，重要性依次递减。",
+            "en": "A stand of oil palm is itself a carbon sink: a mature block fixes a large quantity of carbon dioxide every year. The problem is not the palm but what it replaced, and how the operation is run. Emissions come from three sources, in descending order of importance.",
+            "ms": "Dirian sawit itu sendiri ialah sinki karbon: blok matang mengikat sejumlah besar karbon dioksida setiap tahun. Masalahnya bukan pokok itu tetapi apa yang digantikannya, dan bagaimana operasi dijalankan. Pelepasan datang daripada tiga sumber, mengikut kepentingan menurun."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "主要碳储量对比", "en": "Carbon stock of different land covers", "ms": "Stok karbon pelbagai litupan tanah" },
+            "note": { "zh": "地上生物量碳储。土地转换的排放，主要就是这两个数字之差。泥炭地还要另计地下碳。", "en": "Above-ground biomass carbon. Emissions from land conversion are essentially the difference between two of these numbers — with peat adding a large below-ground store on top.", "ms": "Karbon biojisim atas tanah. Pelepasan daripada penukaran tanah pada asasnya ialah perbezaan antara dua angka ini — dengan gambut menambah simpanan bawah tanah yang besar." },
+            "source": { "zh": "已发表的生物量估算", "en": "Published biomass estimates", "ms": "Anggaran biojisim terbitan" },
+            "x": {
+              "categories": [
+                { "zh": "原始热带雨林", "en": "Primary tropical forest", "ms": "Hutan tropika primer" },
+                { "zh": "次生／退化林", "en": "Secondary or logged forest", "ms": "Hutan sekunder atau ditebang" },
+                { "zh": "油棕园（生命周期平均）", "en": "Oil palm, cycle average", "ms": "Sawit, purata kitaran" },
+                { "zh": "灌丛与荒草地", "en": "Scrub and grassland", "ms": "Belukar dan padang rumput" }
+              ]
+            },
+            "y": { "unit": "t C/ha", "label": { "zh": "吨碳／公顷", "en": "tonnes carbon per hectare", "ms": "tan karbon sehektar" } },
+            "series": [
+              {
+                "name": { "zh": "地上碳储量", "en": "Above-ground carbon", "ms": "Karbon atas tanah" },
+                "values": [200, 90, 38, 15],
+                "colors": ["--c-1", "--c-6", "--c-2", "--c-3"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "泥炭地排干：迄今为止最大的一项。排水后泥炭持续氧化，每公顷每年可释放数十吨二氧化碳当量，而且会持续几十年。这是唯一一个可能让整个生命周期碳平衡变成净负的因素。", "en": "Draining peat: by far the largest item. Once drained, peat oxidises continuously, releasing tens of tonnes of CO₂-equivalent per hectare a year, and it keeps going for decades. It is the one factor that can turn a whole life-cycle balance negative on its own.", "ms": "Menyalirkan gambut: item terbesar setakat ini. Setelah disalirkan, gambut teroksida berterusan, melepaskan berpuluh tan setara CO₂ sehektar setahun, dan ia berterusan selama beberapa dekad. Ia satu-satunya faktor yang boleh menjadikan keseluruhan imbangan kitaran hayat negatif dengan sendirinya." },
+            { "zh": "森林转换：砍伐原始林造成的一次性碳损失，是园区碳储量与原有植被碳储量之差。转换退化地与转换原始林，差别是数量级的。", "en": "Forest conversion: the one-off loss of the difference between the forest's carbon stock and the plantation's. Converting degraded land and converting primary forest differ by an order of magnitude.", "ms": "Penukaran hutan: kehilangan sekali gus perbezaan antara stok karbon hutan dan ladang. Menukar tanah terdegradasi dan menukar hutan primer berbeza mengikut susunan magnitud." },
+            { "zh": "工厂废水甲烷：POME 厌氧塘释放的甲烷。甲烷的温室效应远强于二氧化碳，但这项排放技术上最容易解决——加盖捕集发电即可。", "en": "Methane from mill effluent: anaerobic POME ponds release methane, which is a far stronger greenhouse gas than CO₂. It is also the easiest of the three to fix — cover the pond and capture the gas for power.", "ms": "Metana daripada efluen kilang: kolam POME anaerobik melepaskan metana, yang jauh lebih kuat kesan rumah hijaunya daripada CO₂. Ia juga paling mudah diatasi antara ketiga-tiganya — tutup kolam dan tangkap gas untuk kuasa." },
+            { "zh": "肥料与运输：氮肥生产和施用后的一氧化二氮排放，加上运输燃料。相对次要，但可以通过精准施肥改善。", "en": "Fertiliser and transport: nitrous oxide from nitrogen fertiliser manufacture and application, plus haulage fuel. Relatively minor, but improved by more precise nutrition.", "ms": "Baja dan pengangkutan: nitrus oksida daripada pembuatan dan penggunaan baja nitrogen, ditambah bahan api pengangkutan. Agak kecil, tetapi diperbaiki melalui pemakanan yang lebih tepat." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17.2",
+      "heading": { "zh": "土地选择决定一切", "en": "Land choice decides everything", "ms": "Pilihan tanah menentukan segalanya" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "把上面几项放在一起看，一个结论很清楚：一片油棕园的气候表现，几乎完全由开园时选了什么地决定，而不是由后续如何经营决定。同样的种植和管理方式，开在退化草地上和开在泥炭沼泽林上，碳平衡可以相差几十倍。",
+            "en": "Put those items together and one conclusion is hard to avoid: the climate performance of an oil palm block is settled almost entirely by what land was chosen when it was opened, not by how it is subsequently run. The same planting and the same management, on degraded grassland versus on peat swamp forest, differ in carbon balance by tens of times.",
+            "ms": "Gabungkan item-item itu dan satu kesimpulan sukar dielakkan: prestasi iklim blok sawit ditentukan hampir sepenuhnya oleh tanah yang dipilih ketika ia dibuka, bukan oleh cara ia diuruskan selepas itu. Penanaman dan pengurusan yang sama, di padang rumput terdegradasi berbanding di hutan paya gambut, berbeza imbangan karbonnya berpuluh kali ganda."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "这也是为什么可持续性讨论的重心从「种油棕好不好」转移到了「在哪里种」。前者没有一个普遍答案；后者有。",
+            "en": "This is why the sustainability discussion has shifted from whether oil palm is good or bad to where it is planted. The first question has no general answer; the second does.",
+            "ms": "Inilah sebabnya perbincangan kelestarian beralih daripada sama ada sawit baik atau buruk kepada di mana ia ditanam. Soalan pertama tiada jawapan umum; yang kedua ada."
+          }
+        }
+      ]
+    },
+    {
+      "id": "17.3",
+      "heading": { "zh": "气候变化反过来的影响", "en": "How a changing climate acts back on the crop", "ms": "Kesan perubahan iklim terhadap tanaman" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕不只是气候议题的一方，它也是受影响的一方。预期的影响有几条：",
+            "en": "The oil palm is not only a party to the climate question; it is exposed to it. The expected effects run along a few lines:",
+            "ms": "Sawit bukan sahaja pihak dalam isu iklim; ia juga terdedah kepadanya. Kesan yang dijangka mengikut beberapa garis:"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "温度上升：目前主产区的温度已接近最适区间的上沿。进一步升温会增加呼吸消耗、降低净光合，同时加剧蒸散需求。", "en": "Rising temperature: the main growing regions already sit near the top of the optimum band. Further warming raises respiration, cuts net photosynthesis and increases evaporative demand.", "ms": "Suhu meningkat: kawasan pengeluaran utama sudah berada berhampiran had atas julat optimum. Pemanasan lanjut meningkatkan respirasi, mengurangkan fotosintesis bersih dan menambah permintaan sejatan." },
+            { "zh": "降雨变率上升：年总量可能变化不大，但极端事件更频繁。对油棕来说，分布的恶化比总量的变化更要命。", "en": "More variable rainfall: annual totals may not change much, but extremes get more frequent. For this crop a worsening distribution matters more than a change in the total.", "ms": "Hujan lebih berubah-ubah: jumlah tahunan mungkin tidak banyak berubah, tetapi kejadian melampau lebih kerap. Bagi tanaman ini, taburan yang memburuk lebih memudaratkan daripada perubahan jumlah." },
+            { "zh": "厄尔尼诺事件加剧：东南亚的强厄尔尼诺年往往伴随严重干旱和烟霾，产量影响会延续两年（见第 5 章的时间线）。", "en": "Stronger El Niño events: in South-East Asia these bring severe drought and haze, and the yield effect carries over two years — see the pipeline in Chapter 5.", "ms": "Kejadian El Niño lebih kuat: di Asia Tenggara ini membawa kemarau teruk dan jerebu, dan kesan hasilnya berlarutan dua tahun — lihat rangkaian masa dalam Bab 5." },
+            { "zh": "二氧化碳浓度上升在理论上有施肥效应，但对已经接近光饱和的 C3 冠层，实际增益有限，多半不足以抵消温度和水分胁迫。", "en": "Rising CO₂ has a theoretical fertilisation effect, but for a C3 canopy already close to light saturation the practical gain is limited and unlikely to offset heat and water stress.", "ms": "CO₂ yang meningkat mempunyai kesan pembajaan secara teori, tetapi bagi kanopi C3 yang sudah hampir tepu cahaya, keuntungan praktikalnya terhad dan tidak mungkin mengimbangi tekanan haba dan air." }
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "实际应对方向包括：选择耐旱种植材料、在边际地区考虑灌溉、通过覆盖和有机质提高土壤持水能力、以及在选址时把气候情景而不只是历史气候纳入评估。",
+            "en": "The practical responses are to choose drought-tolerant planting material, to consider irrigation in marginal areas, to raise soil water-holding capacity through mulch and organic matter, and to assess new sites against climate scenarios rather than the historical record alone.",
+            "ms": "Tindak balas praktikalnya ialah memilih bahan tanaman tahan kemarau, mempertimbangkan pengairan di kawasan marginal, meningkatkan keupayaan tanah menyimpan air melalui sungkupan dan bahan organik, serta menilai tapak baharu berdasarkan senario iklim dan bukan rekod sejarah semata-mata."
+          }
+        }
+      ]
+    },
+    {
+      "id": "17.4",
+      "heading": { "zh": "可以做什么", "en": "What can actually be done", "ms": "Apa yang boleh dilakukan" },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "zh": "不在泥炭地上新开园，这一条的效果超过其余所有措施之和。", "en": "Do not open new plantings on peat. This single choice outweighs everything else combined.", "ms": "Jangan buka penanaman baharu di gambut. Pilihan tunggal ini melebihi semua yang lain digabungkan." },
+            { "zh": "已在泥炭地上的园区，把地下水位管理在 50–70 厘米，减缓氧化与沉降。", "en": "On existing peat plantings, hold the water table at 50–70 cm to slow oxidation and subsidence.", "ms": "Di penanaman gambut sedia ada, kekalkan aras air pada 50–70 cm untuk melambatkan pengoksidaan dan mendapan." },
+            { "zh": "工厂加装甲烷捕集，把 POME 的甲烷用于发电或替代化石燃料。", "en": "Fit methane capture at the mill and use the gas for power or to displace fossil fuel.", "ms": "Pasang penangkapan metana di kilang dan gunakan gas itu untuk kuasa atau menggantikan bahan api fosil." },
+            { "zh": "零燃烧整地与重种，避免一次性大量释放。", "en": "Clear and replant without fire, avoiding a large one-off release.", "ms": "Bersih dan tanam semula tanpa api, mengelakkan pelepasan besar sekali gus." },
+            { "zh": "空果串还田与覆盖作物，把碳留在土壤里并减少化肥用量。", "en": "Return empty bunches to the field and keep cover crops, holding carbon in the soil and cutting fertiliser use.", "ms": "Pulangkan tandan kosong ke ladang dan kekalkan tanaman penutup, menyimpan karbon dalam tanah dan mengurangkan penggunaan baja." },
+            { "zh": "提高现有园区单产——每公顷多产一吨油，就是少开一块地。", "en": "Raise yield on land already planted: every extra tonne of oil per hectare is a hectare not opened somewhere else.", "ms": "Tingkatkan hasil di tanah yang sudah ditanam: setiap tan minyak tambahan sehektar ialah sehektar yang tidak dibuka di tempat lain." }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "泥炭地排放与生物量碳储的已发表估算", "en": "Published estimates of peat emissions and biomass carbon stocks", "ms": "Anggaran terbitan pelepasan gambut dan stok karbon biojisim" }
+  ]
+}

@@ -1,0 +1,25 @@
+# The reference textbook — a commercial, copyrighted work (Corley & Tinker,
+# The Oil Palm, 5th ed., © 2016 John Wiley & Sons). It is a local reference for
+# writing this app's original content and must never be published. See README.
+*.pdf
+
+# Python virtualenv for the tooling
+venv/
+__pycache__/
+*.pyc
+
+# Local agent/plugin state — not part of the app
+.swarm/
+.claude-flow/
+.claude/
+ruvector.db
+*.db
+*.db-shm
+*.db-wal
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*~

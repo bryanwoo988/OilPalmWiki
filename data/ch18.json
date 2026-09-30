@@ -1,0 +1,154 @@
+{
+  "id": "ch18",
+  "num": 18,
+  "title": { "zh": "生物燃料", "en": "Biofuel", "ms": "Biobahan Api" },
+  "sections": [
+    {
+      "id": "18.1",
+      "heading": { "zh": "棕油生物柴油是什么", "en": "What palm biodiesel is", "ms": "Apa itu biodiesel sawit" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "生物柴油是脂肪酸甲酯（FAME），由植物油与甲醇在催化剂作用下发生酯交换反应制成。棕油生物柴油的十六烷值高、氧化稳定性好，作为柴油掺混组分性能不错。它的主要弱点是低温流动性差——棕油饱和度高，冷凝点也高，在温带冬季会析蜡堵塞，所以掺混比例在寒冷地区受限。",
+            "en": "Biodiesel is a fatty acid methyl ester, made by transesterifying vegetable oil with methanol over a catalyst. Palm biodiesel has a high cetane number and good oxidative stability, so it performs well as a diesel blend component. Its weakness is cold flow: palm is saturated, its cloud point is high, and it waxes and blocks filters in a temperate winter — which limits blend ratios in cold climates.",
+            "ms": "Biodiesel ialah ester metil asid lemak, dibuat dengan transesterifikasi minyak sayuran dengan metanol menggunakan pemangkin. Biodiesel sawit mempunyai nombor setana tinggi dan kestabilan pengoksidaan yang baik, jadi ia berprestasi baik sebagai komponen campuran diesel. Kelemahannya ialah aliran sejuk: sawit adalah tepu, takat keruhnya tinggi, dan ia membeku serta menyumbat penapis pada musim sejuk sederhana — yang mengehadkan nisbah campuran di iklim sejuk."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "在热带产地本身，这个弱点不存在。印尼和马来西亚因此把国内生物柴油掺混作为政策工具——B30、B35 这样的强制掺混比例，既消化国内产量、支撑价格，也减少成品油进口。",
+            "en": "In the tropics where it is made, that weakness does not arise. Indonesia and Malaysia have therefore used domestic blending as a policy instrument: mandates such as B30 and B35 absorb domestic output, support the price and cut refined fuel imports at the same time.",
+            "ms": "Di kawasan tropika tempat ia dihasilkan, kelemahan itu tidak timbul. Indonesia dan Malaysia oleh itu menggunakan campuran domestik sebagai alat dasar: mandat seperti B30 dan B35 menyerap pengeluaran domestik, menyokong harga dan mengurangkan import bahan api bertapis serentak."
+          }
+        }
+      ]
+    },
+    {
+      "id": "18.2",
+      "heading": { "zh": "能量平衡", "en": "The energy balance", "ms": "Imbangan tenaga" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "衡量一种生物燃料值不值得做，第一个指标是能量产出与化石能量投入之比。棕油在这个指标上表现很好：产出／投入比通常在 5:1 到 9:1 之间，明显高于大豆生物柴油（约 3:1）和玉米乙醇（接近 1.5:1）。",
+            "en": "The first test of any biofuel is the ratio of energy out to fossil energy in. Palm does well on it: typical output-to-input ratios run between about 5:1 and 9:1, clearly above soya biodiesel at roughly 3:1 and well above maize ethanol at close to 1.5:1.",
+            "ms": "Ujian pertama bagi mana-mana biobahan api ialah nisbah tenaga keluar kepada tenaga fosil masuk. Sawit menunjukkan prestasi baik: nisbah tipikal keluaran kepada input antara kira-kira 5:1 dan 9:1, jelas melebihi biodiesel soya pada kira-kira 3:1 dan jauh melebihi etanol jagung pada hampir 1.5:1."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "生物燃料的能量产出／投入比", "en": "Energy output to fossil input ratio", "ms": "Nisbah tenaga keluaran kepada input fosil" },
+            "note": { "zh": "数值越高越好。棕油的优势来自高单产和工厂用自产纤维、果壳供能。", "en": "Higher is better. Palm's advantage comes from high yield and from mills running on their own fibre and shell.", "ms": "Lebih tinggi lebih baik. Kelebihan sawit datang daripada hasil tinggi dan kilang yang beroperasi dengan gentian serta tempurungnya sendiri." },
+            "source": { "zh": "已发表的生命周期能量分析", "en": "Published life-cycle energy analyses", "ms": "Analisis tenaga kitaran hayat terbitan" },
+            "x": {
+              "categories": [
+                { "zh": "棕油生物柴油", "en": "Palm biodiesel", "ms": "Biodiesel sawit" },
+                { "zh": "菜籽油生物柴油", "en": "Rapeseed biodiesel", "ms": "Biodiesel kanola" },
+                { "zh": "大豆生物柴油", "en": "Soya biodiesel", "ms": "Biodiesel soya" },
+                { "zh": "玉米乙醇", "en": "Maize ethanol", "ms": "Etanol jagung" }
+              ]
+            },
+            "y": { "label": { "zh": "产出／投入", "en": "output / input", "ms": "keluaran / input" } },
+            "series": [
+              { "name": { "zh": "能量比", "en": "Energy ratio", "ms": "Nisbah tenaga" }, "values": [7.5, 2.5, 3.0, 1.5], "color": "--c-1" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "棕油之所以占优，一是单产高——每公顷产油量是大豆的八倍，摊薄了种植环节的能量投入；二是棕油厂几乎不用外部能源，纤维和果壳烧锅炉就足够整个工厂运转。",
+            "en": "Two things give palm the edge. Yield: eight times as much oil per hectare as soya, which spreads the cultivation energy over far more product. And the mill: fibre and shell fired in the boiler run the whole plant, so almost no external energy is bought.",
+            "ms": "Dua perkara memberi sawit kelebihan. Hasil: lapan kali ganda minyak sehektar berbanding soya, yang menyebarkan tenaga penanaman ke atas lebih banyak produk. Dan kilang: gentian dan tempurung yang dibakar dalam dandang menjalankan seluruh loji, jadi hampir tiada tenaga luar dibeli."
+          }
+        }
+      ]
+    },
+    {
+      "id": "18.3",
+      "heading": { "zh": "碳偿还期：真正的争议点", "en": "Carbon payback: where the argument actually is", "ms": "Bayar balik karbon: di mana perdebatan sebenarnya" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "能量平衡漂亮，并不等于减排。因为如果开园时砍掉了高碳储量的植被，那一次性释放的碳需要很多年的化石燃料替代量才能抵消。这段时间叫碳偿还期，它才是棕油生物柴油争议的核心。",
+            "en": "A good energy balance does not by itself mean lower emissions. If opening the land released a high carbon stock, that one-off release has to be worked off by years of displaced fossil fuel before any net benefit begins. The time this takes is the carbon payback period, and it is where the real argument over palm biodiesel sits.",
+            "ms": "Imbangan tenaga yang baik tidak dengan sendirinya bermakna pelepasan lebih rendah. Jika membuka tanah melepaskan stok karbon yang tinggi, pelepasan sekali gus itu perlu dibayar balik dengan bertahun-tahun bahan api fosil yang digantikan sebelum sebarang manfaat bersih bermula. Masa yang diambil ialah tempoh bayar balik karbon, dan di situlah perdebatan sebenar mengenai biodiesel sawit berada."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "碳偿还期：取决于原有植被", "en": "Carbon payback time, by previous land cover", "ms": "Masa bayar balik karbon, mengikut litupan tanah asal" },
+            "note": { "zh": "同一种燃料，同一套工艺，因为开在不同的地上，减排效果从「很好」变成「毫无意义」。", "en": "The same fuel from the same process goes from clearly beneficial to meaningless, purely according to the land it was grown on.", "ms": "Bahan api yang sama daripada proses yang sama berubah daripada jelas bermanfaat kepada tidak bermakna, semata-mata mengikut tanah tempat ia ditanam." },
+            "source": { "zh": "已发表的碳偿还期估算", "en": "Published carbon payback estimates", "ms": "Anggaran masa bayar balik karbon terbitan" },
+            "x": {
+              "categories": [
+                { "zh": "退化草地／灌丛", "en": "Degraded grassland or scrub", "ms": "Padang rumput atau belukar terdegradasi" },
+                { "zh": "次生林", "en": "Secondary forest", "ms": "Hutan sekunder" },
+                { "zh": "原始热带雨林", "en": "Primary tropical forest", "ms": "Hutan tropika primer" },
+                { "zh": "泥炭沼泽林", "en": "Peat swamp forest", "ms": "Hutan paya gambut" }
+              ]
+            },
+            "y": { "unit": "yr", "label": { "zh": "年", "en": "years", "ms": "tahun" } },
+            "series": [
+              {
+                "name": { "zh": "碳偿还期", "en": "Payback period", "ms": "Tempoh bayar balik" },
+                "values": [10, 50, 90, 220],
+                "colors": ["--c-1", "--c-6", "--c-2", "--c-3"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "这张图是整个生物燃料争议的浓缩：种在退化草地上的棕油生物柴油，十年就开始净减排；种在泥炭沼泽林上的，偿还期超过两百年——远长于园区寿命，也远长于任何有意义的气候政策时间尺度。同一种燃料，结论完全相反。",
+            "en": "This chart compresses the whole biofuel argument. Palm biodiesel from degraded grassland starts delivering net reductions within about a decade. From drained peat swamp forest the payback runs past two hundred years — longer than the plantation's life and far longer than any meaningful climate policy horizon. Same fuel, opposite conclusions.",
+            "ms": "Carta ini merumuskan keseluruhan perdebatan biobahan api. Biodiesel sawit dari padang rumput terdegradasi mula memberi pengurangan bersih dalam kira-kira sedekad. Daripada hutan paya gambut yang disalirkan, bayar baliknya melebihi dua ratus tahun — lebih lama daripada hayat ladang dan jauh lebih lama daripada mana-mana ufuk dasar iklim yang bermakna. Bahan api sama, kesimpulan bertentangan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "18.4",
+      "heading": { "zh": "政策与间接土地利用变化", "en": "Policy and indirect land use change", "ms": "Dasar dan perubahan guna tanah tidak langsung" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "还有一层更难处理的问题：间接土地利用变化（ILUC）。即使某一批棕油生物柴油确实产自退化地，把这批油从食用市场调走，也会推高食用油价格，进而在别处诱发新的开垦。这部分排放不发生在生产者的账本上，但在全球尺度上是真实的。",
+            "en": "A harder problem sits behind that: indirect land use change. Even if a particular batch of palm biodiesel genuinely came from degraded land, diverting that oil out of the food market raises edible oil prices and induces new clearing somewhere else. Those emissions never appear on the producer's ledger, but at a global scale they are real.",
+            "ms": "Masalah yang lebih sukar berada di belakangnya: perubahan guna tanah tidak langsung. Walaupun sesuatu kumpulan biodiesel sawit benar-benar datang dari tanah terdegradasi, mengalihkan minyak itu daripada pasaran makanan menaikkan harga minyak makan dan mendorong pembukaan baharu di tempat lain. Pelepasan itu tidak pernah muncul dalam lejar pengeluar, tetapi pada skala global ia nyata."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "欧盟基于这类考量，在可再生能源指令中把棕油归为高 ILUC 风险原料并逐步退出补贴支持。产地国则视之为贸易壁垒。这个分歧短期内不会消失。",
+            "en": "On that reasoning the European Union classified palm as a high-ILUC-risk feedstock under its renewable energy directive and is phasing out its eligibility for support. Producing countries read the same measure as a trade barrier. The disagreement is not going to resolve quickly.",
+            "ms": "Atas alasan itu Kesatuan Eropah mengelaskan sawit sebagai bahan mentah berisiko ILUC tinggi di bawah arahan tenaga boleh diperbaharuinya dan sedang menghapuskan kelayakannya untuk sokongan. Negara pengeluar membaca langkah yang sama sebagai halangan perdagangan. Perselisihan ini tidak akan selesai dengan cepat."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "有一条路径争议较小：用副产物而不是食用油做原料。棕油厂的高酸值油渣、精炼副产物（PFAD）、以及餐饮废油都可以制成生物柴油，既不占用新增土地，也不与食用竞争。规模有限，但没有 ILUC 问题。",
+            "en": "One route attracts much less argument: making the fuel from residues rather than from food-grade oil. High-acid mill residues, palm fatty acid distillate from refining, and used cooking oil all convert to biodiesel without occupying new land or competing with food. The volumes are limited, but the ILUC problem does not arise.",
+            "ms": "Satu laluan menarik jauh kurang pertikaian: membuat bahan api daripada sisa dan bukan minyak gred makanan. Sisa kilang berasid tinggi, distilat asid lemak sawit daripada penapisan, dan minyak masak terpakai semuanya boleh ditukar kepada biodiesel tanpa menduduki tanah baharu atau bersaing dengan makanan. Volumnya terhad, tetapi masalah ILUC tidak timbul."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "生物柴油生命周期能量与碳分析文献", "en": "Life-cycle energy and carbon analyses of biodiesel", "ms": "Analisis tenaga dan karbon kitaran hayat biodiesel" }
+  ]
+}

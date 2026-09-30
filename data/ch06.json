@@ -1,0 +1,164 @@
+{
+  "id": "ch06",
+  "num": 6,
+  "title": { "zh": "育种与选育", "en": "Breeding and Selection", "ms": "Pembiakbakaan dan Pemilihan" },
+  "sections": [
+    {
+      "id": "6.1",
+      "heading": { "zh": "四棵棕榈的遗产", "en": "The legacy of four palms", "ms": "Warisan empat pokok" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "亚洲整个油棕育种体系的母本一侧，可以追溯到 1848 年种在茂物的那四棵棕榈。它们的后代被称为 Deli dura，经过一个多世纪的选择，果串重、中果皮厚、性状高度一致——正是作为母本所需要的特质。这份一致性是资产，但也意味着母本一侧的遗传基础极窄。",
+            "en": "The maternal side of every Asian breeding programme traces back to the four palms planted at Bogor in 1848. Their descendants, the Deli dura, have been selected for over a century into a population with heavy bunches, thick mesocarp and remarkable uniformity — exactly what is wanted in a mother parent. That uniformity is an asset, but it also means the maternal base is extremely narrow.",
+            "ms": "Sebelah induk betina setiap program pembiakbakaan Asia berasal daripada empat pokok yang ditanam di Bogor pada 1848. Keturunannya, Deli dura, telah dipilih selama lebih seabad menjadi populasi dengan tandan berat, mesokarp tebal dan keseragaman luar biasa — tepat seperti yang dikehendaki pada induk betina. Keseragaman itu satu aset, tetapi ia juga bermakna asas induk betina sangat sempit."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "父本一侧则来自非洲的 tenera 和 pisifera 群体，主要是 AVROS（源自刚果 Yangambi）、La Mé（象牙海岸）、Yangambi、Ekona、Binga 等来源。育种的基本框架就是把窄而一致的 Deli 母本与遗传上更远的非洲父本杂交，利用杂种优势。",
+            "en": "The paternal side comes from African tenera and pisifera populations — principally AVROS, which came from Yangambi in the Congo, along with La Mé from Côte d'Ivoire, Yangambi, Ekona and Binga. The basic framework is to cross the narrow, uniform Deli mothers with genetically more distant African fathers and exploit the heterosis.",
+            "ms": "Sebelah induk jantan datang daripada populasi tenera dan pisifera Afrika — terutamanya AVROS, yang berasal dari Yangambi di Congo, bersama La Mé dari Côte d'Ivoire, Yangambi, Ekona dan Binga. Rangka asasnya ialah mengacukkan induk Deli yang sempit dan seragam dengan induk jantan Afrika yang lebih jauh dari segi genetik dan memanfaatkan heterosis."
+          }
+        }
+      ]
+    },
+    {
+      "id": "6.2",
+      "heading": { "zh": "为什么一个育种周期这么长", "en": "Why one cycle takes so long", "ms": "Mengapa satu kitaran mengambil masa lama" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕育种最根本的困难是时间。棕榈定植后要 3 年才开始结果，要 6–8 年的连续产量记录才能可靠评价一个后代组合，加上育苗和授粉的时间，一个完整的选择周期大约 10–12 年。一个育种家的整个职业生涯，可能只能完成三到四轮。",
+            "en": "The fundamental difficulty in oil palm breeding is time. A palm takes three years to start fruiting and six to eight years of continuous yield records before a progeny can be judged reliably; add nursery and pollination time and one full cycle of selection runs 10–12 years. A breeder's whole career may cover three or four rounds.",
+            "ms": "Kesukaran asas dalam pembiakbakaan sawit ialah masa. Pokok mengambil tiga tahun untuk mula berbuah dan enam hingga lapan tahun rekod hasil berterusan sebelum satu progeni boleh dinilai dengan yakin; tambah masa semaian dan pendebungaan, satu kitaran pemilihan lengkap mengambil 10–12 tahun. Seluruh kerjaya seorang pembiakbaka mungkin hanya merangkumi tiga atau empat pusingan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "第二个困难是 pisifera 的雌花不育。你不能直接看一棵 pisifera 的产量来判断它好不好——只能通过它的后代表现来推断，也就是后裔测定。这让父本选择又多耗一个完整周期。",
+            "en": "The second difficulty is that pisifera is female-sterile. You cannot judge a pisifera by looking at its own yield, only by how its offspring perform — progeny testing. That adds another full cycle to the selection of fathers.",
+            "ms": "Kesukaran kedua ialah pisifera mandul betina. Anda tidak boleh menilai pisifera dengan melihat hasilnya sendiri, hanya melalui prestasi anaknya — ujian progeni. Itu menambah satu lagi kitaran penuh kepada pemilihan induk jantan."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "这正是分子标记和基因组选择对这个作物特别有价值的原因：如果能在苗期就预测成年表现，哪怕只是部分准确，节省下来的也是以年计的时间。",
+            "en": "This is exactly why molecular markers and genomic selection matter so much in this crop. Predicting adult performance from a seedling, even imperfectly, saves time measured in years.",
+            "ms": "Inilah sebabnya penanda molekul dan pemilihan genomik sangat penting dalam tanaman ini. Meramal prestasi dewasa daripada anak benih, walaupun tidak sempurna, menjimatkan masa yang diukur dalam tahun."
+          }
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "heading": { "zh": "遗传力与选择效率", "en": "Heritability and what selection can move", "ms": "Kebolehwarisan dan apa yang boleh diubah" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "并非所有性状都一样好选。果串组成相关的性状（果实／果串、中果皮／果实、油／中果皮）遗传力高，选择见效快；果串产量本身遗传力低，受环境影响大，需要更多重复和更长的记录期才能可靠选择。",
+            "en": "Not all traits respond equally to selection. Bunch composition traits — fruit to bunch, mesocarp to fruit, oil to mesocarp — are highly heritable and respond fast. Bunch yield itself is much less heritable and much more influenced by environment, so it needs more replication and longer records before selection is reliable.",
+            "ms": "Bukan semua sifat bertindak balas sama terhadap pemilihan. Sifat komposisi tandan — buah kepada tandan, mesokarp kepada buah, minyak kepada mesokarp — mempunyai kebolehwarisan tinggi dan bertindak balas cepat. Hasil tandan itu sendiri kurang boleh diwarisi dan lebih dipengaruhi persekitaran, jadi ia memerlukan lebih banyak replikasi dan rekod lebih panjang."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "主要性状的遗传力（广义示意）", "en": "Heritability of the main traits", "ms": "Kebolehwarisan sifat utama" },
+            "note": { "zh": "数值越高，选择见效越快。这解释了为什么果串组成的改良远快于产量本身。", "en": "The higher the figure, the faster selection works. It explains why bunch composition has improved far faster than yield itself.", "ms": "Semakin tinggi angka, semakin cepat pemilihan berkesan. Ini menjelaskan mengapa komposisi tandan bertambah baik jauh lebih pantas daripada hasil." },
+            "source": { "zh": "已发表的遗传力估计的典型范围", "en": "Typical range of published heritability estimates", "ms": "Julat tipikal anggaran kebolehwarisan yang diterbitkan" },
+            "x": {
+              "categories": [
+                { "zh": "中果皮／果实", "en": "Mesocarp to fruit", "ms": "Mesokarp kepada buah" },
+                { "zh": "油／中果皮", "en": "Oil to mesocarp", "ms": "Minyak kepada mesokarp" },
+                { "zh": "单串重", "en": "Mean bunch weight", "ms": "Berat tandan purata" },
+                { "zh": "树高增量", "en": "Height increment", "ms": "Pertambahan ketinggian" },
+                { "zh": "果串数", "en": "Bunch number", "ms": "Bilangan tandan" },
+                { "zh": "果串总产量", "en": "Bunch yield", "ms": "Hasil tandan" }
+              ]
+            },
+            "y": { "label": { "zh": "遗传力 h²", "en": "heritability h²", "ms": "kebolehwarisan h²" } },
+            "series": [
+              { "name": { "zh": "遗传力", "en": "Heritability", "ms": "Kebolehwarisan" }, "values": [0.7, 0.6, 0.45, 0.45, 0.25, 0.2], "color": "--c-1" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这个差异解释了过去几十年的改良轨迹：油／果串比从 dura 时代的 17% 左右提高到今天优良 tenera 的 25%–26%，进步显著；而单位面积果串产量的提升要慢得多。同时，矮生性（低树高增量）已经成为一个明确的选择目标，因为它直接延长了园区的经济寿命。",
+            "en": "That difference explains the trajectory of the last several decades. Oil to bunch has moved from around 17% in the dura era to 25–26% in good tenera today — a large gain. Bunch yield per hectare has improved far more slowly. Meanwhile slow height increment has become an explicit selection target, because it directly extends the economic life of a stand.",
+            "ms": "Perbezaan itu menjelaskan perjalanan beberapa dekad lalu. Minyak kepada tandan meningkat daripada sekitar 17% pada era dura kepada 25–26% dalam tenera yang baik hari ini — satu peningkatan besar. Hasil tandan sehektar meningkat jauh lebih perlahan. Sementara itu pertambahan ketinggian yang perlahan telah menjadi sasaran pemilihan yang jelas, kerana ia memanjangkan hayat ekonomi dirian secara langsung."
+          }
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "heading": { "zh": "育种方法", "en": "How selection is actually done", "ms": "Bagaimana pemilihan dilakukan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "主流方法是改良的轮回相互选择（modified reciprocal recurrent selection）：把 Deli dura 和非洲来源分别维持为两个群体，各自内部改良，同时通过相互杂交测定配合力。表现最好的组合进入商业种子园，用于大量生产 D × P 种子。",
+            "en": "The standard method is modified reciprocal recurrent selection: the Deli duras and the African sources are kept as two separate populations, each improved within itself, while crosses between them measure combining ability. The best-performing combinations go into commercial seed gardens to mass-produce D × P seed.",
+            "ms": "Kaedah lazim ialah pemilihan berulang timbal balik terubah suai: Deli dura dan sumber Afrika dikekalkan sebagai dua populasi berasingan, masing-masing diperbaiki dalam dirinya, sementara kacukan antara keduanya mengukur keupayaan bergabung. Gabungan terbaik dimasukkan ke taman benih komersial untuk mengeluarkan benih D × P secara besar-besaran."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "母本（dura）在自己的群体内按产量和果串组成选择，同时保持家系记录。", "en": "Mothers — the duras — are selected within their own population on yield and bunch composition, with family records kept throughout.", "ms": "Induk betina — dura — dipilih dalam populasinya sendiri berdasarkan hasil dan komposisi tandan, dengan rekod keluarga disimpan." },
+            { "zh": "父本（pisifera）只能靠后裔测定评价，通常一个 pisifera 要与多个 dura 杂交，看后代平均表现。", "en": "Fathers — pisiferas — can only be judged by progeny test; one pisifera is usually crossed onto several duras and judged on the average of its offspring.", "ms": "Induk jantan — pisifera — hanya boleh dinilai melalui ujian progeni; satu pisifera biasanya dikacukkan dengan beberapa dura dan dinilai pada purata anaknya." },
+            { "zh": "基因型 × 环境互作是真实存在的：在一个地点表现最好的组合，换一个土壤和气候未必最好。大公司因此在不同地区分别做适应性试验。", "en": "Genotype-by-environment interaction is real: the best combination at one site is not necessarily the best on another soil and climate. Large companies therefore run adaptation trials region by region.", "ms": "Interaksi genotip-persekitaran adalah nyata: gabungan terbaik di satu tapak belum tentu terbaik pada tanah dan iklim lain. Syarikat besar menjalankan ujian adaptasi mengikut wilayah." },
+            { "zh": "近年的选择目标已经从单纯高产扩展到矮生、耐旱、耐 Ganoderma、以及更高不饱和度的油。", "en": "Selection targets have broadened from yield alone to slow height increment, drought tolerance, Ganoderma tolerance and more unsaturated oil.", "ms": "Sasaran pemilihan telah meluas daripada hasil semata-mata kepada pertambahan ketinggian perlahan, ketahanan kemarau, ketahanan Ganoderma dan minyak yang lebih tidak tepu." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6.5",
+      "heading": { "zh": "买种苗时该问什么", "en": "What to ask when buying planting material", "ms": "Apa yang perlu ditanya ketika membeli bahan tanaman" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "对种植者来说，育种的全部成果最终浓缩成一袋种子或一批苗。这是整个二十五年周期里最便宜、却影响最大的一笔支出——种苗成本通常不到总投入的百分之几，但决定了产量上限。",
+            "en": "For a grower, all of this breeding arrives as one bag of seed or one batch of seedlings. It is the cheapest decision in the whole twenty-five-year cycle and by far the most consequential: planting material is usually a low single-digit percentage of total investment, and it sets the ceiling on everything after.",
+            "ms": "Bagi penanam, semua pembiakbakaan ini tiba sebagai satu beg benih atau satu kumpulan anak benih. Ia keputusan termurah dalam keseluruhan kitaran dua puluh lima tahun dan yang paling berkesan: bahan tanaman biasanya beberapa peratus sahaja daripada jumlah pelaburan, tetapi ia menentukan had atas segala-galanya selepas itu."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "种子来源：是有资质的种子园吗？能出示 D × P 杂交的来源证明吗？", "en": "Where did the seed come from — a licensed seed garden, with documentation of the D × P cross?", "ms": "Dari mana benih itu datang — taman benih berlesen, dengan dokumentasi kacukan D × P?" },
+            { "zh": "亲本组合：Deli dura 与哪个非洲来源？该组合在你这类土壤和气候下有试验数据吗？", "en": "Which parent combination — Deli dura with which African source, and is there trial data for it on soil and climate like yours?", "ms": "Gabungan induk yang mana — Deli dura dengan sumber Afrika yang mana, dan adakah data ujian untuknya pada tanah dan iklim seperti anda?" },
+            { "zh": "预期性状：树高年增量多少？抗旱性如何？在 Ganoderma 高风险区是否有耐病记录？", "en": "What are the expected traits — height increment per year, drought tolerance, and any record of Ganoderma tolerance if you are in a high-risk area?", "ms": "Apakah sifat jangkaan — pertambahan ketinggian setahun, ketahanan kemarau, dan rekod ketahanan Ganoderma jika anda di kawasan berisiko tinggi?" },
+            { "zh": "苗圃管理：淘汰率是多少？有没有做 SHELL 基因检测？", "en": "How was the nursery run — what culling rate, and was SHELL gene testing done?", "ms": "Bagaimana tapak semaian diuruskan — berapa kadar pembuangan, dan adakah ujian gen SHELL dilakukan?" }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "来源不明的廉价种苗是这个行业里最贵的东西。价格差异可能只有几个百分点，产量差异可以是 30% 以上，而且要背二十五年。",
+            "en": "Cheap planting material of unknown origin is the most expensive thing in this industry. The price difference is a few per cent; the yield difference can be over 30%, and it is carried for twenty-five years.",
+            "ms": "Bahan tanaman murah yang tidak diketahui asalnya ialah perkara paling mahal dalam industri ini. Perbezaan harganya beberapa peratus; perbezaan hasilnya boleh melebihi 30%, dan ditanggung selama dua puluh lima tahun."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "MPOB、CIRAD 等机构公开的育种研究", "en": "Published breeding research from MPOB, CIRAD and others", "ms": "Penyelidikan pembiakbakaan terbitan MPOB, CIRAD dan lain-lain" }
+  ]
+}

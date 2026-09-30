@@ -1,0 +1,150 @@
+{
+  "id": "ch19",
+  "num": 19,
+  "title": { "zh": "可持续发展", "en": "Sustainability", "ms": "Kelestarian" },
+  "sections": [
+    {
+      "id": "19.1",
+      "heading": { "zh": "毁林：把数字说清楚", "en": "Deforestation: getting the numbers straight", "ms": "Penebangan hutan: meluruskan angka" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕扩张与热带雨林消失之间确实存在联系，这一点没有争辩的余地。但要把责任分配清楚，需要更细的数据：不同时期、不同国家、油棕扩张占用的前身土地并不相同。",
+            "en": "There is a real link between oil palm expansion and tropical forest loss, and that is not in dispute. Apportioning responsibility, though, needs finer data: what oil palm actually replaced varies a great deal between periods and between countries.",
+            "ms": "Terdapat kaitan sebenar antara pengembangan sawit dan kehilangan hutan tropika, dan itu tidak dipertikaikan. Namun membahagikan tanggungjawab memerlukan data yang lebih halus: apa yang sebenarnya digantikan sawit berbeza-beza antara tempoh dan antara negara."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "在 1990–2010 年间，马来西亚和印尼相当大比例的新植油棕确实来自林地转换，其中一部分是已被采伐的次生林，一部分是原始林与泥炭沼泽林。而在拉丁美洲和西非，油棕更多地占用了已开垦的牧场和农地。近十余年来，随着监管收紧和认证要求，直接的林地转换比例明显下降，但历史遗留的碳与生物多样性损失已经发生。",
+            "en": "Between 1990 and 2010, a substantial share of new planting in Malaysia and Indonesia did come from forest conversion — part of it already-logged secondary forest, part of it primary forest and peat swamp. In Latin America and West Africa, oil palm more often went onto existing pasture and farmland. Over the past decade or so, direct forest conversion has fallen noticeably under tighter regulation and certification, but the historical carbon and biodiversity losses have already happened.",
+            "ms": "Antara 1990 dan 2010, sebahagian besar penanaman baharu di Malaysia dan Indonesia memang berasal daripada penukaran hutan — sebahagiannya hutan sekunder yang sudah ditebang, sebahagiannya hutan primer dan paya gambut. Di Amerika Latin dan Afrika Barat, sawit lebih kerap menduduki padang ragut dan tanah pertanian sedia ada. Sepanjang dekad yang lalu, penukaran hutan secara langsung menurun dengan ketara di bawah peraturan dan pensijilan yang lebih ketat, tetapi kehilangan karbon dan biodiversiti sejarah sudah berlaku."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "一个在辩论中经常被两边都忽略的事实：因为单产高，棕油每生产一吨油所占用的土地远少于其他油料。全面抵制棕油、用其他植物油替代，在土地层面上很可能造成更多而不是更少的转换。真正有意义的问题不是「用不用棕油」，而是「这批棕油种在了哪里」。",
+            "en": "A fact both sides of the argument tend to skip: because yields are so high, palm uses far less land per tonne of oil than any alternative. Boycotting palm and substituting other vegetable oils would most likely cause more land conversion, not less. The question that carries weight is not whether to use palm oil but where a given batch of it was grown.",
+            "ms": "Satu fakta yang kedua-dua pihak perdebatan cenderung abaikan: kerana hasilnya sangat tinggi, sawit menggunakan jauh lebih sedikit tanah bagi setiap tan minyak berbanding alternatif. Memboikot sawit dan menggantikannya dengan minyak sayuran lain berkemungkinan besar menyebabkan lebih banyak penukaran tanah, bukan kurang. Soalan yang bermakna bukan sama ada hendak menggunakan minyak sawit tetapi di mana kumpulan minyak itu ditanam."
+          }
+        }
+      ]
+    },
+    {
+      "id": "19.2",
+      "heading": { "zh": "生物多样性", "en": "Biodiversity", "ms": "Biodiversiti" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕园的物种丰富度远低于原始雨林——这一点在各类调查中高度一致。以昆虫、鸟类、哺乳动物为对象的研究普遍显示，转换后物种数下降 50%–80%，而且丢失的往往是森林特有种和对栖息地要求严格的种类，留下的多是广布种。",
+            "en": "Species richness in an oil palm block is far below that of primary forest, and surveys agree on this closely. Studies of insects, birds and mammals generally find species numbers down by 50–80% after conversion, and what is lost is disproportionately the forest specialists and habitat-sensitive species, while generalists remain.",
+            "ms": "Kekayaan spesies di blok sawit jauh lebih rendah daripada hutan primer, dan tinjauan bersetuju rapat mengenainya. Kajian serangga, burung dan mamalia umumnya mendapati bilangan spesies menurun 50–80% selepas penukaran, dan yang hilang secara tidak seimbang ialah spesies khusus hutan dan yang sensitif habitat, sementara spesies generalis kekal."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "但同样值得说明的是：与一年生作物相比，油棕园的结构复杂度更高、土壤扰动更少、常年有冠层覆盖，其生物多样性通常高于同一地区的水稻田、玉米地或大豆田。比较的基准选哪个，结论会很不一样。",
+            "en": "It is equally worth stating that, compared with annual crops, an oil palm block is structurally more complex, disturbs the soil far less and carries a canopy year-round; its biodiversity is usually higher than rice, maize or soya fields in the same region. Which baseline you compare against changes the conclusion considerably.",
+            "ms": "Wajar juga dinyatakan bahawa, berbanding tanaman semusim, blok sawit lebih kompleks strukturnya, jauh kurang mengganggu tanah dan mempunyai kanopi sepanjang tahun; biodiversitinya biasanya lebih tinggi daripada sawah padi, jagung atau soya di rantau yang sama. Garis dasar perbandingan yang dipilih mengubah kesimpulan dengan ketara."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "保留河岸缓冲带和林地斑块，为物种提供连通的栖息地走廊。", "en": "Keep riparian buffers and forest patches, so species have connected habitat corridors.", "ms": "Kekalkan zon penampan tebing sungai dan petak hutan, supaya spesies mempunyai koridor habitat yang bersambung." },
+            { "zh": "行间保留受控的地被植被，不做裸露地面管理。", "en": "Keep controlled ground vegetation in the interrows rather than managing for bare soil.", "ms": "Kekalkan tumbuhan penutup bumi terkawal di kawasan antara baris dan bukan menguruskan untuk tanah kosong." },
+            { "zh": "减少广谱农药——这既服务于生物多样性，也服务于第 14 章讲的天敌与传粉者。", "en": "Cut broad-spectrum pesticides — this serves biodiversity and, as Chapter 14 argues, the natural enemies and pollinators the crop depends on.", "ms": "Kurangkan racun perosak spektrum luas — ini memberi manfaat kepada biodiversiti dan, seperti dihujahkan dalam Bab 14, kepada musuh semula jadi serta pendebunga yang diperlukan tanaman." },
+            { "zh": "猫头鹰巢箱、有益植物带这类措施同时具有农艺和生态价值，是最容易推行的一类。", "en": "Owl boxes and beneficial plant strips deliver agronomic and ecological value at once, which makes them the easiest measures to get adopted.", "ms": "Kotak burung hantu dan jalur tumbuhan berfaedah memberi nilai agronomi dan ekologi serentak, menjadikannya langkah paling mudah diterima pakai." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19.3",
+      "heading": { "zh": "认证体系", "en": "Certification schemes", "ms": "Skim pensijilan" },
+      "blocks": [
+        {
+          "type": "table",
+          "caption": { "zh": "主要认证体系", "en": "The main certification schemes", "ms": "Skim pensijilan utama" },
+          "headers": [
+            { "zh": "体系", "en": "Scheme", "ms": "Skim" },
+            { "zh": "性质", "en": "Nature", "ms": "Sifat" },
+            { "zh": "要点", "en": "Key points", "ms": "Perkara utama" }
+          ],
+          "rows": [
+            [
+              "RSPO",
+              { "zh": "国际多方利益相关者自愿体系，2004 年成立", "en": "international multi-stakeholder, voluntary, founded 2004", "ms": "antarabangsa pelbagai pihak berkepentingan, sukarela, ditubuhkan 2004" },
+              { "zh": "涵盖环境、社会与法律要求；含高保护价值（HCV）与高碳储量（HCS）评估、自由知情同意（FPIC）原则", "en": "covers environmental, social and legal requirements; includes HCV and HCS assessment and the principle of free, prior and informed consent", "ms": "merangkumi keperluan alam sekitar, sosial dan undang-undang; termasuk penilaian HCV dan HCS serta prinsip persetujuan bebas, awal dan termaklum" }
+            ],
+            [
+              "MSPO",
+              { "zh": "马来西亚国家体系，对国内生产者强制", "en": "Malaysian national scheme, mandatory for domestic producers", "ms": "skim kebangsaan Malaysia, mandatori bagi pengeluar tempatan" },
+              { "zh": "覆盖率高（因为强制），标准门槛低于 RSPO", "en": "high coverage because it is mandatory; the bar sits below RSPO", "ms": "liputan tinggi kerana ia mandatori; standardnya lebih rendah daripada RSPO" }
+            ],
+            [
+              "ISPO",
+              { "zh": "印尼国家体系，对国内生产者强制", "en": "Indonesian national scheme, mandatory for domestic producers", "ms": "skim kebangsaan Indonesia, mandatori bagi pengeluar tempatan" },
+              { "zh": "以国内法律合规为主轴", "en": "built primarily around compliance with domestic law", "ms": "dibina terutamanya berdasarkan pematuhan undang-undang domestik" }
+            ],
+            [
+              { "zh": "EUDR（欧盟毁林法规）", "en": "EUDR — EU Deforestation Regulation", "ms": "EUDR — Peraturan Penebangan Hutan EU" },
+              { "zh": "不是认证，是市场准入法规", "en": "not a certification but a market access regulation", "ms": "bukan pensijilan tetapi peraturan akses pasaran" },
+              { "zh": "要求进口商证明产品未来自 2020 年后毁林的土地，需要地块级别的可追溯", "en": "requires importers to prove the product did not come from land deforested after 2020, which needs plot-level traceability", "ms": "menghendaki pengimport membuktikan produk tidak datang daripada tanah yang ditebang selepas 2020, memerlukan kebolehkesanan peringkat plot" }
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "认证棕油目前约占全球产量的两成左右，而且长期面临一个结构性问题：认证产量超过了愿意支付溢价的需求。这意味着相当一部分认证棕油最终按普通棕油的价格售出，认证成本无法完全回收——这直接削弱了生产者参与的动力，尤其对小农。",
+            "en": "Certified palm oil makes up roughly a fifth of world output and faces a persistent structural problem: certified supply exceeds the demand willing to pay a premium for it. A considerable share therefore sells at the conventional price, and the cost of certification is not recovered — which blunts the incentive to take part, smallholders most of all.",
+            "ms": "Minyak sawit bersijil merangkumi kira-kira satu perlima pengeluaran dunia dan menghadapi masalah struktur yang berterusan: bekalan bersijil melebihi permintaan yang sanggup membayar premium untuknya. Sebahagian besar oleh itu dijual pada harga biasa, dan kos pensijilan tidak dipulihkan — yang melemahkan insentif untuk menyertainya, terutamanya bagi pekebun kecil."
+          }
+        }
+      ]
+    },
+    {
+      "id": "19.4",
+      "heading": { "zh": "社会层面", "en": "The social side", "ms": "Aspek sosial" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "可持续性不只是环境问题。油棕产业的社会争议主要集中在几个方面：土地权属与习惯法权利的冲突、种植园劳工条件（包括移工的处境和农药接触）、童工问题，以及小农在合约安排中的议价地位。",
+            "en": "Sustainability is not only an environmental matter. The social disputes in this industry cluster around a few issues: conflicts between land title and customary rights, plantation labour conditions — including the position of migrant workers and exposure to pesticides — child labour, and the bargaining position of smallholders inside contract arrangements.",
+            "ms": "Kelestarian bukan hanya soal alam sekitar. Pertikaian sosial dalam industri ini berkisar beberapa isu: konflik antara hak milik tanah dan hak adat, keadaan buruh ladang — termasuk kedudukan pekerja asing dan pendedahan kepada racun perosak — buruh kanak-kanak, dan kedudukan tawar-menawar pekebun kecil dalam susunan kontrak."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "另一方面，油棕在许多地区确实是重要的脱贫途径。对拥有几公顷土地的小农来说，油棕的单位面积收益、常年现金流和相对稳定的收购渠道，往往优于可选的替代作物。马来西亚 FELDA 计划在几十年间改变了数十万家庭的经济状况——这个记录同样是事实的一部分。",
+            "en": "At the same time, oil palm has been a genuine route out of poverty in many places. For a household with a few hectares, its returns per hectare, its year-round cash flow and a relatively dependable buyer often beat the available alternatives. Malaysia's FELDA settlement scheme changed the economic position of hundreds of thousands of families over several decades — that record is part of the picture too.",
+            "ms": "Pada masa yang sama, sawit memang menjadi laluan keluar daripada kemiskinan di banyak tempat. Bagi isi rumah dengan beberapa hektar, pulangan sehektarnya, aliran tunai sepanjang tahun dan pembeli yang agak boleh diharap selalunya mengatasi alternatif yang ada. Skim penempatan FELDA Malaysia mengubah kedudukan ekonomi ratusan ribu keluarga sepanjang beberapa dekad — rekod itu juga sebahagian daripada gambaran."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "小农占全球油棕面积约四成，却在认证体系中占比很低——因为认证的固定成本对小面积经营者极不友好。团体认证（group certification）和把认证成本并入收购方的做法，是目前较有效的解法。",
+            "en": "Smallholders hold roughly 40% of the world's oil palm area but a much smaller share of certified output, because the fixed cost of certification falls very heavily on a small operation. Group certification, and shifting the cost onto the buyer, are the more effective answers so far.",
+            "ms": "Pekebun kecil memegang kira-kira 40% keluasan sawit dunia tetapi bahagian yang jauh lebih kecil daripada pengeluaran bersijil, kerana kos tetap pensijilan menimpa operasi kecil dengan sangat berat. Pensijilan berkumpulan, dan memindahkan kosnya kepada pembeli, adalah jawapan yang lebih berkesan setakat ini."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "RSPO、MSPO、ISPO 公开标准文件", "en": "Published RSPO, MSPO and ISPO standards", "ms": "Piawaian RSPO, MSPO dan ISPO yang diterbitkan" },
+    { "zh": "毁林与生物多样性的遥感与生态调查文献", "en": "Remote sensing and ecological survey literature on deforestation and biodiversity", "ms": "Literatur penderiaan jauh dan tinjauan ekologi mengenai penebangan hutan dan biodiversiti" }
+  ]
+}

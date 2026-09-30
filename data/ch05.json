@@ -1,0 +1,190 @@
+{
+  "id": "ch05",
+  "num": 5,
+  "title": { "zh": "生长与产量形成", "en": "Growth and Yield Formation", "ms": "Pertumbuhan dan Pembentukan Hasil" },
+  "sections": [
+    {
+      "id": "5.1",
+      "heading": { "zh": "干物质去了哪里", "en": "Where the dry matter goes", "ms": "Ke mana bahan kering pergi" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "理解油棕产量，最有用的框架是把它当成一个分配问题。棕榈通过光合作用生产干物质，这些干物质要分给三处：营养生长（叶、干、根）、维持呼吸，以及果串。产量高低取决于总产量有多大，以及其中有多大比例进了果串——后者称为收获指数（bunch index）。",
+            "en": "The most useful way to think about oil palm yield is as a partitioning problem. The palm makes dry matter by photosynthesis and has to divide it three ways: vegetative growth of fronds, trunk and roots; maintenance respiration; and bunches. Yield depends both on how much total dry matter is made and on what share of it reaches the bunches — the bunch index.",
+            "ms": "Cara paling berguna untuk memahami hasil sawit ialah sebagai masalah pengagihan. Pokok menghasilkan bahan kering melalui fotosintesis dan perlu membahagikannya tiga arah: pertumbuhan vegetatif pelepah, batang dan akar; respirasi penyelenggaraan; dan tandan. Hasil bergantung kepada jumlah bahan kering yang dihasilkan dan bahagian yang sampai ke tandan — indeks tandan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "成龄园的总干物质生产大致在每公顷每年 20–36 吨，其中进入果串的通常不到一半。这个框架解释了很多现象：为什么棕榈长得太高太快反而不好（营养生长抢走了干物质）、为什么过度修叶会减产（叶面积减少，总产量下降），以及为什么育种的主要方向之一就是提高收获指数而不是单纯增加生物量。",
+            "en": "A mature stand produces roughly 20–36 tonnes of dry matter per hectare a year, of which typically under half ends up in bunches. The framework explains a lot: why a palm that grows tall fast is not a good thing (vegetative growth is taking the dry matter), why over-pruning costs yield (less leaf area, less total production), and why one of the main aims in breeding is to raise the bunch index rather than simply grow more biomass.",
+            "ms": "Dirian matang menghasilkan kira-kira 20–36 tan bahan kering sehektar setahun, dan biasanya kurang separuh berakhir dalam tandan. Rangka kerja ini menjelaskan banyak perkara: mengapa pokok yang cepat meninggi bukan perkara baik (pertumbuhan vegetatif mengambil bahan kering), mengapa pemangkasan berlebihan mengurangkan hasil (kurang luas daun, kurang pengeluaran), dan mengapa salah satu matlamat utama pembiakbakaan ialah menaikkan indeks tandan, bukan sekadar menambah biojisim."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "stackedBar",
+            "title": { "zh": "成龄园干物质分配（示意）", "en": "Dry matter partitioning in a mature stand", "ms": "Pengagihan bahan kering dalam dirian matang" },
+            "note": { "zh": "典型比例。育种的方向是把左边的份额往右边挪。", "en": "Typical proportions. Breeding aims to move share from the left of the bar to the right.", "ms": "Kadar tipikal. Pembiakbakaan bertujuan memindahkan bahagian dari kiri ke kanan bar." },
+            "source": { "zh": "基于破坏性取样测定的生长分析数据", "en": "From growth-analysis studies using destructive sampling", "ms": "Daripada kajian analisis pertumbuhan menggunakan persampelan musnah" },
+            "x": { "categories": [{ "zh": "成龄棕榈", "en": "Mature palm", "ms": "Pokok matang" }] },
+            "y": { "unit": "%" },
+            "series": [
+              { "name": { "zh": "叶片与叶轴", "en": "Fronds and rachis", "ms": "Pelepah dan rakis" }, "values": [28], "color": "--c-1" },
+              { "name": { "zh": "茎干", "en": "Trunk", "ms": "Batang" }, "values": [12], "color": "--c-3" },
+              { "name": { "zh": "根系", "en": "Roots", "ms": "Akar" }, "values": [10], "color": "--c-6" },
+              { "name": { "zh": "果串", "en": "Bunches", "ms": "Tandan" }, "values": [50], "color": "--c-2" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "heading": { "zh": "性比与果串败育", "en": "Sex ratio and bunch failure", "ms": "Nisbah jantina dan kegagalan tandan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "每个叶腋都会产生一个花序原基，但它最终变成雄花序还是雌花序，是在抽出前约两年就决定了的。决定的依据是棕榈当时的碳水化合物状况：养分和水分充足、负载轻的时候，倾向分化成雌花序；受胁迫的时候，倾向雄花。雌花序占全部花序的比例就是性比。",
+            "en": "Every leaf axil produces an inflorescence primordium, but whether it becomes male or female is settled about two years before it emerges. What settles it is the palm's carbohydrate status at that moment: well supplied with water and nutrients and lightly loaded, it tends towards female; under stress, towards male. The proportion of inflorescences that are female is the sex ratio.",
+            "ms": "Setiap ketiak daun menghasilkan primordium jambak, tetapi sama ada ia menjadi jantan atau betina ditentukan kira-kira dua tahun sebelum ia muncul. Penentunya ialah status karbohidrat pokok pada saat itu: jika air dan nutrien mencukupi dan bebannya ringan, ia cenderung menjadi betina; jika tertekan, menjadi jantan. Kadar jambak yang betina ialah nisbah jantina."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "更靠近收获期的还有第二道关卡：花序败育。已经分化为雌花序的原基，如果在抽出前的几个月里棕榈遇到严重胁迫，会整个败育脱落。这是干旱在产量上最快显现的一条路径，通常在旱情之后 6–12 个月出现产量低谷。",
+            "en": "Closer to harvest there is a second filter: abortion. A primordium already committed to being female will abort outright if the palm meets severe stress in the months before it would have emerged. This is the fastest route by which drought reaches the crop, usually showing up as a trough in yield six to twelve months after the dry spell.",
+            "ms": "Lebih dekat kepada penuaian terdapat penapis kedua: keguguran. Primordium yang sudah menjadi betina akan gugur terus jika pokok mengalami tekanan teruk pada bulan-bulan sebelum ia sepatutnya muncul. Ini laluan terpantas kemarau menjejaskan hasil, biasanya muncul sebagai penurunan hasil enam hingga dua belas bulan selepas musim kering."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "结果活动（fruiting activity）本身会反过来压低性比：一次大丰收之后，棕榈的碳水化合物被果串抽走，接下来分化的花序更多是雄花，于是产量下滑。这就是油棕产量常见的两年周期波动——它是生理性的，不全是天气造成的。",
+            "en": "Heavy fruiting itself depresses the sex ratio. After a big crop the palm's carbohydrate has gone into bunches, so the inflorescences differentiating next are more often male and yield falls back. This is the source of the familiar two-year cycling in oil palm yields — it is physiological, not only weather.",
+            "ms": "Pembuahan lebat itu sendiri menurunkan nisbah jantina. Selepas hasil besar, karbohidrat pokok telah masuk ke tandan, jadi jambak yang membeza seterusnya lebih kerap jantan dan hasil menurun semula. Inilah punca kitaran dua tahun yang biasa dalam hasil sawit — ia fisiologi, bukan semata-mata cuaca."
+          }
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "heading": { "zh": "产量随树龄的变化", "en": "Yield over the life of a stand", "ms": "Hasil sepanjang hayat dirian" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕定植后约 30 个月开始有产量，此后迅速爬升，通常在第 7–10 年之间达到峰值，随后缓慢下降。下降的原因主要不是棕榈老化，而是树高增加使收割效率下降、果串重量趋于稳定而株数不变，以及长期的养分与病害累积。",
+            "en": "A stand starts yielding about 30 months after planting, climbs quickly, usually peaks somewhere between years seven and ten, and then declines slowly. The decline is less about the palm ageing than about height making harvesting harder, bunch weight plateauing while palm number stays fixed, and the long accumulation of nutrient and disease pressure.",
+            "ms": "Dirian mula menghasilkan kira-kira 30 bulan selepas ditanam, meningkat cepat, biasanya memuncak antara tahun ketujuh dan kesepuluh, kemudian menurun perlahan. Penurunan itu bukan kerana pokok menua, tetapi kerana ketinggian menyukarkan penuaian, berat tandan mendatar sementara bilangan pokok tetap, dan tekanan nutrien serta penyakit yang terkumpul."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "line",
+            "title": { "zh": "果串产量随树龄变化（典型曲线）", "en": "FFB yield against palm age — a typical curve", "ms": "Hasil BTS mengikut umur pokok — lengkung tipikal" },
+            "note": { "zh": "管理良好的东南亚园区。绝对数值因地点而异，曲线形状则相当一致。", "en": "A well-managed South-East Asian stand. Absolute values vary by site; the shape of the curve does not vary much.", "ms": "Dirian Asia Tenggara yang diurus baik. Nilai mutlak berbeza mengikut tapak; bentuk lengkung agak tetap." },
+            "source": { "zh": "典型商业园区产量曲线", "en": "Typical commercial yield profile", "ms": "Profil hasil komersial tipikal" },
+            "x": {
+              "label": { "zh": "定植后年数", "en": "years after planting", "ms": "tahun selepas menanam" },
+              "categories": ["3", "4", "5", "6", "7", "8", "10", "12", "15", "18", "21", "24"]
+            },
+            "y": { "unit": "t/ha", "label": { "zh": "吨果串／公顷·年", "en": "t FFB per ha per year", "ms": "tan BTS/ha setahun" } },
+            "series": [
+              {
+                "name": { "zh": "果串产量", "en": "FFB yield", "ms": "Hasil BTS" },
+                "values": [8, 16, 22, 26, 28, 29, 28, 27, 25, 23, 21, 18],
+                "color": "--c-1",
+                "area": true
+              }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "产量的构成也随树龄改变。幼龄期果串小而多；随着树龄增加，单串重量显著上升而串数下降。成龄园的单株果串数常在每年 8–14 串之间，单串 15–25 公斤。这个变化对收割和运输安排有实际影响：幼龄园收割频次高、每次量小，成龄园正好相反。",
+            "en": "The make-up of the yield changes with age too. Young palms carry many small bunches; as they age, bunch weight rises sharply while bunch number falls. A mature palm typically carries 8–14 bunches a year at 15–25 kg each. That shift has practical consequences for harvesting and transport: young blocks need frequent rounds with small volumes, mature blocks the opposite.",
+            "ms": "Komposisi hasil juga berubah mengikut umur. Pokok muda membawa banyak tandan kecil; apabila meningkat usia, berat tandan naik mendadak sementara bilangan tandan menurun. Pokok matang biasanya membawa 8–14 tandan setahun pada 15–25 kg setiap satu. Perubahan itu memberi kesan praktikal kepada penuaian dan pengangkutan: blok muda memerlukan pusingan kerap dengan volum kecil, blok matang sebaliknya."
+          }
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "heading": { "zh": "产量构成与油／果串比", "en": "Yield components and oil to bunch", "ms": "Komponen hasil dan minyak kepada tandan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "最终卖的是油，不是果串。从果串产量到油产量，中间隔着一串比例，每一环都可能漏掉产量：",
+            "en": "What is sold is oil, not bunches. Between FFB yield and oil yield sits a chain of ratios, and yield can leak at every link:",
+            "ms": "Yang dijual ialah minyak, bukan tandan. Antara hasil BTS dan hasil minyak terdapat rangkaian nisbah, dan hasil boleh bocor di setiap sambungan:"
+          }
+        },
+        {
+          "type": "keyval",
+          "rows": [
+            {
+              "k": { "zh": "F/B 果实／果串", "en": "F/B — fruit to bunch", "ms": "F/B — buah kepada tandan" },
+              "v": { "zh": "约 60%–70%。授粉不良会直接压低这个比例。", "en": "about 60–70%. Poor pollination pushes this straight down.", "ms": "kira-kira 60–70%. Pendebungaan lemah menurunkannya terus." }
+            },
+            {
+              "k": { "zh": "M/F 中果皮／果实", "en": "M/F — mesocarp to fruit", "ms": "M/F — mesokarp kepada buah" },
+              "v": { "zh": "tenera 约 75%–85%，由遗传决定。", "en": "about 75–85% in tenera; set by genetics.", "ms": "kira-kira 75–85% dalam tenera; ditentukan oleh genetik." }
+            },
+            {
+              "k": { "zh": "O/M 油／中果皮", "en": "O/M — oil to mesocarp", "ms": "O/M — minyak kepada mesokarp" },
+              "v": { "zh": "约 45%–50%，受成熟度影响很大。", "en": "about 45–50%, and strongly dependent on ripeness.", "ms": "kira-kira 45–50%, sangat bergantung kepada kematangan." }
+            },
+            {
+              "k": { "zh": "O/B 油／果串", "en": "O/B — oil to bunch", "ms": "O/B — minyak kepada tandan" },
+              "v": { "zh": "tenera 约 23%–26%；这是三项的乘积。", "en": "about 23–26% in tenera; the product of the three above.", "ms": "kira-kira 23–26% dalam tenera; hasil darab ketiga-tiga di atas." }
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "工厂实际测到的出油率（OER）总是低于田间的 O/B，差额就是加工损耗，通常 1.5–3 个百分点。所以一个 O/B 为 25% 的园，工厂出油率大致在 22%–23.5%。如果实际 OER 明显更低，问题要么出在成熟度掌握上，要么出在果串到厂的时间上，要么出在工厂本身。",
+            "en": "The oil extraction rate a mill actually records is always below the field's O/B; the gap is processing loss, usually 1.5 to 3 percentage points. A block with an O/B of 25% should give a mill OER of about 22–23.5%. If the recorded OER is much lower than that, the problem lies in harvesting ripeness, in the time bunches spend before processing, or in the mill itself.",
+            "ms": "Kadar perahan minyak yang direkodkan kilang sentiasa lebih rendah daripada O/B di ladang; jurangnya ialah kehilangan pemprosesan, biasanya 1.5 hingga 3 mata peratus. Blok dengan O/B 25% sepatutnya memberi OER kilang sekitar 22–23.5%. Jika OER yang direkodkan jauh lebih rendah, masalahnya terletak pada kematangan penuaian, masa tandan menunggu sebelum diproses, atau pada kilang itu sendiri."
+          }
+        }
+      ]
+    },
+    {
+      "id": "5.5",
+      "heading": { "zh": "产量潜力与产量差距", "en": "Potential yield and the yield gap", "ms": "Potensi hasil dan jurang hasil" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "按截获辐射和光合效率估算，油棕在理想条件下的理论产油潜力约为每公顷每年 10–12 吨。最好的试验小区和最优秀的无性系可以做到 8–10 吨。而世界平均实际产量只有约 3.8 吨。",
+            "en": "Estimated from intercepted radiation and photosynthetic efficiency, the theoretical oil yield potential of this crop is around 10–12 tonnes per hectare a year. The best trial plots and the best clones reach 8–10. The world average actually achieved is about 3.8.",
+            "ms": "Dianggarkan daripada sinaran yang dipintas dan kecekapan fotosintesis, potensi hasil minyak teori tanaman ini sekitar 10–12 tan sehektar setahun. Plot ujian terbaik dan klon terbaik mencapai 8–10. Purata dunia yang benar-benar dicapai ialah kira-kira 3.8."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这个差距的意义在第 19、20 章会反复出现：如果现有园区的产量能往潜力靠拢一部分，就能在完全不新增土地的前提下满足相当大一块需求增长。差距的主要来源是种植材料、养分管理、收割纪律与病害控制——都是管理问题，不是物理极限。",
+            "en": "That gap recurs through Chapters 19 and 20. If existing blocks moved even part of the way towards their potential, a large share of demand growth could be met with no new land at all. The gap comes mainly from planting material, nutrition, harvesting discipline and disease control — management, not physics.",
+            "ms": "Jurang itu muncul semula dalam Bab 19 dan 20. Jika blok sedia ada bergerak walau sebahagian ke arah potensinya, sebahagian besar pertumbuhan permintaan boleh dipenuhi tanpa tanah baharu. Jurang itu datang terutamanya daripada bahan tanaman, pemakanan, disiplin penuaian dan kawalan penyakit — pengurusan, bukan fizik."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "马来西亚与西非的生长分析研究", "en": "Growth-analysis studies in Malaysia and West Africa", "ms": "Kajian analisis pertumbuhan di Malaysia dan Afrika Barat" }
+  ]
+}

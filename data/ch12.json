@@ -1,0 +1,207 @@
+{
+  "id": "ch12",
+  "num": 12,
+  "title": { "zh": "养分管理", "en": "Nutrient Management", "ms": "Pengurusan Nutrien" },
+  "sections": [
+    {
+      "id": "12.1",
+      "heading": { "zh": "带走多少，补回多少", "en": "Replace what the crop removes", "ms": "Gantikan apa yang diambil tanaman" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "施肥通常占成龄园现金成本的一半以上，是田间管理里最大的一笔支出，也是最容易做错的一笔。最基本的出发点是养分平衡：每收走一吨果串，就从这块地里带走了一定量的氮磷钾镁，这部分必须补回来，否则土壤养分储量会被逐年抽干。",
+            "en": "Fertiliser is usually more than half the cash cost of running a mature block — the largest line in field operations and the easiest to get wrong. The starting point is the nutrient balance: every tonne of bunches taken off the block removes a quantity of nitrogen, phosphorus, potassium and magnesium, and that has to be put back or the soil's reserves are drawn down year after year.",
+            "ms": "Baja biasanya lebih separuh kos tunai mengendalikan blok matang — perbelanjaan terbesar dalam operasi ladang dan paling mudah tersilap. Titik permulaannya ialah imbangan nutrien: setiap tan tandan yang diambil dari blok mengeluarkan sejumlah nitrogen, fosforus, kalium dan magnesium, dan itu mesti digantikan atau simpanan tanah akan susut tahun demi tahun."
+          }
+        },
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "每收获一吨果串带走的养分", "en": "Nutrients removed per tonne of bunches harvested", "ms": "Nutrien yang diambil setiap tan tandan dituai" },
+            "note": { "zh": "钾的需求量远大于其他元素，这是油棕施肥的核心事实。", "en": "Potassium demand dwarfs everything else. This is the central fact of oil palm nutrition.", "ms": "Permintaan kalium jauh melebihi yang lain. Inilah fakta teras pemakanan sawit." },
+            "source": { "zh": "按果串干物质约 53% 与已发表的养分浓度计算", "en": "Calculated from published bunch nutrient concentrations at about 53% dry matter", "ms": "Dikira daripada kepekatan nutrien tandan terbitan pada kira-kira 53% bahan kering" },
+            "x": {
+              "categories": [
+                { "zh": "钾 K", "en": "Potassium (K)", "ms": "Kalium (K)" },
+                { "zh": "氮 N", "en": "Nitrogen (N)", "ms": "Nitrogen (N)" },
+                { "zh": "镁 Mg", "en": "Magnesium (Mg)", "ms": "Magnesium (Mg)" },
+                { "zh": "磷 P", "en": "Phosphorus (P)", "ms": "Fosforus (P)" }
+              ]
+            },
+            "y": { "unit": "kg/t", "label": { "zh": "公斤／吨果串", "en": "kg per tonne FFB", "ms": "kg setiap tan BTS" } },
+            "series": [
+              { "name": { "zh": "养分带走量", "en": "Removed in bunches", "ms": "Diambil dalam tandan" }, "values": [4.1, 3.4, 0.75, 0.5], "color": "--c-1" }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "一片年产 25 吨果串的园区，仅果串一项每年就带走约 100 公斤钾、85 公斤氮。再加上营养生长固定的养分、淋失和挥发损失，实际需要的施肥量还要更高。这就是为什么钾肥（通常是氯化钾）是油棕园里用量最大的单一肥料。",
+            "en": "A block yielding 25 tonnes of bunches removes roughly 100 kg of potassium and 85 kg of nitrogen a year in bunches alone. Add what is locked into vegetative growth, plus leaching and volatilisation losses, and the amount that actually has to be applied is higher still. That is why potassium — usually as muriate of potash — is the largest single fertiliser input on an oil palm estate.",
+            "ms": "Blok yang menghasilkan 25 tan tandan mengeluarkan kira-kira 100 kg kalium dan 85 kg nitrogen setahun dalam tandan sahaja. Tambah apa yang terkunci dalam pertumbuhan vegetatif, ditambah kehilangan larut lesap dan peruapan, dan jumlah yang perlu digunakan lebih tinggi lagi. Itulah sebabnya kalium — biasanya sebagai muriate of potash — ialah input baja tunggal terbesar di ladang sawit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "12.2",
+      "heading": { "zh": "叶片分析", "en": "Leaf analysis", "ms": "Analisis daun" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "土壤分析在油棕上的诊断价值有限，因为热带酸性土的养分状况与棕榈实际吸收之间关系松散。行业标准做法是叶片分析：在固定位置取固定叶位的样本，测养分浓度，与临界值对照。",
+            "en": "Soil analysis has limited diagnostic value in this crop: on tropical acid soils the relationship between what the soil test shows and what the palm actually takes up is loose. The industry standard is leaf analysis — sample a fixed leaf position at a fixed point, measure nutrient concentrations, and compare against critical levels.",
+            "ms": "Analisis tanah mempunyai nilai diagnostik terhad dalam tanaman ini: pada tanah asid tropika hubungan antara keputusan ujian tanah dan apa yang diambil pokok adalah longgar. Piawai industri ialah analisis daun — ambil sampel kedudukan daun tetap pada titik tetap, ukur kepekatan nutrien, dan bandingkan dengan aras kritikal."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "成龄棕榈取第 17 叶，幼龄取第 9 叶，取叶轴中段的小叶，去除中脉。取样时间、取样人、处理方式都要固定——叶片分析的价值在于年度之间的可比性，方法一变，历史数据就作废了。",
+            "en": "Frond 17 is sampled on mature palms and frond 9 on young ones, taking leaflets from the middle of the rachis with the midrib removed. Timing, sampler and handling must be held constant: the value of leaf analysis lies in comparability between years, and changing the method invalidates the history.",
+            "ms": "Pelepah 17 disampel pada pokok matang dan pelepah 9 pada pokok muda, mengambil anak daun dari tengah rakis dengan tulang tengah dibuang. Masa, pensampel dan pengendalian mesti tetap: nilai analisis daun terletak pada kebolehbandingan antara tahun, dan menukar kaedah membatalkan rekod lalu."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "第 17 叶养分临界值（成龄棕榈，占干物质 %）", "en": "Critical levels in frond 17, mature palms, % of dry matter", "ms": "Aras kritikal dalam pelepah 17, pokok matang, % bahan kering" },
+          "headers": [
+            { "zh": "元素", "en": "Element", "ms": "Unsur" },
+            { "zh": "缺乏", "en": "Deficient", "ms": "Kekurangan" },
+            { "zh": "适宜", "en": "Adequate", "ms": "Mencukupi" }
+          ],
+          "rows": [
+            [{ "zh": "氮 N", "en": "Nitrogen (N)", "ms": "Nitrogen (N)" }, "< 2.30", "2.50–2.80"],
+            [{ "zh": "磷 P", "en": "Phosphorus (P)", "ms": "Fosforus (P)" }, "< 0.14", "0.15–0.19"],
+            [{ "zh": "钾 K", "en": "Potassium (K)", "ms": "Kalium (K)" }, "< 0.90", "1.00–1.30"],
+            [{ "zh": "镁 Mg", "en": "Magnesium (Mg)", "ms": "Magnesium (Mg)" }, "< 0.20", "0.25–0.40"],
+            [{ "zh": "钙 Ca", "en": "Calcium (Ca)", "ms": "Kalsium (Ca)" }, "< 0.50", "0.60–1.00"],
+            [{ "zh": "硼 B（ppm）", "en": "Boron (B), ppm", "ms": "Boron (B), ppm" }, "< 8", "10–25"]
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "叶片分析要和产量记录、田间观察一起读，不要单独解释。一个常见的误判是：产量很高的园区叶片钾含量偏低，其实是养分被大量果串稀释了，而不是真的缺钾——但这恰恰说明钾肥要跟上。",
+            "en": "Read leaf analysis alongside yield records and field observation, never on its own. A common misreading: a high-yielding block shows low leaf potassium. Often that is dilution by a heavy crop rather than true deficiency — but it is still a signal that potassium supply needs to rise to match.",
+            "ms": "Baca analisis daun bersama rekod hasil dan pemerhatian ladang, jangan bersendirian. Salah tafsir biasa: blok berhasil tinggi menunjukkan kalium daun rendah. Selalunya itu pencairan oleh hasil yang lebat dan bukan kekurangan sebenar — tetapi ia tetap isyarat bahawa bekalan kalium perlu dinaikkan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "12.3",
+      "heading": { "zh": "缺素症状识别", "en": "Reading deficiency symptoms", "ms": "Mengenali simptom kekurangan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "叶片分析要送样等结果，田间目视诊断则是即时的。关键是记住一条原则：可移动元素（氮、钾、镁）的缺乏症状先出现在老叶，因为棕榈会把它们从老叶调往新叶；不可移动元素（硼、钙）的症状先出现在新叶。",
+            "en": "Leaf analysis requires sending samples and waiting; visual diagnosis in the field is immediate. The key principle: mobile elements — nitrogen, potassium, magnesium — show first on old fronds, because the palm moves them out of old tissue into new. Immobile elements — boron, calcium — show first on new fronds.",
+            "ms": "Analisis daun memerlukan penghantaran sampel dan menunggu; diagnosis visual di ladang adalah serta-merta. Prinsip utamanya: unsur mudah alih — nitrogen, kalium, magnesium — muncul dahulu pada pelepah tua, kerana pokok memindahkannya dari tisu tua ke tisu baharu. Unsur tidak mudah alih — boron, kalsium — muncul dahulu pada pelepah baharu."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "常见缺素的田间症状", "en": "Field symptoms of the common deficiencies", "ms": "Simptom ladang bagi kekurangan biasa" },
+          "headers": [
+            { "zh": "元素", "en": "Element", "ms": "Unsur" },
+            { "zh": "症状", "en": "Symptom", "ms": "Simptom" },
+            { "zh": "出现位置", "en": "Where it shows", "ms": "Di mana ia muncul" }
+          ],
+          "rows": [
+            [
+              { "zh": "氮 N", "en": "Nitrogen", "ms": "Nitrogen" },
+              { "zh": "整片叶均匀褪绿发黄，叶片变小，生长停滞", "en": "uniform pale yellowing of the whole frond, smaller fronds, growth stalls", "ms": "kekuningan sekata seluruh pelepah, pelepah mengecil, pertumbuhan terhenti" },
+              { "zh": "老叶先", "en": "old fronds first", "ms": "pelepah tua dahulu" }
+            ],
+            [
+              { "zh": "钾 K", "en": "Potassium", "ms": "Kalium" },
+              { "zh": "橙斑病：小叶上出现橙黄色斑点，逐渐扩大坏死；叶尖干枯", "en": "orange spotting — orange-yellow flecks on the leaflets enlarging into necrosis; tips die back", "ms": "bintik jingga — bintik jingga kekuningan pada anak daun yang membesar menjadi nekrosis; hujung mati" },
+              { "zh": "老叶先", "en": "old fronds first", "ms": "pelepah tua dahulu" }
+            ],
+            [
+              { "zh": "镁 Mg", "en": "Magnesium", "ms": "Magnesium" },
+              { "zh": "橙黄条斑，受光面明显而遮阴面仍绿（这是与钾缺乏最好的区分点）", "en": "orange-yellow banding, obvious on the sun-exposed side while the shaded side stays green — the best way to tell it from potassium", "ms": "jalur jingga kekuningan, jelas pada bahagian terdedah matahari sementara bahagian teduh kekal hijau — cara terbaik membezakannya daripada kalium" },
+              { "zh": "老叶先", "en": "old fronds first", "ms": "pelepah tua dahulu" }
+            ],
+            [
+              { "zh": "硼 B", "en": "Boron", "ms": "Boron" },
+              { "zh": "钩状叶、皱叶、小叶变窄呈鱼骨状，新叶畸形", "en": "hook leaf, crinkled leaf, narrowed fishbone leaflets, deformed new fronds", "ms": "daun cangkuk, daun berkedut, anak daun sempit seperti tulang ikan, pelepah baharu cacat" },
+              { "zh": "新叶先", "en": "new fronds first", "ms": "pelepah baharu dahulu" }
+            ],
+            [
+              { "zh": "铜 Cu", "en": "Copper", "ms": "Kuprum" },
+              { "zh": "叶片黄化并出现坏死，泥炭地上常见", "en": "chlorosis with necrosis; common on peat", "ms": "klorosis dengan nekrosis; biasa di tanah gambut" },
+              { "zh": "新叶先", "en": "new fronds first", "ms": "pelepah baharu dahulu" }
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "硼肥的安全窗口很窄——缺硼和硼中毒的症状都表现为新叶畸形。宁可少施、分次施，也不要一次施足。看到钩状叶先确认是缺硼再补，不要凭印象加量。",
+            "en": "Boron has a narrow safe window: both deficiency and toxicity show as deformed new fronds. Apply less and more often rather than a large single dose. Confirm that hook leaf really is boron deficiency before correcting it, and do not raise the rate on impression.",
+            "ms": "Boron mempunyai julat selamat yang sempit: kedua-dua kekurangan dan ketoksikan muncul sebagai pelepah baharu cacat. Gunakan lebih sedikit dan lebih kerap daripada satu dos besar. Sahkan daun cangkuk benar-benar kekurangan boron sebelum membetulkannya, dan jangan naikkan kadar berdasarkan andaian."
+          }
+        }
+      ]
+    },
+    {
+      "id": "12.4",
+      "heading": { "zh": "施肥实务", "en": "Applying it", "ms": "Pelaksanaan pembajaan" },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "zh": "位置：撒在树盘外缘到叶尖投影之间的环带上，那里三级和四级根最密集。撒在树干基部是浪费。", "en": "Placement: broadcast in the band between the edge of the weeded circle and the frond-tip line, where the feeder roots are densest. Fertiliser at the base of the trunk is wasted.", "ms": "Penempatan: tabur dalam jalur antara tepi bulatan bersih dan garisan hujung pelepah, di mana akar penyerap paling padat. Baja di pangkal batang adalah pembaziran." },
+            { "zh": "时机：雨季施用，但避开大雨前后。土壤湿润但不饱和时效果最好。", "en": "Timing: apply in the wet season but not immediately before or after heavy rain. Moist but not saturated soil is best.", "ms": "Masa: gunakan pada musim hujan tetapi bukan sejurus sebelum atau selepas hujan lebat. Tanah lembap tetapi tidak tepu adalah terbaik." },
+            { "zh": "分次：全年分 2–4 次施用。砂质土和高降雨区要分得更细，否则淋失严重。", "en": "Splitting: two to four applications a year. Split more finely on sandy soils and in high-rainfall areas, or leaching takes a large share.", "ms": "Pembahagian: dua hingga empat kali setahun. Bahagikan lebih halus di tanah berpasir dan kawasan hujan tinggi, atau larut lesap mengambil bahagian besar." },
+            { "zh": "氮肥：尿素在碱性或高温干燥条件下挥发损失大，硫酸铵在这类条件下更稳妥，但会加剧土壤酸化。", "en": "Nitrogen: urea volatilises heavily under alkaline conditions or in hot dry weather; ammonium sulphate is safer there but acidifies the soil more.", "ms": "Nitrogen: urea meruap dengan banyak dalam keadaan beralkali atau cuaca panas kering; ammonium sulfat lebih selamat di situ tetapi mengasidkan tanah lebih banyak." },
+            { "zh": "镁与钾拮抗：钾施用过量会抑制镁吸收。看到缺镁症状时，先检查是不是钾施多了，而不是直接加镁。", "en": "Magnesium and potassium antagonise each other: heavy potassium suppresses magnesium uptake. When magnesium symptoms appear, check whether potassium rates are too high before simply adding magnesium.", "ms": "Magnesium dan kalium saling mengantagonis: kalium yang banyak menekan pengambilan magnesium. Apabila simptom magnesium muncul, periksa sama ada kadar kalium terlalu tinggi sebelum sekadar menambah magnesium." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12.5",
+      "heading": { "zh": "循环利用：空果串与废水", "en": "Recycling: EFB and mill effluent", "ms": "Kitar semula: EFB dan efluen kilang" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "工厂在榨油之后剩下大量副产物，其中养分含量最高的是空果串（EFB）和棕油厂废水（POME）。这两样都是可观的钾和有机质来源，把它们送回田里既能省肥料，又能解决废弃物处理问题。",
+            "en": "The mill leaves behind large quantities of by-product, and the richest in nutrients are the empty fruit bunches and the palm oil mill effluent. Both are substantial sources of potassium and organic matter; returning them to the field saves fertiliser and disposes of the waste at the same time.",
+            "ms": "Kilang meninggalkan sejumlah besar produk sampingan, dan yang paling kaya nutrien ialah tandan buah kosong dan efluen kilang minyak sawit. Kedua-duanya sumber kalium dan bahan organik yang banyak; memulangkannya ke ladang menjimatkan baja dan melupuskan sisa pada masa yang sama."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "每加工一吨果串约产生 0.22 吨空果串。把空果串摊在行间做覆盖，通常每公顷每年施用 30–60 吨，可以替代相当大一部分钾肥，同时改善表土有机质、保墒和抑草。缺点是运输成本高、摊铺费工，而且湿料可能招引犀角金龟繁殖——要摊薄，不要堆厚。",
+            "en": "Milling a tonne of bunches leaves about 0.22 tonnes of empty bunches. Spread in the interrow as mulch, typically at 30–60 tonnes per hectare a year, they replace a large share of the potassium requirement while raising topsoil organic matter, conserving moisture and suppressing weeds. The drawbacks are haulage cost, the labour of spreading, and the risk that wet heaps breed rhinoceros beetle — spread them thin, do not pile them.",
+            "ms": "Mengilang satu tan tandan meninggalkan kira-kira 0.22 tan tandan kosong. Ditabur di kawasan antara baris sebagai sungkupan, biasanya 30–60 tan sehektar setahun, ia menggantikan sebahagian besar keperluan kalium sambil menaikkan bahan organik tanah atas, memelihara lembapan dan menekan rumpai. Kelemahannya ialah kos pengangkutan, buruh menabur, dan risiko timbunan basah membiakkan kumbang badak — tabur nipis, jangan timbun."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "POME 经厌氧处理后可以田间施用，也是良好的钾源。但要注意两点：处理不当的 POME 生化需氧量极高，直接排入水体会造成严重污染；而厌氧塘释放的甲烷是棕油产业温室气体排放的主要来源之一，捕集甲烷发电已成为许多工厂的标准配置（见第 17 章）。",
+            "en": "Treated effluent can also be applied in the field and is a good potassium source. Two cautions: untreated POME has an extremely high biochemical oxygen demand and causes severe pollution if it reaches a watercourse; and the methane released by anaerobic ponds is one of the largest greenhouse gas sources in the industry. Capturing that methane for power is now standard at many mills — see Chapter 17.",
+            "ms": "Efluen yang dirawat juga boleh digunakan di ladang dan merupakan sumber kalium yang baik. Dua amaran: POME yang tidak dirawat mempunyai permintaan oksigen biokimia yang sangat tinggi dan menyebabkan pencemaran teruk jika sampai ke sungai; dan metana yang dilepaskan kolam anaerobik ialah antara sumber gas rumah hijau terbesar dalam industri ini. Menangkap metana itu untuk kuasa kini standard di banyak kilang — lihat Bab 17."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "马来西亚与印尼的长期肥效试验", "en": "Long-term fertiliser trials in Malaysia and Indonesia", "ms": "Ujian baja jangka panjang di Malaysia dan Indonesia" }
+  ]
+}

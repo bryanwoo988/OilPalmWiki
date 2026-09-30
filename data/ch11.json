@@ -1,0 +1,169 @@
+{
+  "id": "ch11",
+  "num": 11,
+  "title": { "zh": "田间管理", "en": "Field Upkeep", "ms": "Penyelenggaraan Ladang" },
+  "sections": [
+    {
+      "id": "11.1",
+      "heading": { "zh": "树盘、行间与修叶", "en": "Circles, interrows and pruning", "ms": "Bulatan, antara baris dan pemangkasan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "成龄园的地面管理分三个区域，各有各的目的：树盘保持清洁，便于施肥、捡拾散果和观察棕榈状况；采果小路保持通行；行间则保留受控的植被或棕榈叶堆行。",
+            "en": "Ground management in a mature block divides into three zones, each with its own purpose. The palm circle is kept clean so fertiliser can be placed, loose fruit collected and the palm inspected. The harvesting path is kept passable. The interrow carries controlled vegetation or the frond stack.",
+            "ms": "Pengurusan tanah di blok matang terbahagi kepada tiga zon, masing-masing dengan tujuannya. Bulatan pokok dikekalkan bersih supaya baja boleh diletakkan, buah lerai dikutip dan pokok diperiksa. Laluan menuai dikekalkan boleh dilalui. Kawasan antara baris membawa tumbuhan terkawal atau susunan pelepah."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "修叶（pruning）的原则是：只割掉真正碍事或已经衰老的叶片。经验法则是收割时按需割除，保持树冠上有 40 片左右的活叶——幼龄园可以更多。过度修叶是很常见的错误：叶面积直接决定光合产量，割多了就是在割自己的产量。",
+            "en": "The rule for pruning is to cut only fronds that genuinely obstruct or are already senescent. The working guide is to prune as needed at harvest and keep roughly 40 living fronds on the crown — more on young palms. Over-pruning is a common mistake: leaf area is what makes the crop, and cutting it back is cutting yield.",
+            "ms": "Peraturan pemangkasan ialah potong hanya pelepah yang benar-benar menghalang atau sudah tua. Panduan kerjanya ialah memangkas mengikut keperluan semasa menuai dan mengekalkan kira-kira 40 pelepah hidup pada mahkota — lebih banyak pada pokok muda. Pemangkasan berlebihan ialah kesilapan biasa: luas daun itulah yang menghasilkan tanaman, dan memotongnya bermakna memotong hasil."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "割下的叶片堆在行间（frond stack），通常摆成 L 形或按行堆放，避开采果小路和树盘。叶堆不只是处理废弃物——它是养分循环的主要渠道，一片成龄园每年通过叶堆返还的钾相当可观，同时还起到保墒、抑草和防侵蚀的作用。",
+            "en": "Cut fronds are stacked in the interrow, usually in an L-shape or in rows, kept clear of the harvesting path and the circle. The frond stack is not simply waste disposal — it is the main channel of nutrient recycling. A mature block returns a substantial quantity of potassium through it each year, and the stack also conserves moisture, suppresses weeds and slows erosion.",
+            "ms": "Pelepah yang dipotong disusun di kawasan antara baris, biasanya dalam bentuk L atau dalam barisan, jauh dari laluan menuai dan bulatan. Susunan pelepah bukan sekadar pelupusan sisa — ia saluran utama kitaran nutrien. Blok matang memulangkan kuantiti kalium yang banyak melaluinya setiap tahun, dan susunan itu juga memelihara lembapan, menekan rumpai dan melambatkan hakisan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "11.2",
+      "heading": { "zh": "收割：成熟度与轮次", "en": "Harvesting: ripeness and rounds", "ms": "Menuai: kematangan dan pusingan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "收割是整个田间管理里对最终收益影响最直接的一环，因为它同时决定收多少果串和每串能出多少油。果实里的油在成熟过程中持续累积，在果实开始脱落前不久达到最高——但一旦开始脱落，脂肪酶就启动，游离脂肪酸开始上升。",
+            "en": "Harvesting is the single field operation with the most direct effect on revenue, because it governs both how much fruit is taken and how much oil each bunch gives. Oil accumulates in the fruit through ripening and peaks shortly before fruits begin to detach — but once they start detaching, lipase activity begins and free fatty acid starts to climb.",
+            "ms": "Penuaian ialah operasi ladang yang paling langsung mempengaruhi pendapatan, kerana ia menentukan berapa banyak buah diambil dan berapa banyak minyak setiap tandan berikan. Minyak terkumpul dalam buah sepanjang kematangan dan memuncak sejurus sebelum buah mula tanggal — tetapi sebaik ia mula tanggal, aktiviti lipase bermula dan asid lemak bebas mula meningkat."
+          }
+        },
+        {
+          "type": "keyval",
+          "rows": [
+            {
+              "k": { "zh": "成熟标准", "en": "Ripeness standard", "ms": "Piawai kematangan" },
+              "v": { "zh": "常用标准是树上或地面出现至少 1 粒（幼龄）或每公斤果串 1 粒散果。各厂标准略有不同，务必按收购方的标准执行。", "en": "A common standard is at least one detached fruit on the ground per bunch, or one per kilogram of bunch. Mills differ; harvest to your buyer's standard.", "ms": "Piawai biasa ialah sekurang-kurangnya satu buah lerai di tanah bagi setiap tandan, atau satu bagi setiap kilogram tandan. Kilang berbeza; tuai mengikut piawai pembeli anda." }
+            },
+            {
+              "k": { "zh": "收割轮次", "en": "Harvest round", "ms": "Pusingan menuai" },
+              "v": { "zh": "旺季 7–10 天，淡季 10–15 天。轮次拖长会同时增加过熟和漏割。", "en": "7–10 days in peak season, 10–15 in the low season. Longer rounds increase both over-ripe fruit and missed bunches.", "ms": "7–10 hari pada musim puncak, 10–15 pada musim rendah. Pusingan lebih panjang meningkatkan buah terlebih masak dan tandan tertinggal." }
+            },
+            {
+              "k": { "zh": "散果回收", "en": "Loose fruit", "ms": "Buah lerai" },
+              "v": { "zh": "散果含油率高于果串平均值，必须全部捡回。漏捡散果是最常见的隐性损失。", "en": "Loose fruit is richer in oil than the bunch average and must all be collected. Leaving it is the commonest hidden loss on an estate.", "ms": "Buah lerai lebih kaya minyak daripada purata tandan dan mesti dikutip semuanya. Meninggalkannya ialah kerugian tersembunyi paling biasa di ladang." }
+            },
+            {
+              "k": { "zh": "到厂时间", "en": "Time to mill", "ms": "Masa ke kilang" },
+              "v": { "zh": "24 小时以内。每多放一天，游离脂肪酸明显上升。", "en": "Within 24 hours. Every extra day raises free fatty acid noticeably.", "ms": "Dalam 24 jam. Setiap hari tambahan menaikkan asid lemak bebas dengan ketara." }
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "收割成熟度是个典型的两难：割得太生，油还没长足，出油率低；割得太熟，油是足了但游离脂肪酸高、散果损失大。这两个方向的损失都是实打实的现金，而且都不会在果串重量上显示出来——所以必须靠制度和抽查来管，不能靠计件重量来管。",
+            "en": "Harvest ripeness is a genuine dilemma. Cut too green and the oil has not finished accumulating, so extraction is low. Cut too ripe and the oil is there but free fatty acid is high and loose fruit is lost. Both errors cost real cash and neither shows up in bunch weight — which is why ripeness has to be managed by standards and spot checks, not by paying on tonnage alone.",
+            "ms": "Kematangan penuaian ialah dilema sebenar. Potong terlalu muda dan minyak belum selesai terkumpul, jadi perahan rendah. Potong terlalu masak dan minyak ada tetapi asid lemak bebas tinggi dan buah lerai hilang. Kedua-dua kesilapan merugikan wang sebenar dan tiada yang kelihatan pada berat tandan — sebab itu kematangan mesti diurus melalui piawai dan pemeriksaan, bukan hanya dengan membayar mengikut tan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "11.3",
+      "heading": { "zh": "授粉与出油率", "en": "Pollination and the extraction rate", "ms": "Pendebungaan dan kadar perahan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "1981 年把非洲的授粉象鼻虫 Elaeidobius kamerunicus 引入马来西亚，是这个行业历史上回报最高的一次单项干预。在此之前，东南亚园区必须人工辅助授粉，成本高且效果有限。引入之后果实／果串比大幅提高，单串重上升，出油率跟着上升，而人工授粉这项常年开支直接消失。",
+            "en": "Introducing the African pollinating weevil Elaeidobius kamerunicus to Malaysia in 1981 was the highest-return single intervention in this industry's history. Before it, South-East Asian estates had to pollinate by hand, at high cost and with limited success. Afterwards fruit set rose sharply, bunch weight rose, extraction rate followed, and a permanent labour line simply disappeared.",
+            "ms": "Memperkenalkan kumbang pendebunga Afrika Elaeidobius kamerunicus ke Malaysia pada 1981 ialah campur tangan tunggal dengan pulangan tertinggi dalam sejarah industri ini. Sebelum itu, ladang Asia Tenggara terpaksa mendebunga secara manual, dengan kos tinggi dan kejayaan terhad. Selepas itu pembentukan buah meningkat mendadak, berat tandan naik, kadar perahan mengikut, dan satu kos buruh tetap terus hilang."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这也意味着象鼻虫的种群健康是一项需要留意的资产。广谱杀虫剂、雄花序不足（比如性比极高的年份或幼龄园）都会压低虫口，进而压低果实／果串比。如果一个园区的 F/B 持续偏低而找不到其他原因，应该检查雄花序上的象鼻虫密度。",
+            "en": "It also means the weevil population is an asset worth watching. Broad-spectrum insecticides, or a shortage of male inflorescences — in a year with a very high sex ratio, or in a young block — will cut weevil numbers and with them fruit set. If a block's fruit-to-bunch ratio is persistently low with no other explanation, count weevils on the male inflorescences.",
+            "ms": "Ia juga bermakna populasi kumbang ialah aset yang wajar diperhatikan. Racun serangga spektrum luas, atau kekurangan jambak jantan — pada tahun dengan nisbah jantina sangat tinggi, atau di blok muda — akan mengurangkan bilangan kumbang dan seterusnya pembentukan buah. Jika nisbah buah kepada tandan sesuatu blok kekal rendah tanpa penjelasan lain, kira kumbang pada jambak jantan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "11.4",
+      "heading": { "zh": "机械化", "en": "Mechanisation", "ms": "Mekanisasi" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕的机械化程度远低于多数大宗作物，原因很实际：收割动作需要判断成熟度、在高处精确下刀、并把二三十公斤的果串安全落下——这几件事至今没有可靠的机械替代。机械化真正落地的环节是搬运，不是收割。",
+            "en": "This crop is far less mechanised than most broadacre crops, for a practical reason: harvesting requires judging ripeness, cutting accurately at height, and bringing down a twenty- or thirty-kilogram bunch safely. No machine yet does those reliably. Where mechanisation has actually landed is in transport, not in cutting.",
+            "ms": "Tanaman ini jauh kurang dimekanisasikan berbanding kebanyakan tanaman ladang luas, atas sebab praktikal: penuaian memerlukan penilaian kematangan, pemotongan tepat pada ketinggian, dan menurunkan tandan dua puluh atau tiga puluh kilogram dengan selamat. Belum ada mesin yang melakukannya dengan boleh diharap. Mekanisasi yang benar-benar berjaya ialah dalam pengangkutan, bukan pemotongan."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "田间搬运车（mini tractor、buffalo 型运输机）把果串从行间运到集材点，是目前效果最确凿的一项，人均日搬运量可以提高数倍。", "en": "In-field transporters — mini tractors and buffalo-type carriers — moving bunches from the interrow to the collection point. This is the best-established gain, often multiplying what one worker can move in a day.", "ms": "Pengangkut dalam ladang — traktor mini dan pengangkut jenis kerbau — memindahkan tandan dari kawasan antara baris ke tempat pengumpulan. Ini keuntungan paling mantap, sering menggandakan apa yang seorang pekerja boleh pindahkan sehari." },
+            { "zh": "机械臂式抓斗装车，减少装卸环节的人工。", "en": "Grab loaders, cutting the labour in loading and unloading.", "ms": "Pemuat cakar, mengurangkan buruh dalam memuat dan memunggah." },
+            { "zh": "长杆收割工具（可伸缩镰刀）扩展了人工收割的高度上限，但超过约 12 米后效率急剧下降。", "en": "Extensible harvesting poles, which raise the height at which hand harvesting stays workable — though efficiency falls away sharply past about 12 m.", "ms": "Galah menuai boleh panjang, yang menaikkan ketinggian penuaian tangan masih praktikal — walaupun kecekapan menurun mendadak selepas kira-kira 12 m." },
+            { "zh": "机械施肥（撒肥车）在平地上可行，坡地和软土上受限。", "en": "Mechanical fertiliser spreading, workable on flat land but limited on slopes and soft ground.", "ms": "Penaburan baja bermesin, boleh dilaksanakan di tanah rata tetapi terhad di cerun dan tanah lembut." }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "机械化的隐性成本是土壤压实。搬运车反复走同一条路线，会在表层根区形成压实带。解决办法是固定通道（把压实限制在指定的路线上）而不是随意穿行。",
+            "en": "The hidden cost of mechanisation is compaction. Transporters running the same route repeatedly create a compacted band through the surface rooting zone. The answer is designated traffic lanes — confining compaction to chosen lines — rather than driving wherever is convenient.",
+            "ms": "Kos tersembunyi mekanisasi ialah pemadatan. Pengangkut yang berulang kali menggunakan laluan sama membentuk jalur padat di zon akar permukaan. Jawapannya ialah lorong trafik yang ditetapkan — mengehadkan pemadatan kepada laluan terpilih — bukan memandu di mana-mana yang mudah."
+          }
+        }
+      ]
+    },
+    {
+      "id": "11.5",
+      "heading": { "zh": "什么时候该重种", "en": "When to replant", "ms": "Bila perlu tanam semula" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "重种的时机通常在定植后 22–28 年。触发因素往往不是产量本身，而是收割高度：当棕榈高到收割效率明显下降、单位果串的采收成本快速上升时，即使产量还不算太差，继续经营也不划算了。",
+            "en": "Replanting normally falls between 22 and 28 years after planting. What triggers it is usually not yield but height: once palms are tall enough that harvesting slows markedly and the cost of getting each bunch down climbs, continuing stops paying even while yield is still respectable.",
+            "ms": "Tanam semula biasanya berlaku antara 22 dan 28 tahun selepas penanaman. Yang mencetuskannya biasanya bukan hasil tetapi ketinggian: apabila pokok cukup tinggi sehingga penuaian menjadi jauh lebih perlahan dan kos menurunkan setiap tandan meningkat, meneruskan tidak lagi berbaloi walaupun hasil masih memuaskan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "重种的另一个考虑是种植材料的进步：二十五年前的材料与今天的相比，产量潜力可能相差 15% 以上。这部分差距是重种的隐性收益，在决策时应当计入。",
+            "en": "The other consideration is genetic progress. Material planted twenty-five years ago may sit 15% or more below today's potential. That gap is a hidden return on replanting and belongs in the calculation.",
+            "ms": "Pertimbangan lain ialah kemajuan genetik. Bahan yang ditanam dua puluh lima tahun lalu mungkin 15% atau lebih di bawah potensi hari ini. Jurang itu ialah pulangan tersembunyi daripada tanam semula dan patut dimasukkan dalam pengiraan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "重种方式有两种：全面砍伐后重新种植（clear felling），或者在老棕榈之间先种新苗、待新苗接近结果时再砍老树（underplanting）。后者缩短了无收入期，但新苗在遮阴下生长受抑，而且老树残体与 Ganoderma 的关系使这种做法在病害高发区风险偏高。",
+            "en": "There are two approaches: clear-fell and replant, or underplant — put the new palms in between the old ones and fell the old stand as the new one approaches bearing. Underplanting shortens the income gap, but the young palms grow poorly under shade, and the relationship between old palm debris and Ganoderma makes it the riskier choice where that disease is established.",
+            "ms": "Terdapat dua pendekatan: tebang bersih dan tanam semula, atau tanam sisip — letakkan pokok baharu antara yang lama dan tebang dirian lama apabila yang baharu hampir berbuah. Tanam sisip memendekkan jurang pendapatan, tetapi pokok muda tumbuh lemah di bawah teduhan, dan hubungan antara sisa pokok lama dengan Ganoderma menjadikannya pilihan lebih berisiko di kawasan penyakit itu telah bertapak."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "Elaeidobius kamerunicus 引入后的产量记录（马来西亚，1981 年起）", "en": "Yield records following the introduction of Elaeidobius kamerunicus, Malaysia from 1981", "ms": "Rekod hasil selepas pengenalan Elaeidobius kamerunicus, Malaysia dari 1981" }
+  ]
+}

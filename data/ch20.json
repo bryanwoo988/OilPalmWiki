@@ -1,0 +1,122 @@
+{
+  "id": "ch20",
+  "num": 20,
+  "title": { "zh": "未来展望", "en": "The Road Ahead", "ms": "Masa Hadapan" },
+  "sections": [
+    {
+      "id": "20.1",
+      "heading": { "zh": "需求还会增长", "en": "Demand keeps rising", "ms": "Permintaan terus meningkat" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "全球植物油需求的增长来自两条线：人口增长，以及人均食用油消费量随收入上升。后者的影响更大——低收入国家的人均植物油消费量往往只有高收入国家的三分之一到一半，随着收入提高，这个差距会逐步缩小。",
+            "en": "Growth in world vegetable oil demand comes from two directions: population, and rising per-capita consumption as incomes rise. The second matters more. Per-capita vegetable oil use in low-income countries often runs at a third to a half of that in high-income countries, and that gap narrows as incomes climb.",
+            "ms": "Pertumbuhan permintaan minyak sayuran dunia datang dari dua arah: penduduk, dan penggunaan per kapita yang meningkat apabila pendapatan naik. Yang kedua lebih penting. Penggunaan minyak sayuran per kapita di negara berpendapatan rendah selalunya sepertiga hingga separuh daripada negara berpendapatan tinggi, dan jurang itu mengecil apabila pendapatan meningkat."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "要满足这部分增长，只有两条路：多开地，或者提高现有土地的单产。第一条路在可持续性上越来越难走通——可用的非森林土地有限，法规和市场准入都在收紧。所以答案实际上落在第二条路上。",
+            "en": "There are only two ways to meet that growth: open more land, or lift yield on land already planted. The first route is getting harder to take — suitable non-forest land is limited, and both regulation and market access are tightening. Which leaves the second.",
+            "ms": "Hanya ada dua cara memenuhi pertumbuhan itu: buka lebih banyak tanah, atau tingkatkan hasil di tanah yang sudah ditanam. Laluan pertama semakin sukar — tanah bukan hutan yang sesuai adalah terhad, dan kedua-dua peraturan serta akses pasaran semakin ketat. Maka tinggallah yang kedua."
+          }
+        }
+      ]
+    },
+    {
+      "id": "20.2",
+      "heading": { "zh": "产量差距是最大的机会", "en": "The yield gap is the opportunity", "ms": "Jurang hasil ialah peluangnya" },
+      "blocks": [
+        {
+          "type": "chart",
+          "chart": {
+            "kind": "hbar",
+            "title": { "zh": "产量层级：从世界平均到理论潜力", "en": "Yield levels, from world average to theoretical potential", "ms": "Tahap hasil, dari purata dunia ke potensi teori" },
+            "note": { "zh": "世界平均与管理良好的园区之间的差距，几乎全部是管理造成的，而不是遗传或气候造成的。", "en": "The gap between the world average and a well-run estate is almost entirely management, not genetics or climate.", "ms": "Jurang antara purata dunia dan ladang yang diurus baik hampir seluruhnya pengurusan, bukan genetik atau iklim." },
+            "source": { "zh": "Oil World 2013；试验与无性系记录", "en": "Oil World 2013; trial and clonal records", "ms": "Oil World 2013; rekod ujian dan klon" },
+            "x": {
+              "categories": [
+                { "zh": "世界平均", "en": "World average", "ms": "Purata dunia" },
+                { "zh": "小农典型水平", "en": "Typical smallholder", "ms": "Pekebun kecil tipikal" },
+                { "zh": "管理良好的大园", "en": "Well-run estate", "ms": "Ladang diurus baik" },
+                { "zh": "最好的试验小区与无性系", "en": "Best trials and clones", "ms": "Ujian dan klon terbaik" },
+                { "zh": "理论潜力", "en": "Theoretical potential", "ms": "Potensi teori" }
+              ]
+            },
+            "y": { "unit": "t/ha", "label": { "zh": "吨油／公顷·年", "en": "tonnes oil per ha per year", "ms": "tan minyak sehektar setahun" } },
+            "series": [
+              {
+                "name": { "zh": "产油量", "en": "Oil yield", "ms": "Hasil minyak" },
+                "values": [3.8, 2.6, 5.5, 9.0, 11.0],
+                "colors": ["--c-2", "--c-3", "--c-1", "--c-1", "--c-6"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "把世界平均单产从 3.8 吨提高到 5 吨，就相当于在不新增一公顷土地的情况下，增加约三成的全球棕油供应。这个目标不需要任何尚未存在的技术——需要的只是把已知的做法落实到更多园区：合格的种植材料、按需施肥、收割纪律、及时到厂、病害防控。",
+            "en": "Lifting the world average from 3.8 tonnes to 5 would add roughly 30% to global palm oil supply without a single extra hectare. Reaching it needs no technology that does not already exist — only getting known practice onto more blocks: sound planting material, fertiliser matched to need, harvesting discipline, prompt delivery to the mill, and disease control.",
+            "ms": "Menaikkan purata dunia daripada 3.8 tan kepada 5 akan menambah kira-kira 30% kepada bekalan minyak sawit global tanpa satu hektar tambahan. Mencapainya tidak memerlukan teknologi yang belum wujud — hanya membawa amalan yang sudah diketahui ke lebih banyak blok: bahan tanaman yang baik, baja mengikut keperluan, disiplin penuaian, penghantaran segera ke kilang, dan kawalan penyakit."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "小农的产量差距最大，因此提升空间也最大。小农约占全球种植面积的四成，单产却普遍比大园低 20%–40%。把技术推广、优质种苗和融资送到这一群体手里，是整个行业回报率最高的一项投资——对产量、对收入、对森林都是。",
+            "en": "The gap is widest among smallholders, so the headroom is largest there too. They hold about 40% of the world's planted area at yields 20–40% below estates. Getting extension, good planting material and finance to that group is the highest-return investment available to this industry — for output, for incomes and for forests alike.",
+            "ms": "Jurangnya paling luas dalam kalangan pekebun kecil, jadi ruang peningkatan juga paling besar di situ. Mereka memegang kira-kira 40% keluasan tanaman dunia dengan hasil 20–40% di bawah ladang besar. Membawa pengembangan, bahan tanaman yang baik dan pembiayaan kepada kumpulan itu ialah pelaburan berpulangan tertinggi yang ada dalam industri ini — untuk pengeluaran, pendapatan dan hutan sekali gus."
+          }
+        }
+      ]
+    },
+    {
+      "id": "20.3",
+      "heading": { "zh": "育种与技术的下一步", "en": "What breeding and technology can add", "ms": "Apa yang boleh ditambah oleh pembiakbakaan dan teknologi" },
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            { "zh": "矮生材料：把树高年增量从 50 厘米降到 30 厘米，等于把收割期延长若干年，直接改善整个周期的经济性。", "en": "Slow-height material: cutting annual height increment from 50 cm to 30 cm adds several harvestable years and improves the economics of the whole cycle.", "ms": "Bahan berketinggian perlahan: mengurangkan pertambahan ketinggian tahunan daripada 50 cm kepada 30 cm menambah beberapa tahun boleh tuai dan memperbaiki ekonomi keseluruhan kitaran." },
+            { "zh": "Ganoderma 耐性：目前只有耐性没有抗性，这是东南亚最迫切的育种目标，尤其在第三、第四代重种地块上。", "en": "Ganoderma tolerance: only tolerance exists today, not resistance. It is South-East Asia's most pressing breeding target, particularly on third- and fourth-generation replant land.", "ms": "Ketahanan Ganoderma: hanya toleransi wujud hari ini, bukan ketahanan. Ia sasaran pembiakbakaan paling mendesak di Asia Tenggara, terutamanya di tanah tanam semula generasi ketiga dan keempat." },
+            { "zh": "耐旱性：随着气候变率上升，这项性状的价值在提高，尤其在边际产区。", "en": "Drought tolerance: as climate variability rises, this trait is worth more, especially in marginal regions.", "ms": "Ketahanan kemarau: apabila kebolehubahan iklim meningkat, sifat ini semakin bernilai, terutamanya di kawasan marginal." },
+            { "zh": "基因组选择：把选择周期从 10–12 年压缩下来，这是加快一切其他改良的杠杆。", "en": "Genomic selection: shortening the 10–12 year cycle is the lever that speeds up every other improvement.", "ms": "Pemilihan genomik: memendekkan kitaran 10–12 tahun ialah tuas yang mempercepat setiap penambahbaikan lain." },
+            { "zh": "无性系繁殖：如果 mantled 异常的分子筛查能稳定可靠，扩繁规模的限制就会松动，优良单株的复制才真正有经济意义。", "en": "Clonal propagation: if molecular screening for the mantled abnormality becomes reliable, the ceiling on multiplication lifts and copying elite palms finally makes economic sense.", "ms": "Pembiakan klon: jika saringan molekul untuk keabnormalan mantled menjadi boleh diharap, had pembiakan akan longgar dan menyalin pokok elit akhirnya masuk akal dari segi ekonomi." },
+            { "zh": "精准农业：无人机与卫星影像做树冠健康监测、变量施肥、病株早期定位——这些在大园区已经开始落地。", "en": "Precision agriculture: drone and satellite imagery for canopy health, variable-rate fertiliser and early location of diseased palms — already being adopted on larger estates.", "ms": "Pertanian persis: imej dron dan satelit untuk kesihatan kanopi, baja kadar berubah dan pengesanan awal pokok berpenyakit — sudah diterima pakai di ladang yang lebih besar." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20.4",
+      "heading": { "zh": "结语", "en": "In closing", "ms": "Penutup" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕是一种极其高效的作物，也是一种后果很重的作物。它以最少的土地产出最多的油，这是事实；它的扩张在几十年间造成了真实的森林与碳损失，这也是事实。两件事同时成立，并不矛盾。",
+            "en": "The oil palm is an extraordinarily efficient crop and a consequential one. It produces more oil from less land than anything else — that is true. Its expansion caused real losses of forest and carbon over several decades — that is also true. Both hold at once, and there is no contradiction in saying so.",
+            "ms": "Sawit ialah tanaman yang sangat cekap dan juga tanaman yang berat akibatnya. Ia menghasilkan lebih banyak minyak daripada tanah yang lebih sedikit berbanding apa-apa jua — itu benar. Pengembangannya menyebabkan kehilangan hutan dan karbon yang sebenar selama beberapa dekad — itu juga benar. Kedua-duanya benar serentak, dan tiada percanggahan dalam menyatakannya."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "从这两条事实出发，能推出的结论其实相当具体：把新增产量放在已经种植的土地上，而不是放在新开的土地上。这意味着更好的种植材料、更准确的施肥、更严格的收割纪律、更有效的病虫害管理——也就是这本手册前面十九章讲的全部内容。技术上没有一项是新的，难的是把它们真正落实到每一片园区，尤其是那四成小农的园区。",
+            "en": "From those two facts a fairly specific conclusion follows: put the additional production on land that is already planted rather than on land newly opened. That means better planting material, more accurate fertiliser, stricter harvesting discipline, more effective pest and disease management — which is to say, everything in the preceding nineteen chapters. None of it is new. The hard part is getting it onto every block, and above all onto the 40% of the area that smallholders farm.",
+            "ms": "Daripada dua fakta itu satu kesimpulan yang agak khusus menyusul: letakkan pengeluaran tambahan di tanah yang sudah ditanam dan bukan di tanah yang baru dibuka. Itu bermakna bahan tanaman yang lebih baik, baja yang lebih tepat, disiplin penuaian yang lebih ketat, pengurusan perosak dan penyakit yang lebih berkesan — iaitu segala-galanya dalam sembilan belas bab sebelum ini. Tiada satu pun yang baharu. Bahagian yang sukar ialah membawanya ke setiap blok, dan terutamanya ke 40% keluasan yang diusahakan pekebun kecil."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Oil World Annual 2013 (ISTA Mielke GmbH)",
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "产量潜力与产量差距研究", "en": "Research on yield potential and the yield gap", "ms": "Penyelidikan potensi hasil dan jurang hasil" }
+  ]
+}

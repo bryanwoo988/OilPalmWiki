@@ -1,0 +1,134 @@
+{
+  "id": "ch07",
+  "num": 7,
+  "title": { "zh": "组织培养与生物技术", "en": "Tissue Culture and Biotechnology", "ms": "Kultur Tisu dan Bioteknologi" },
+  "sections": [
+    {
+      "id": "7.1",
+      "heading": { "zh": "为什么要做无性系", "en": "Why clone at all", "ms": "Mengapa perlu klon" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "D × P 种子是杂交种，后代之间仍有相当大的个体差异——同一批种苗种下去，最好的棕榈可能比最差的高产一倍。如果能把表现最好的那些单株直接复制，理论上整片园的产量就能接近现在最好的单株水平，一步提高 20%–30%。这就是组培育苗的全部吸引力。",
+            "en": "D × P seed is hybrid seed, and its offspring still vary a great deal: within one planting, the best palm may yield twice what the worst does. If the best individuals could simply be copied, a whole block could in principle perform at the level of today's best palms — a step change of 20–30%. That is the entire attraction of tissue culture.",
+            "ms": "Benih D × P ialah benih kacukan, dan anaknya masih sangat berbeza-beza: dalam satu penanaman, pokok terbaik mungkin menghasilkan dua kali ganda pokok terburuk. Jika individu terbaik boleh disalin, satu blok penuh secara teori boleh mencapai tahap pokok terbaik hari ini — lonjakan 20–30%. Itulah daya tarikan penuh kultur tisu."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕不能扦插也不能分株——它只有一个生长点，没有侧芽。因此唯一的无性繁殖途径是组织培养：取叶片或根尖外植体，诱导愈伤组织，经体细胞胚胎发生再生成完整植株。这条路在 1970 年代打通，商业化却一路曲折。",
+            "en": "The oil palm cannot be propagated by cuttings or by division: it has one growing point and no lateral buds. The only vegetative route is tissue culture — take a leaf or root-tip explant, induce callus, and regenerate whole plants through somatic embryogenesis. The route was opened in the 1970s; commercialisation has been anything but smooth.",
+            "ms": "Sawit tidak boleh dibiakkan melalui keratan atau pembahagian: ia mempunyai satu titik tumbuh dan tiada tunas sisi. Satu-satunya laluan vegetatif ialah kultur tisu — ambil eksplan daun atau hujung akar, aruh kalus, dan janakan semula pokok lengkap melalui embriogenesis somatik. Laluan itu dibuka pada 1970-an; pengkomersialannya jauh daripada lancar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "heading": { "zh": "mantled 异常：一次昂贵的教训", "en": "The mantled abnormality: an expensive lesson", "ms": "Keabnormalan mantled: satu pengajaran mahal" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "1980 年代，商业无性系开始大规模种植。几年后问题暴露：相当比例的组培苗结出异常的花和果——雄蕊原基发育成了肉质的副心皮，包在果实外面，形似「披风」，因此叫 mantled。严重的植株几乎完全不结实。",
+            "en": "Commercial clones went into the ground at scale in the 1980s. A few years later the problem surfaced: a substantial proportion of tissue-cultured palms produced abnormal flowers and fruit, with stamen primordia developing into fleshy supplementary carpels wrapped around the fruit like a mantle. Badly affected palms set almost no fruit at all.",
+            "ms": "Klon komersial ditanam secara besar-besaran pada 1980-an. Beberapa tahun kemudian masalah muncul: sebahagian besar pokok kultur tisu menghasilkan bunga dan buah abnormal, dengan primordium stamen membentuk karpel tambahan berisi yang membaluti buah seperti jubah. Pokok yang teruk terjejas hampir tidak berbuah langsung."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这个异常有几个特点让它格外难缠：它不是遗传突变，而是表观遗传变化（DNA 甲基化改变），所以常规的遗传筛查看不出来；它有部分可逆性，有些植株会随树龄恢复；最要命的是，它要等到棕榈开花才能发现——也就是定植三年之后。",
+            "en": "Several features made it particularly awkward. It is not a genetic mutation but an epigenetic change — an alteration in DNA methylation — so conventional genetic screening does not see it. It is partly reversible, with some palms recovering as they age. And worst of all, it cannot be detected until the palm flowers, which is three years after planting.",
+            "ms": "Beberapa ciri menjadikannya amat menyusahkan. Ia bukan mutasi genetik tetapi perubahan epigenetik — perubahan metilasi DNA — jadi saringan genetik biasa tidak mengesannya. Ia separa boleh berbalik, dengan sesetengah pokok pulih apabila meningkat usia. Dan yang paling teruk, ia tidak dapat dikesan sehingga pokok berbunga, iaitu tiga tahun selepas ditanam."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "mantled 异常的发生率与培养条件密切相关，尤其是愈伤组织继代培养的时间长短和生长调节剂的浓度。控制办法是缩短培养周期、限制继代次数——这直接限制了每个优良单株能扩繁的数量，也就限制了无性系的经济规模。",
+            "en": "The incidence is closely tied to culture conditions, especially how long callus is subcultured and at what growth-regulator concentration. The control is to shorten the culture cycle and limit subculturing — which directly caps how many plants each elite palm can yield, and therefore caps the economics of cloning.",
+            "ms": "Kejadiannya berkait rapat dengan keadaan kultur, terutamanya berapa lama kalus disubkultur dan pada kepekatan pengawal atur tumbesaran yang mana. Kawalannya ialah memendekkan kitaran kultur dan mengehadkan subkultur — yang terus mengehadkan bilangan pokok yang boleh dihasilkan daripada setiap pokok elit, dan seterusnya ekonomi pengklonan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "2015 年，研究者定位出与 mantled 表型关联的 Karma 转座子甲基化标记。这使得在苗期用分子检测筛除异常株成为可能，是这条技术路线多年来最重要的一次突破。",
+            "en": "In 2015, researchers identified a methylation marker at the Karma transposon associated with the mantled phenotype. That made it possible to screen out abnormal plants molecularly at the seedling stage — the most important advance this technology has seen in years.",
+            "ms": "Pada 2015, penyelidik mengenal pasti penanda metilasi pada transposon Karma yang berkaitan dengan fenotip mantled. Itu membolehkan pokok abnormal disaring secara molekul pada peringkat anak benih — kemajuan paling penting yang dicapai teknologi ini sejak bertahun-tahun."
+          }
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "heading": { "zh": "无性系今天的位置", "en": "Where clones stand today", "ms": "Kedudukan klon hari ini" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "经过三十多年，组培苗仍然只占商业种植材料的一小部分。原因是成本、扩繁效率和风险的综合结果：单株苗成本远高于种子苗，每个优良单株能安全扩繁的数量有限，而一旦出现批次性异常，损失是整片园二十五年的。",
+            "en": "Thirty-odd years on, tissue-cultured material still makes up only a small share of commercial planting. The reason is the combination of cost, multiplication rate and risk: a clonal plant costs far more than a seedling, the number of plants that can safely be produced from each elite palm is limited, and a bad batch costs a whole block twenty-five years.",
+            "ms": "Lebih tiga puluh tahun kemudian, bahan kultur tisu masih hanya sebahagian kecil daripada penanaman komersial. Sebabnya gabungan kos, kadar pembiakan dan risiko: pokok klon jauh lebih mahal daripada anak benih, bilangan pokok yang boleh dihasilkan dengan selamat daripada setiap pokok elit adalah terhad, dan satu kumpulan yang gagal merugikan satu blok selama dua puluh lima tahun."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "尽管如此，最好的无性系在试验中确实达到了每公顷 8–10 吨油的水平，明显高于同期的种子苗。随着甲基化检测的成熟和培养流程的改进，无性系的份额预计会缓慢上升，但短期内不会取代 D × P 种子。",
+            "en": "Even so, the best clones have reached 8–10 tonnes of oil per hectare in trials, clearly above seedling material planted alongside them. As methylation screening matures and culture protocols improve, the clonal share is expected to rise slowly — but it will not replace D × P seed in the near term.",
+            "ms": "Walau begitu, klon terbaik telah mencapai 8–10 tan minyak sehektar dalam ujian, jelas mengatasi bahan anak benih yang ditanam bersebelahan. Apabila saringan metilasi matang dan protokol kultur bertambah baik, bahagian klon dijangka meningkat perlahan — tetapi ia tidak akan menggantikan benih D × P dalam masa terdekat."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "无性系的另一个固有风险是遗传均一性。整片园基因型相同，意味着面对新的病害或环境胁迫时，没有任何个体差异作为缓冲。这在 Ganoderma 高风险区尤其值得权衡。",
+            "en": "Clones carry a second, inherent risk: genetic uniformity. A block of one genotype has no individual variation to buffer it against a new disease or a new stress. In Ganoderma country in particular, that is worth weighing carefully.",
+            "ms": "Klon membawa risiko kedua yang wujud secara semula jadi: keseragaman genetik. Blok dengan satu genotip tiada variasi individu untuk menampung penyakit baharu atau tekanan baharu. Di kawasan Ganoderma khususnya, ini wajar ditimbang dengan teliti."
+          }
+        }
+      ]
+    },
+    {
+      "id": "7.4",
+      "heading": { "zh": "基因组学带来的改变", "en": "What genomics changed", "ms": "Apa yang diubah oleh genomik" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕基因组在 2013 年发表，同年 SHELL 基因被定位。这两件事把这个作物从「只能靠田间表型慢慢选」推进到可以做分子辅助选择的阶段。目前已有实际应用的包括：",
+            "en": "The oil palm genome was published in 2013, and the SHELL gene was identified the same year. Between them they moved the crop from selection on field phenotype alone to marker-assisted selection. The applications already in practical use include:",
+            "ms": "Genom sawit diterbitkan pada 2013, dan gen SHELL dikenal pasti pada tahun yang sama. Kedua-duanya menggerakkan tanaman ini daripada pemilihan berdasarkan fenotip ladang semata-mata kepada pemilihan berbantu penanda. Aplikasi yang sudah digunakan termasuk:"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "SHELL 基因检测——苗期确认是 tenera，把混入的 dura 和 pisifera 淘汰在苗圃里，而不是四年后在田里。", "en": "SHELL testing — confirming tenera in the nursery and culling stray dura and pisifera there, rather than in the field four years later.", "ms": "Ujian SHELL — mengesahkan tenera di tapak semaian dan membuang dura serta pisifera yang tersasul di situ, bukan di ladang empat tahun kemudian." },
+            { "zh": "VIRESCENS 基因检测——选择成熟度更易判断的果色类型。", "en": "VIRESCENS testing — selecting for the fruit colour whose ripeness is easier to judge.", "ms": "Ujian VIRESCENS — memilih warna buah yang kematangannya lebih mudah dinilai." },
+            { "zh": "Karma 甲基化标记——在苗期筛除 mantled 风险植株。", "en": "The Karma methylation marker — screening out mantled-risk plants at the seedling stage.", "ms": "Penanda metilasi Karma — menyaring pokok berisiko mantled pada peringkat anak benih." },
+            { "zh": "亲本身份鉴定与种子园质量控制——确认杂交组合确实是标称的那一个。", "en": "Parent verification and seed-garden quality control — confirming a cross really is the combination it is sold as.", "ms": "Pengesahan induk dan kawalan kualiti taman benih — memastikan kacukan benar-benar gabungan yang dijual." }
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "产量本身仍然是多基因控制、遗传力低的性状，基因组选择在这方面的效果还在验证中。转基因油棕（例如提高油酸比例）有过实验室成果，但受制于监管与市场接受度，至今没有商业化种植。",
+            "en": "Yield itself remains polygenic and weakly heritable, and genomic selection for it is still being validated. Transgenic oil palm — for instance to raise the oleic acid share — has produced laboratory results, but regulation and market acceptance have kept it out of commercial planting.",
+            "ms": "Hasil itu sendiri kekal poligenik dan lemah kebolehwarisannya, dan pemilihan genomik untuknya masih disahkan. Sawit transgenik — contohnya untuk menaikkan bahagian asid oleik — telah menghasilkan keputusan makmal, tetapi peraturan dan penerimaan pasaran menghalangnya daripada penanaman komersial."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "MPOB 基因组与 SHELL、Karma 标记研究（2013、2015）", "en": "MPOB genome, SHELL and Karma marker research (2013, 2015)", "ms": "Penyelidikan genom, SHELL dan penanda Karma MPOB (2013, 2015)" }
+  ]
+}

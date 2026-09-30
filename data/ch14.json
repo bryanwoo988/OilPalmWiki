@@ -1,0 +1,166 @@
+{
+  "id": "ch14",
+  "num": 14,
+  "title": { "zh": "虫害与综合防治", "en": "Pests and Integrated Management", "ms": "Perosak dan Pengurusan Bersepadu" },
+  "sections": [
+    {
+      "id": "14.1",
+      "heading": { "zh": "综合防治的基本立场", "en": "The case for integrated management", "ms": "Asas pengurusan bersepadu" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "油棕园里几乎所有的重大虫害爆发，追根究底都与天敌被破坏有关。成龄油棕园是一个相对稳定的生态系统，寄生蜂、捕食性昆虫、蜘蛛和鸟类通常足以把害虫压在经济阈值以下。一旦大面积喷洒广谱杀虫剂，天敌恢复得比害虫慢，结果往往是更严重的第二次爆发。",
+            "en": "Nearly every serious pest outbreak in an oil palm block traces back to damaged natural enemies. A mature stand is a relatively stable ecosystem in which parasitoids, predatory insects, spiders and birds normally hold pests below the economic threshold. Spray a broad-spectrum insecticide across an area and the natural enemies recover more slowly than the pest, so the usual result is a worse second outbreak.",
+            "ms": "Hampir setiap serangan perosak serius di blok sawit berpunca daripada musuh semula jadi yang dimusnahkan. Dirian matang ialah ekosistem yang agak stabil di mana parasitoid, serangga pemangsa, labah-labah dan burung biasanya menahan perosak di bawah ambang ekonomi. Semburan racun serangga spektrum luas di kawasan luas memulihkan musuh semula jadi lebih perlahan daripada perosak, jadi hasil biasanya ialah serangan kedua yang lebih teruk."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "定期普查：固定样点、固定频率，记录虫口密度趋势，而不是等到看见落叶才反应。", "en": "Census regularly: fixed sample points, fixed frequency, recording the trend in pest numbers rather than reacting once defoliation is visible.", "ms": "Bancian berkala: titik sampel tetap, kekerapan tetap, merekod arah aliran bilangan perosak dan bukan bertindak balas setelah gugur daun kelihatan." },
+            { "zh": "行动阈值：达到阈值才处理，不到阈值不动手。", "en": "Act on thresholds: treat when the threshold is crossed, and not before.", "ms": "Bertindak pada ambang: rawat apabila ambang dilepasi, bukan sebelumnya." },
+            { "zh": "有益植物带：在行间和道路边种 Turnera、Cassia、Antigonon 等蜜源植物，供养寄生蜂。", "en": "Beneficial plant strips: Turnera, Cassia and Antigonon along roads and in interrows feed the parasitoid wasps.", "ms": "Jalur tumbuhan berfaedah: Turnera, Cassia dan Antigonon di tepi jalan dan antara baris memberi makan kepada tebuan parasitoid." },
+            { "zh": "定点处理优先：树干注射或单株处理，而不是全园喷雾。", "en": "Prefer targeted treatment: trunk injection or single-palm treatment rather than blanket spraying.", "ms": "Utamakan rawatan bersasar: suntikan batang atau rawatan sepokok dan bukan semburan menyeluruh." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.2",
+      "heading": { "zh": "食叶害虫", "en": "Leaf-eating pests", "ms": "Perosak pemakan daun" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "袋蛾和刺蛾是东南亚最主要的食叶害虫，两者都能在短时间内造成大面积落叶。失去 50% 叶面积的棕榈，产量损失可以达到 40%，而且要两年才恢复——因为损失体现在两年后成熟的那批果串上。",
+            "en": "Bagworms and nettle caterpillars are the main defoliators in South-East Asia, and both can strip large areas quickly. A palm that loses half its leaf area can lose 40% of its yield, and it takes two years to recover — because the loss appears in the bunches that ripen two years later.",
+            "ms": "Ulat bungkus dan ulat bulu ialah pemakan daun utama di Asia Tenggara, dan kedua-duanya boleh menggondolkan kawasan luas dengan cepat. Pokok yang kehilangan separuh luas daunnya boleh kehilangan 40% hasil, dan mengambil masa dua tahun untuk pulih — kerana kerugian itu muncul pada tandan yang masak dua tahun kemudian."
+          }
+        },
+        {
+          "type": "table",
+          "caption": { "zh": "主要食叶害虫", "en": "The main defoliators", "ms": "Pemakan daun utama" },
+          "headers": [
+            { "zh": "害虫", "en": "Pest", "ms": "Perosak" },
+            { "zh": "识别", "en": "How to recognise it", "ms": "Cara mengenalinya" },
+            { "zh": "防治要点", "en": "Control", "ms": "Kawalan" }
+          ],
+          "rows": [
+            [
+              { "zh": "袋蛾 Metisa plana、Pteroma pendula、Mahasena corbetti", "en": "Bagworms — Metisa plana, Pteroma pendula, Mahasena corbetti", "ms": "Ulat bungkus — Metisa plana, Pteroma pendula, Mahasena corbetti" },
+              { "zh": "幼虫用叶片碎片织成的小袋挂在叶背，取食后叶片呈窗格状透光", "en": "larvae in small cases made of leaf fragments hanging under the leaflets; feeding leaves a windowed, translucent leaf", "ms": "larva dalam sarung kecil daripada serpihan daun tergantung di bawah anak daun; makanannya meninggalkan daun bertingkap dan lut sinar" },
+              { "zh": "寄生蜂为主；虫口超阈值时用树干注射，避免全园喷雾", "en": "rely on parasitoids; if the threshold is crossed, trunk injection rather than blanket spray", "ms": "bergantung kepada parasitoid; jika ambang dilepasi, suntikan batang dan bukan semburan menyeluruh" }
+            ],
+            [
+              { "zh": "刺蛾 Setora nitens、Setothosea asigna", "en": "Nettle caterpillars — Setora nitens, Setothosea asigna", "ms": "Ulat bulu — Setora nitens, Setothosea asigna" },
+              { "zh": "体表有刺毛的绿色或花色幼虫，取食快，可造成整片叶轴光秃", "en": "green or patterned larvae covered in stinging spines; they feed fast and can strip a rachis bare", "ms": "larva hijau atau bercorak dengan duri menyengat; ia makan cepat dan boleh menggondolkan rakis" },
+              { "zh": "天敌丰富（寄生蜂 Spinaria、病毒、真菌）；阈值管理", "en": "well supplied with natural enemies — Spinaria parasitoids, viruses, fungi; manage on thresholds", "ms": "banyak musuh semula jadi — parasitoid Spinaria, virus, kulat; urus mengikut ambang" }
+            ],
+            [
+              { "zh": "潜叶甲 Coelaenomenodera（非洲）", "en": "Leaf miner — Coelaenomenodera (Africa)", "ms": "Pengorek daun — Coelaenomenodera (Afrika)" },
+              { "zh": "幼虫在小叶内取食形成坏死的隧道斑", "en": "larvae mine inside the leaflet, leaving necrotic galleries", "ms": "larva mengorek dalam anak daun, meninggalkan galeri nekrotik" },
+              { "zh": "西非周期性爆发；以寄生蜂防治为主", "en": "cyclical outbreaks in West Africa; parasitoids are the main control", "ms": "serangan berkitar di Afrika Barat; parasitoid ialah kawalan utama" }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14.3",
+      "heading": { "zh": "犀角金龟与象甲", "en": "Rhinoceros beetle and weevils", "ms": "Kumbang badak dan kumbang moncong" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "犀角金龟 Oryctes rhinoceros 是重种阶段最危险的害虫。成虫钻入幼棕的生长点取食，抽出的新叶呈典型的 V 形或扇形缺刻；钻得深的直接杀死生长点，棕榈随即死亡。",
+            "en": "Oryctes rhinoceros is the most dangerous pest of the replanting phase. Adults bore into the growing point of young palms to feed, and the fronds that emerge afterwards carry the characteristic V-shaped or fan-shaped cuts. A deep enough bore kills the growing point, and the palm with it.",
+            "ms": "Oryctes rhinoceros ialah perosak paling berbahaya pada fasa tanam semula. Kumbang dewasa menebuk ke titik tumbuh pokok muda untuk makan, dan pelepah yang muncul selepas itu membawa potongan berbentuk V atau kipas yang khas. Tebukan yang cukup dalam membunuh titik tumbuh, dan pokok itu bersamanya."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "关键在于它的繁殖场所：腐烂的棕榈残体。重种时留下的老棕榈堆、厚堆的空果串、树桩——这些都是犀角金龟的繁殖温床。所以零燃烧整地必须配合残体粉碎摊薄，否则等于给害虫建了育婴房。",
+            "en": "The key is where it breeds: rotting palm material. Heaps of felled palms left from replanting, thickly piled empty fruit bunches and standing stumps are all nurseries for it. Zero-burn clearing therefore has to be paired with chipping and thin spreading, or it amounts to building the pest a breeding ground.",
+            "ms": "Kuncinya ialah tempat ia membiak: bahan sawit yang reput. Timbunan pokok yang ditebang semasa tanam semula, tandan buah kosong yang ditimbun tebal dan tunggul yang tinggal semuanya menjadi tapak pembiakan. Pembersihan tanpa bakar mesti digandingkan dengan pencincangan dan taburan nipis, atau ia sama sahaja dengan membina tapak pembiakan untuk perosak itu."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "残体管理是首要措施：粉碎、摊薄、加速腐解。", "en": "Debris management comes first: chip it, spread it thin, let it break down fast.", "ms": "Pengurusan sisa didahulukan: cincang, tabur nipis, biarkan terurai cepat." },
+            { "zh": "信息素诱捕器（ethyl 4-methyloctanoate）大面积布设，可显著降低成虫密度。", "en": "Pheromone traps baited with ethyl 4-methyloctanoate, deployed across the area, cut adult numbers appreciably.", "ms": "Perangkap feromon berumpan ethyl 4-methyloctanoate, dipasang merentas kawasan, mengurangkan bilangan dewasa dengan ketara." },
+            { "zh": "生物防治：Oryctes 核型多角体病毒与绿僵菌 Metarhizium 可在繁殖场所施用。", "en": "Biological control: Oryctes nudivirus and the fungus Metarhizium can be applied at breeding sites.", "ms": "Kawalan biologi: Oryctes nudivirus dan kulat Metarhizium boleh digunakan di tapak pembiakan." },
+            { "zh": "幼棕心叶施用杀虫颗粒剂，在高压力时期作为补充措施。", "en": "Insecticide granules in the spear base of young palms, as a supplement in periods of high pressure.", "ms": "Butiran racun serangga di pangkal pucuk pokok muda, sebagai tambahan pada tempoh tekanan tinggi." }
+          ]
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "红棕象甲 Rhynchophorus 属通常是继发性害虫：它被犀角金龟造成的伤口吸引，在茎内蛀食。它本身的危害可以致命，但预防的抓手仍然是先控制住犀角金龟。",
+            "en": "Rhynchophorus weevils are usually secondary: they are drawn to wounds left by rhinoceros beetle and tunnel inside the stem. The damage they do can kill on its own, but the lever for preventing it is still control of the rhinoceros beetle.",
+            "ms": "Kumbang Rhynchophorus biasanya sekunder: ia tertarik kepada luka yang ditinggalkan kumbang badak dan mengorek dalam batang. Kerosakannya boleh membunuh, tetapi tuas pencegahan tetap kawalan kumbang badak."
+          }
+        }
+      ]
+    },
+    {
+      "id": "14.4",
+      "heading": { "zh": "鼠害与谷仓猫头鹰", "en": "Rats and the barn owl", "ms": "Tikus dan burung hantu" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "鼠类（主要是 Rattus tiomanicus）取食成熟果实和散果，损失可以达到产量的 5%–10%，在管理不善的园区更高。它们还啃食幼棕基部，造成定植期死亡。",
+            "en": "Rats, chiefly Rattus tiomanicus, feed on ripe fruit and loose fruit and can take 5–10% of the crop, more on a poorly run estate. They also gnaw the base of young palms and cause losses during establishment.",
+            "ms": "Tikus, terutamanya Rattus tiomanicus, memakan buah masak dan buah lerai serta boleh mengambil 5–10% hasil, lebih tinggi di ladang yang kurang diurus. Ia juga menggigit pangkal pokok muda dan menyebabkan kerugian semasa penanaman."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "最成功的防治手段是引入谷仓猫头鹰 Tyto alba，在园区内按每 10–15 公顷一个的密度设置人工巢箱。一对繁殖中的猫头鹰每年可捕食上千只鼠。这个方案的优点是成本低、无残留、不伤天敌，并且效果持久——是油棕产业里生物防治最成功的案例之一。",
+            "en": "The most successful control is the barn owl, Tyto alba, encouraged with nest boxes at roughly one per 10–15 hectares. A breeding pair takes upwards of a thousand rats in a year. The approach is cheap, leaves no residue, harms no natural enemies and keeps working — one of the industry's clearest biological control successes.",
+            "ms": "Kawalan paling berjaya ialah burung hantu, Tyto alba, digalakkan dengan kotak sarang kira-kira satu bagi setiap 10–15 hektar. Sepasang yang membiak menangkap lebih seribu ekor tikus setahun. Pendekatan ini murah, tiada residu, tidak memudaratkan musuh semula jadi dan terus berkesan — antara kejayaan kawalan biologi paling jelas dalam industri ini."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "抗凝血类灭鼠剂与猫头鹰方案互相冲突：猫头鹰吃了中毒的老鼠会二次中毒。两者不能同时用。决定用猫头鹰，就要停用灭鼠剂。",
+            "en": "Anticoagulant rodenticides and the owl programme work against each other: an owl that eats a poisoned rat is poisoned in turn. They cannot run together. Choosing owls means stopping the bait.",
+            "ms": "Racun tikus antikoagulan dan program burung hantu bercanggah: burung hantu yang memakan tikus beracun turut diracuni. Kedua-duanya tidak boleh digunakan serentak. Memilih burung hantu bermakna menghentikan umpan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "14.5",
+      "heading": { "zh": "授粉象鼻虫：唯一受欢迎的甲虫", "en": "The one beetle you want", "ms": "Satu-satunya kumbang yang dialu-alukan" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "Elaeidobius kamerunicus 在虫害这一章里出现，是因为它提醒了一件事：并非园区里所有昆虫都该被消灭。这只象鼻虫是油棕的主要传粉者，它的种群健康直接决定果实／果串比，进而决定出油率。",
+            "en": "Elaeidobius kamerunicus belongs in a chapter on pests for one reason: it is a reminder that not every insect in the block is to be killed. This weevil is the crop's principal pollinator, and the health of its population feeds straight through into fruit set and therefore into the extraction rate.",
+            "ms": "Elaeidobius kamerunicus wajar berada dalam bab perosak atas satu sebab: ia peringatan bahawa bukan setiap serangga di blok itu perlu dibunuh. Kumbang ini ialah pendebunga utama tanaman, dan kesihatan populasinya terus mempengaruhi pembentukan buah dan seterusnya kadar perahan."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "这正是综合防治的现实理由：广谱杀虫剂杀掉食叶害虫的同时，也会杀掉传粉象鼻虫和所有天敌。一次全园喷雾省下的落叶损失，可能被随后几个月果实／果串比下降造成的损失全部抵消，甚至倒亏。",
+            "en": "This is the practical case for integrated management. A broad-spectrum spray that kills defoliators also kills the pollinating weevil and every natural enemy present. The defoliation saved by one blanket spray can be entirely offset — or worse — by the drop in fruit set over the following months.",
+            "ms": "Inilah alasan praktikal bagi pengurusan bersepadu. Semburan spektrum luas yang membunuh pemakan daun juga membunuh kumbang pendebunga dan setiap musuh semula jadi. Gugur daun yang dijimatkan oleh satu semburan menyeluruh boleh diimbangi sepenuhnya — atau lebih teruk — oleh penurunan pembentukan buah pada bulan-bulan berikutnya."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "东南亚综合虫害管理实践", "en": "Integrated pest management practice in South-East Asia", "ms": "Amalan pengurusan perosak bersepadu di Asia Tenggara" }
+  ]
+}

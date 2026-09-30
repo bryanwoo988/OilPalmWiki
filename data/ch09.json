@@ -1,0 +1,143 @@
+{
+  "id": "ch09",
+  "num": 9,
+  "title": { "zh": "选址与整地", "en": "Site Selection and Land Preparation", "ms": "Pemilihan Tapak dan Penyediaan Tanah" },
+  "sections": [
+    {
+      "id": "9.1",
+      "heading": { "zh": "开园之前", "en": "Before the first tree comes down", "ms": "Sebelum pokok pertama ditebang" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "整地阶段的决定，是整个项目里最不可逆的一批。土壤压实、表土流失、排水系统走向、道路网布局——这些一旦做错，之后二十五年都在付代价，而且大多无法补救。反过来，在这个阶段多花的钱，回报期往往很短。",
+            "en": "Decisions taken during land preparation are the least reversible in the whole project. Compaction, loss of topsoil, the alignment of the drainage system, the road network — get these wrong and the next twenty-five years pay for it, mostly with no remedy available. Conversely, money spent carefully at this stage tends to pay back quickly.",
+            "ms": "Keputusan yang dibuat semasa penyediaan tanah adalah paling tidak boleh diubah dalam keseluruhan projek. Pemadatan, kehilangan tanah atas, penjajaran sistem saliran, rangkaian jalan — jika salah, dua puluh lima tahun akan datang menanggungnya, kebanyakannya tanpa penyelesaian. Sebaliknya, wang yang dibelanjakan dengan teliti pada peringkat ini biasanya pulang dengan cepat."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "土壤调查与土地适宜性评级（见第 4 章），落到具体的地块单元。", "en": "A soil survey and suitability grading — see Chapter 4 — resolved down to individual mapping units.", "ms": "Kajian tanah dan penggredan kesesuaian — lihat Bab 4 — diperincikan kepada unit pemetaan individu." },
+            { "zh": "长期气候数据，特别是历史水分亏缺和旱季长度。", "en": "Long-run climate records, particularly historical water deficit and the length of the dry season.", "ms": "Rekod iklim jangka panjang, terutamanya defisit air sejarah dan panjang musim kemarau." },
+            { "zh": "地形测量：坡度分布决定需要多少梯田、道路怎么走、机械化程度能到哪里。", "en": "A topographic survey: the slope distribution decides how much terracing is needed, where roads can run, and how far mechanisation can go.", "ms": "Ukur topografi: taburan cerun menentukan berapa banyak teres diperlukan, di mana jalan boleh dibina, dan sejauh mana mekanisasi boleh dilaksanakan." },
+            { "zh": "工厂位置与运输距离——果串必须在 24 小时内到厂，这直接限制了种植半径。", "en": "Mill location and haulage distance — bunches must reach the mill within 24 hours, which puts a hard limit on the planting radius.", "ms": "Lokasi kilang dan jarak pengangkutan — tandan mesti sampai ke kilang dalam 24 jam, yang mengehadkan jejari penanaman." },
+            { "zh": "法律与可持续性审查：土地权属、社区权利、高保护价值与高碳储量区域的识别（见第 19 章）。", "en": "Legal and sustainability due diligence: land title, community rights, and identification of high conservation value and high carbon stock areas — see Chapter 19.", "ms": "Usaha wajar undang-undang dan kelestarian: hak milik tanah, hak komuniti, dan pengenalpastian kawasan nilai pemuliharaan tinggi serta stok karbon tinggi — lihat Bab 19." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "heading": { "zh": "园区布局", "en": "Laying out the block", "ms": "Susun atur blok" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "标准做法是把园区切成约 25–30 公顷的作业区（block），四周环以道路和排水沟。这个尺寸不是随意定的：它让每个作业区的收割半径控制在人工搬运的合理范围内，同时让一个收割班组的日工作量与一个作业区大致匹配。",
+            "en": "The standard layout divides the estate into blocks of roughly 25–30 hectares, each bounded by roads and drains. The size is not arbitrary: it keeps the carrying distance within what a harvester can reasonably manage, and it makes one block roughly a day's work for one harvesting gang.",
+            "ms": "Susun atur standard membahagikan ladang kepada blok kira-kira 25–30 hektar, setiap satu dibatasi jalan dan parit. Saiznya bukan sewenang-wenangnya: ia mengekalkan jarak angkut dalam lingkungan yang munasabah bagi penuai, dan menjadikan satu blok kira-kira kerja sehari bagi satu kumpulan penuai."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "道路网通常分三级：主干道全天候通行，可供载重卡车；收集道路连接各作业区；采果小路（harvesting path）在棕榈行间。排水沟按等级设计，从田间浅沟汇到集水沟再到主排水。在平地和沿海冲积土上，排水系统的设计比什么都重要；在坡地上，防侵蚀才是重点。",
+            "en": "The road network usually has three levels: an all-weather main road carrying loaded lorries, collection roads serving the blocks, and harvesting paths between the palm rows. Drains are graded likewise, from shallow field drains into collection drains into a main outfall. On flat ground and coastal alluvium, drainage design matters more than anything else; on slopes, erosion control takes its place.",
+            "ms": "Rangkaian jalan biasanya mempunyai tiga peringkat: jalan utama segala cuaca yang membawa lori bermuatan, jalan pengumpulan yang menyampai blok, dan laluan menuai antara barisan pokok. Parit digredkan begitu juga, daripada parit ladang cetek ke parit pengumpul ke saliran utama. Di tanah rata dan aluvium pantai, reka bentuk saliran lebih penting daripada apa-apa; di cerun, kawalan hakisan menggantikannya."
+          }
+        }
+      ]
+    },
+    {
+      "id": "9.3",
+      "heading": { "zh": "坡地与梯田", "en": "Slopes and terracing", "ms": "Cerun dan terasering" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "坡度超过约 12° 就应该考虑修梯田，超过 20° 基本是必须。梯田宽度一般 3–4 米，向内微倾（反坡），这样雨水沿梯面往内汇流而不是向外冲刷。修梯田的成本不低，但它同时解决了三个问题：减少侵蚀、保住表土和肥料、让收割和搬运有落脚点。",
+            "en": "Above about 12° of slope, terracing should be considered; above 20° it is effectively compulsory. Terraces are typically 3–4 m wide and cut with a slight backslope, so rain runs inwards along the terrace rather than over its edge. Terracing is not cheap, but it solves three problems at once: it cuts erosion, it keeps topsoil and fertiliser on the block, and it gives harvesters and carriers somewhere to stand.",
+            "ms": "Melebihi kira-kira 12° cerun, terasering patut dipertimbangkan; melebihi 20° ia wajib. Teres biasanya selebar 3–4 m dan dipotong dengan sedikit cerun ke belakang, supaya hujan mengalir ke dalam sepanjang teres dan bukan melimpah ke tepi. Terasering tidak murah, tetapi ia menyelesaikan tiga masalah sekali gus: mengurangkan hakisan, mengekalkan tanah atas dan baja di blok, serta memberi tempat berpijak kepada penuai dan pengangkut."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "text": {
+            "zh": "梯田如果修成外倾，比不修还糟——雨水会沿着梯面加速汇集，在下坡形成集中冲刷。反坡是关键，不是可选项。",
+            "en": "A terrace cut with an outward slope is worse than no terrace at all: water gathers along it, accelerates, and concentrates into gullying below. The backslope is the point, not an optional refinement.",
+            "ms": "Teres yang dipotong dengan cerun ke luar lebih buruk daripada tiada teres langsung: air berkumpul di sepanjangnya, memecut, dan menumpu menjadi galur di bawah. Cerun ke belakang itulah intinya, bukan tambahan pilihan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "9.4",
+      "heading": { "zh": "零燃烧整地", "en": "Clearing without fire", "ms": "Pembersihan tanpa bakar" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "过去整地普遍用火烧，因为便宜、快、还能一次性释放灰分养分。现在零燃烧（zero burn）已经是行业标准，一方面是法规和认证要求，另一方面是烟霾问题的社会压力。做法是把砍下的植株粉碎或堆成行，就地腐解。",
+            "en": "Clearing used to be done with fire, because it was cheap, quick and released ash nutrients in one go. Zero burn is now the industry standard, partly through regulation and certification and partly under public pressure over haze. The method is to chip the felled material or windrow it and let it rot down in place.",
+            "ms": "Pembersihan dahulunya dilakukan dengan api, kerana ia murah, cepat dan melepaskan nutrien abu sekali gus. Tanpa bakar kini menjadi standard industri, sebahagiannya melalui peraturan dan pensijilan dan sebahagiannya di bawah tekanan awam tentang jerebu. Kaedahnya ialah mencincang bahan yang ditebang atau menyusunnya dalam barisan dan membiarkannya reput di tempat."
+          }
+        },
+        {
+          "type": "p",
+          "text": {
+            "zh": "零燃烧的成本高于火烧，但有实实在在的农艺回报：有机质留在土里、表土结构得以保持、腐解过程持续释放养分（尤其是钾），而且残体堆行能有效减少径流和侵蚀。多数试验显示零燃烧地块的早期生长不输于火烧，成龄后产量往往更好。",
+            "en": "Zero burn costs more than burning, but it earns that back agronomically: organic matter stays in the soil, topsoil structure is preserved, decomposition releases nutrients — potassium above all — over several years, and the windrows themselves cut runoff and erosion. Most trials show early growth on unburnt land at least matching burnt land, with better yields once mature.",
+            "ms": "Tanpa bakar lebih mahal daripada membakar, tetapi ia berbaloi dari segi agronomi: bahan organik kekal dalam tanah, struktur tanah atas terpelihara, penguraian melepaskan nutrien — terutamanya kalium — selama beberapa tahun, dan barisan susunan itu sendiri mengurangkan air larian dan hakisan. Kebanyakan ujian menunjukkan pertumbuhan awal di tanah tidak dibakar sekurang-kurangnya menyamai tanah dibakar, dengan hasil lebih baik apabila matang."
+          }
+        },
+        {
+          "type": "note",
+          "kind": "key",
+          "text": {
+            "zh": "重种（replanting）时的零燃烧还有一层特殊意义：旧棕榈的残体是 Ganoderma 的温床。粉碎、摊开、加速腐解，比堆成大堆让它慢慢烂要安全得多。详见第 13 章。",
+            "en": "At replanting, zero burn carries an extra consideration: old palm debris is a reservoir for Ganoderma. Chipping the material and spreading it so it decomposes quickly is considerably safer than leaving it in large heaps to rot slowly. See Chapter 13.",
+            "ms": "Semasa tanam semula, tanpa bakar membawa pertimbangan tambahan: sisa pokok lama ialah takungan Ganoderma. Mencincang bahan itu dan menyebarkannya supaya cepat reput jauh lebih selamat daripada meninggalkannya dalam timbunan besar untuk reput perlahan-lahan. Lihat Bab 13."
+          }
+        }
+      ]
+    },
+    {
+      "id": "9.5",
+      "heading": { "zh": "覆盖作物", "en": "Establishing a cover crop", "ms": "Menanam tanaman penutup" },
+      "blocks": [
+        {
+          "type": "p",
+          "text": {
+            "zh": "整地之后、棕榈封行之前，行间会有两三年的裸露期。这段时间必须用豆科覆盖作物填上。常用的有 Pueraria phaseoloides（爪哇葛藤）、Calopogonium caeruleum、Mucuna 属等，通常混播。",
+            "en": "Between clearing and canopy closure there are two or three years when the interrows would otherwise sit bare. A legume cover crop fills that gap. The usual species are Pueraria phaseoloides, Calopogonium caeruleum and Mucuna species, generally sown as a mixture.",
+            "ms": "Antara pembersihan dan penutupan kanopi terdapat dua atau tiga tahun apabila kawasan antara baris akan kekal kosong. Tanaman penutup kekacang mengisi jurang itu. Spesies biasa ialah Pueraria phaseoloides, Calopogonium caeruleum dan spesies Mucuna, umumnya ditabur sebagai campuran."
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            { "zh": "固氮：良好的豆科覆盖每年可固定每公顷 100–150 公斤氮，相当可观地减少前几年的氮肥投入。", "en": "Nitrogen fixation: a good legume cover fixes 100–150 kg N per hectare a year, cutting nitrogen fertiliser appreciably in the early years.", "ms": "Pengikatan nitrogen: penutup kekacang yang baik mengikat 100–150 kg N sehektar setahun, mengurangkan baja nitrogen dengan ketara pada tahun-tahun awal." },
+            { "zh": "控制侵蚀：覆盖层拦下雨滴动能，大幅减少表土流失。", "en": "Erosion control: the cover absorbs raindrop energy and sharply reduces topsoil loss.", "ms": "Kawalan hakisan: penutup menyerap tenaga titisan hujan dan mengurangkan kehilangan tanah atas dengan mendadak." },
+            { "zh": "抑制杂草：封行前把生态位占住，比反复除草便宜得多。", "en": "Weed suppression: occupying the niche before canopy closure is far cheaper than repeated weeding.", "ms": "Menekan rumpai: menduduki relung sebelum kanopi tertutup jauh lebih murah daripada merumput berulang kali." },
+            { "zh": "改善土壤：持续的凋落物增加有机质，改善表层结构和持水能力。", "en": "Soil improvement: continuous litter raises organic matter and improves surface structure and water holding.", "ms": "Pemulihan tanah: sarap berterusan meningkatkan bahan organik dan memperbaiki struktur permukaan serta simpanan air." }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "tip",
+          "text": {
+            "zh": "覆盖作物要及时从棕榈树盘拉开。藤本豆科会爬上幼棕并把它缠住，这是幼龄园常见却完全可以避免的损失。",
+            "en": "Keep the cover pulled back from the palm circle. Twining legumes will climb a young palm and smother it — a common loss in young blocks and an entirely avoidable one.",
+            "ms": "Pastikan penutup ditarik jauh dari bulatan pokok. Kekacang melilit akan memanjat pokok muda dan melemaskannya — kerugian biasa di blok muda dan boleh dielakkan sepenuhnya."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "Corley & Tinker, The Oil Palm, 5th ed., Wiley-Blackwell 2016",
+    { "zh": "零燃烧整地与覆盖作物田间试验", "en": "Field trials on zero-burn clearing and cover crops", "ms": "Ujian ladang pembersihan tanpa bakar dan tanaman penutup" }
+  ]
+}
