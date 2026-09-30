@@ -1,7 +1,10 @@
 # 油棕百科 · OPWiki · Wiki Sawit
 
+**<https://bryanwoo988.github.io/OilPalmWiki/>**
+
 An offline, trilingual oil palm field reference. Static PWA — no build step, no
-npm dependencies, no CDN.
+npm dependencies, no CDN. Open it once, add it to the home screen, and it works
+with no network.
 
 | | |
 |---|---|
@@ -141,12 +144,18 @@ Chart kinds: `hbar`, `bar`, `stackedBar`, `line`, `donut`.
 
 ## Deploying
 
-Everything is relative, so it works from a subpath. For GitHub Pages:
+Live at <https://bryanwoo988.github.io/OilPalmWiki/>, served from `main` by
+GitHub Pages. Everything is relative, so it also works from any other subpath.
+
+To publish elsewhere:
 
 1. Set `APP_URL` in `js/config.js` to the published address — that one line is
    also what the QR code encodes.
 2. `node tools/build-sw.mjs`
 3. Push. Serve over HTTPS; a service worker will not register otherwise.
+
+The reference PDF is in `.gitignore` and must stay there. It is a commercial,
+copyrighted textbook; publishing it would be distributing it.
 
 ---
 
@@ -156,14 +165,15 @@ Everything is relative, so it works from a subpath. For GitHub Pages:
 |---|---|---|
 | Content | `node tools/lint-content.mjs` | 20 chapters, 90 sections, 242 blocks, 16 charts — no missing translations |
 | Modules, content, search, charts | `/tests/` in a browser | 45/45 |
-| Service worker | `node tools/test-sw.mjs` | 13/13 |
+| Service worker | `node tools/test-sw.mjs` | 17/17 |
 | QR encoder | `tools/verify-qr.py` | 64/64 mask variants decode; penalty scores match the reference |
 | QR end to end | extracted the SVG the live Info screen renders and decoded it | returns the correct URL under both zxing-cpp and OpenCV |
 
-Service worker **registration** could not be exercised in the in-app browser
-pane, which refuses to register even a two-line worker; the worker's behaviour
-is covered by `tools/test-sw.mjs` instead. Install it from a normal browser over
-HTTPS to confirm on a real device.
+Confirmed on the live deployment: the service worker registers over HTTPS,
+precaches 62 entries including all 20 chapters, takes control of the page, and
+the QR code the Info screen renders decodes back to the live URL under both
+zxing-cpp and OpenCV. The browser test page passes 45/45 when served from
+GitHub Pages.
 
 ---
 
