@@ -20,6 +20,12 @@ export const LANG_NAME = {
   ms: { zh: '马来文', en: 'Malay', ms: 'Melayu' },
 };
 
+/**
+ * Each language written in itself. The first-run picker is shown before anyone
+ * has chosen, so it cannot pick one language to label the others in.
+ */
+export const LANG_NATIVE = { zh: '中文', en: 'English', ms: 'Bahasa Melayu' };
+
 export function current() {
   return getPrefs().lang;
 }
@@ -77,6 +83,14 @@ export const UI = {
   searchHint:  { zh: '三种语言同时搜索，无论界面是哪一种',
                  en: 'Searches all three languages at once, whatever the interface is set to',
                  ms: 'Mencari dalam ketiga-tiga bahasa serentak' },
+
+  /* First-run language picker */
+  chooseLanguage: { zh: '选择语言', en: 'Choose your language', ms: 'Pilih bahasa anda' },
+  changeLater: {
+    zh: '之后随时可以用顶部的语言按钮切换。',
+    en: 'You can change this any time with the language button at the top.',
+    ms: 'Anda boleh menukarnya bila-bila masa dengan butang bahasa di atas.',
+  },
 
   themeAuto:  { zh: '跟随系统', en: 'Match system', ms: 'Ikut sistem' },
   themeLight: { zh: '浅色', en: 'Light', ms: 'Cerah' },

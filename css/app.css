@@ -304,6 +304,87 @@ button { font: inherit; color: inherit; }
   to   { opacity: 1; transform: none; }
 }
 
+/* --- First-run language picker ------------------------------------------ */
+/* The app bar is hidden until a language is chosen: its controls are labelled
+   in a language the reader has not picked yet, and the language toggle would
+   compete with the choice being made. */
+
+:root[data-onboarding="on"] .appbar,
+:root[data-onboarding="on"] .skip-link { display: none; }
+
+.langpick {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 6px;
+  max-width: 30rem;
+  margin-inline: auto;
+  padding-top: 8vh;
+}
+.langpick__mark { width: 76px; height: 76px; }
+
+.langpick__names {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 12px;
+  margin-top: 10px;
+  font-size: var(--step-2);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.langpick__names span:not(:last-child)::after {
+  content: "·";
+  margin-left: 12px;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+
+.langpick__head {
+  margin: 14px 0 20px;
+  color: var(--text-dim);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+.langpick__head p:not(:first-child) { color: var(--text-faint); }
+
+.langpick__list {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.langopt {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  padding: 15px 18px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color .16s var(--ease), transform .16s var(--ease),
+              box-shadow .16s var(--ease);
+}
+.langopt:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+.langopt:active { transform: translateY(0); }
+.langopt__name {
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.langopt__tag {
+  font-size: var(--step--1);
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
 /* --- Home --------------------------------------------------------------- */
 
 .hero {

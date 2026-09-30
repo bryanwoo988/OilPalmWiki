@@ -39,7 +39,7 @@
 
 <script type="module">
 import * as prefs from '../js/prefs.js';
-import { pick, t, UI, LANG_GLYPH } from '../js/i18n.js';
+import { pick, t, UI, LANG_GLYPH, LANG_NATIVE } from '../js/i18n.js';
 import { encode } from '../js/qrcode.js';
 import { render as renderChart } from '../js/charts.js';
 import { loadIndex, loadChapter, renderSections } from '../js/content.js';
@@ -153,9 +153,66 @@ check('preferences survive a round trip through localStorage', () => {
 check('an invalid stored value falls back to the default', () => {
   localStorage.setItem('opwiki.prefs', JSON.stringify({ lang: 'fr', theme: 'neon', fontScale: 9 }));
   const s = prefs.init();
-  eq(s.lang, 'zh', 'lang: ');
+  eq(s.lang, 'en', 'lang: ');
   eq(s.theme, 'auto', 'theme: ');
   eq(s.fontScale, 1, 'scale: ');
+});
+
+section('first-run language picker');
+
+check('a fresh install defaults to English and has not chosen yet', () => {
+  localStorage.removeItem('opwiki.prefs');
+  const s = prefs.init();
+  eq(s.lang, 'en', 'lang: ');
+  eq(prefs.hasChosenLang(), false, 'chosen: ');
+});
+
+check('choosing a language records the choice', () => {
+  localStorage.removeItem('opwiki.prefs');
+  prefs.init();
+  eq(prefs.chooseLang('ms'), 'ms');
+  eq(prefs.hasChosenLang(), true, 'chosen: ');
+  eq(document.documentElement.lang, 'ms', 'html lang: ');
+});
+
+check('the choice survives a reload, so the picker is shown once', () => {
+  const s = prefs.init();
+  eq(s.lang, 'ms', 'lang: ');
+  eq(prefs.hasChosenLang(), true, 'chosen: ');
+});
+
+check('using the header toggle also counts as choosing', () => {
+  localStorage.removeItem('opwiki.prefs');
+  prefs.init();
+  eq(prefs.hasChosenLang(), false, 'before: ');
+  prefs.cycleLang();
+  eq(prefs.hasChosenLang(), true, 'after: ');
+});
+
+check('a stored flag without a valid language does not skip the picker', () => {
+  localStorage.setItem('opwiki.prefs', JSON.stringify({ lang: 'fr', langChosen: true }));
+  prefs.init();
+  eq(prefs.hasChosenLang(), false);
+});
+
+check('chooseLang rejects an unknown language', () => {
+  try { prefs.chooseLang('fr'); } catch { return true; }
+  throw new Error('should have thrown');
+});
+
+check('every language has a name written in itself', () => {
+  for (const l of prefs.LANGS) {
+    if (!LANG_NATIVE[l]) throw new Error(`no native name for ${l}`);
+  }
+  eq(LANG_NATIVE.ms, 'Bahasa Melayu');
+});
+
+check('the picker heading and tagline exist in all three languages', () => {
+  for (const l of prefs.LANGS) {
+    if (!UI.chooseLanguage[l]) throw new Error(`chooseLanguage missing ${l}`);
+    if (!UI.tagline[l]) throw new Error(`tagline missing ${l}`);
+    if (!UI.changeLater[l]) throw new Error(`changeLater missing ${l}`);
+  }
 });
 
 /* --- QR ------------------------------------------------------------------ */
@@ -288,6 +345,7 @@ await (async () => {
 
 section('content');
 
+prefs.chooseLang('zh');
 const index = await loadIndex();
 
 check('the index lists 20 chapters in order', () => {

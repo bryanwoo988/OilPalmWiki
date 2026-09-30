@@ -11,7 +11,11 @@ export const LANGS = ['zh', 'en', 'ms'];
 export const THEMES = ['auto', 'light', 'dark'];
 export const SCALES = [1, 1.15, 1.3, 1.5];
 
-const DEFAULTS = { lang: 'zh', theme: 'auto', fontScale: 1 };
+// English is the default so that the first screen, which is shown before anyone
+// has chosen, reads for the widest audience. `langChosen` records whether that
+// choice has actually been made — without it there is no way to tell a first
+// visit from someone who deliberately picked English.
+const DEFAULTS = { lang: 'en', theme: 'auto', fontScale: 1, langChosen: false };
 
 let state = { ...DEFAULTS };
 const listeners = new Set();
@@ -39,6 +43,9 @@ function sanitise(raw) {
     lang: LANGS.includes(raw.lang) ? raw.lang : DEFAULTS.lang,
     theme: THEMES.includes(raw.theme) ? raw.theme : DEFAULTS.theme,
     fontScale: SCALES.includes(raw.fontScale) ? raw.fontScale : DEFAULTS.fontScale,
+    // Anything other than a stored `true` counts as not yet chosen, so a
+    // corrupted value shows the picker again rather than silently skipping it.
+    langChosen: raw.langChosen === true && LANGS.includes(raw.lang),
   };
 }
 
@@ -76,9 +83,30 @@ function step(list, current) {
   return list[(list.indexOf(current) + 1) % list.length];
 }
 
+/** Has the reader picked a language yet? False on a first visit. */
+export function hasChosenLang() {
+  return state.langChosen;
+}
+
+/**
+ * Set the language from the first-run picker. Unlike cycleLang this also
+ * records that the choice was made, so the picker is not shown again.
+ */
+export function chooseLang(lang) {
+  if (!LANGS.includes(lang)) throw new RangeError(`unknown language: ${lang}`);
+  state.lang = lang;
+  state.langChosen = true;
+  apply();
+  write();
+  emit('lang');
+  return state.lang;
+}
+
 /** Advance zh → en → ms → zh. Returns the new language. */
 export function cycleLang() {
   state.lang = step(LANGS, state.lang);
+  // Using the header toggle is a choice too; the picker should not reappear.
+  state.langChosen = true;
   apply();
   write();
   emit('lang');

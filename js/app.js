@@ -8,7 +8,7 @@
  */
 
 import * as prefs from './prefs.js';
-import { pick, t, UI, LANG_GLYPH } from './i18n.js';
+import { pick, t, UI, LANG_GLYPH, LANG_NATIVE } from './i18n.js';
 import { loadIndex, loadChapter, renderSections } from './content.js';
 import { redrawAll } from './charts.js';
 import { search as runSearch } from './search.js';
@@ -337,6 +337,60 @@ function viewMissing() {
   return view;
 }
 
+/**
+ * First-run language picker.
+ *
+ * Shown before anything else on a first visit, so it cannot be written in one
+ * language: each option is labelled in its own language and previews the app's
+ * tagline in that language, and the heading appears in all three.
+ */
+function viewLanguagePicker() {
+  const view = el('div', 'view langpick');
+
+  const mark = el('img', 'langpick__mark');
+  mark.src = 'icons/icon-512.png';
+  mark.alt = '';
+  mark.width = 76;
+  mark.height = 76;
+
+  const names = el('div', 'langpick__names');
+  for (const l of ['zh', 'en', 'ms']) names.append(el('span', null, UI.appName[l]));
+
+  const head = el('div', 'langpick__head');
+  // English first: it is the default, and the option a reader who knows none of
+  // the three is most likely to manage.
+  for (const l of ['en', 'zh', 'ms']) head.append(el('p', null, UI.chooseLanguage[l]));
+
+  view.append(mark, names, head);
+
+  const list = el('div', 'langpick__list');
+  for (const l of ['en', 'zh', 'ms']) {
+    const b = el('button', 'langopt');
+    b.type = 'button';
+    b.lang = l;
+    b.setAttribute('aria-label', `${LANG_NATIVE[l]} — ${UI.chooseLanguage[l]}`);
+    b.append(
+      el('span', 'langopt__name', LANG_NATIVE[l]),
+      el('span', 'langopt__tag', UI.tagline[l]),
+    );
+    b.addEventListener('click', () => {
+      prefs.chooseLang(l);
+      document.getElementById('lang-glyph').textContent = LANG_GLYPH[l];
+      delete document.documentElement.dataset.onboarding;
+      applyLabels();
+      // Re-render whatever route was actually requested, so a shared deep link
+      // still lands where it was pointing after the language is picked.
+      render();
+      toast(t('changeLater'));
+    });
+    list.append(b);
+  }
+  view.append(list);
+
+  requestAnimationFrame(() => list.firstElementChild?.focus({ preventScroll: true }));
+  return view;
+}
+
 /* --- Router --------------------------------------------------------------- */
 
 function parseRoute() {
@@ -355,6 +409,15 @@ async function render(keepScroll = false) {
   const route = parseRoute();
   const token = ++renderToken;
   const y = window.scrollY;
+
+  // Nothing else renders until a language has been picked. The route is left
+  // untouched, so the picker hands the reader on to wherever they were headed.
+  if (!prefs.hasChosenLang()) {
+    document.documentElement.dataset.onboarding = 'on';
+    main.replaceChildren(viewLanguagePicker());
+    window.scrollTo(0, 0);
+    return;
+  }
 
   let view;
   switch (route.name) {

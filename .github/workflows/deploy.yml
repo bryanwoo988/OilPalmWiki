@@ -1,0 +1,85 @@
+name: Build and deploy
+
+# Every push to main regenerates the service worker's precache list and cache
+# name from a hash of the files it will serve, then deploys. Nobody has to
+# remember to run tools/build-sw.mjs: if index.html — or a chapter, a
+# stylesheet, an icon — changes, the cache name changes with it, which is what
+# makes installed copies pick the new content up.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; a half-applied Pages deploy is worse than a queue.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Gate the deploy on the checks that do not need a browser. A missing
+      # translation or a broken chart spec should never reach the site.
+      - name: Lint content
+        run: node tools/lint-content.mjs
+
+      - name: Regenerate the service worker
+        run: node tools/build-sw.mjs
+
+      - name: Service worker behaviour
+        run: node tools/test-sw.mjs
+
+      # Informational. The committed sw.js drifting from the generated one is
+      # normal and harmless — it only affects local development — but it is
+      # worth seeing in the log.
+      - name: Note whether the committed service worker was current
+        run: |
+          if git diff --quiet -- sw.js; then
+            echo "sw.js in the repository was already up to date."
+          else
+            echo "::notice::sw.js was regenerated during the build. Run 'node tools/build-sw.mjs' locally to match."
+            git --no-pager diff --unified=0 -- sw.js | grep -E '^[+-]const CACHE' || true
+          fi
+
+      # Publish a curated tree rather than the repository root, so tooling,
+      # specs and workflow files are not served as part of the app.
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          for item in index.html manifest.webmanifest favicon.ico sw.js \
+                      css js data icons figures tests; do
+            [ -e "$item" ] && cp -r "$item" _site/
+          done
+          echo "--- deploying ---"
+          find _site -type f | wc -l | xargs echo "files:"
+          du -sh _site | cut -f1 | xargs echo "size:"
+          grep -E "^const CACHE" _site/sw.js
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
