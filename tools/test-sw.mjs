@@ -43,6 +43,12 @@ class FakeResponse {
   }
   get ok() { return this.status >= 200 && this.status < 300; }
   clone() { return new FakeResponse(this.body, this); }
+  static redirect(url, status = 302) {
+    const r = new FakeResponse(null, { status, statusText: 'Found' });
+    r.redirected = true;
+    r.location = url;
+    return r;
+  }
 }
 
 class FakeRequest {
@@ -211,14 +217,22 @@ check('a cached chapter is served with the network down', () => {
   if (networkCalls !== 0) throw new Error('it went to the network for a cached file');
 });
 
+const rootRes = await scope.dispatch('fetch', {
+  request: new FakeRequest('/', { mode: 'navigate' }),
+});
+check('a navigation to the scope root is served the cached shell', () => {
+  if (!rootRes?.ok) throw new Error(`status ${rootRes?.status}`);
+  if (!String(rootRes.body).includes('index.html')) {
+    throw new Error(`served ${rootRes.body} instead of the shell`);
+  }
+});
+
 const navRes = await scope.dispatch('fetch', {
   request: new FakeRequest('/some/deep/link', { mode: 'navigate' }),
 });
-check('an offline deep link falls back to the shell', () => {
-  if (!navRes?.ok) throw new Error(`status ${navRes?.status}`);
-  if (!String(navRes.body).includes('index.html')) {
-    throw new Error(`served ${navRes.body} instead of the shell`);
-  }
+check('a nested navigation redirects to the scope root, so relative assets resolve', () => {
+  if (navRes?.status !== 302) throw new Error(`expected a 302, got ${navRes?.status}`);
+  if (navRes.location !== '/') throw new Error(`redirected to ${navRes.location}`);
 });
 
 const missRes = await scope.dispatch('fetch', {

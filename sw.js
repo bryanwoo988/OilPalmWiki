@@ -117,6 +117,18 @@ self.addEventListener('fetch', event => {
   // routes on the hash.
   if (request.mode === 'navigate') {
     event.respondWith((async () => {
+      const root = new URL('./', self.location);
+
+      // Serving the shell straight back at a nested path would leave its
+      // relative css/ and js/ references resolving against that depth, where
+      // nothing exists — an unstyled, empty page. Redirecting to the scope root
+      // first fixes them, and the fragment, which is where this app's routes
+      // live, is carried across the redirect by the browser.
+      if (url.pathname !== root.pathname &&
+          url.pathname !== `${root.pathname}index.html`) {
+        return Response.redirect(root.pathname + url.search, 302);
+      }
+
       const cached = await caches.match('index.html');
       if (cached) return cached;
       try {
