@@ -412,3 +412,45 @@ independent implementation — no amount of looking at the rendered code would
 have surfaced it. Hence the verification approach: every mask of every payload
 is decoded with zxing-cpp, and mask selection is scored against a separately
 written implementation of the ISO 18004 penalty rules.
+
+---
+
+## 15. Added after the first deploy
+
+**A first-run language picker.** §7 had the app open in Chinese and offer a
+toggle. That is the wrong first impression for most of the people §1 describes,
+and a toggle only helps someone who already recognises the interface. A new
+reader now chooses before anything else: each option is labelled in its own
+language and previews the tagline in it, because the screen is shown before any
+language has been agreed. English is the default and listed first. The app bar
+is hidden until the choice is made, since its controls are labelled in a
+language nobody has picked. The route is untouched throughout, so a shared deep
+link still lands where it pointed.
+
+`prefs` gained `langChosen`, which is separate from the language itself:
+without it there is no way to distinguish a first visit from someone who
+deliberately chose English. Using the header toggle also sets it.
+
+**Deployment moved into CI.** §8 said bumping the cache version was "the only
+step needed to ship new content", which was true and also a step that would
+eventually be forgotten — and forgetting it means installed copies never see the
+update. `.github/workflows/deploy.yml` now lints the content, regenerates the
+service worker, runs the service worker tests and deploys on every push to
+`main`. GitHub Pages builds from the workflow rather than from the branch.
+
+Verified by changing `index.html` and pushing *without* running the generator
+locally: CI regenerated the cache name from `opwiki-892a5c861d` to
+`opwiki-936c9276a0` and deployed with it.
+
+**Two things the live deployment exposed that local serving could not.** The
+service worker's opportunistic caching of any successful response pinned stale
+copies of files outside the precache — its own script included, so an updated
+worker appeared not to deploy. It was removed; the app is precached in full, so
+it covered nothing that should be cached. Separately, navigations to a nested
+path were served the shell, whose relative `css/` and `js/` then resolved against
+the wrong depth; those now redirect to the scope root, but only when the network
+is unavailable, so real sub-pages such as `tests/` stay reachable.
+
+The iOS launch images were generated and precached from the start but never
+referenced from the shell, so iOS showed a blank frame while the app started.
+`index.html` now carries a line per device size and pixel ratio, in both themes.

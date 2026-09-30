@@ -38,9 +38,14 @@ no-store` is sent, and it refuses to register a service worker over HTTP/1.0.
   chapters, icons, splash screens — on install. 1.4 MB total. There is no
   partial-offline state: either it installed or it did not, and the Info screen
   says which.
-- **Three languages, one button.** The header glyph shows the current language
-  and cycles 中 → EN → MY → 中. Switching re-renders in place and keeps your
-  place in the chapter.
+- **Pick a language first.** A new reader chooses before anything else. Each
+  option is labelled in its own language and previews the tagline in it, since
+  the screen appears before any language has been picked. English is the
+  default. The choice is remembered, and a shared deep link still lands where it
+  pointed once the language is chosen.
+- **Three languages, one button.** After that, the header glyph shows the
+  current language and cycles 中 → EN → MY → 中. Switching re-renders in place
+  and keeps your place in the chapter.
 - **Light and dark.** Follows the OS by default; the toggle cycles auto → light
   → dark → auto, so an override can be undone. Applied before first paint, so
   there is no white flash on a dark phone.
@@ -120,7 +125,7 @@ edited without touching code.
 |---|---|
 | `python3 tools/serve.py [port]` | Dev server. No-store headers, HTTP/1.1, correct MIME types. |
 | `node tools/lint-content.mjs` | Checks every chapter: all three languages present, chart series match their categories, table rows match their headers, figure files exist. |
-| `node tools/build-sw.mjs` | Regenerates the service worker precache list and its cache name from a content hash. **Run after any content or code change.** |
+| `node tools/build-sw.mjs` | Regenerates the service worker precache list and its cache name from a content hash. CI runs this on every push, so you do not have to; run it locally if you want the repository copy to match what is deployed. |
 | `node tools/test-sw.mjs` | Runs `sw.js` in a stubbed ServiceWorkerGlobalScope and exercises install, activate and fetch against a fake network. |
 | `venv/bin/python tools/verify-qr.py` | Decodes every mask variant of every test payload with zxing-cpp and checks mask selection against an independent implementation of the ISO 18004 penalty rules. |
 | `venv/bin/python tools/make-icons.py` | Regenerates icons and splash screens from `palm-oil-2.png`. |
@@ -134,8 +139,7 @@ in a venv. The Node tools need nothing but Node.
 
 1. Edit `data/chNN.json`. Every user-visible string is a `{zh, en, ms}` triple.
 2. `node tools/lint-content.mjs`
-3. `node tools/build-sw.mjs` — this changes the cache name, which is what makes
-   existing installs pick the new content up.
+3. Push. That is all — see below.
 
 Block types: `p`, `list`, `keyval`, `table`, `chart`, `figure`, `note`.
 Chart kinds: `hbar`, `bar`, `stackedBar`, `line`, `donut`.
@@ -144,8 +148,16 @@ Chart kinds: `hbar`, `bar`, `stackedBar`, `line`, `donut`.
 
 ## Deploying
 
-Live at <https://bryanwoo988.github.io/OilPalmWiki/>, served from `main` by
-GitHub Pages. Everything is relative, so it also works from any other subpath.
+Live at <https://bryanwoo988.github.io/OilPalmWiki/>. Everything is relative, so
+it also works from any other subpath.
+
+**Pushing to `main` is the whole deploy.** `.github/workflows/deploy.yml` lints
+the content, regenerates the service worker, runs the service worker tests and
+publishes. The cache name is a hash of every precached file, so changing
+`index.html` — or a chapter, a stylesheet, an icon — changes it, and installed
+copies pick the new version up. Nobody has to remember to run
+`tools/build-sw.mjs`; if the committed copy was stale, the build log says so and
+uses the fresh one anyway.
 
 To publish elsewhere:
 
@@ -164,7 +176,7 @@ copyrighted textbook; publishing it would be distributing it.
 | What | How | Result |
 |---|---|---|
 | Content | `node tools/lint-content.mjs` | 20 chapters, 90 sections, 242 blocks, 16 charts — no missing translations |
-| Modules, content, search, charts | `/tests/` in a browser | 45/45 |
+| Modules, language picker, content, search, charts | `/tests/` in a browser | 53/53 |
 | Service worker | `node tools/test-sw.mjs` | 17/17 |
 | QR encoder | `tools/verify-qr.py` | 64/64 mask variants decode; penalty scores match the reference |
 | QR end to end | extracted the SVG the live Info screen renders and decoded it | returns the correct URL under both zxing-cpp and OpenCV |

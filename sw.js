@@ -11,7 +11,7 @@
  */
 
 /* --- generated:begin --- */
-const CACHE = 'opwiki-892a5c861d';
+const CACHE = 'opwiki-936c9276a0';
 const ASSETS = [
   './',
   'css/app.css',
