@@ -147,16 +147,15 @@ self.addEventListener('fetch', event => {
   }
 
   event.respondWith((async () => {
+    // Only what install put in the cache is served from it. There is
+    // deliberately no opportunistic caching of other responses: the app is
+    // precached in full, so it would add nothing, and it would quietly pin a
+    // stale copy of anything else fetched once — including this worker's own
+    // script and the pages under tests/.
     const cached = await caches.match(request, { ignoreSearch: true });
     if (cached) return cached;
     try {
-      const response = await fetch(request);
-      // Opportunistically cache anything precaching missed.
-      if (response.ok && response.type === 'basic') {
-        const cache = await caches.open(CACHE);
-        cache.put(request, response.clone());
-      }
-      return response;
+      return await fetch(request);
     } catch {
       return new Response('', { status: 504, statusText: 'Offline' });
     }

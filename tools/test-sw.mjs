@@ -266,6 +266,19 @@ check('an uncached asset fails gracefully rather than throwing', () => {
   if (missRes.status !== 504) throw new Error(`expected 504, got ${missRes.status}`);
 });
 
+// Anything not precached must stay off the cache, or a single fetch pins a
+// stale copy of it for the life of the cache — the worker's own script included.
+scope.fetch = async req => new FakeResponse(`live ${new URL(req.url).pathname}`, { url: req.url });
+await scope.dispatch('fetch', { request: new FakeRequest('/sw.js', { mode: 'cors' }) });
+await scope.dispatch('fetch', { request: new FakeRequest('/tests/index.html', { mode: 'cors' }) });
+const afterMiss = (await cache.keys()).map(r => new URL(r.url).pathname);
+check('a cache miss does not add the response to the cache', () => {
+  for (const p of ['/sw.js', '/tests/index.html']) {
+    if (afterMiss.includes(p)) throw new Error(`${p} was cached opportunistically`);
+  }
+});
+scope.fetch = offline;
+
 const postRes = await scope.dispatch('fetch', {
   request: new FakeRequest('/data/ch07.json', { method: 'POST' }),
 });
