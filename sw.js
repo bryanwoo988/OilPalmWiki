@@ -97,7 +97,9 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const names = await caches.keys();
-    await Promise.all(names.filter(n => n !== CACHE).map(n => caches.delete(n)));
+    // Every app on bryanwoo988.github.io shares this origin's Cache Storage:
+    // delete only this app's own old versions, never another app's offline copy.
+    await Promise.all(names.filter(n => n.startsWith('opwiki-') && n !== CACHE).map(n => caches.delete(n)));
     await self.clients.claim();
   })());
 });

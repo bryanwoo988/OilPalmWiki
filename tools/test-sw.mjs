@@ -193,14 +193,21 @@ check('install calls skipWaiting', () => scope.skipWaitingCalls > 0);
 /* activate should sweep old versions */
 const stale = await scope.caches.open('opwiki-deadbeef01');
 await stale.put('/old.js', new FakeResponse('old'));
+// Every one of Bryan's apps is served from bryanwoo988.github.io, and Cache
+// Storage is shared per origin: the other apps' offline copies must survive.
+const OTHER_APPS = ['opb-shell', 'pw-shell', 'pw-notice', 'ndvi-shell', 'meteo-0123456789'];
+for (const n of OTHER_APPS) await (await scope.caches.open(n)).put('/x', new FakeResponse('other app'));
 await scope.dispatch('activate', {});
 
 check('activate deletes caches from earlier versions', async () => true);
 const afterActivate = await scope.caches.keys();
-check('only the current cache survives activate', () => {
-  if (afterActivate.length !== 1 || afterActivate[0] !== cacheNames[0]) {
-    throw new Error(`caches after activate: ${afterActivate.join(', ')}`);
-  }
+check('activate removes this app\'s old versions only', () => {
+  if (afterActivate.includes('opwiki-deadbeef01')) throw new Error('the old opwiki cache survived');
+  if (!afterActivate.includes(cacheNames[0])) throw new Error('the current cache was deleted');
+});
+check('activate leaves the other apps on the same origin alone', () => {
+  const gone = OTHER_APPS.filter(n => !afterActivate.includes(n));
+  if (gone.length) throw new Error(`deleted other apps' caches: ${gone.join(', ')}`);
 });
 check('activate claims open clients', () => scope.claimCalls > 0);
 
