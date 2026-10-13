@@ -130,3 +130,23 @@ export function cycleFontScale() {
   emit('fontScale');
   return state.fontScale;
 }
+
+/** Set the theme directly (Settings screen). */
+export function setTheme(theme) {
+  if (!THEMES.includes(theme)) return state.theme;
+  state.theme = theme;
+  apply();
+  write();
+  emit('theme');
+  return state.theme;
+}
+
+/** Set the reading-mode font scale directly (Settings screen). */
+export function setFontScale(scale) {
+  if (!SCALES.includes(scale)) return state.fontScale;
+  state.fontScale = scale;
+  apply();
+  write();
+  emit('fontScale');
+  return state.fontScale;
+}

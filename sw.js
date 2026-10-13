@@ -11,10 +11,11 @@
  */
 
 /* --- generated:begin --- */
-const CACHE = 'opwiki-8945d968e6';
+const CACHE = 'opwiki-7d2f95d06c';
 const ASSETS = [
   './',
   'css/app.css',
+  'css/reader.css',
   'data/ch01.json',
   'data/ch02.json',
   'data/ch03.json',
@@ -73,6 +74,7 @@ const ASSETS = [
   'js/i18n.js',
   'js/prefs.js',
   'js/qrcode.js',
+  'js/reader.js',
   'js/releases.js',
   'js/search.js',
   'js/whatsnew.js',

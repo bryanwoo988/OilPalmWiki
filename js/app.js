@@ -8,7 +8,7 @@
  */
 
 import * as prefs from './prefs.js';
-import { pick, t, UI, LANG_GLYPH, LANG_NATIVE } from './i18n.js';
+import { pick, t, UI, LANG_NATIVE } from './i18n.js';
 import { loadIndex, loadChapter, renderSections } from './content.js';
 import { redrawAll } from './charts.js';
 import { search as runSearch } from './search.js';
@@ -246,15 +246,55 @@ async function viewSearch(query) {
   return view;
 }
 
+/** A row of buttons, one of them on: language, theme, text size. */
+function segmented(options, current, onPick) {
+  const seg = el('div', 'rd-seg setseg');
+  for (const [value, label] of options) {
+    const b = el('button', value === current ? 'on' : null, label);
+    b.type = 'button';
+    b.addEventListener('click', () => onPick(value));
+    seg.append(b);
+  }
+  return seg;
+}
+
 function viewInfo() {
   const view = el('div', 'view');
   const wrap = el('div', 'info');
 
-  const back = el('button', 'crumb');
-  back.type = 'button';
-  back.append(icon('M15 5l-7 7 7 7'), document.createTextNode(t('home')));
-  back.addEventListener('click', () => go('#/'));
-  wrap.append(back);
+  wrap.append(el('h1', 'chapter__title', t('settings')));
+
+  // Language, appearance, text size, read aloud — what used to be the buttons
+  // at the top of the screen.
+  const set = el('div', 'card setgroup');
+  const row = (title, control) => {
+    const r = el('div', 'setrow');
+    r.append(el('h3', null, title), control);
+    return r;
+  };
+  const p = prefs.get();
+  set.append(row(t('language'), segmented(
+    ['zh', 'en', 'ms'].map(l => [l, LANG_NATIVE[l]]), p.lang, l => {
+      prefs.chooseLang(l);
+      applyLabels();
+      render(true);
+      toast(t('langSet'));
+    })));
+  set.append(row(t('theme'), segmented(
+    [['auto', t('themeAuto')], ['light', t('themeLight')], ['dark', t('themeDark')]], p.theme, th => {
+      prefs.setTheme(th);
+      render(true);
+    })));
+  set.append(row(t('textSize'), segmented(
+    prefs.SCALES.map(sc => [sc, `${Math.round(sc * 100)}%`]), p.fontScale, sc => {
+      prefs.setFontScale(sc);
+      redrawAll();
+      render(true);
+    })));
+  const tts = el('div');
+  set.append(row(t('readAloud'), tts));
+  window.Reader.renderSettings(tts);
+  wrap.append(set);
 
   // Byline
   const by = el('div', 'card byline');
@@ -347,6 +387,26 @@ function viewInfo() {
   return view;
 }
 
+/** Notes and highlights share a screen; bookmarks have their own. */
+let notesKind = 'notes';
+
+function viewLibrary(kind) {
+  const view = el('div', 'view');
+  const wrap = el('div', 'info lib');
+  wrap.append(el('h1', 'chapter__title', t(kind === 'bookmarks' ? 'bookmarks' : 'notes')));
+  const list = el('div', 'card');
+  if (kind !== 'bookmarks') {
+    wrap.append(segmented([['notes', t('notes')], ['marks', t('highlights')]], notesKind, k => {
+      notesKind = k;
+      render(true);
+    }));
+  }
+  wrap.append(list);
+  window.Reader.renderList(list, kind === 'bookmarks' ? 'bookmarks' : notesKind);
+  view.append(wrap);
+  return view;
+}
+
 function viewMissing() {
   const view = el('div', 'view');
   view.append(el('p', 'empty', t('noResults')));
@@ -391,7 +451,6 @@ function viewLanguagePicker() {
     );
     b.addEventListener('click', () => {
       prefs.chooseLang(l);
-      document.getElementById('lang-glyph').textContent = LANG_GLYPH[l];
       delete document.documentElement.dataset.onboarding;
       applyLabels();
       // Re-render whatever route was actually requested, so a shared deep link
@@ -415,7 +474,9 @@ function parseRoute() {
   if (!parts.length) return { name: 'home' };
   if (parts[0] === 'ch') return { name: 'chapter', id: parts[1], anchor: parts[2] };
   if (parts[0] === 'search') return { name: 'search', q: decodeURIComponent(parts[1] || '') };
-  if (parts[0] === 'info') return { name: 'info' };
+  if (parts[0] === 'info' || parts[0] === 'settings') return { name: 'info' };
+  if (parts[0] === 'notes') return { name: 'notes' };
+  if (parts[0] === 'bookmarks') return { name: 'bookmarks' };
   return { name: 'home' };
 }
 
@@ -440,20 +501,103 @@ async function render(keepScroll = false) {
     case 'chapter': view = await viewChapter(route.id, route.anchor); break;
     case 'search':  view = await viewSearch(route.q); break;
     case 'info':    view = viewInfo(); break;
+    case 'notes':   view = viewLibrary('notes'); break;
+    case 'bookmarks': view = viewLibrary('bookmarks'); break;
     default:        view = viewHome();
   }
 
   // A newer navigation started while this one was awaiting content.
   if (token !== renderToken) return;
 
+  // Reading aloud follows the chapter it started in. Going anywhere else stops
+  // it, unless the reading itself turned the page (readerNext below).
+  if (!ttsTurningPage) window.Reader.stop();
+
   main.replaceChildren(view);
+  window.Reader.refresh();
+  markNav();
+  if (pendingReveal && route.name === 'chapter') {
+    const key = pendingReveal;
+    pendingReveal = null;
+    requestAnimationFrame(() => window.Reader.reveal(key));
+  }
   // All three names, always: the tab title is also what a bookmark and a
   // shared link are labelled with, and those outlive the reader's language.
   document.title = `${UI.appName.zh} · ${UI.appName.en} · ${UI.appName.ms}`;
   document.getElementById('app-name').textContent = t('appName');
 
   if (keepScroll) window.scrollTo(0, y);
-  else if (!route.anchor) window.scrollTo(0, 0);
+  else if (!route.anchor && !pendingReveal) window.scrollTo(0, 0);
+  for (const fn of afterRender.splice(0)) fn();
+}
+
+/* --- Notes, bookmarks, read aloud (js/reader.js) --------------------------- */
+
+let pendingReveal = null;
+let ttsTurningPage = false;
+const afterRender = [];
+
+/** "Chapter 5 · 5.2 Heading" — where a saved block lives. */
+function whereOf(u) {
+  const chap = u.closest('.chapter')?.querySelector('.chapter__num')?.textContent || '';
+  const sec = u.closest('.sec')?.querySelector('.sec__h');
+  const head = sec ? [...sec.children].map(c => c.textContent).join(' ') : '';
+  return [chap, head].filter(Boolean).join(' · ');
+}
+
+/** Go to the chapter a saved block is in, then bring the block on screen. */
+function openSaved(key) {
+  const chapterId = key.split('/')[0];
+  const route = parseRoute();
+  if (route.name === 'chapter' && route.id === chapterId && window.Reader.reveal(key)) return;
+  pendingReveal = key;
+  go(`#/ch/${chapterId}`);
+}
+
+/** Reading aloud reached the end of a chapter: turn to the next one. */
+async function readerNext() {
+  const route = parseRoute();
+  if (route.name !== 'chapter') return false;
+  const i = index.chapters.findIndex(c => c.id === route.id);
+  const next = index.chapters[i + 1];
+  if (!next) return false;
+  ttsTurningPage = true;
+  const done = new Promise(resolve => afterRender.push(resolve));
+  go(`#/ch/${next.id}`);
+  await done;
+  ttsTurningPage = false;
+  return true;
+}
+
+function markNav() {
+  const route = parseRoute().name;
+  const tab = { home: 'home', chapter: 'home', search: 'home', info: 'settings',
+                notes: 'notes', bookmarks: 'bookmarks' }[route];
+  const listening = window.Reader.isListening();
+  for (const b of document.querySelectorAll('#bottomnav [data-nav]')) {
+    b.classList.toggle('on', b.dataset.nav === 'listen' ? listening : b.dataset.nav === tab);
+  }
+  document.getElementById('nav-listen').textContent = t(listening ? 'stopReading' : 'readAloud');
+}
+
+function wireBottomNav() {
+  document.getElementById('bottomnav').addEventListener('click', e => {
+    const b = e.target.closest('[data-nav]');
+    if (!b) return;
+    switch (b.dataset.nav) {
+      case 'home': go('#/'); break;
+      case 'listen':
+        if (!window.Reader.isListening() && parseRoute().name !== 'chapter') {
+          toast(t('openChapter'));
+          return;
+        }
+        window.Reader.listen();
+        break;
+      case 'notes': go('#/notes'); break;
+      case 'bookmarks': go('#/bookmarks'); break;
+      case 'settings': go('#/settings'); break;
+    }
+  });
 }
 
 /* --- Controls ------------------------------------------------------------- */
@@ -467,31 +611,20 @@ function wireControls() {
     if (route.name !== 'search') go('#/search/');
   });
 
-  document.getElementById('btn-lang').addEventListener('click', () => {
-    const lang = prefs.cycleLang();
-    document.getElementById('lang-glyph').textContent = LANG_GLYPH[lang];
-    applyLabels();
-    // Re-render in place: switching language should not lose the reader's spot.
-    render(true);
-    toast(t('langSet'));
-  });
+  wireBottomNav();
 
-  document.getElementById('btn-read').addEventListener('click', () => {
-    const scale = prefs.cycleFontScale();
-    document.getElementById('read-glyph').textContent =
-      'A'.repeat(prefs.SCALES.indexOf(scale) + 1);
-    // Chart gutters are sized from the scale, so they need a redraw.
-    redrawAll();
-    toast(t('scaleSet', { n: Math.round(scale * 100) }));
+  window.Reader.init({
+    app: 'opw',
+    root: () => main,
+    units: '[data-rk]',
+    lang: () => prefs.get().lang,
+    where: whereOf,
+    open: openSaved,
+    next: readerNext,
+    toast,
+    onState: markNav,
+    topOffset: () => document.querySelector('.appbar').getBoundingClientRect().bottom,
   });
-
-  document.getElementById('btn-theme').addEventListener('click', () => {
-    const theme = prefs.cycleTheme();
-    toast(t({ auto: 'themeAuto', light: 'themeLight', dark: 'themeDark' }[theme]));
-  });
-
-  document.getElementById('btn-info')
-    .addEventListener('click', () => go('#/info'));
 }
 
 /** Refresh every aria-label and static label after a language change. */
@@ -547,9 +680,6 @@ async function boot() {
   const state = prefs.init();
   // Nothing chosen yet: a first-ever launch, with no update to catch up on.
   const newUser = !state.langChosen;
-  document.getElementById('lang-glyph').textContent = LANG_GLYPH[state.lang];
-  document.getElementById('read-glyph').textContent =
-    'A'.repeat(prefs.SCALES.indexOf(state.fontScale) + 1);
   applyLabels();
   wireControls();
 

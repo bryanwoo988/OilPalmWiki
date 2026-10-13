@@ -43,22 +43,31 @@ no-store` is sent, and it refuses to register a service worker over HTTP/1.0.
   the screen appears before any language has been picked. English is the
   default. The choice is remembered, and a shared deep link still lands where it
   pointed once the language is chosen.
-- **Three languages, one button.** After that, the header glyph shows the
-  current language and cycles 中 → EN → MY → 中. Switching re-renders in place
-  and keeps your place in the chapter.
-- **Light and dark.** Follows the OS by default; the toggle cycles auto → light
-  → dark → auto, so an override can be undone. Applied before first paint, so
-  there is no white flash on a dark phone.
-- **Reading mode.** The AAA button cycles the text scale 100% → 115% → 130% →
-  150%. Everything scales together — body text, tables, chart labels — and at
-  130% and above the layout also drops to a single column with looser leading.
+- **Bottom menu bar.** Contents, Read aloud, Notes, Bookmarks and Settings sit
+  at the bottom of the screen, within reach of a thumb. Language (中文 / English
+  / Bahasa Melayu), light / dark / match-system, and text size (100% → 150%) are
+  set on the Settings screen. Switching language re-renders in place and keeps
+  your place in the chapter; at 130% and above the layout drops to a single
+  column with looser leading. The theme is applied before first paint, so there
+  is no white flash on a dark phone.
+- **Highlights, notes, bookmarks.** Tap any paragraph, list item, table row or
+  key/value pair to highlight or underline it in one of five colours, add a
+  note, bookmark it, copy it, or start reading aloud from it. Marks are keyed by
+  chapter, section and position, so they stay on the same block in all three
+  languages. Stored in the browser (`opw.reader`); Settings exports and imports
+  a backup. `js/reader.js` and `css/reader.css` are shared with Oil Palm Basics
+  — keep both copies identical.
+- **Read aloud.** Uses the phone's own speech voices, paragraph by paragraph,
+  starting from what is on screen, and carries on into the next chapter. Speed
+  and voice are in Settings. Where the phone has no Malay voice, an Indonesian
+  one is used; failing that, the phone's default.
 - **Search.** Searches all three languages at once, so `Ganoderma` is found
   whether the interface is in Chinese or Malay, and results come back in the
   language being read.
 - **Charts.** 16 interactive SVG charts drawn from primary statistics. Each one
   carries a hidden data table, so the numbers survive for a screen reader or if
   the graphic fails.
-- **Info screen.** Credit, an offline-generated QR code, the link, data sources
+- **Settings screen.** Credit, an offline-generated QR code, the link, data sources
   and the offline/update status.
 
 ---

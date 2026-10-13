@@ -618,7 +618,8 @@ button { font: inherit; color: inherit; }
   overflow: hidden;
   font-size: var(--step--1);
 }
-.keyval > * { background: var(--surface); padding: 9px 12px; }
+.keyval__row { display: contents; }
+.keyval dt, .keyval dd { background: var(--surface); padding: 9px 12px; }
 .keyval dt { font-weight: 650; color: var(--text-dim); }
 .keyval dd { margin: 0; }
 
@@ -933,3 +934,40 @@ figcaption {
   .appbar__name { font-size: 17px; }
   .hero { padding: 44px 0 30px; }
 }
+
+/* --- Bottom navigation, notes, read aloud (css/reader.css) --------------- */
+
+:root {
+  --rd-bg: var(--bg);
+  --rd-surface: var(--surface);
+  --rd-ink: var(--text);
+  --rd-muted: var(--text-dim);
+  --rd-line: var(--border);
+  --rd-accent: var(--accent);
+  --rd-accent-ink: var(--accent-ink);
+  --rd-nav-h: 60px;
+}
+
+/* room under the last line for the bottom bar, and the player above it */
+.main { padding-bottom: calc(var(--rd-nav-h) + 40px + env(safe-area-inset-bottom)); }
+:root.rd-playing .main { padding-bottom: calc(var(--rd-nav-h) + 150px + env(safe-area-inset-bottom)); }
+:root.rd-selecting .main { padding-bottom: 170px; }
+:root[data-onboarding="on"] .bottomnav { display: none; }
+
+.toast { bottom: calc(var(--rd-nav-h) + 14px + env(safe-area-inset-bottom)); }
+:root.rd-playing .toast { bottom: calc(var(--rd-nav-h) + 132px + env(safe-area-inset-bottom)); }
+.wn-bar { bottom: calc(var(--rd-nav-h) + 12px + env(safe-area-inset-bottom)) !important; }
+
+/* Settings screen */
+.setgroup { display: grid; gap: 14px; }
+.setrow { display: grid; gap: 8px; }
+.setrow > h3 { margin: 0; font-size: var(--step--1); font-weight: 700; color: var(--text-dim); }
+.setseg { display: flex; width: 100%; }
+.setseg button { flex: 1; font-size: var(--step--1); padding: 8px 4px; }
+
+/* Settings, notes and bookmarks screens open with their title */
+.info > .chapter__title { margin-top: 22px; }
+
+/* Notes and bookmarks screens */
+.lib .rd-seg { display: flex; margin-bottom: 4px; }
+.lib .rd-seg button { flex: 1; }

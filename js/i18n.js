@@ -87,10 +87,23 @@ export const UI = {
   /* First-run language picker */
   chooseLanguage: { zh: '选择语言', en: 'Choose your language', ms: 'Pilih bahasa anda' },
   changeLater: {
-    zh: '之后随时可以用顶部的语言按钮切换。',
-    en: 'You can change this any time with the language button at the top.',
-    ms: 'Anda boleh menukarnya bila-bila masa dengan butang bahasa di atas.',
+    zh: '之后随时可以在底部的「设置」里切换。',
+    en: 'You can change this any time in Settings, at the bottom of the screen.',
+    ms: 'Anda boleh menukarnya bila-bila masa dalam Tetapan, di bawah skrin.',
   },
+
+  /* Bottom navigation and settings */
+  menu:       { zh: '菜单', en: 'Menu', ms: 'Menu' },
+  contents:   { zh: '目录', en: 'Contents', ms: 'Kandungan' },
+  readAloud:  { zh: '朗读', en: 'Read aloud', ms: 'Baca kuat' },
+  stopReading:{ zh: '停止', en: 'Stop', ms: 'Henti' },
+  notes:      { zh: '笔记', en: 'Notes', ms: 'Nota' },
+  highlights: { zh: '画线', en: 'Highlights', ms: 'Serlahan' },
+  bookmarks:  { zh: '书签', en: 'Bookmarks', ms: 'Penanda' },
+  settings:   { zh: '设置', en: 'Settings', ms: 'Tetapan' },
+  language:   { zh: '语言', en: 'Language', ms: 'Bahasa' },
+  textSize:   { zh: '字号', en: 'Text size', ms: 'Saiz teks' },
+  openChapter:{ zh: '先打开一章，再按「朗读」', en: 'Open a chapter first, then Read aloud', ms: 'Buka satu bab dahulu, kemudian Baca kuat' },
 
   themeAuto:  { zh: '跟随系统', en: 'Match system', ms: 'Ikut sistem' },
   themeLight: { zh: '浅色', en: 'Light', ms: 'Cerah' },

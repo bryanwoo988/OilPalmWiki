@@ -67,8 +67,12 @@ const BLOCKS = {
 
   keyval(b) {
     const dl = el('dl', 'blk keyval');
+    // Each pair in its own <div> (valid inside <dl>, and display: contents in
+    // the stylesheet keeps the grid) so a pair can be marked as one block.
     for (const row of b.rows) {
-      dl.append(el('dt', null, pick(row.k)), el('dd', null, pick(row.v)));
+      const pair = el('div', 'keyval__row');
+      pair.append(el('dt', null, pick(row.k)), el('dd', null, pick(row.v)));
+      dl.append(pair);
     }
     return dl;
   },
@@ -134,6 +138,10 @@ function renderBlock(block) {
   return fn(block);
 }
 
+/** What a reader can mark or have read aloud, in reading order. */
+export const UNITS = ':scope > .blk--p, :scope > .blk--list > li, :scope > .keyval > .keyval__row, '
+  + ':scope > .note, :scope > .tablewrap tbody tr';
+
 /** Render a whole chapter body into a fragment. */
 export function renderSections(chapter) {
   const frag = document.createDocumentFragment();
@@ -151,6 +159,11 @@ export function renderSections(chapter) {
       const node = renderBlock(block);
       if (node) sec.append(node);
     }
+    // Markable blocks (highlights, notes, bookmarks, read-aloud) get a key that
+    // is the same in every language: chapter, section, place in the section.
+    sec.querySelectorAll(UNITS).forEach((u, i) => {
+      u.dataset.rk = `${chapter.id}/${section.id}#${i}`;
+    });
     frag.append(sec);
   }
 
