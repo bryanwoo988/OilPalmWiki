@@ -131,6 +131,8 @@ export const UI = {
   updateNow:    { zh: '立即更新', en: 'Update now', ms: 'Kemas kini sekarang' },
   version:      { zh: '版本', en: 'Version', ms: 'Versi' },
   whatsNew:     { zh: '更新记录', en: "What's new", ms: 'Apa yang baharu' },
+  shareApp:     { zh: '分享 App 链接', en: 'Share the app link', ms: 'Kongsi pautan aplikasi' },
+  linkCopied:   { zh: '链接已复制', en: 'Link copied', ms: 'Pautan disalin' },
   loading:      { zh: '载入中…', en: 'Loading…', ms: 'Memuatkan…' },
   loadError:    { zh: '内容载入失败', en: 'Could not load that chapter', ms: 'Gagal memuatkan bab' },
 };

@@ -283,6 +283,16 @@ function viewInfo() {
   link.rel = 'noopener';
   link.className = 'qr__link';
   qr.append(link);
+  const share = el('button', 'btn', t('shareApp'));
+  share.type = 'button';
+  share.addEventListener('click', async () => {
+    if (navigator.share) {
+      try { await navigator.share({ title: t('appName'), url: APP_URL }); } catch { /* cancelled */ }
+      return;
+    }
+    try { await navigator.clipboard.writeText(APP_URL); toast(t('linkCopied')); } catch { toast(APP_URL); }
+  });
+  qr.append(share);
   wrap.append(qr);
 
   const card = (title, ...paras) => {
@@ -512,18 +522,22 @@ function registerSW() {
         sw?.addEventListener('statechange', () => {
           if (sw.state === 'installed' && navigator.serviceWorker.controller) {
             updateWaiting = sw;
-            toast(t('updateReady'));
           }
         });
       });
     })
     .catch(err => console.warn('[sw] registration failed', err));
 
+  // A new worker has taken over with new content. Ask before reloading: a
+  // reload in the middle of reading loses the reader's place. The first
+  // install also fires this, with nothing new to show.
+  const hadController = !!navigator.serviceWorker.controller;
   let reloading = false;
+  const reload = () => { if (!reloading) { reloading = true; location.reload(); } };
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (reloading) return;
-    reloading = true;
-    location.reload();
+    if (!hadController || reloading) return;
+    if (window.WhatsNew) window.WhatsNew.offerUpdate(reload);
+    else reload();
   });
 }
 
