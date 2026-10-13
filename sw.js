@@ -11,7 +11,7 @@
  */
 
 /* --- generated:begin --- */
-const CACHE = 'opwiki-936c9276a0';
+const CACHE = 'opwiki-2a681e2bf7';
 const ASSETS = [
   './',
   'css/app.css',
@@ -73,7 +73,9 @@ const ASSETS = [
   'js/i18n.js',
   'js/prefs.js',
   'js/qrcode.js',
+  'js/releases.js',
   'js/search.js',
+  'js/whatsnew.js',
   'manifest.webmanifest',
 ];
 /* --- generated:end --- */

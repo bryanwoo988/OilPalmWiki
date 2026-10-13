@@ -8,7 +8,9 @@
 
 export const APP_URL = 'https://bryanwoo988.github.io/OilPalmWiki/';
 
-/** Shown on the Info screen. Bumping CACHE_VERSION in sw.js ships new content. */
-export const APP_VERSION = '1.0.0';
+import { RELEASES } from './releases.js';
+
+/** Shown on the Info screen: the newest entry in releases.js. */
+export const APP_VERSION = RELEASES[0].v;
 
 export const AUTHOR = 'Bryan Woo';

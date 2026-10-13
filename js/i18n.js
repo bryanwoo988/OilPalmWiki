@@ -130,6 +130,7 @@ export const UI = {
   updateReady:  { zh: '有新版本内容', en: 'An update is ready', ms: 'Kemas kini sedia' },
   updateNow:    { zh: '立即更新', en: 'Update now', ms: 'Kemas kini sekarang' },
   version:      { zh: '版本', en: 'Version', ms: 'Versi' },
+  whatsNew:     { zh: '更新记录', en: "What's new", ms: 'Apa yang baharu' },
   loading:      { zh: '载入中…', en: 'Loading…', ms: 'Memuatkan…' },
   loadError:    { zh: '内容载入失败', en: 'Could not load that chapter', ms: 'Gagal memuatkan bab' },
 };

@@ -14,6 +14,7 @@ import { redrawAll } from './charts.js';
 import { search as runSearch } from './search.js';
 import { toSVG } from './qrcode.js';
 import { APP_URL, APP_VERSION, AUTHOR } from './config.js';
+import { RELEASES } from './releases.js';
 
 const main = document.getElementById('main');
 const toastEl = document.getElementById('toast');
@@ -324,7 +325,12 @@ function viewInfo() {
     status.append(el('p', null, t('updateReady')), btn);
   }
 
-  status.append(el('p', null, `${t('version')} ${APP_VERSION} · content ${index.version}`));
+  const ver = el('p', null, `${t('version')} ${window.WhatsNew?.label(RELEASES) || APP_VERSION} · content ${index.version} · `);
+  const notes = el('a', null, t('whatsNew'));
+  notes.href = '#';
+  notes.addEventListener('click', e => { e.preventDefault(); window.WhatsNew?.history(); });
+  ver.append(notes);
+  status.append(ver);
   wrap.append(status);
 
   view.append(wrap);
@@ -525,6 +531,8 @@ function registerSW() {
 
 async function boot() {
   const state = prefs.init();
+  // Nothing chosen yet: a first-ever launch, with no update to catch up on.
+  const newUser = !state.langChosen;
   document.getElementById('lang-glyph').textContent = LANG_GLYPH[state.lang];
   document.getElementById('read-glyph').textContent =
     'A'.repeat(prefs.SCALES.indexOf(state.fontScale) + 1);
@@ -542,6 +550,11 @@ async function boot() {
   window.addEventListener('hashchange', () => render());
   await render();
   registerSW();
+  // After an update: what changed, once.
+  window.WhatsNew?.init({
+    version: APP_VERSION, releases: RELEASES, key: 'opw.seenVersion',
+    lang: () => prefs.get().lang, isNewUser: () => newUser,
+  });
 }
 
 boot();
