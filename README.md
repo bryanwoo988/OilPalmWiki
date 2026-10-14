@@ -54,7 +54,9 @@ no-store` is sent, and it refuses to register a service worker over HTTP/1.0.
   key/value pair to highlight or underline it in one of five colours, add a
   note, bookmark it, copy it, or start reading aloud from it. Marks are keyed by
   chapter, section and position, so they stay on the same block in all three
-  languages. Stored in the browser (`opw.reader`); Settings exports and imports
+  languages. Long-press to select just a few words instead: those marks are
+  stored as character offsets in that language, so they show only in the
+  language they were made in, and the Notes list says which. Stored in the browser (`opw.reader`); Settings exports and imports
   a backup. `js/reader.js` and `css/reader.css` are shared with Oil Palm Basics
   — keep both copies identical.
 - **Read aloud.** Uses the phone's own speech voices, paragraph by paragraph,

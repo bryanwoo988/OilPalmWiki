@@ -3,11 +3,13 @@
    Shared by Oil Palm Basics (SawitBasics) and OPWiki. Keep both copies
    identical: anything app-specific comes in through Reader.init(options).
 
-   The unit of marking is a block — a paragraph, a list item, a table row, a
-   callout — not a run of characters. Every block exists in all three
-   languages with the same key, so a highlight made in 中文 is still on the
-   same paragraph after switching to English or BM. Character ranges would
-   only survive in the language they were made in.
+   Two ways to mark, as in the Bible app:
+   - tap a block (paragraph, list item, table row, callout): the whole block.
+     Every block has the same key in all three languages, so the mark is
+     still there after switching between 中文, English and BM;
+   - long-press and drag to select some words: just those words. The same
+     sentence has different words in each language, so these marks show only
+     in the language they were made in; the lists say which one.
 
    Reader.init({
      app:    "opb",                     // storage prefix
@@ -50,12 +52,17 @@
     bmRemoved: { zh: "已移除书签", en: "Bookmark removed", ms: "Penanda dibuang" },
     copied:    { zh: "已复制", en: "Copied", ms: "Disalin" },
     copyFail:  { zh: "无法复制", en: "Could not copy", ms: "Tidak dapat menyalin" },
-    tapHint:   { zh: "点一下段落即可画线、做笔记或加书签", en: "Tap a paragraph to highlight, add a note or bookmark it", ms: "Ketik perenggan untuk serlah, tambah nota atau tanda" },
+    markTitle: { zh: "画线", en: "Highlight", ms: "Serlahan" },
+    addNote:   { zh: "加笔记", en: "Add note", ms: "Tambah nota" },
+    editNote:  { zh: "编辑笔记", en: "Edit note", ms: "Sunting nota" },
+    removeMark:{ zh: "移除画线", en: "Remove", ms: "Buang" },
+    cleared:   { zh: "已清除", en: "Cleared", ms: "Dipadam" },
+    madeIn:    { zh: "在{x}版本", en: "in {x}", ms: "dalam {x}" },
     notes:     { zh: "笔记", en: "Notes", ms: "Nota" },
     marks:     { zh: "画线", en: "Highlights", ms: "Serlahan" },
     bookmarks: { zh: "书签", en: "Bookmarks", ms: "Penanda" },
-    emptyNotes:{ zh: "还没有笔记。点一下任何段落，再按「笔记」。", en: "No notes yet. Tap any paragraph, then Note.", ms: "Belum ada nota. Ketik mana-mana perenggan, kemudian Nota." },
-    emptyMarks:{ zh: "还没有画线。点一下段落，选荧光笔或下划线和颜色。", en: "Nothing highlighted yet. Tap a paragraph, then pick Highlight or Underline and a colour.", ms: "Belum ada serlahan. Ketik perenggan, kemudian pilih Serlah atau Garis bawah dan warna." },
+    emptyNotes:{ zh: "还没有笔记。点一下段落，或长按选取几个字，再按「笔记」。", en: "No notes yet. Tap a paragraph, or long-press to select some words, then Note.", ms: "Belum ada nota. Ketik perenggan, atau tekan lama untuk memilih beberapa perkataan, kemudian Nota." },
+    emptyMarks:{ zh: "还没有画线。点一下段落，或长按选取几个字，再选荧光笔或下划线和颜色。", en: "Nothing highlighted yet. Tap a paragraph, or long-press to select some words, then pick Highlight or Underline and a colour.", ms: "Belum ada serlahan. Ketik perenggan, atau tekan lama untuk memilih beberapa perkataan, kemudian pilih Serlah atau Garis bawah dan warna." },
     emptyBm:   { zh: "还没有书签。点一下段落，再按「书签」。", en: "No bookmarks yet. Tap a paragraph, then Bookmark.", ms: "Belum ada penanda. Ketik perenggan, kemudian Penanda." },
     confirmDel:{ zh: "删除这条笔记？", en: "Delete this note?", ms: "Padam nota ini?" },
     remove:    { zh: "移除", en: "Remove", ms: "Buang" },
@@ -108,7 +115,11 @@
   };
 
   let cfg = null;
-  let data = { marks: {}, notes: {}, bookmarks: {}, settings: { rate: 1, voice: {} } };
+  /* marks/notes/bookmarks: block key -> { t, q, w, hl?, ul?, text? }
+     ranges: id -> { k, lang, s, e, q, w, t, g, last?, hl?, ul? }  (some words)
+     rnotes: g -> { text, t }  (a note on a group of ranges from one selection) */
+  let data = { marks: {}, notes: {}, bookmarks: {}, ranges: {}, rnotes: {}, settings: { rate: 1, voice: {} } };
+  const LANG_NAME = { zh: "中文", en: "English", ms: "BM" };
   const selected = new Set();       // keys
   let mode = "hl";
 
@@ -129,6 +140,8 @@
       data.marks = raw.marks || {};
       data.notes = raw.notes || {};
       data.bookmarks = raw.bookmarks || {};
+      data.ranges = raw.ranges || {};
+      data.rnotes = raw.rnotes || {};
       data.settings = Object.assign({ rate: 1, voice: {} }, raw.settings || {});
     } catch (e) { /* private mode or corrupt: start empty */ }
   }
@@ -181,13 +194,16 @@
     const note = data.notes[key];
     const bm = data.bookmarks[key];
 
+    // start from the plain block every time
+    $$(".rd-badges, .rd-rn", u).forEach((b) => b.remove());
+    $$(".rd-r", u).forEach((sp) => sp.replaceWith(...sp.childNodes));
     let ink = $(":scope > .rd-ink", u);
-    if (ink) {                       // start from the plain block every time
+    if (ink) {
       while (ink.firstChild) u.insertBefore(ink.firstChild, ink);
       ink.remove();
       ink = null;
     }
-    $$(".rd-badges", u).forEach((b) => b.remove());
+    u.normalize();
     const kind = kindOf(u);
     if (m && kind === "ink") {
       ink = document.createElement("span");
@@ -205,6 +221,12 @@
       if (m.ul) target.dataset.ul = m.ul;
     }
 
+    const L = lang();
+    const words = Object.values(data.ranges)
+      .filter((r) => r.k === key && r.lang === L && r.s < r.e && (r.hl || r.ul || data.rnotes[r.g]))
+      .sort((a, b) => a.t - b.t);
+    if (words.length) paintRanges(u, words);
+
     if (note || bm) {
       const b = document.createElement("span");
       b.className = "rd-badges";
@@ -215,11 +237,64 @@
     u.classList.toggle("rd-sel", selected.has(key));
   }
 
+  /* Wrap the marked words. Offsets count the block's text characters, the
+     same way a selection is measured (selectionPieces). */
+  function paintRanges(u, list) {
+    const len = u.textContent.length;
+    list = list.filter((r) => r.e <= len);
+    if (!list.length) return;
+    const cuts = Array.from(new Set([0, len].concat(...list.map((r) => [r.s, r.e])))).sort((a, b) => a - b);
+    const nodes = [];
+    const walker = document.createTreeWalker(u, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    let pos = 0;
+    nodes.forEach((n) => {
+      const a = pos, b = pos + n.nodeValue.length;
+      pos = b;
+      if (a === b) return;
+      const bounds = [a].concat(cuts.filter((c) => c > a && c < b), [b]);
+      const frag = document.createDocumentFragment();
+      let touched = false;
+      for (let i = 0; i < bounds.length - 1; i++) {
+        const from = bounds[i], to = bounds[i + 1];
+        const piece = n.nodeValue.slice(from - a, to - a);
+        const on = list.filter((r) => r.s <= from && r.e >= to);
+        if (!on.length) frag.appendChild(document.createTextNode(piece));
+        else {
+          touched = true;
+          const sp = document.createElement("span");
+          sp.className = "rd-r";
+          let hl, ul;
+          on.forEach((r) => { if (r.hl) hl = r.hl; if (r.ul) ul = r.ul; });
+          if (hl) sp.dataset.hl = hl;
+          if (ul) sp.dataset.ul = ul;
+          sp.dataset.g = on[on.length - 1].g;
+          sp.textContent = piece;
+          frag.appendChild(sp);
+        }
+        list.forEach((r) => {
+          if (r.e === to && r.last && data.rnotes[r.g]) {
+            touched = true;
+            const nb = document.createElement("button");
+            nb.type = "button";
+            nb.className = "rd-rn";
+            nb.dataset.g = r.g;
+            nb.setAttribute("aria-label", t("note"));
+            nb.innerHTML = ICON.note;
+            frag.appendChild(nb);
+          }
+        });
+      }
+      if (touched) n.parentNode.replaceChild(frag, n);
+    });
+  }
+
   /* Called by the app after every render. Also refreshes the saved snippet
      and location label, so lists follow the reader's current language. */
   function refresh() {
     if (!cfg) return;
     selected.clear();
+    textPieces = [];
     hideBar();
     let changed = false;
     units().forEach((u) => {
@@ -249,11 +324,21 @@
       if (u) openNote([u.dataset.rk]);
       return;
     }
+    const rn = e.target.closest(".rd-rn");
+    if (rn) {
+      e.preventDefault();
+      openRangeNote({ g: rn.dataset.g });
+      return;
+    }
     if (e.target.closest("a, button, input, select, textarea, summary, label, img, svg, video, .chart, canvas")) return;
     const sel = window.getSelection && window.getSelection();
-    if (sel && !sel.isCollapsed) return;          // the reader is selecting text to copy
+    if (sel && !sel.isCollapsed) return;          // the reader is selecting words
+    if (textPieces.length) { clearSelection(); return; }   // a tap elsewhere drops the selected words
     const u = e.target.closest(cfg.units);
     if (!u || !u.dataset.rk || !r.contains(u)) return;
+    // Tapping marked words opens their menu: colour, note, copy, remove.
+    const marked = e.target.closest(".rd-r[data-g]");
+    if (marked && !selected.size) { openMarkMenu(marked.dataset.g); return; }
     if (tts.on && !selected.size) {             // while listening, a tap moves the reading there
       ttsJumpTo(u);
       return;
@@ -271,13 +356,141 @@
   function clearSelection() {
     selected.clear();
     $$(".rd-sel").forEach((n) => n.classList.remove("rd-sel"));
+    if (textPieces.length) {
+      textPieces = [];
+      const sel = window.getSelection();
+      const r = root();
+      if (sel && !sel.isCollapsed && r && r.contains(sel.anchorNode)) sel.removeAllRanges();
+    }
     updateBar();
   }
 
-  /* selected keys in reading order */
+  /* selected keys in reading order: tapped blocks, or blocks the selected words are in */
   function selectedKeys() {
+    if (textPieces.length) return Array.from(new Set(textPieces.map((p) => p.k)));
     const order = units().map((u) => u.dataset.rk);
     return Array.from(selected).sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  }
+
+  /* ---------------- selecting words ---------------- */
+
+  /* Long-press uses the phone's own text selection; we follow it and offer
+     the same tool bar. One piece per block the selection touches. */
+  let textPieces = [];
+  let barTouch = 0;
+  let selTimer;
+
+  function offsetIn(u, node, off) {
+    const r = document.createRange();
+    r.setStart(u, 0);
+    r.setEnd(node, off);
+    return r.toString().length;
+  }
+
+  function selectionPieces() {
+    const sel = window.getSelection && window.getSelection();
+    if (!cfg || !sel || sel.isCollapsed || !sel.rangeCount) return [];
+    const range = sel.getRangeAt(0);
+    const r = root();
+    if (!r || !r.contains(range.commonAncestorContainer)) return [];
+    const L = lang();
+    const out = [];
+    units().forEach((u) => {
+      if (!range.intersectsNode(u) || u.closest("details:not([open])")) return;
+      const len = u.textContent.length;
+      const s = u.contains(range.startContainer) ? offsetIn(u, range.startContainer, range.startOffset) : 0;
+      const e = u.contains(range.endContainer) ? offsetIn(u, range.endContainer, range.endOffset) : len;
+      const q = u.textContent.slice(s, e);
+      if (e > s && q.trim()) out.push({ k: u.dataset.rk, lang: L, s: s, e: e, q: q });
+    });
+    return out;
+  }
+
+  function onSelectionChange() {
+    clearTimeout(selTimer);
+    selTimer = setTimeout(() => {
+      const pieces = selectionPieces();
+      if (pieces.length) {
+        textPieces = pieces;
+        if (selected.size) {
+          selected.clear();
+          $$(".rd-sel").forEach((n) => n.classList.remove("rd-sel"));
+        }
+        updateBar();
+      } else if (textPieces.length && Date.now() - barTouch > 800) {
+        // Tapping the tool bar can collapse the selection on phones; keep the words then.
+        textPieces = [];
+        updateBar();
+      }
+    }, 150);
+  }
+
+  const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+  function addPieces(pieces, props) {
+    const g = newId(), now = Date.now();
+    pieces.forEach((p, i) => {
+      const u = unitOf(p.k);
+      data.ranges[newId()] = Object.assign({}, p, props, { g: g, last: i === pieces.length - 1, t: now + i, w: u ? cfg.where(u) : "" });
+    });
+    return g;
+  }
+
+  const groupPieces = (g) => Object.keys(data.ranges)
+    .filter((id) => data.ranges[id].g === g)
+    .map((id) => Object.assign({ id: id }, data.ranges[id]))
+    .sort((a, b) => a.t - b.t);
+  const groupQuote = (g) => groupPieces(g).map((p) => p.q).join(" … ");
+  const groupKeys = (g) => Array.from(new Set(groupPieces(g).map((p) => p.k)));
+
+  function markText(color) {
+    const pieces = textPieces;
+    const same = (r, p) => r.k === p.k && r.lang === p.lang && r.s === p.s && r.e === p.e;
+    const matches = pieces.map((p) => Object.keys(data.ranges).find((id) => same(data.ranges[id], p) && data.ranges[id][mode] === color));
+    if (matches.every(Boolean)) {
+      // The exact same words already have this colour: tapping again takes it off.
+      matches.forEach((id) => {
+        const r = data.ranges[id];
+        delete r[mode];
+        if (!r.hl && !r.ul && !data.rnotes[r.g]) delete data.ranges[id];
+      });
+    } else addPieces(pieces, { [mode]: color });
+    persist();
+    const keys = selectedKeys();
+    clearSelection();
+    repaint(keys);
+  }
+
+  function clearText() {
+    const pieces = textPieces;
+    Object.keys(data.ranges).forEach((id) => {
+      const r = data.ranges[id];
+      if (!pieces.some((p) => r.k === p.k && r.lang === p.lang && r.s < p.e && r.e > p.s)) return;
+      delete r.hl;
+      delete r.ul;
+      if (!data.rnotes[r.g]) delete data.ranges[id];
+    });
+    persist();
+    const keys = selectedKeys();
+    clearSelection();
+    repaint(keys);
+  }
+
+  function deleteRangeNote(g) {
+    delete data.rnotes[g];
+    Object.keys(data.ranges).forEach((id) => {
+      const r = data.ranges[id];
+      if (r.g === g && !r.hl && !r.ul) delete data.ranges[id];
+    });
+  }
+
+  function removeGroupMark(g) {
+    groupPieces(g).forEach((p) => {
+      const r = data.ranges[p.id];
+      delete r.hl;
+      delete r.ul;
+      if (!data.rnotes[g]) delete data.ranges[p.id];
+    });
   }
 
   /* ---------------- action bar ---------------- */
@@ -291,13 +504,15 @@
     bar.setAttribute("role", "toolbar");
     document.body.appendChild(bar);
     bar.addEventListener("mousedown", (e) => e.preventDefault());
+    bar.addEventListener("pointerdown", () => { barTouch = Date.now(); });
+    bar.addEventListener("touchstart", () => { barTouch = Date.now(); }, { passive: true });
     bar.addEventListener("click", onBarClick);
   }
 
   function renderBar() {
     const keys = selectedKeys();
     const allBm = keys.length && keys.every((k) => data.bookmarks[k]);
-    const cur = keys.length === 1 && data.marks[keys[0]] ? data.marks[keys[0]][mode] : null;
+    const cur = !textPieces.length && keys.length === 1 && data.marks[keys[0]] ? data.marks[keys[0]][mode] : null;
     bar.innerHTML =
       '<div class="rd-row1">' +
         '<div class="rd-seg">' +
@@ -323,7 +538,7 @@
 
   function updateBar() {
     if (!bar) return;
-    const on = selected.size > 0;
+    const on = selected.size > 0 || textPieces.length > 0;
     bar.hidden = !on;
     document.documentElement.classList.toggle("rd-selecting", on);
     if (on) renderBar();
@@ -339,13 +554,14 @@
     const m = e.target.closest("[data-mode]");
     if (m) { mode = m.dataset.mode; renderBar(); return; }
     const c = e.target.closest("[data-c]");
-    if (c) { applyColor(c.dataset.c); return; }
+    if (c) { if (textPieces.length) markText(c.dataset.c); else applyColor(c.dataset.c); return; }
     const a = e.target.closest("[data-act]");
     if (!a) return;
     const keys = selectedKeys();
     switch (a.dataset.act) {
       case "note":
-        openNote(keys);
+        if (textPieces.length) openRangeNote({ pieces: textPieces });
+        else openNote(keys);
         break;
       case "bookmark": {
         const add = !keys.every((k) => data.bookmarks[k]);
@@ -366,7 +582,10 @@
         break;
       }
       case "copy": {
-        const text = keys.map((k) => textOf(unitOf(k))).join("\n\n");
+        const sel = window.getSelection();
+        const text = textPieces.length
+          ? ((sel && sel.toString().trim()) || textPieces.map((p) => p.q).join(" "))
+          : keys.map((k) => textOf(unitOf(k))).join("\n\n");
         const u = unitOf(keys[0]);
         const where = u ? cfg.where(u) : "";
         try {
@@ -377,6 +596,7 @@
         break;
       }
       case "clear":
+        if (textPieces.length) { clearText(); break; }
         keys.forEach((k) => delete data.marks[k]);
         persist();
         repaint(keys);
@@ -478,6 +698,95 @@
     });
   }
 
+  /* A note on selected words (pieces) or on words already marked (g). */
+  function openRangeNote(o) {
+    const g = o.g || null;
+    const existing = g ? data.rnotes[g] : null;
+    const parts = g ? groupPieces(g) : o.pieces;
+    if (!parts || !parts.length) return;
+    const u = unitOf(parts[0].k);
+    const where = u ? cfg.where(u) : parts[0].w || "";
+    const quote = parts.map((p) => p.q).join(" … ");
+    const keys = Array.from(new Set(parts.map((p) => p.k)));
+    const body = openSheet(t("noteTitle"),
+      (where ? '<div class="rd-where">' + esc(where) + "</div>" : "") +
+      '<blockquote class="rd-quote">' + esc(quote) + "</blockquote>" +
+      '<textarea class="rd-input" rows="5" placeholder="' + esc(t("notePh")) + '">' + esc(existing ? existing.text : "") + "</textarea>" +
+      '<div class="rd-actions">' +
+        (existing ? '<button type="button" class="rd-btn rd-danger" data-do="del">' + esc(t("del")) + "</button>" : "") +
+        '<button type="button" class="rd-btn" data-do="cancel">' + esc(t("cancel")) + "</button>" +
+        '<button type="button" class="rd-btn rd-primary" data-do="save">' + esc(t("save")) + "</button>" +
+      "</div>");
+    const ta = $("textarea", body);
+    setTimeout(() => ta.focus(), 60);
+    body.addEventListener("click", (e) => {
+      const d = e.target.closest("[data-do]");
+      if (!d) return;
+      if (d.dataset.do === "cancel") return closeSheet();
+      const text = d.dataset.do === "save" ? ta.value.trim() : "";
+      if (text) {
+        const id = g || addPieces(parts, {});
+        data.rnotes[id] = { text: text, t: Date.now() };
+      } else if (g) deleteRangeNote(g);
+      persist();
+      closeSheet();
+      clearSelection();
+      repaint(keys);
+      toast(t(text ? "saved" : "deleted"));
+      if (onChange) onChange();
+    });
+  }
+
+  /* Menu for words that are already marked: colour, note, copy, remove. */
+  function openMarkMenu(g) {
+    const parts = groupPieces(g);
+    if (!parts.length) return;
+    const note = data.rnotes[g];
+    const m = parts[0].hl ? "hl" : parts[0].ul ? "ul" : "hl";
+    const cur = parts[0][m];
+    const u = unitOf(parts[0].k);
+    const keys = groupKeys(g);
+    const body = openSheet(t("markTitle"),
+      (u ? '<div class="rd-where">' + esc(cfg.where(u)) + "</div>" : "") +
+      '<blockquote class="rd-quote">' + esc(groupQuote(g)) + "</blockquote>" +
+      (note ? '<div class="rd-item-note" style="margin:0 0 14px">' + esc(note.text) + "</div>" : "") +
+      '<div class="rd-colors rd-menu-colors">' + COLORS.map((c) =>
+        '<button type="button" data-color="' + c + '" class="rd-c-' + c + (c === cur ? " on" : "") + '" aria-label="' + esc(t(c)) + '"></button>').join("") + "</div>" +
+      '<div class="rd-actions">' +
+        '<button type="button" class="rd-btn rd-danger" data-do="remove">' + esc(t("removeMark")) + "</button>" +
+        '<button type="button" class="rd-btn" data-do="copy">' + esc(t("copy")) + "</button>" +
+        '<button type="button" class="rd-btn rd-primary" data-do="note">' + esc(t(note ? "editNote" : "addNote")) + "</button>" +
+      "</div>");
+    body.addEventListener("click", async (e) => {
+      const col = e.target.closest("[data-color]");
+      if (col) {
+        parts.forEach((p) => { data.ranges[p.id][m] = col.dataset.color; });
+        persist();
+        closeSheet();
+        repaint(keys);
+        return;
+      }
+      const d = e.target.closest("[data-do]");
+      if (!d) return;
+      if (d.dataset.do === "note") return openRangeNote({ g: g });
+      if (d.dataset.do === "copy") {
+        try {
+          await navigator.clipboard.writeText(groupQuote(g) + (u ? "\n— " + cfg.where(u) : ""));
+          toast(t("copied"));
+        } catch (err) { toast(t("copyFail")); }
+        return closeSheet();
+      }
+      if (d.dataset.do === "remove") {
+        removeGroupMark(g);
+        persist();
+        closeSheet();
+        repaint(keys);
+        toast(t("cleared"));
+        if (onChange) onChange();
+      }
+    });
+  }
+
   let onChange = null;   // the list page re-draws itself when a note changes
 
   /* ---------------- lists: notes, highlights, bookmarks ---------------- */
@@ -489,10 +798,28 @@
     } catch (e) { return new Date(ts).toISOString().slice(0, 10); }
   }
 
-  /* kind: "notes" | "marks" | "bookmarks" */
-  function renderList(container, kind) {
+  /* kind: "notes" | "marks" | "bookmarks". Block items and marked-words
+     items are listed together, newest first. */
+  function listItems(kind) {
     const bag = kind === "notes" ? data.notes : kind === "marks" ? data.marks : data.bookmarks;
-    const items = Object.keys(bag).map((k) => Object.assign({ k: k }, bag[k])).sort((a, b) => (b.t || 0) - (a.t || 0));
+    const items = Object.keys(bag).map((k) => Object.assign({ id: "k:" + k, k: k }, bag[k]));
+    const groups = {};
+    Object.keys(data.ranges).forEach((id) => {
+      const r = data.ranges[id];
+      (groups[r.g] = groups[r.g] || []).push(r);
+    });
+    Object.keys(groups).forEach((g) => {
+      const parts = groups[g].sort((a, b) => a.t - b.t);
+      const first = parts[0];
+      const base = { id: "g:" + g, k: first.k, w: first.w, lang: first.lang, q: parts.map((p) => p.q).join(" … ") };
+      if (kind === "marks" && (first.hl || first.ul)) items.push(Object.assign(base, { t: first.t, hl: first.hl, ul: first.ul }));
+      if (kind === "notes" && data.rnotes[g]) items.push(Object.assign(base, { t: data.rnotes[g].t, text: data.rnotes[g].text }));
+    });
+    return items.sort((a, b) => (b.t || 0) - (a.t || 0));
+  }
+
+  function renderList(container, kind) {
+    const items = listItems(kind);
     if (!items.length) {
       container.innerHTML = '<p class="rd-empty">' + esc(t(kind === "notes" ? "emptyNotes" : kind === "marks" ? "emptyMarks" : "emptyBm")) + "</p>";
       return;
@@ -502,22 +829,34 @@
       const dot = kind === "marks"
         ? '<span class="rd-dot rd-c-' + esc(color) + (it.hl ? "" : " rd-dot-ul") + '"></span>'
         : kind === "bookmarks" ? '<span class="rd-dot-ico">' + ICON.bm + "</span>" : "";
+      // marked words show only in the language they were made in: say which
+      const madeIn = it.lang && it.lang !== lang() ? " · " + t("madeIn").replace("{x}", LANG_NAME[it.lang] || it.lang) : "";
       return '<li><button type="button" class="rd-item" data-k="' + esc(it.k) + '">' +
-          '<span class="rd-item-top">' + dot + '<span class="rd-item-where">' + esc(it.w || "") + "</span>" +
+          '<span class="rd-item-top">' + dot + '<span class="rd-item-where">' + esc((it.w || "") + madeIn) + "</span>" +
           '<span class="rd-item-date">' + esc(fmtDate(it.t)) + "</span></span>" +
           '<span class="rd-item-q">' + esc(it.q || "") + "</span>" +
           (kind === "notes" ? '<span class="rd-item-note">' + esc(it.text) + "</span>" : "") +
         "</button>" +
-        '<button type="button" class="rd-item-del" data-del="' + esc(it.k) + '" aria-label="' + esc(t("remove")) + '">' + ICON.x + "</button></li>";
+        '<button type="button" class="rd-item-del" data-del="' + esc(it.id) + '" aria-label="' + esc(t("remove")) + '">' + ICON.x + "</button></li>";
     }).join("") + "</ul>";
     container.onclick = (e) => {
       const del = e.target.closest("[data-del]");
       if (del) {
-        const k = del.dataset.del;
+        const id = del.dataset.del;
         if (kind === "notes" && !window.confirm(t("confirmDel"))) return;
-        delete bag[k];
+        let keys;
+        if (id.indexOf("g:") === 0) {
+          const g = id.slice(2);
+          keys = groupKeys(g);
+          if (kind === "notes") deleteRangeNote(g);
+          else removeGroupMark(g);
+        } else {
+          const k = id.slice(2);
+          keys = [k];
+          delete (kind === "notes" ? data.notes : kind === "marks" ? data.marks : data.bookmarks)[k];
+        }
         persist();
-        repaint([k]);
+        repaint(keys);
         renderList(container, kind);
         return;
       }
@@ -527,7 +866,7 @@
   }
 
   function counts() {
-    return { notes: Object.keys(data.notes).length, marks: Object.keys(data.marks).length, bookmarks: Object.keys(data.bookmarks).length };
+    return { notes: listItems("notes").length, marks: listItems("marks").length, bookmarks: listItems("bookmarks").length };
   }
 
   /* Bring a saved block on screen: open what it sits in, scroll, flash. */
@@ -839,7 +1178,7 @@
 
   function exportBackup() {
     const out = { app: cfg.app + "-reader", version: 1, exported: new Date().toISOString(),
-      marks: data.marks, notes: data.notes, bookmarks: data.bookmarks };
+      marks: data.marks, notes: data.notes, bookmarks: data.bookmarks, ranges: data.ranges, rnotes: data.rnotes };
     const blob = new Blob([JSON.stringify(out, null, 1)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -858,6 +1197,8 @@
         Object.assign(data.marks, d.marks || {});
         Object.assign(data.notes, d.notes || {});
         Object.assign(data.bookmarks, d.bookmarks || {});
+        Object.assign(data.ranges, d.ranges || {});
+        Object.assign(data.rnotes, d.rnotes || {});
         persist();
         units().forEach(paint);
         toast(t("imported"));
@@ -875,6 +1216,7 @@
     buildBar();
     buildPlayer();
     document.addEventListener("click", onClick);
+    document.addEventListener("selectionchange", onSelectionChange);
     document.addEventListener("keydown", (e) => {
       if (e.key !== "Escape") return;
       if (sheet) closeSheet();
@@ -892,7 +1234,7 @@
     listen: listen,
     stop: ttsStop,
     isListening: () => tts.on,
-    isBusy: () => !!sheet || selected.size > 0,
+    isBusy: () => !!sheet || selected.size > 0 || textPieces.length > 0,
     renderList: renderList,
     renderSettings: renderSettings,
     counts: counts,
