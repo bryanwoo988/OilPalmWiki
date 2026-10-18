@@ -140,6 +140,29 @@
   }
 }
 
+/* --- Theme looks --------------------------------------------------------
+   data-theme (auto|light|dark) picks the side above; data-palette names the
+   look in use on that side (prefs.js resolves `auto`). Classic and Midnight
+   are the base itself; brand and chart colours stay the same. */
+:root[data-palette="paper"] {
+  --bg: #f6f1e7; --bg-sunk: #ede5d5; --surface: #fffdf8; --surface-2: #efe7d8; --border: #e3d9c6; --border-strong: #cbbfa6; --text: #2b2620; --text-dim: #5e5446; --text-faint: #857a69; --accent: #a8571a; --accent-ink: #ffffff; --accent-soft: #f4e4d3;
+}
+:root[data-palette="mint"] {
+  --bg: #eef7f3; --bg-sunk: #e2f0e9; --surface: #ffffff; --surface-2: #e0f1ea; --border: #cde4da; --border-strong: #a9cbbd; --text: #15302a; --text-dim: #4a645d; --text-faint: #6f8781; --accent: #0b7f62; --accent-ink: #ffffff; --accent-soft: #d9efe6;
+}
+:root[data-palette="lavender"] {
+  --bg: #f5f3fc; --bg-sunk: #ebe7f8; --surface: #ffffff; --surface-2: #ebe7f8; --border: #dcd6f0; --border-strong: #bdb4de; --text: #231f3a; --text-dim: #575078; --text-faint: #7d779b; --accent: #5b45c4; --accent-ink: #ffffff; --accent-soft: #e7e2fa;
+}
+:root[data-palette="oled"] {
+  --bg: #000000; --bg-sunk: #000000; --surface: #0d0d0d; --surface-2: #1a1a1a; --border: #262626; --border-strong: #3a3a3a; --text: #ededed; --text-dim: #b0b0b0; --text-faint: #8a8a8a;
+}
+:root[data-palette="slate"] {
+  --bg: #23272f; --bg-sunk: #1c1f26; --surface: #2c313b; --surface-2: #363c48; --border: #404857; --border-strong: #535d6e; --text: #e2e6ec; --text-dim: #b3bbc6; --text-faint: #949daa; --accent: #8cbcea; --accent-ink: #10202f; --accent-soft: #2f3e52;
+}
+:root[data-palette="grape"] {
+  --bg: #17121f; --bg-sunk: #110d17; --surface: #221a2e; --surface-2: #2d243c; --border: #3a2f4d; --border-strong: #4e4166; --text: #ede7f8; --text-dim: #c0b5d6; --text-faint: #9a8fb2; --accent: #b89dff; --accent-ink: #1a1030; --accent-soft: #30264a;
+}
+
 /* --- Reset -------------------------------------------------------------- */
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -964,6 +987,16 @@ figcaption {
 .setrow > h3 { margin: 0; font-size: var(--step--1); font-weight: 700; color: var(--text-dim); }
 .setseg { display: flex; width: 100%; }
 .setseg button { flex: 1; font-size: var(--step--1); padding: 8px 4px; }
+.looks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; width: 100%; }
+.look { display: flex; flex-direction: column; gap: 5px; padding: 5px; border: 2px solid transparent; border-radius: 14px; background: none; color: var(--text); font: inherit; font-size: var(--step--1); font-weight: 600; cursor: pointer; }
+.look.on { border-color: var(--accent); }
+.look:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+.look-prev { display: block; height: 52px; padding: 8px; border-radius: 10px; border: 1px solid rgba(127, 127, 127, .28); }
+.look-card { display: flex; flex-direction: column; gap: 5px; height: 100%; padding: 6px; border-radius: 6px; }
+.look-card i { display: block; width: 45%; height: 6px; border-radius: 3px; }
+.look-card b { display: block; width: 75%; height: 5px; border-radius: 3px; background: rgba(127, 127, 127, .35); }
+.look-name { text-align: center; line-height: 1.25; font-size: .8rem; overflow-wrap: normal; }
+.theme-note { margin: 8px 0 0; color: var(--text-dim); font-size: var(--step--1); line-height: 1.45; }
 
 /* Settings, notes and bookmarks screens open with their title */
 .info > .chapter__title { margin-top: 22px; }

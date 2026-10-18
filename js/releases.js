@@ -5,6 +5,10 @@
  * the first entry.
  */
 export const RELEASES = [
+  { v: '1.5.0', date: '2026-10-18', notes: {
+    zh: ['设置里新增 4 种浅色主题（经典、纸张、薄荷、薰衣草）和 4 种深色主题（午夜、纯黑 OLED、石板、葡萄）。「跟随系统」时，手机为浅色就用你选的浅色主题，为深色就用你选的深色主题'],
+    en: ['Settings now offers four light themes (Classic, Paper, Mint, Lavender) and four dark themes (Midnight, OLED Black, Slate, Grape). Match system uses your chosen light theme when your phone is light and your dark theme when it is dark'],
+    ms: ['Tetapan kini ada empat tema cerah (Klasik, Kertas, Pudina, Lavender) dan empat tema gelap (Tengah Malam, Hitam OLED, Batu Loh, Anggur). Ikut sistem menggunakan tema cerah pilihan anda apabila telefon cerah dan tema gelap apabila telefon gelap'] } },
   { v: '1.4.0', date: '2026-10-14', notes: {
     zh: ['长按并拖动，就能只选一段里的几个字或一句话，给它画荧光笔或下划线、选颜色、加笔记（跟圣经 App 一样）；点一下画过的字可以换颜色、加笔记或移除',
          '选几个字做的画线只会在当时的语言里显示（同一句话在三种语言里字不一样）；「笔记」页会注明是在哪个语言做的。点一下整段标记的方式照旧'],

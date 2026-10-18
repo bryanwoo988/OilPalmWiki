@@ -59,6 +59,10 @@
   try {
     var p = JSON.parse(localStorage.getItem('opwiki.prefs') || '{}');
     if (p.theme) r.dataset.theme = p.theme;
+    var dark = p.theme === 'dark' || (p.theme !== 'light' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    var looks = dark ? ['midnight', 'oled', 'slate', 'grape'] : ['classic', 'paper', 'mint', 'lavender'];
+    var look = dark ? p.darkTheme : p.lightTheme;
+    r.dataset.palette = looks.indexOf(look) >= 0 ? look : looks[0];
     r.lang = p.lang || 'en';
     if (p.fontScale) r.style.setProperty('--font-scale', p.fontScale);
     if (p.fontScale >= 1.3) r.dataset.wide = 'on';

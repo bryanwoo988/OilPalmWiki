@@ -258,6 +258,32 @@ function segmented(options, current, onPick) {
   return seg;
 }
 
+/* Theme looks as small previews: page, card and accent colour of each look.
+   Keep in step with the [data-palette] blocks in css/app.css. */
+const LOOK_COLOURS = {
+  classic: ['#FBFAF6', '#FFFFFF', '#016F46'], paper: ['#f6f1e7', '#fffdf8', '#a8571a'],
+  mint: ['#eef7f3', '#ffffff', '#0b7f62'], lavender: ['#f5f3fc', '#ffffff', '#5b45c4'],
+  midnight: ['#0F1412', '#171E1A', '#45D69A'], oled: ['#000000', '#0d0d0d', '#45D69A'],
+  slate: ['#23272f', '#2c313b', '#8cbcea'], grape: ['#17121f', '#221a2e', '#b89dff'],
+};
+function swatches(names, current, onPick) {
+  const wrap = el('div', 'looks');
+  for (const n of names) {
+    const [bg, surface, accent] = LOOK_COLOURS[n];
+    const b = el('button', n === current ? 'look on' : 'look');
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(n === current));
+    const prev = el('span', 'look-prev'); prev.style.background = bg;
+    const card = el('span', 'look-card'); card.style.background = surface;
+    const bar = el('i'); bar.style.background = accent;
+    card.append(bar, el('b')); prev.append(card);
+    b.append(prev, el('span', 'look-name', t(`look_${n}`)));
+    b.addEventListener('click', () => onPick(n));
+    wrap.append(b);
+  }
+  return wrap;
+}
+
 function viewInfo() {
   const view = el('div', 'view');
   const wrap = el('div', 'info');
@@ -285,6 +311,9 @@ function viewInfo() {
       prefs.setTheme(th);
       render(true);
     })));
+  set.lastChild.append(el('p', 'theme-note', t('themeNote')));
+  set.append(row(t('lightLooks'), swatches(prefs.LIGHT_THEMES, p.lightTheme, n => { prefs.setLightTheme(n); render(true); })));
+  set.append(row(t('darkLooks'), swatches(prefs.DARK_THEMES, p.darkTheme, n => { prefs.setDarkTheme(n); render(true); })));
   set.append(row(t('textSize'), segmented(
     prefs.SCALES.map(sc => [sc, `${Math.round(sc * 100)}%`]), p.fontScale, sc => {
       prefs.setFontScale(sc);
